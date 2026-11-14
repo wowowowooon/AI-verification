@@ -11,26 +11,40 @@
 | 질문 | 답 | 핵심 근거 |
 |---|---|---|
 | ① 시장에 이미 있나? | **있다. 많다.** | 모달리티마다 제품 수십 개. 영상 [Reality Defender](https://kpmg.com/us/en/media/news/kpmg-llp-takes-minority-stake-in-deepfake-detection-leader-reality-defender.html), 음성 [Pindrop](https://www.biometricupdate.com/202504/pindrop-surpasses-100m-in-annual-recurring-revenue-kicks-off-bu-podcast), 음악 [Deezer](https://dataconomy.com/2026/01/29/music-streaming-giant-deezer-opens-ai-detection-tool-to-external-platforms/), 글 [GPTZero](https://www.businesswire.com/news/home/20260623083788/en/Superhuman-to-Acquire-GPTZero-AI-Authenticity-Platform) (2절) |
-| ② 메이저한 앱이 있나? | **모달리티별로는 있다. 네 매체를 다 하는 메이저 소비자 앱은 없다.** | Google SynthID Detector는 무료지만 글 제외, 워터마크 확인만 [MacRumors](https://www.macrumors.com/2026/10/07/google-synthid-detector/). 가장 비슷한 Bitdefender RealCheck는 영상 중심·영어 전용 [Bitdefender](https://www.bitdefender.com/en-us/news/bitdefender-launches-realcheck-a-powerful-deepfake-detection-solution) |
-| ③ 완성도가 높고 많이 쓰이나? | **B2B와 글은 많이 쓴다. 소비자 판별 앱은 거의 안 쓴다.** | 미국 교사 68%가 글 탐지기 정기 사용 [CDT](https://cdt.org/insights/new-research-educators-still-struggling-with-generative-ai-detection-discipline-and-distrust-despite-increased-school-guidance/). 이미지 판별 전용 앱 중 설치 10만 건 넘는 앱은 못 찾음 [AppBrain](https://www.appbrain.com/dev/Zyur/) |
-| ④ 믿을 만한가? | **아니다(범죄 판단 기준).** 벤더는 95~99%를 주장하지만 독립 평가는 훨씬 낮다. | 실제 유통 딥페이크에서 오픈소스 탐지기 AUC가 영상 50%·음성 48%·이미지 45% 하락, 상용도 사람 분석가 미달(독립 평가) [Deepfake-Eval-2024](https://arxiv.org/abs/2503.02857). 최신 이미지 생성기 탐지율 18~30%(독립 평가) [arXiv 2602.07814](https://arxiv.org/html/2602.07814) |
+| ② 메이저한 앱이 있나? | **모달리티별로는 있다. 네 매체를 다 하는 메이저 소비자 앱은 없다.** | Google SynthID Detector는 무료지만 글 제외, 워터마크 확인만 [MacRumors](https://www.macrumors.com/2026/10/07/google-synthid-detector/). 기능상 가장 가까운 것은 네 매체를 지원하는 Hive AI Detector(크롬 확장, 사용자 약 5만 명) [Chrome 웹스토어](https://chromewebstore.google.com/detail/hive-ai-detector/cmeikcgfecnhojcbfapbmpbjgllklcbi), 모바일 앱 형태로 가장 가까운 것은 Bitdefender RealCheck(영상 중심·영어 전용) [Bitdefender](https://www.bitdefender.com/en-us/news/bitdefender-launches-realcheck-a-powerful-deepfake-detection-solution) |
+| ③ 완성도가 높고 많이 쓰이나? | **B2B와 글은 많이 쓴다. 소비자 판별 앱은 거의 안 쓴다.** | 미국 교사 68%가 글 탐지기 정기 사용(2023년 조사, 보도에 따라 39%로도 집계) [CDT](https://cdt.org/insights/new-research-educators-still-struggling-with-generative-ai-detection-discipline-and-distrust-despite-increased-school-guidance/). 이미지 판별 전용 앱 중 설치 10만 건 넘는 앱은 못 찾음 [AppBrain](https://www.appbrain.com/dev/Zyur/) |
+| ④ 믿을 만한가? | **아니다(범죄 판단 기준).** 벤더는 95~99%를 주장하지만 독립 평가는 훨씬 낮다. | 실제 유통 딥페이크에서 오픈소스 탐지기 AUC가 영상 50%·음성 48%·이미지 45% 하락, 상용도 사람 분석가 미달(독립 평가) [Deepfake-Eval-2024](https://arxiv.org/abs/2503.02857). 최신 이미지 생성기 탐지율 18~30%(독립 평가, 오픈소스 16종·제로샷 기준, 상용은 별도) [arXiv 2602.07814](https://arxiv.org/html/2602.07814) |
 | ⑤ 레드오션인가? | **범용은 예. 일부 니치는 아직 아니지만 좁아지는 중.** | 이미지·영상·음성 = 부분적, 음악 = 예, 영어 글 = 예, 통합 소비자 앱 = 예(수익 관점). 2026년 인수·통합 시작 [TechFundingNews](https://techfundingnews.com/deel-buys-deepfake-detection-startup-clarity-in-15th-acquisition-as-it-hits-1-5b-in-arr/) |
-| ⑥ 특허로 막혔나? | **아니다. 다만 구현 특허는 쌓이는 중.** | 개념 전체를 막는 특허는 발견 안 됨. C2PA(KeeeX 소송)·얼굴 라이브니스(FaceTec)는 고위험 [JUVE Patent](https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/) [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents). 법률 자문 아님, FTO 필요 |
-| ⑦ 지금 만들어도 경쟁력이 있나? | **범용 소비자 앱은 없다. 좁은 B2B 니치는 조건부로 있다.** | 빅테크 무료 확인 기능 [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/), 한국 수사·선거는 정부 자체 개발 [다음](https://v.daum.net/v/6VGDUSx2ab), 실시간 통화 탐지는 삼성·통신사 무료 [바이라인](https://byline.network/2026/02/12-535/) |
+| ⑥ 특허로 막혔나? | **아니다. 다만 구현 특허는 쌓이는 중.** | 개념 전체를 막는 특허는 발견 안 됨. C2PA 서명·검증(KeeeX 소송, 본안 판결 전)·얼굴 라이브니스(FaceTec)로 확장하면 고위험 [JUVE Patent](https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/) [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents). 법률 자문 아님, FTO 필요 |
+| ⑦ 지금 만들어도 경쟁력이 있나? | **범용 소비자 앱은 없다. 좁은 B2B 니치는 검증해야 할 가설 수준이다(국내 지불 의사 미확인).** | 빅테크 무료 확인 기능 [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/), 한국 수사·선거는 정부 자체 개발 [다음](https://v.daum.net/v/6VGDUSx2ab), 실시간 통화 탐지는 삼성·통신사 무료 [바이라인](https://byline.network/2026/02/12-535/) |
 
 ### 0.2 최종 권고: 조건부 진행
 
-원래 구상(범용 소비자 앱 + 범죄 수준 판별)은 **포기**를 권한다. 사용자가 정한 포기 기준("레드오션이면 포기") 중 레드오션 조건에 해당하기 때문이다. 특허 조건에는 해당하지 않는다.
+원래 구상(범용 소비자 앱 + 범죄 수준 판별)은 **포기**를 권한다. 사용자가 정한 포기 기준("레드오션이면 포기") 중 레드오션 조건에 해당하기 때문이다. 특허 조건에는 현재까지 해당하지 않는다. 단, 사용자 기준의 '특허'를 **개념 전체를 막는 특허**로 해석한 판단이다. 구현 단위 특허는 실제로 있으므로 FTO 전에는 확정할 수 없다("결정적 장벽을 확인하지 못함"이지 "없음"이 아니다, 6.4).
 
-대신 방향을 바꾼다면 **조건부 진행**이 가능하다. 아래 조건을 모두 받아들일 수 있을 때만 진행하라.
+대신 방향을 바꾼다면 **조건부 진행**이 가능하다. 다만 아래 B2B 방향(8.3 포지셔닝 A)은 **검증해야 할 가설**이다. 근거: 국내 로펌·보험사의 지불 의사·건수·단가는 확인되지 않았고, 수요 근거는 미국 사이버보험 특약 1건과 국내 로펌 사례 기사 1건뿐이다(8.3). 10절의 고객 인터뷰에서 중단 기준에 걸리면 이 방향도 접는다. 아래 조건을 모두 받아들일 수 있을 때만 진행하라.
 
-1. **소비자 앱이 아니라 좁은 B2B로 간다.** 첫 타깃은 로펌·보험사·노무·언론처럼 "근거가 있는 판단"에 돈을 내는 곳이다. 앱은 인지도·데이터를 모으는 입구로만 쓴다 (8절).
-2. **"AI 확률 점수"가 아니라 설명형 리포트를 판다.** 메타데이터·편집 흔적·워터마크/C2PA 확인·탐지 결과를 한 장에 묶고, "진짜 / 가짜 / 판정 불가" 3단으로 답한다. 수사 현장도 AI 판별을 1차 선별로만 쓴다 [Amped](https://blog.ampedsoftware.com/2026/03/11/authenticate-update-40165).
-3. **오류율을 공개하고 독립 검증을 받는다.** 국산 제품 중 독립 벤치마크로 검증된 것이 하나도 없다는 점이 오히려 차별점이 된다 [보안뉴스](https://m.boannews.com/html/detail.html?idx=127364).
+1. **소비자 앱이 아니라 좁은 B2B로 간다.** 첫 타깃은 로펌·보험사·노무·언론처럼 "근거가 있는 판단"에 돈을 내는 곳이다. 앱은 인지도를 모으는 입구로만 쓴다 (8절). '데이터 입구'로서는 한계가 크다. 사용자가 올린 성착취 딥페이크를 서버에 보관하면 소지·유포 위험이 있어 비보관 처리가 필요하고, 업로드를 학습에 쓰려면 별도 동의가 필요하다 (9절).
+2. **"AI 확률 점수"가 아니라 설명형 리포트를 판다.** 메타데이터·편집 흔적·워터마크 확인·탐지 결과를 한 장에 묶고(C2PA 판독은 FTO 뒤 선택 기능), "진짜 / 가짜 / 판정 불가" 3단으로 답한다. 수사 현장도 AI 판별을 1차 선별로만 쓴다 [Amped](https://blog.ampedsoftware.com/2026/03/11/authenticate-update-40165).
+3. **오류율을 공개하고 독립 검증을 받는다.** 국산 제품 중 독립 벤치마크로 검증된 것을 찾지 못했다는 점(한국 요약본 기준, 5.3)이 오히려 차별점이 된다.
 4. **상업 이용 가능한 데이터만 쓴다.** GenImage·FaceForensics++·DeepfakeBench는 상업 이용 금지다 [GenImage](https://genimage-dataset.github.io). 실제 성착취 딥페이크는 소지만으로 처벌되므로 학습용으로 모을 수 없다 [뉴시스](https://www.newsis.com/view/NISX20251114_0003403877).
-5. **출시 전 변리사 FTO를 받고, C2PA 서명·eKYC 라이브니스로는 확장하지 않는다.** 이 두 영역에서 실제 특허 분쟁이 진행 중이다 (6절).
+5. **출시 전 변리사 FTO를 받고, C2PA 서명·eKYC 라이브니스로는 확장하지 않는다. C2PA 판독·검증도 FTO 결과가 나온 뒤에만 넣는다.** 이 두 영역에서 실제 특허 분쟁이 진행 중이다 (6절).
 
 이 조건이 싫다면, 즉 "누구나 쓰는 범용 판별 앱"이 아니면 의미가 없다면 **포기하는 것이 근거에 맞는 판단**이다.
+
+> **용어 풀이**
+> - **AUC/AUROC:** 탐지기가 진짜와 가짜를 얼마나 잘 가르는지 나타내는 0.5~1 사이 점수. 0.5는 동전 던지기 수준.
+> - **EER:** 오탐률과 미탐률이 같아지는 지점의 오류율. 낮을수록 좋다.
+> - **제로샷:** 해당 생성기 데이터로 따로 학습하지 않은 상태에서 잰 성능.
+> - **FTO:** 출시 전에 남의 특허를 침해하지 않는지 변리사가 보는 조사.
+> - **PTAB·IPR:** 미국 특허심판원과 그곳의 특허 무효 심판 절차.
+> - **UPC:** 유럽 통합특허법원.
+> - **Daubert:** 미국 법원이 전문가 증거(과학적 방법)를 받아들일지 판단하는 기준.
+> - **C2PA:** 사진·영상에 "누가 어떻게 만들었는지" 서명된 기록을 붙이는 국제 표준. **SynthID**는 Google의 보이지 않는 워터마크.
+> - **ODC-By:** 출처만 밝히면 상업 이용도 되는 데이터 라이선스.
+> - **PRNU:** 카메라 센서마다 남는 고유 잡음 패턴. **rPPG:** 영상 속 얼굴 피부색의 미세한 변화로 맥박을 읽는 기법.
+>
+> 같은 제품이라도 표마다 점수가 다를 수 있다. 각 표는 해당 모달리티(또는 통합 앱) 기준으로 매겼기 때문이다.
 
 
 ## 1. 조사 방법·기준·한계
@@ -75,7 +89,7 @@
 - **특허:** 청구항 전문을 원문으로 확인하지 못했고 서지 사항만 확인했다. 미국 법원 기록(PACER)은 조회하지 않았다. 이 보고서는 법률 자문이 아니다.
 - **시장 규모:** 판매용 조사 보고서의 추정치라 신뢰도가 낮다.
 - **앱 사용자 수:** 대부분의 회사가 공개하지 않아 다운로드 수·자기 진술로 추정했다.
-- **표본:** 언론 테스트(NewsGuard 30장, EDMO 15장 등)는 표본이 작다.
+- **표본:** 언론 테스트(NewsGuard 진짜 15장+조작 15장, EDMO가 소개한 같은 테스트 등)는 표본이 작다.
 
 
 ## 2. 모달리티별 현황
@@ -86,7 +100,7 @@
 
 | 제품 | 회사 | 형태 | 대상 | 메이저성 | 실사용 | 신뢰도 | 비고 |
 |---|---|---|---|---|---|---|---|
-| SynthID Detector·Gemini 검증 | Google(미국) | 웹·Gemini·Chrome | 소비자·언론 | 5 | 5 | 3 | 무료. Google 등 워터마크 있는 것만 판별, "범용 탐지기 아님" [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/) |
+| SynthID Detector·Gemini 검증 | Google(미국) | 웹·Gemini·Chrome | 소비자·언론 | 5 | 5(Gemini 기본 탑재 기준) | 3 | 무료. Google 등 워터마크 있는 것만 판별, "범용 탐지기 아님" [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/) |
 | Hive AI 탐지 | Hive(미국) | API·크롬 확장 | 플랫폼·정부 | 5 | 4 | 3~4 | 독립 평가 98.03%(구형·교란 없는 AI 아트) [arXiv 2402.03214](https://arxiv.org/pdf/2402.03214), 미 국방부 240만 달러 계약 [BusinessWire](https://www.businesswire.com/news/home/20241205852015/en/Hive-Secures-DoD-Contract-for-Deepfake-Detection-Pioneering-AI-Defense-Against-Emerging-Threats) |
 | Amped Authenticate | Amped Software(이탈리아) | 포렌식 SW | 수사기관 | 4 | 4 | 3 | 벤더 스스로 "증거가 아니라 선별용" [Amped](https://blog.ampedsoftware.com/2026/03/11/authenticate-update-40165) |
 | Magnet Verify/Axiom | Magnet Forensics(캐나다) | 포렌식 플랫폼 | 수사·검찰 | 4 | 4 | 3 | "법정 방어 가능" 표방(벤더 주장) [Magnet](https://www.magnetforensics.com/blog/authenticity-on-trial-how-magnet-verify-helps-prosecutors-admit-digital-media-and-defeat-deepfake-defenses/) |
@@ -105,13 +119,13 @@ Amped·Magnet의 본사 국가는 요약본에 별도 출처 없이 적힌 값�
 **4개 기준 판정**
 - **메이저성: 있음.** Google·OpenAI·Adobe가 무료 검증을 기본 기능으로 넣었다. 다만 이들은 자사·파트너 워터마크 확인기이고 범용 탐지기가 아니다. Midjourney는 워터마크를 넣지 않는다(2차 출처) [c2paviewer](https://c2paviewer.com/articles/ai-tools-c2pa-support).
 - **완성도·실사용: 소비자 앱은 낮음.** 설치 10만 건이 넘는 이미지 판별 전용 앱은 찾지 못했다 [AppBrain](https://www.appbrain.com/dev/Zyur/). 수사 현장에서는 Amped·Magnet이 이미 쓰인다 [ForensicFocus](https://www.forensicfocus.com/news/advanced-detection-tools-from-amped-software-aim-to-combat-ai-generated-csam-and-protect-children/).
-- **신뢰도: 범죄 수사 기준으로는 낮음.** 독립 평가에서 오픈소스 16종의 최고 평균 정확도는 75%, 최신 생성기(Midjourney v7·Flux 등) 탐지율은 18~30%였다 [arXiv 2602.07814](https://arxiv.org/html/2602.07814). 실제 사진 15장 테스트에서 평균 오탐 13.3%(독립 평가, 표본 작음) [EDMO](https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/). 워터마크도 제거 공격(SynthID-Image 100% 제거)에 뚫렸다 [arXiv 2608.10166](https://arxiv.org/pdf/2608.10166).
+- **신뢰도: 범죄 수사 기준으로는 낮음.** 독립 평가에서 오픈소스 16종의 최고 평균 정확도는 75%, 최신 생성기(Midjourney v7·Flux 등) 탐지율은 18~30%였다(오픈소스·제로샷 기준, 상용은 별도) [arXiv 2602.07814](https://arxiv.org/html/2602.07814). 상용 탐지기는 실제 유통 딥페이크에서 오픈소스보다 낫지만 사람 분석가에는 못 미쳤다 [Deepfake-Eval-2024](https://arxiv.org/abs/2503.02857). 실제 사진 15장 테스트에서 평균 오탐 13.3%(독립 평가, 표본 작음) [EDMO](https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/). 워터마크도 제거 공격(SynthID-Image 100% 제거)에 뚫렸다 [arXiv 2608.10166](https://arxiv.org/pdf/2608.10166).
 - **신규 진입 경쟁력: 범용은 낮고 니치는 조건부.** 무료 대체재와 자금 격차(Hive 2021년 기업가치 20억 달러 [SiliconANGLE](https://siliconangle.com/2021/04/21/enterprise-ai-solutions-startup-hive-raises-85m-2b-valuation/))가 크다. 반면 "학습 데이터가 구조보다 중요"하다는 결과는 한국·문서 위조 같은 특화 데이터에 유리하다 [arXiv 2602.07814](https://arxiv.org/html/2602.07814).
 
 **레드오션 판정: 부분적**
 - 범용 소비자 판별 앱은 **예**. 저품질 앱 난립, 빅테크 무료 검증, 도구별 오탐 0~40%로 신뢰 형성이 어렵다 [EDMO](https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/).
-- 수사·포렌식도 블루오션이 아니다. Amped·Magnet이 조달 채널과 법정 실적을 쥐고 있다. 남은 틈은 부분 합성 위치 표시, 문서·신분증 위조, 한국 특화 데이터다 [HF 2606.19259](https://huggingface.co/papers/2606.19259.md).
-- 특허는 장벽이 아니다. C2PA 관련 KeeeX 소송은 원고에게 불리하게 진행 중이다 [UPC 명령](https://www.unifiedpatentcourt.org/sites/default/files/files/api_order/922-2026%20Adobe%20ea%20Final%20Order%20en-GB.pdf).
+- 수사·포렌식도 블루오션이 아니다. Amped·Magnet이 조달 채널과 법정 실적을 쥐고 있다. Hive는 미국 DHS 사이버범죄센터와 AI 생성 아동성착취물 판별 시범계약(15만 달러, 3개월)을 맺었다 [getcoai](https://getcoai.com/news/dhs-deploys-ai-tools-to-detect-fake-child-abuse-imagery). 남은 틈은 부분 합성 위치 표시, 문서·신분증 위조, 한국 특화 데이터다 [HF 2606.19259](https://huggingface.co/papers/2606.19259.md).
+- 특허: 개념 전체를 막는 특허는 찾지 못했다. C2PA 관련 KeeeX 소송은 2026-03 관할이 일부 축소됐지만 본안은 판결 전이다. C2PA 서명·판독을 넣는다면 FTO가 필요하다(6.2) [UPC 명령](https://www.unifiedpatentcourt.org/sites/default/files/files/api_order/922-2026%20Adobe%20ea%20Final%20Order%20en-GB.pdf).
 
 ### 2.2 영상·딥페이크
 
@@ -127,7 +141,7 @@ Amped·Magnet의 본사 국가는 요약본에 별도 출처 없이 적힌 값�
 | YouTube 초상 감지 | Google(미국) | 플랫폼 내장 | 크리에이터 | 5 | 4 | 3 | 진위 판별이 아니라 본인 얼굴 찾기 [Tubefilter](https://www.tubefilter.com/2026/05/18/youtube-generative-ai-deepfake-likeness-detection-rollout/) |
 | Gemini SynthID 검증 | Google(미국) | 앱 업로드 | 소비자 | 5 | 4 | 3 | Google 워터마크 영상만 [Android Central](https://www.androidcentral.com/apps-software/ai/gemini-can-now-tell-you-whether-a-video-was-generated-with-google-ai) |
 | Zoom·Teams 탐지 | Zoom·MS(미국) | 회의 애드온·연동 | 기업 | 5 | 1 | 2 | 출시 전(2026.12~2027Q1 예상) [Zoom](https://www.zoom.com/en/blog/zoomtopia2026-ai-governance-zoom-workplace/) [BleepingComputer](https://bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection) |
-| 경찰청 SW·국과수 아이기스 | 경찰청·국과수(한국) | 내부 도구 | 수사·선관위 | 4 | 3 | 3 | 누적 1,636건, 국과수 공식 92% [뉴스핌](https://www.newspim.com/news/view/20260813000619) [세계일보](https://www.segye.com/newsView/20260310517457) |
+| 경찰청 SW·국과수 아이기스 | 경찰청·국과수(한국) | 내부 도구 | 수사·선관위 | 4 | 3 | 3 | 누적 1,636건, 국과수 공식 92%(2026-03 공개 모델, 아이기스와 같은 모델인지 불명확) [뉴스핌](https://www.newspim.com/news/view/20260813000619) [세계일보](https://www.segye.com/newsView/20260310517457) |
 | 딥브레인AI | 딥브레인AI(한국) | SaaS·API | 공공·금융 | 3 | 3 | 3 | 96%는 벤더 의뢰 시험(미확인) [유니콘팩토리](https://www.unicornfactory.co.kr/article/2025111111081151366) |
 
 국과수 모델 정확도는 요약본끼리 엇갈린다. 영상 요약본은 "단일 92%·앙상블 97%"로, 한국 요약본은 "97%는 기사 제목뿐, 공식 수치는 5종 앙상블 92%"로 적었다. 검증이 더 구체적인 92%를 따른다.
@@ -214,7 +228,7 @@ Reality Defender의 KPMG 지분 투자는 음성 요약본이 "미확인"으로 
 
 **4개 기준 판정**
 - **메이저성: 높음.** Turnitin(기관)과 Superhuman+GPTZero(소비자·기관)의 플랫폼 구도가 됐다 [BusinessWire](https://www.businesswire.com/news/home/20260623083788/en/Superhuman-to-Acquire-GPTZero-AI-Authenticity-Platform). 생성사(OpenAI·Google)도 워터마크 검출기를 직접 쥐고 있다.
-- **완성도·실사용: 높음.** 다섯 모달리티 중 실사용이 가장 크다. 미국 6~12학년 교사의 68%가 정기적으로 쓴다 [CDT](https://cdt.org/insights/new-research-educators-still-struggling-with-generative-ai-detection-discipline-and-distrust-despite-increased-school-guidance/).
+- **완성도·실사용: 높음.** 다섯 모달리티 중 실사용이 가장 크다. 미국 6~12학년 교사의 68%가 정기적으로 쓴다(2023년 조사, K-12 Dive는 39%로 보도) [CDT](https://cdt.org/insights/new-research-educators-still-struggling-with-generative-ai-detection-discipline-and-distrust-despite-increased-school-guidance/).
 - **신뢰도: 중간, 구조적 한계.** 독립 평가에서 Pangram·GPTZero는 사람 글 오탐이 거의 0이었지만 [NBER](https://www.nber.org/system/files/working_papers/w34223/w34223.pdf), 문체를 흉내 낸 AI 글은 10~29%를 놓쳤다 [Epoch AI](https://epoch.ai/data-insights/ai-detectors-false-negatives). 비원어민 영어 에세이 평균 오탐 61.3%(2023년 도구 기준) [Liang 외](https://arxiv.org/html/2304.02819v3). 탐지 점수 하나로 내린 징계를 법원이 무효화했다(절차 하자 판결) [Plagiarism Today](https://www.plagiarismtoday.com/2026/02/11/adelphi-student-wins-ai-plagiarism-lawsuit/). 대학의 사용 중단도 늘고 있다 [Waterloo](https://uwaterloo.ca/educational-technology-hub/news/discontinuing-use-ai-detection-functionality-turnitin).
 - **신규 진입 경쟁력: 낮음.** 유통은 대형사가 묶었고, 정확도 상위는 Pangram·GPTZero가 독식하며, 무료가 기본이다. 한국어는 무하유가 장악했고 Turnitin이 분기마다 언어를 늘리고 있어 공백은 시한부다. 한국어 공개 벤치마크(KatFish)와 코드도 이미 공개돼 "한국어"만으로는 장벽이 안 된다 [ACL Anthology](https://aclanthology.org/2025.acl-long.1030).
 
@@ -244,7 +258,7 @@ Reality Defender의 KPMG 지분 투자는 음성 요약본이 "미확인"으로 
 **4개 기준 판정**
 - **메이저성: 지배적 단일 브랜드 없음.** 모달리티마다 강자가 나뉘고, 소비자 접점은 빅테크와 보안 번들이 쥐고 있다 [TNW](https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection). 네 매체(영상·사진·음악·글)를 모두 다루는 메이저 소비자 앱은 확인되지 않았다(SynthID Detector는 글 제외, 워터마크 확인만).
 - **완성도·실사용: 낮음.** 앱스토어 탐지 앱은 작동하지 않거나 리뷰가 의심스러운 경우가 많다 [Copyleaks](https://copyleaks.com/blog/ai-detector-apps-arent-what-they-claim). 국산 소비자 도구는 얼굴 이미지 중심 무료 부가 기능이고, 해외 앱이 국내 수요를 일부 흡수한다 [jakeinsight](https://jakeinsight.com/ko/tech-economy/2026-09-03-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%83%90%EC%A7%80%EA%B8%B0-%EC%95%B1-%EC%A7%84%EC%A7%9C-%EB%AF%BF%EC%96%B4%EB%8F%84-%EB%90%98%EB%82%98/).
-- **신뢰도: 낮음.** 각 모달리티의 한계(2.1~2.5)가 그대로 합쳐진다. 독립 평가에서 실제 유통물 앞에서 오픈소스 탐지기 성능이 영상 50%, 음성 48%, 이미지 45% 떨어졌다 [arXiv 2503.02857](https://arxiv.org/abs/2503.02857).
+- **신뢰도: 낮음.** 각 모달리티의 한계(2.1~2.5)가 그대로 합쳐진다. 독립 평가에서 실제 유통물 앞에서 오픈소스 탐지기 AUC가 영상 50%, 음성 48%, 이미지 45% 떨어졌다(오픈소스 기준). 상용 탐지기는 오픈소스보다 나았지만 사람 분석가에는 못 미쳤다 [arXiv 2503.02857](https://arxiv.org/abs/2503.02857).
 - **신규 진입 경쟁력: 낮음.** "올인원" 자체는 비어 있는 것처럼 보이지만, 각 칸마다 무료 대체재가 있고 운영비(매 생성기마다 재학습)가 커서 비영리 TrueMedia도 독자 운영을 접었다 [TrueMedia](https://www.truemedia.org/post/shutting-down-truemedia). 차별화 여지는 "워터마크·C2PA·탐지·메타데이터를 한 리포트로 묶는 통합 검증"과 한국어 지원 정도다 [Morgan Lewis](https://www.morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative).
 
 **레드오션 판정: 예(수익 관점)**
@@ -278,7 +292,7 @@ Reality Defender의 KPMG 지분 투자는 음성 요약본이 "미확인"으로 
 | Adobe Content Authenticity | Adobe | 웹 앱·Chrome 확장 | 퍼블릭 베타 [Adobe](https://helpx.adobe.com/ae_en/creative-cloud/help/cai/adobe-content-authenticity-chrome-browser-extension.html) | 자격증명 붙은 콘텐츠만 의미 |
 | Pixel 10 / Galaxy / Apple 카메라 서명 | Google·Samsung·Apple | 촬영 기기 서명 | Pixel 10 전 JPEG 서명, Apple Reference Image는 2026-09 iPhone 18 Pro [Nieman Lab](https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/) | "진짜 증명"용, 탐지기 아님. Apple은 C2PA 아님 |
 
-SynthID 연합에는 OpenAI, NVIDIA, Kakao, ElevenLabs가 참여했고 Apple은 "곧" 참여한다(날짜 미공개) [Mixed](https://mixed-news.com/en/google-synthid-detector-worldwide-apple-ai-content-comes-soon/). Google은 이미지·영상 1천억 건 이상에 SynthID를 넣었다고 밝혔다(벤더 주장) [InfoQ](https://infoq.com/news/2026/10/synthid-watermarking-detector). 다만 **어느 회사도 확인 도구 이용자 수를 공개하지 않는다.** 생태계는 쪼개져 있다. Meta, Microsoft, TikTok은 각자 워터마크를 쓰고, Microsoft 워터마크는 SynthID와 호환되지 않는다 [arXiv 2602.18681](https://arxiv.org/abs/2602.18681).
+SynthID 연합에는 OpenAI, NVIDIA, Kakao, ElevenLabs가 참여했고 Apple은 "곧" 참여한다(날짜 미공개) [Mixed](https://mixed-news.com/en/google-synthid-detector-worldwide-apple-ai-content-comes-soon/). Google은 SynthID를 넣은 콘텐츠가 1천억 건 이상이라고 밝혔다(벤더 주장, 출처에 따라 1,800억 건 이상으로도 보도) [InfoQ](https://infoq.com/news/2026/10/synthid-watermarking-detector) [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/). 무료 포털에는 하루 약 10회의 사용 한도가 있다 [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/). 다만 **어느 회사도 확인 도구 이용자 수를 공개하지 않는다.** 생태계는 쪼개져 있다. Meta, Microsoft, TikTok은 각자 워터마크를 쓰고, Microsoft 워터마크는 SynthID와 호환되지 않는다 [arXiv 2602.18681](https://arxiv.org/abs/2602.18681).
 
 ### 3.2 워터마크·출처증명의 한계
 
@@ -307,12 +321,12 @@ Microsoft의 자체 보고서(2026-02)도 **"단일 기술로는 믿을 만하�
 | EU AI Act 50조 | AI 생성물 표시·기계판독 표식 의무 [William Fry](https://www.williamfry.com/knowledge/eu-ai-act-omnibus-deal-reached-postponed-deadlines-watermarking-compromise-and-the-nudificiation-prohibition/) | 2026-08-02(기존 시스템의 2항만 2026-12-02까지 유예, 옴니버스 관보 게재 미확인) | 실천강령 서명사(약 190곳)는 2027-02-02까지 워터마크 탐지 상호운용성 구현 [Freshfields](https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/eu-ai-act-unpacked-33-the-final-code-of-practice-on-transparency-of-ai-generate-102n4yx) |
 | EU 누디파이 금지 | 누드 합성·CSAM 생성 AI 금지 [Simmons](https://www.simmons-simmons.com/en/publications/cmoveo6ke00icuxskpgueb0od/ai-omnibus-update) | 2026-12-02 | 플랫폼 탐지 수요 |
 | 미국 TAKE IT DOWN Act | 비동의 성적 이미지 신고 시 48시간 내 삭제, 위반 건당 최대 53,088달러 [FTC](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-sends-warning-letters-companies-about-compliance-take-it-down-act) | 2026-05-19 FTC 집행 | 플랫폼용 탐지·중복 제거 수요 |
-| 캘리포니아 SB 942 / AB 853 | 생성 AI 제공자에게 표시·무료 검증도구 의무, 위반 건당·일당 5,000달러 [MoFo](https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements) | 2026-08-02 | "생성기별 확인"은 법으로 무료화됨 |
+| 캘리포니아 SB 942 / AB 853 | 생성 AI 제공자에게 표시·무료 검증도구 의무, 위반 건당·일당 5,000달러 [MoFo](https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements) | 2026-08-02 | 대형 생성 AI 제공자에게 검증도구 제공 의무(캘리포니아 법). SB 1000으로 제3자 도구로도 이행 가능해져 B2B 기회가 됨. 한국 소비자 시장에는 직접 적용되지 않음 |
 | 캘리포니아 SB 1000 | 100만 명 기준 삭제(모든 생성 AI 제공자 대상). "자격 있는 제3자 검증도구"로도 의무 이행 가능 [Latham](https://www.lw.com/en/insights/newest-slate-of-ai-laws-keeps-california-at-the-forefront-of-us-regulation) | 2026-09-30 서명·즉시 시행(공식 기록 미확인) | 소규모 생성 AI 업체용 화이트라벨 검증도구 B2B 기회 |
 | 중국 AI 생성물 표시 규정 | 명시·잠재 표시 의무. 2026-02 13,421개 계정 처벌(팩트체크 미확인) [TechNode](https://technode.com/2026/02/13/china-cyberspace-regulators-crack-down-on-unlabeled-ai-generated-content-penalize-over-13000-accounts/) | 2025-09-01 | 중국 시장은 자국 기업 중심 |
 | 덴마크 법안 L 49 | 얼굴·목소리 보호, 게시자에게 입증 책임 [Euronews](https://www.euronews.com/2026/10/08/denmark-introduces-a-bill-protecting-peoples-faces-and-voices-from-deepfakes) | 미통과 | 통과 시 출처 증명 수요 |
 
-주의할 점이 있다. 미국은 연방 행정명령이 주법을 견제하고 있어 주 규제의 앞날이 불확실하다 [Ropes & Gray](https://www.ropesgray.com/en/insights/alerts/2025/12/trump-attempts-to-preempt-state-ai-regulation-through-executive-order). 규제의 대부분은 **생성하는 쪽(AI 제공자·플랫폼)에 표시 의무**를 지운다. 일반인이 "이게 AI인지" 확인할 수 있게 하는 도구는 그 의무의 일부로 빅테크가 직접 무료 제공하게 된다.
+주의할 점이 있다. 미국은 연방 행정명령이 주법을 견제하고 있어 주 규제의 앞날이 불확실하다 [Ropes & Gray](https://www.ropesgray.com/en/insights/alerts/2025/12/trump-attempts-to-preempt-state-ai-regulation-through-executive-order). 규제의 대부분은 **생성하는 쪽(AI 제공자·플랫폼)에 표시 의무**를 지운다. 캘리포니아에서는 생성 AI 제공자가 검증도구를 제공해야 하지만, 제3자 도구로도 이행할 수 있다 [Latham](https://www.lw.com/en/insights/newest-slate-of-ai-laws-keeps-california-at-the-forefront-of-us-regulation). 한국 소비자 시장 판단의 주 근거는 이 법이 아니라 Google의 무료 포털과 Search·Chrome·Gemini 기본 탑재다(3.1).
 
 ### 3.4 결론: 위협인가 기회인가
 
@@ -320,7 +334,7 @@ Microsoft의 자체 보고서(2026-02)도 **"단일 기술로는 믿을 만하�
 
 | 구분 | 판정 | 이유 |
 |---|---|---|
-| "유명 AI로 만들었는지" 확인하는 소비자 앱 | **위협(사실상 끝남)** | Google·OpenAI·ElevenLabs가 무료 제공, Search·Chrome·Gemini·YouTube에 기본 탑재, 캘리포니아 법이 생성사에 무료 검증도구를 의무화 [Morgan Lewis](https://morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative) |
+| "유명 AI로 만들었는지" 확인하는 소비자 앱 | **위협(사실상 끝남)** | Google·OpenAI·ElevenLabs가 무료 제공, Search·Chrome·Gemini·YouTube에 기본 탑재 [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/). 캘리포니아 법의 검증도구 의무는 한국 시장에 직접 적용되지 않음 |
 | 워터마크·C2PA를 직접 만드는 것 | **무의미** | 표준과 연합이 이미 있음. 소규모 팀이 끼어들 자리가 없음 |
 | 워터마크 없는/지워진 콘텐츠의 사후 탐지 | **빈 영역이지만 블루오션 아님** | 실전 성능이 크게 떨어지고(4절), 경찰청 자체 도구와 Google 기업용 API가 경쟁자 [보안뉴스](https://m.boannews.com/html/detail.html?idx=127364) |
 | 여러 표식을 한 번에 확인 + 사후 탐지 결합 | **조건부 기회** | SynthID·Meta·Microsoft·C2PA·Apple이 쪼개져 있음. 다만 EU 상호운용성 기한(2027-02-02) 이후 대형사가 직접 구현하면 흡수될 수 있음 |
@@ -343,7 +357,6 @@ Microsoft의 자체 보고서(2026-02)도 **"단일 기술로는 믿을 만하�
 | 평가 | 결과 | 구분 |
 |---|---|---|
 | Deepfake-Eval-2024 | 오픈소스 최신 탐지기 AUC가 학술 벤치마크 대비 영상 50%, 음성 48%, 이미지 45% 하락. 상용 모델은 오픈소스보다 낫지만 사람 포렌식 분석가에 못 미침 [HF Papers](https://huggingface.co/papers/2503.02857) | 독립 평가 |
-| 같은 벤치마크 2차 집계 | 최고 상용 영상 탐지기 정확도 약 78% [EmergentMind](https://www.emergentmind.com/topics/deepfake-eval-2024) | 독립 평가(원문 대조 미확인) |
 | DailyBench | 기존 세트(GenImage)에서 90% 넘던 탐지기가 최신 이미지에선 약 57% [DailyBench](https://arxiv.org/pdf/2607.24016) | 독립 평가 |
 | 음성 일반화 | 실험실 데이터(ASVspoof 2019)로 학습한 모델의 오류율(EER)이 실제 녹음에서 200~1000% 악화 [Müller 2022](https://arxiv.org/pdf/2203.16263) | 독립 평가 |
 | NIST 정부 벤치마크 | 이미지 판별 파일럿 진행, 2026-11 현재 공개 수치 없음 [NIST](https://ai-challenges.nist.gov/t2i) | 독립 평가(결과 비공개) |
@@ -462,7 +475,7 @@ NYT(2026-02)가 12개 서비스를 비교했을 때, 복잡한 AI 이미지를 �
 |---|---|---|---|
 | 경찰청 딥페이크 탐지 SW | 2024.3 도입(1차 딥브레인AI 협력, 고도화는 대학·한컴위드). 탐지 SW·AI 전문분석관·범행도구 분석의 "3중 대응" | 누적 1,636건 활용(2026.8, 시장 요약본은 미확인 처리, 4.4 참고), 도입 당시 탐지율 약 80%(2024 정부 발표, 재확인 안 됨) | [뉴데일리](https://www.newdaily.co.kr/site/data/html/2026/08/13/2026081300088.html) [보안뉴스](https://m.boannews.com/html/detail.html?idx=127364) |
 | 경찰 R&D | 허위조작 콘텐츠 복합 탐지기술(2025~2027). 끝나면 전 수사기관 공동 시스템 계획 | 91억 원 | [데일리안](https://www.dailian.co.kr/news/view/1408429/) [korea.kr](https://www.korea.kr/news/policyNewsView.do?newsId=148973649) |
-| 국과수·KETI 아이기스 | 선거·감정용 정부 모델, 선관위에 무상 지원 | 공식 정확도 92%(5종 앙상블), 2025 대선 감정 15건 | [세계일보](https://www.segye.com/newsView/20260310517457) [세계일보](https://www.segye.com/newsView/20250730515766) |
+| 국과수·KETI 아이기스 등 정부 모델 | 선거·감정용 정부 모델, 선관위에 무상 지원 | 2026-03 공개 모델의 공식 정확도 92%(5종 앙상블), 아이기스는 2025 대선 감정 15건. 두 모델의 관계는 불명확 | [세계일보](https://www.segye.com/newsView/20260310517457) [세계일보](https://www.segye.com/newsView/20250730515766) |
 | 선관위 3단계 감별 | 시청각 탐지 → 아이기스 등 교차검증 → 전문가 감별 | 딥페이크 전용 예산 "전무" | [트위그](https://www.twig24.com/news/2026/02/11/20260211500394) [다음](https://v.daum.net/v/6VGDUSx2ab) |
 | 대검찰청 | 합성음성 탐지 자체 개발·특허 출원, 2026.5 AI 위조 탐지 시스템 착수 | 2027년까지 86억 원 R&D | [서울신문](https://m.seoul.co.kr/news/2024/04/01/20240401500181) [한경](https://www.hankyung.com/article/2026050722651) |
 | 국과수 음성 | LG유플러스 딥보이스 탐지 시스템을 무상으로 받아 사용 | 보이스피싱 분석 효율 16배(기관 발표) | [머니투데이](https://www.mt.co.kr/tech/2025/07/23/2025072315221813011) |
@@ -554,7 +567,7 @@ NYT(2026-02)가 12개 서비스를 비교했을 때, 복잡한 AI 이미지를 �
 
 | 권리 | 권리자 | 내용 | 상태 | 리스크 |
 |---|---|---|---|---|
-| EP 2 949 070 | KeeeX(프랑스) | 데이터 무결성 검증. OpenAI·Adobe·Truepic·C2PA를 유럽통합특허법원(UPC)에 제소 | 2026-03 항소법원이 일부 국가 관할 부정, 2026-10 파리 본안 심리 시작, 피고 무효 반소, 판결 전 [JUVE Patent](https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/) | C2PA 기능을 넣으면 높음 |
+| EP 2 949 070 | KeeeX(프랑스) | 데이터 무결성 검증. OpenAI·Adobe·Truepic·C2PA를 유럽통합특허법원(UPC)에 제소 | 2026-03 항소법원이 일부 국가 관할 부정, 2026-10 파리 본안 심리 시작(단일 출처, 공개된 절차 명령은 2026-07 청구항 정정 신청까지만 확인 [UPC 파리 명령](https://www.veron.com/wp-content/uploads/pve-upc/fichiers/2026-07-29_LD_Paris_UPC_CFI_530-2025_en-GB.pdf)), 피고 무효 반소, 판결 전 [JUVE Patent](https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/) | C2PA 서명뿐 아니라 판독·검증 기능도 높음(무결성 검증 특허) |
 | FaceTec 라이브니스 특허 50건 | FaceTec(미국) | 얼굴이 실제 사람인지 확인 | 2026-06 PTAB가 Jumio의 무효 청구 4건 기각, iProov·Jumio 소송 진행 [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents) | eKYC로 확장 시 높음 |
 | US12142083B2 | Pindrop(미국) | 화자·얼굴 딥페이크 + 인식 + 립싱크 점수 결합 | 2024-11-12 등록 [Justia](https://patents.justia.com/patent/12142083) | 영상·음성 교차검증 시 주의 |
 | US12412376 등 3건 | Reality Defender(미국) | 가짜 영상 ML 탐지, 오디오 가짜 탐지 | 2025-09~11 등록 [USPTO 공보](https://patentsgazette.uspto.gov/week44/OG/html/1540-1/US12462813-20251104.html) | 청구 범위 미확인 |
@@ -627,7 +640,7 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 
 | 시기 | 회사 | 거래 | 금액 | 의미 | 근거 |
 |---|---|---|---|---|---|
-| 2024-07 | Pindrop(음성) | 투자 | 지분 2.183억 달러 + 부채 1억 달러 | 콜센터 음성 강자, ARR 1억 달러 돌파(벤더 주장) | [HelpNetSecurity](https://www.helpnetsecurity.com/2024/07/18/pindrop-financing-100-million/) |
+| 2024-07 | Pindrop(음성) | 대출 | Hercules Capital 대출 1억 달러(누적 지분 조달은 약 2.2억~3.3억 달러, 자료마다 다름) | 콜센터 음성 강자, ARR 1억 달러 돌파(벤더 주장) | [HelpNetSecurity](https://www.helpnetsecurity.com/2024/07/18/pindrop-financing-100-million/) |
 | 2024-10 | Reality Defender | Series A | 3,300만 달러 | 기업용 멀티모달 API | [DCVC](https://dcvc.com/press-releases/reality-defender-expands-series-a-to-33-million-to-enhance-ai-detection-capabilities) |
 | 2025-03 | GetReal Security | Series A | 1,750만 달러(In-Q-Tel 참여) | 포렌식·정부 | [SecurityWeek](https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/) |
 | 2025-11 | Doppel | Series C | 7,000만 달러, 기업가치 6억 달러 이상 | 사칭 대응 플랫폼 | [SecurityWeek](https://www.securityweek.com/doppel-raises-70-million-at-600-million-valuation/) |
@@ -675,7 +688,7 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 | 오탐 책임 | 소비자 도구 오탐률이 최대 40%(NewsGuard). 일반인이 결과를 믿고 남을 고발하면 분쟁이 생김 [NewsGuard](https://www.newsguardtech.com/?p=33448) |
 | 기능 흡수 | GPTZero는 Superhuman에, Clarity는 Deel에 흡수됨. 탐지는 독립 앱보다 다른 서비스의 기능이 되는 흐름 [TNW](https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection) |
 
-**결론:** 소비자 앱은 레드오션이고 수익화가 어렵다. 텍스트 분야만 예외적으로 소비자 규모를 만들었지만(GPTZero) 결국 인수로 끝났다. 현실적인 비즈니스 모델은 **좁은 B2B 버티컬(보험·법무·언론 감정 리포트, 한국어 보이스피싱 음성, 채용 신원확인)**이고, 출구는 플랫폼 인수형이다. 소비자 앱은 사업의 본체가 아니라 인지도와 데이터를 모으는 입구로만 의미가 있다.
+**결론:** 소비자 앱은 레드오션이고 수익화가 어렵다. 텍스트 분야만 예외적으로 소비자 규모를 만들었지만(GPTZero) 결국 인수로 끝났다. 현실적인 비즈니스 모델은 **좁은 B2B 버티컬(보험·법무·언론 감정 리포트, 한국어 보이스피싱 음성, 채용 신원확인)**이고, 출구는 플랫폼 인수형이다. 소비자 앱은 사업의 본체가 아니라 인지도를 모으는 입구로만 의미가 있다. 데이터 수집 경로로는 한계가 크다. 불법 촬영물·허위영상물 업로드를 보관하면 법적 위험이 생기고, 업로드를 학습에 쓰려면 별도 동의가 필요하다(9절).
 
 
 ## 8. 경쟁력 종합 판단
@@ -685,17 +698,19 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 | 세그먼트 | 경쟁 강도 | 기회 | 소규모 팀 적합도 | 판정 |
 |---|---|---|---|---|
 | 범용 소비자 판별 앱(4매체 통합) | 매우 높음(빅테크 무료·보안 번들) | 낮음. 유료화 어려움 | 낮음 | **포기** |
-| "유명 AI로 만들었나" 워터마크 확인 | 매우 높음(Google·OpenAI 무료, 캘리포니아법 의무화) | 거의 없음 | 낮음 | **포기** |
+| "유명 AI로 만들었나" 워터마크 확인 | 매우 높음(Google·OpenAI 무료, 검색·브라우저 기본 탑재) | 거의 없음 | 낮음 | **포기** |
 | 영어 글 탐지 | 매우 높음(Turnitin, Superhuman+GPTZero) | 낮음 | 낮음 | **포기** |
-| 한국어 글 탐지 | 높음(무하유 장악, Turnitin 확장 중) | 낮음. 공백은 시한부 | 낮음 | **포기** |
+| 한국어 글 탐지(범용) | 높음(무하유 장악, Turnitin 확장 중) | 낮음. 공백은 시한부 | 낮음 | **포기**(2.5의 "부분적"은 수사용 등 좁은 니치에 한정) |
 | AI 음악 판별 B2B | 높음(Deezer·Modulate·IRCAM) | 국내 초기 시장, 수요 주체 방향 불확실 | 낮음~중간 | 보류 |
 | 한국 실시간 통화 보이스피싱 탐지 | 매우 높음(삼성·통신3사 무료) | 없음. Play 정책으로 통화 접근 차단 | 매우 낮음 | **포기** |
 | 콜센터·화상회의 기업 보안 | 매우 높음(Pindrop·Reality Defender) | 있으나 자본 경쟁 | 낮음 | **포기** |
 | 한국 수사·선거 B2G | 높음(정부 자체 개발·무상 배포) | 2028 총선 전 입찰, R&D 컨소시엄 정도 | 낮음 | 부수적 참여만 |
-| 민간 분쟁용 설명형 감정 리포트(음성·영상·이미지) | 중간(스틸컷·딥브레인AI·포렌식 업체) | 있음. 보험 특약에 포렌식 보고서 포함 | **중간** | **노려볼 만함** |
+| 민간 분쟁용 설명형 감정 리포트(음성·영상·이미지) | 중간(스틸컷·딥브레인AI·포렌식 업체) | 미국 보험 특약에 포렌식 보고서 포함. 국내 지불 의사는 미확인 | **중간** | **노려볼 만함(검증할 가설)** |
 | 한국 특화 공개 벤치마크 | 낮음(KoDF 2021 이후 없음) | 신뢰·인지도 확보 수단 | **높음** | **노려볼 만함(수익 아님)** |
 | 워터마크·C2PA·탐지 통합 검증 리포트 | 중간(Google 무료, 대형사 흡수 가능) | 생태계가 쪼개져 있는 동안 | 중간 | **조건부** |
 | 소규모 생성 AI 업체용 검증도구(SB 1000) | 낮음~중간 | 미국 규제 수요 | 중간 | **조건부(해외)** |
+| 중소 커뮤니티·플랫폼용 모더레이션 API | 높음(Hive·Sightengine 등 해외 API, 무료 대체재) | 한국인 얼굴 특화 신규 합성물 탐지(한국 요약본 기준, 출처 링크 없음) | 낮음~중간. 성범죄물 처리 법적 부담(9절) | 보류 |
+| 학교폭력 심의·피해자지원기관용 리포트 | 낮음~중간 | 설명형 리포트 수요(포지셔닝 A의 고객군 확장) | 중간 | **A에 포함해 검증** |
 
 근거: 2~7절. 핵심 출처는 [Deepfake-Eval-2024](https://arxiv.org/abs/2503.02857), [Morgan Lewis](https://morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative), [Reinsurance News](https://www.reinsurancene.ws/coalition-enhances-cyber-product-with-addition-of-deepfake-response-endorsement), [다음](https://v.daum.net/v/6VGDUSx2ab).
 
@@ -704,7 +719,7 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 | 영역 | 포기 이유 |
 |---|---|
 | 범용 "AI 확률" 소비자 앱 | 무료 대체재(Google SynthID·Hive 확장·Reality Defender 무료 티어)가 있고, 비영리 TrueMedia도 운영비로 독자 운영을 접었다 [TrueMedia](https://www.truemedia.org/post/shutting-down-truemedia). 오탐 최대 40%로 신뢰를 얻기 어렵다 [NewsGuard](https://www.newsguardtech.com/?p=33448) |
-| 워터마크 확인 앱 | 생성사가 법적으로 무료 검증도구를 제공해야 하고, 빅테크 검색·브라우저에 이미 들어갔다 [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/) |
+| 워터마크 확인 앱 | Google 무료 포털이 공개됐고, 빅테크 검색·브라우저에 이미 들어갔다 [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/) |
 | 글(영어·한국어) | 유통이 Turnitin·Superhuman에 묶였고, 한국어는 무하유가 대학을 장악했다. 교육 시장은 "작성 과정 증명"으로 옮겨 가는 중이다 [BusinessWire](https://www.businesswire.com/news/home/20260623083788/en/Superhuman-to-Acquire-GPTZero-AI-Authenticity-Platform) |
 | 실시간 통화 탐지 | 삼성(사용률 약 84%)·통신3사가 무료, 정부가 범죄 음성 데이터를 통신사에 지원, Google Play가 통화 접근을 막는다 [바이라인](https://byline.network/2026/02/12-535/) [Engadget](https://www.engadget.com/google-is-banning-third-party-call-recording-apps-from-the-play-store-093201443.html) |
 | 수사기관용 감정 시스템 | 경찰 91억 원·대검 86억 원·IITP 300억 원 국책 과제로 정부가 직접 만든다. 선관위는 예산이 "전무" [korea.kr](https://www.korea.kr/news/policyNewsView.do?newsId=148973649) |
@@ -715,18 +730,20 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 
 세 가지 모두 "범죄를 잡는 앱"이 아니라 **"사람이 근거를 갖고 더 빨리 판단하도록 돕는 도구"**다. 이것이 현재 기술로 정직하게 약속할 수 있는 최대치다 (4.5절).
 
-#### 포지셔닝 A: 민간 분쟁용 한국어 설명형 감정 리포트 (최우선)
+#### 포지셔닝 A: 민간 분쟁용 한국어 설명형 감정 리포트 (최우선, 검증해야 할 가설)
+
+> 이 포지셔닝은 아직 **가설**이다. 수요 근거는 미국 Coalition 딥페이크 특약 1건 [Reinsurance News](https://www.reinsurancene.ws/coalition-enhances-cyber-product-with-addition-of-deepfake-response-endorsement)과 국내 로펌이 음성 조작을 밝힌 사례 기사 1건 [한경 2024-11](https://www.hankyung.com/article/2024110369981)뿐이다. 국내 로펌·보험사의 지불 의사, 건수, 단가는 확인하지 못했다. 10절 2번 인터뷰의 중단 기준(유료 의향 3곳 미만)에 걸리면 접는다.
 
 | 항목 | 내용 |
 |---|---|
 | 타깃 고객 | 로펌·보험사(보험 사기 조사)·노무법인·언론사 팩트체크팀. 개인 의뢰인은 이들을 통해 간접 확보 |
 | 해결할 문제 | "이 녹취·영상·사진이 조작됐다"는 주장이 나왔을 때, 국과수 감정은 수사용이고 오래 걸린다. 통신사 기능은 실시간 통화 전용, 딥브레인AI는 0~100 확률만 준다 [ITWorld](https://www.itworld.co.kr/article/3575761/%EB%94%A5%EB%B8%8C%EB%A0%88%EC%9D%B8ai-saas%ED%98%95-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%83%90%EC%A7%80-%EC%86%94%EB%A3%A8%EC%85%98-%EC%B6%9C%EC%8B%9C%EC%9D%8C%EC%84%B1-%ED%95%A9.html) |
-| 차별점 | ① 점수가 아니라 근거(메타데이터, 편집 흔적, 워터마크 확인, 탐지 결과, 원본 여부) ② "진짜/가짜/판정 불가" 3단 ③ 파일 해시·처리 이력·모델 버전 기록 ④ 공개 오류율 |
-| 기술·데이터 | 오픈소스 탐지 코드(TrueMedia, MIT) + 상용 API 앙상블로 시작 [TrueMedia](https://www.truemedia.org/post/open-source-release). 음성은 ASVspoof(ODC-By)에 최신 한국어 TTS로 직접 합성한 데이터를 더함 [ASVspoof](https://arxiv.org/pdf/1911.01601). 실사진은 Stanford GPIC [AI Weekly](https://aiweekly.co/alerts/stanfords-gpic-ships-100m-commercially-usable-training-images) |
-| 수익 모델 | 건당 감정 리포트 요금 + 로펌·보험사 월 구독. 가격 기준선은 Reality Defender API 약 0.4달러/회지만, 리포트는 전문가 검토가 붙어 건당 단가가 높다(단가 근거는 요약본에 없음) |
+| 차별점 | ① 점수가 아니라 근거(메타데이터, 편집 흔적, 워터마크 확인, 탐지 결과, 원본 여부. C2PA 판독은 FTO 뒤 선택 기능) ② "진짜/가짜/판정 불가" 3단 ③ 파일 해시·처리 이력·모델 버전 기록 ④ 공개 오류율 |
+| 기술·데이터 | 오픈소스 탐지 코드(TrueMedia, MIT) + 상용 API 앙상블로 시작 [TrueMedia](https://www.truemedia.org/post/open-source-release). 단 TrueMedia는 학습된 가중치를 공개하지 않아 **자체 학습이 필요**하다(6.3). 상용 API 결과를 리포트에 넣어 재판매해도 되는지, 상용 한국어 TTS 출력을 탐지 학습에 써도 되는지는 각 약관 확인 전이다. 음성은 ASVspoof(ODC-By)에 최신 한국어 TTS로 직접 합성한 데이터를 더함 [ASVspoof](https://arxiv.org/pdf/1911.01601). 실사진은 Stanford GPIC [AI Weekly](https://aiweekly.co/alerts/stanfords-gpic-ships-100m-commercially-usable-training-images) |
+| 수익 모델 | 건당 감정 리포트 요금 + 로펌·보험사 월 구독. 가격 기준선은 Reality Defender API 약 0.4달러/회지만, 리포트는 전문가 검토가 붙어 건당 단가가 높을 것으로 본다(단가 근거는 요약본에 없음). **확인할 수치:** 국내 연간 사감정(사설 감정) 의뢰 건수, 기존 포렌식 업체의 음성·영상 감정료 수준. **감정인 확보:** 특수감정인 포렌식 업체 [K포렌식](https://digitalforensics.co.kr/)와 제휴하거나 감정 경력자를 채용해야 한다. 자격 요건·인건비는 미확인 |
 | 주요 경쟁자 | 스틸컷(로펌·방송사 B2B 선점) [비석세스](https://besuccess.com/?p=185339), 딥브레인AI, 특수감정인 포렌식 업체 [K포렌식](https://digitalforensics.co.kr/), 해외 Sensity·GetReal |
 | 리스크 | 오탐 시 손해배상·명예훼손 분쟁, 법원이 증거로 안 받아 줄 가능성(Rule 707은 빨라야 2029-12) [CaseRead](https://www.caseread.ai/blog/fre-707-ai-generated-evidence), 김수현 사건처럼 원본이 없으면 판정 불가 |
-| 첫 3개월 MVP | 음성 파일 1종에 집중. 업로드 → 메타데이터·재인코딩 흔적·SynthID 확인·탐지 앙상블 → PDF 리포트(3단 판정, 근거, 해시). 로펌·보험사 3~5곳과 무료 파일럿, 실제 사건 파일로 오탐·미탐 기록 |
+| 첫 3개월 MVP | 음성 파일 1종에 집중. 업로드 → 메타데이터·재인코딩 흔적·SynthID 확인·탐지 앙상블 → PDF 리포트(3단 판정, 근거, 해시). C2PA 판독은 넣지 않는다(FTO 뒤 선택 기능). 첫 3개월은 고객 인터뷰와 이 음성 MVP에만 집중하고, 무료 파일럿(3~5곳)은 MVP가 나온 뒤 시작. 필요 인원(제안): ML 1명, 백엔드 1명, 도메인 자문(감정·법률) 1명. FTO 비용은 요약본에 근거가 없어 변리사 견적으로 확인 |
 
 #### 포지셔닝 B: 한국 특화 공개 벤치마크 + 독립 검증
 
@@ -739,7 +756,8 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 | 수익 모델 | 벤치마크 자체는 공개(인지도·신뢰 확보). 매출은 기업용 비공개 평가 서비스, 정부 R&D 컨소시엄 참여(IITP 유통차단·데이터검증 과제 2027년 시작) [디데일리](https://www.ddaily.co.kr/page/view/2026051314145159743) |
 | 주요 경쟁자 | 직접 경쟁자는 요약본상 없음. ETRI·KETI·대학이 정부 과제로 만들 가능성 |
 | 리스크 | 단독 매출이 작음. 데이터 참여자 초상권·개인정보 동의 관리, 벤치마크 결과에 대한 업체 반발 |
-| 첫 3개월 MVP | 이미지·음성 2개 모달리티, 최신 생성기 5~10종, 수천 건 규모 v0.1 공개. 오픈소스 탐지기와 공개 API 3~5종 성적표 발표 |
+| 시작 시점 | **2단계로 미룬다.** A가 유료 전환(10절 7번)된 뒤 시작. 첫 3개월에는 A 음성 MVP용 자체 평가셋(10절 6번)만 만든다 |
+| 2단계 목표 | 이미지·음성 2개 모달리티, 최신 생성기 5~10종, 수천 건 규모 v0.1 공개. 오픈소스 탐지기와 공개 API 성적표 발표(각 API 약관이 성적 공개를 허용하는지 먼저 확인) |
 
 #### 포지셔닝 C: 워터마크·출처표식·탐지를 한 번에 보는 통합 검증 API (조건부)
 
@@ -756,7 +774,7 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 
 ### 8.4 종합
 
-- **우선순위: A(본업) → B(신뢰 확보 수단, A와 병행) → C(A에 기능으로 흡수).**
+- **우선순위: A(본업, 검증할 가설) → B(A 유료 전환 뒤 2단계) → C(A에 기능으로 흡수, C2PA는 FTO 뒤).**
 - 세 포지셔닝 모두 경쟁자가 있고 시장이 작다. "빈 시장"이 아니라 **"초기 경쟁 단계의 좁은 시장"**이다. 스틸컷이 같은 방향(로펌·혁신조달)을 먼저 두드리고 있다 [머니투데이](https://www.mt.co.kr/future/2026/08/11/2026081109014616088).
 - 현실적 출구는 대형 플랫폼 인수형이다. Clarity(Deel 인수, 4,500만~5,000만 달러, 현금+주식)가 기준점이지만 과장해 읽으면 안 된다 [TechFundingNews](https://techfundingnews.com/deel-buys-deepfake-detection-startup-clarity-in-15th-acquisition-as-it-hits-1-5b-in-arr/).
 
@@ -771,8 +789,9 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 | 생성기와의 군비경쟁 | 새 생성기가 나오면 성능이 급락한다(최신 영상 94.3→48.2, 독립 평가) [DF26](https://arxiv.org/pdf/2609.07369). 재학습하면 회복되지만 비용이 계속 든다. TrueMedia도 운영비로 독자 운영을 접었다 [TrueMedia](https://www.truemedia.org/post/shutting-down-truemedia) | 분기별 재학습·재평가 예산을 처음부터 사업 계획에 넣기. 도메인을 좁혀 비용 통제 |
 | 학습 데이터의 법적 문제 | 허위영상물은 소지·시청만으로 처벌(최고 3년)되어 실제 성착취 딥페이크를 학습용으로 모을 수 없다 [뉴시스](https://www.newsis.com/view/NISX20251114_0003403877). 얼굴·음성은 민감정보다. GenImage·FaceForensics++·DeepfakeBench는 상업 이용 금지 [GenImage](https://genimage-dataset.github.io) [DeepfakeBench](https://github.com/sclbd/deepfakebench) | 성범죄 영역은 다루지 않거나 수사기관 협력으로만. 동의 기반 자체 합성 데이터 + 상업 가능 데이터(ASVspoof, GPIC). 데이터 출처 기록 |
 | 법적 책임·증거능력 | 법정 감정은 국과수 중심이고 정부도 탐지 결과를 단독 증거로 쓰지 않는다 [보안뉴스](https://m.boannews.com/html/detail.html?idx=127364). 미국 AI 증거 규칙(Rule 707)은 빨라야 2029-12 [CaseRead](https://www.caseread.ai/blog/fre-707-ai-generated-evidence). 판례도 탐지 점수가 아니라 비교 증거로 판단했다 [Volokh](https://reason.com/volokh/2025/09/25/court-throws-out-case-after-finding-plaintiffs-submitted-deepfake-videos-and-altered-images/) | 약관에 책임 한도 명시, 전문가 배상책임보험 검토, "참고자료" 위치 고수 |
-| 특허 | 개념 특허는 없지만 구현 특허가 쌓이는 중. C2PA(KeeeX)·라이브니스(FaceTec)는 실제 분쟁 중 [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents) | 출시 전 변리사 FTO. 이 보고서는 법률 자문이 아니다 |
-| 빅테크 무료화 | Google SynthID Detector가 2026-10 전 세계 무료 공개, Search·Chrome·Gemini·YouTube에 기본 탑재. 캘리포니아법은 생성사에 무료 검증도구를 의무화 [MacRumors](https://www.macrumors.com/2026/10/07/google-synthid-detector/) [MoFo](https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements) | 빅테크가 하지 않는 것(표식 없는 콘텐츠, 설명형 리포트, 한국어 B2B 서비스)에만 집중 |
+| 특허 | 개념 특허는 없지만 구현 특허가 쌓이는 중. C2PA(KeeeX, 본안 판결 전)·라이브니스(FaceTec)는 실제 분쟁 중 [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents) | 출시 전 변리사 FTO. 이 보고서는 법률 자문이 아니다 |
+| 빅테크 무료화 | Google SynthID Detector가 2026-10 전 세계 무료 공개, Search·Chrome·Gemini·YouTube에 기본 탑재. (캘리포니아법의 검증도구 의무는 제3자 도구로도 이행 가능하고 한국 시장에는 직접 적용되지 않음) [MacRumors](https://www.macrumors.com/2026/10/07/google-synthid-detector/) [MoFo](https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements) | 빅테크가 하지 않는 것(표식 없는 콘텐츠, 설명형 리포트, 한국어 B2B 서비스)에만 집중 |
+| 불법 촬영물·허위영상물 업로드 수신 | 사용자가 판별을 위해 성착취 딥페이크를 올리면, 운영자가 그것을 서버에 보관하는 것만으로 개정 성폭력처벌법의 '소지'나 유포 위험에 걸릴 수 있다(허위영상물 소지·시청 처벌) [뉴시스](https://www.newsis.com/view/NISX20251114_0003403877) | 업로드 비보관 처리(분석 후 즉시 폐기), 해시 기반 신고(방심위·디지털성범죄피해자지원센터 연계), 성범죄 의심 콘텐츠는 분석 거부·신고 안내. 업로드의 학습 활용은 별도 동의 |
 | 개인정보 | 의뢰 파일에 제3자 얼굴·음성이 담긴다. SB 1000 검증도구는 개인정보를 동의 없이 내보내면 안 된다 [Sheppard](https://www.sheppard.com/insights/blogs/california-enacts-ai-spokespeople-chatbots-and-content-disclosures-laws) | 파일 보관 기간 최소화, 국내 처리, 학습 활용은 별도 동의 |
 
 **가장 큰 함정:** "범죄까지 잡는다"는 마케팅이다. 독립 평가로 입증할 수 없는 약속은 오탐 한 건으로 회사를 무너뜨릴 수 있다. 성능은 독립 평가 수치로만 말하라.
@@ -787,37 +806,36 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 | 1 | **방향 결정:** 범용 소비자 앱을 접고 B2B 감정 리포트로 갈지 결정 | 0.2절 조건 5개를 받아들일 수 있는지 팀 합의 | 1주 |
 | 2 | **고객 인터뷰 10곳 이상:** 로펌·보험사(사기조사)·노무법인·언론 팩트체크팀 | "건당 얼마를 내겠나", "어떤 파일(음성/영상/사진)이 가장 많나", "리포트에 무엇이 있어야 쓰나" 확인. 유료 의향 3곳 이상이면 진행 | 3~4주 |
 | 3 | **변리사 FTO 1차 검토** | 딥브레인AI·스틸컷·대검·누리랩·Pindrop 특허와 겹치는지 확인. C2PA·라이브니스는 범위에서 제외 [보안뉴스](https://m.boannews.com/html/detail.html?idx=140194) | 4~6주(병행) |
-| 4 | **데이터 라이선스 정리** | 상업 가능 데이터(ASVspoof, Stanford GPIC, TrueMedia MIT 코드) 목록화. 비상업 데이터(GenImage·FaceForensics++·DeepfakeBench)는 제품 학습에서 제외. 성범죄물은 다루지 않음 | 2주 |
-| 5 | **음성 MVP 구축** | 오픈소스+상용 API 앙상블, 메타데이터·재인코딩 흔적·SynthID 확인, 3단 판정 PDF 리포트, 해시·모델 버전 기록 (8.3절 A) | 8~10주 |
-| 6 | **자체 평가셋으로 오류율 측정·공개** | 최신 한국어 TTS로 동의 기반 합성 데이터를 만들어 오탐·미탐률 공개. 이것이 포지셔닝 B(공개 벤치마크) v0.1이 됨 | MVP와 병행 |
+| 4 | **데이터 라이선스 정리** | 상업 가능 데이터(ASVspoof, Stanford GPIC, TrueMedia MIT 코드, 단 가중치 없음) 목록화. 상용 API 결과 재판매·성적 공개 허용 여부와 상용 한국어 TTS 출력의 학습 이용 허용 여부를 약관으로 확인. 비상업 데이터(GenImage·FaceForensics++·DeepfakeBench)는 제품 학습에서 제외. 성범죄물은 다루지 않음 | 2주 |
+| 5 | **음성 MVP 구축** | 오픈소스 코드 기반 자체 학습 모델+상용 API 앙상블(약관 확인 뒤), 메타데이터·재인코딩 흔적·SynthID 확인(C2PA 판독은 FTO 뒤), 3단 판정 PDF 리포트, 해시·모델 버전 기록 (8.3절 A) | 8~10주 |
+| 6 | **자체 평가셋으로 오류율 측정·공개** | 최신 한국어 TTS로 동의 기반 합성 데이터를 만들어 오탐·미탐률 공개. 음성 평가셋만 만든다. 포지셔닝 B(이미지·음성 공개 벤치마크)는 7번 유료 전환 뒤 2단계로 확장 | MVP와 병행 |
 | 7 | **무료 파일럿 3~5곳** | 실제 사건 파일로 리포트 제공, "판정 불가" 비율과 고객 만족도 기록. 유료 전환 1곳 이상이 다음 단계 조건 | 3개월 차 |
 | 8 | **자금·제도 경로 확보** | TIPS·정부 R&D 컨소시엄(IITP 2027년 과제, 경찰 과제 후속) 참여 탐색, 2028-04 총선 전 선관위 입찰 동향 추적 [디데일리](https://www.ddaily.co.kr/page/view/2026051314145159743) [다음](https://v.daum.net/v/6VGDUSx2ab) | 상시 |
 
 **중단 신호(미리 정해 두라):** 인터뷰에서 유료 의향 고객이 3곳 미만이거나, 자체 평가셋 오탐률이 고객이 받아들일 수준으로 내려가지 않거나, FTO에서 핵심 기법이 막히면 접는다. 사용자가 처음 정한 "레드오션이면 포기" 원칙을 이 단계에서도 그대로 적용하는 것이다.
 
-
 ## 출처
 
-본문에 인용한 출처 268개 (첫 인용 순).
+본문에 인용한 출처 270개 (첫 인용 순).
 
 1. [Reality Defender](https://kpmg.com/us/en/media/news/kpmg-llp-takes-minority-stake-in-deepfake-detection-leader-reality-defender.html)
 2. [Pindrop](https://www.biometricupdate.com/202504/pindrop-surpasses-100m-in-annual-recurring-revenue-kicks-off-bu-podcast)
 3. [Deezer](https://dataconomy.com/2026/01/29/music-streaming-giant-deezer-opens-ai-detection-tool-to-external-platforms/)
 4. [GPTZero](https://www.businesswire.com/news/home/20260623083788/en/Superhuman-to-Acquire-GPTZero-AI-Authenticity-Platform)
 5. [MacRumors](https://www.macrumors.com/2026/10/07/google-synthid-detector/)
-6. [Bitdefender](https://www.bitdefender.com/en-us/news/bitdefender-launches-realcheck-a-powerful-deepfake-detection-solution)
-7. [CDT](https://cdt.org/insights/new-research-educators-still-struggling-with-generative-ai-detection-discipline-and-distrust-despite-increased-school-guidance/)
-8. [AppBrain](https://www.appbrain.com/dev/Zyur/)
-9. [Deepfake-Eval-2024](https://arxiv.org/abs/2503.02857)
-10. [arXiv 2602.07814](https://arxiv.org/html/2602.07814)
-11. [TechFundingNews](https://techfundingnews.com/deel-buys-deepfake-detection-startup-clarity-in-15th-acquisition-as-it-hits-1-5b-in-arr/)
-12. [JUVE Patent](https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/)
-13. [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents)
-14. [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/)
-15. [다음](https://v.daum.net/v/6VGDUSx2ab)
-16. [바이라인](https://byline.network/2026/02/12-535/)
-17. [Amped](https://blog.ampedsoftware.com/2026/03/11/authenticate-update-40165)
-18. [보안뉴스](https://m.boannews.com/html/detail.html?idx=127364)
+6. [Chrome 웹스토어](https://chromewebstore.google.com/detail/hive-ai-detector/cmeikcgfecnhojcbfapbmpbjgllklcbi)
+7. [Bitdefender](https://www.bitdefender.com/en-us/news/bitdefender-launches-realcheck-a-powerful-deepfake-detection-solution)
+8. [CDT](https://cdt.org/insights/new-research-educators-still-struggling-with-generative-ai-detection-discipline-and-distrust-despite-increased-school-guidance/)
+9. [AppBrain](https://www.appbrain.com/dev/Zyur/)
+10. [Deepfake-Eval-2024](https://arxiv.org/abs/2503.02857)
+11. [arXiv 2602.07814](https://arxiv.org/html/2602.07814)
+12. [TechFundingNews](https://techfundingnews.com/deel-buys-deepfake-detection-startup-clarity-in-15th-acquisition-as-it-hits-1-5b-in-arr/)
+13. [JUVE Patent](https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/)
+14. [Biometric Update](https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents)
+15. [eWeek](https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/)
+16. [다음](https://v.daum.net/v/6VGDUSx2ab)
+17. [바이라인](https://byline.network/2026/02/12-535/)
+18. [Amped](https://blog.ampedsoftware.com/2026/03/11/authenticate-update-40165)
 19. [GenImage](https://genimage-dataset.github.io)
 20. [뉴시스](https://www.newsis.com/view/NISX20251114_0003403877)
 21. [arXiv 2402.03214](https://arxiv.org/pdf/2402.03214)
@@ -837,134 +855,134 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 35. [EDMO](https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/)
 36. [arXiv 2608.10166](https://arxiv.org/pdf/2608.10166)
 37. [SiliconANGLE](https://siliconangle.com/2021/04/21/enterprise-ai-solutions-startup-hive-raises-85m-2b-valuation/)
-38. [HF 2606.19259](https://huggingface.co/papers/2606.19259.md)
-39. [UPC 명령](https://www.unifiedpatentcourt.org/sites/default/files/files/api_order/922-2026%20Adobe%20ea%20Final%20Order%20en-GB.pdf)
-40. [SecurityWeek](https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/)
-41. [BusinessWire](https://www.businesswire.com/news/home/20251119488893/en)
-42. [Chrome 웹스토어](https://chromewebstore.google.com/detail/hive-ai-detector/cmeikcgfecnhojcbfapbmpbjgllklcbi?hl=fil)
-43. [McAfee](https://www.mcafee.com/en-us/newsroom/press-releases/2025/mcafees-scam-detector-added-to-core-plans-protecting-people-against-text-email-and-video-scams.html)
-44. [Norton](https://support.norton.com/sp/en/us/home/current/solutions/v20250722122612120)
-45. [Tubefilter](https://www.tubefilter.com/2026/05/18/youtube-generative-ai-deepfake-likeness-detection-rollout/)
-46. [Android Central](https://www.androidcentral.com/apps-software/ai/gemini-can-now-tell-you-whether-a-video-was-generated-with-google-ai)
-47. [Zoom](https://www.zoom.com/en/blog/zoomtopia2026-ai-governance-zoom-workplace/)
-48. [BleepingComputer](https://bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection)
-49. [세계일보](https://www.segye.com/newsView/20260310517457)
-50. [유니콘팩토리](https://www.unicornfactory.co.kr/article/2025111111081151366)
-51. [Gartner](https://www.gartner.com/en/documents/8056333)
-52. [Google Play](https://play.google.com/store/apps/details?id=com.avk.imagehunter2&hl=en_US)
-53. [Gigazine](https://gigazine.net/gsc_news/en/20260302-ai-detection-fake)
-54. [DF26](https://arxiv.org/pdf/2609.07369)
-55. [TechBytes](https://techbytes.app/posts/allure-security-17m-series-b-deepfake-fraud-prevention/)
-56. [DF26](https://arxiv.org/html/2609.07369v1)
-57. [Calcalist](https://www.calcalistech.com/ctechnews/article/bkeyex0sgl)
-58. [ChatPaper](https://chatpaper.com/chatpaper/paper/357903)
-59. [Mergermarket](https://ionanalytics.com/insights/mergermarket/pindrop-could-step-up-acquisitions-in-agentic-security-as-its-deepfake-detection-takes-off-ceo/)
-60. [Pindrop](https://www.pindrop.com/article/pindrop-pulse-for-audio-deepfake-detection/)
-61. [Resemble](https://www.resemble.ai/resources/audio-deepfake-detection-benchmark-results-how-8-systems-performed-in-2026)
-62. [TechCrunch](https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/)
-63. [SSN](https://www.securitysystemsnews.com/article/reality-defender-launches-public-api-and-free-tier)
-64. [Google](https://blog.google/technology/ai/google-synthid-ai-content-detector/)
-65. [ElevenLabs](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-detector)
-66. [Hiya](https://www.hiya.com/press-releases/hiya-acquires-deepfake-voice-detection-leader-loccus-ai)
-67. [eSecurityPlanet](https://www.esecurityplanet.com/cybersecurity/best-ai-deepfake-detection-tools/)
-68. [바이라인](https://byline.network/2026/04/27-613/)
-69. [디데일리](https://www.ddaily.co.kr/page/view/2025072908585835162)
-70. [머니투데이](https://www.mt.co.kr/tech/2025/07/23/2025072315221813011)
-71. [바이라인](https://byline.network/2026/09/11-703/)
-72. [BiometricUpdate](https://www.biometricupdate.com/202603/zoom-expands-pindrop-deepfake-detection-to-customer-service)
-73. [Hiya](https://blog.hiya.com/ai-is-making-voice-fraud-worse-both-in-volume-and-in-targeting)
-74. [arXiv 2509.02859](https://arxiv.org/pdf/2509.02859)
-75. [Engadget](https://www.engadget.com/google-is-banning-third-party-call-recording-apps-from-the-play-store-093201443.html)
-76. [서울신문](https://m.seoul.co.kr/news/2024/04/01/20240401500181)
-77. [한경](https://www.hankyung.com/article/2024110369981)
-78. [TNW](https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection)
-79. [Pindrop](https://pindrop.com/products/liveness-detection)
-80. [Winbuzzer](https://winbuzzer.com/2026/06/12/deezer-opens-free-ai-playlist-scanner-to-rival-services-xcxwbn/)
-81. [AI Musicpreneur](https://www.aimusicpreneur.com/ai-tools-news/google-synthid-detector-public-launch-ai-music-october-2026/)
-82. [Cyanite](https://cyanite.ai/blog/best-ai-music-detection-tools-2026/)
-83. [MBW](https://musicbusinessworldwide.com/believe-has-developed-its-own-ai-made-music-detector-with-98-accuracy-what-might-this-mean-for-the-future)
-84. [위키트리](https://www.wikitree.co.kr/articles/1137778)
-85. [아시아경제](https://view.asiae.co.kr/article/2026083116360854659)
-86. [PPC Land](https://ppc.land/spotify-drops-ai-persona-artists-from-recommendations-in-mid-september/)
-87. [TechCrunch](https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/)
-88. [arXiv 2405.04181](https://arxiv.org/abs/2405.04181)
-89. [Deezer](https://newsroom-deezer.com/2025/11/deezer-ipsos-survey-ai-music/)
-90. [주간경향](https://weekly.khan.co.kr/article/202610130600011)
-91. [iMusician](https://imusician.pro/en/resources/blog/deezer-demonetizes-85-of-ia-music-commercializes-ia-detection-technology)
-92. [Deezer](https://newsroom-deezer.com/2025/01/deezer-deploys-cutting-edge-ai-detection-tool-for-music-streaming/)
-93. [Wired](https://www.wired.com/story/student-papers-generative-ai-turnitin/)
-94. [Turnitin FAQ](https://guides.turnitin.com/hc/en-us/articles/28477544839821-Turnitin-s-AI-writing-detection-capabilities)
-95. [Startup Fortune](https://startupfortune.com/superhuman-bets-on-trust-as-it-buys-ai-detection-startup-gptzero-for-its-19-million-users-and-30m-arr/)
-96. [BetaKit](https://betakit.com/grammarly-rebrands-to-superhuman-as-it-expands-from-catching-typos-to-ai-productivity/)
-97. [NBER](https://www.nber.org/system/files/working_papers/w34223/w34223.pdf)
-98. [BleepingComputer](https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/)
-99. [Epoch AI](https://epoch.ai/data-insights/ai-detectors-false-negatives)
-100. [Ars Technica](https://arstechnica.com/information-technology/2023/07/why-ai-detectors-think-the-us-constitution-was-written-by-ai/)
-101. [아이티데일리](https://www.itdaily.kr/news/articleView.html?idxno=223370)
-102. [지티티코리아](https://www.gttkorea.com/news/articleView.html?idxno=22638)
-103. [AI킬러](https://aikiller.app/)
-104. [OpenAI](https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/)
-105. [Liang 외](https://arxiv.org/html/2304.02819v3)
-106. [Plagiarism Today](https://www.plagiarismtoday.com/2026/02/11/adelphi-student-wins-ai-plagiarism-lawsuit/)
-107. [Waterloo](https://uwaterloo.ca/educational-technology-hub/news/discontinuing-use-ai-detection-functionality-turnitin)
-108. [ACL Anthology](https://aclanthology.org/2025.acl-long.1030)
-109. [TechCrunch](https://techcrunch.com/2026/06/23/superhuman-acquires-ai-detection-startup-gptzero/)
-110. [머니투데이](https://www.mt.co.kr/amp/future/2026/05/26/2026052609184984243)
-111. [US11853708B1](https://patents.google.com/patent/US11853708B1/en)
-112. [Gizmodo](https://gizmodo.com/bitdefender-built-an-app-that-analyzes-videos-for-deepfakes-so-you-dont-have-to-guess-2000780027)
-113. [SecurityBrief](https://securitybrief.co.uk/story/norton-adds-ai-powered-deepfake-detection-to-genie-assistant)
-114. [NPR](https://www.npr.org/2024/04/05/1241446778/deepfake-audio-detection)
-115. [BusinessWire](https://www.businesswire.com/news/home/20260729222515/en/Pangram-Launches-New-Worlds-Best-AI-Detector-Expands-to-Images-Backed-by-$9M-From-Menlo-Ventures)
-116. [GeekWire](https://www.geekwire.com/2025/truemedia-is-back-deepfake-detection-tool-revived-now-managed-by-georgetown-university/)
-117. [인공지능신문](https://www.aitimes.kr/news/articleView.html?idxno=34963)
-118. [이투데이](https://www.etoday.co.kr/news/view/2439014)
-119. [이데일리](https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02725686628988568)
-120. [Copyleaks](https://copyleaks.com/blog/ai-detector-apps-arent-what-they-claim)
-121. [jakeinsight](https://jakeinsight.com/ko/tech-economy/2026-09-03-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%83%90%EC%A7%80%EA%B8%B0-%EC%95%B1-%EC%A7%84%EC%A7%9C-%EB%AF%BF%EC%96%B4%EB%8F%84-%EB%90%98%EB%82%98/)
-122. [TrueMedia](https://www.truemedia.org/post/shutting-down-truemedia)
-123. [Morgan Lewis](https://www.morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative)
-124. [SocialMediaToday](https://www.socialmediatoday.com/news/youtube-expands-likeness-detection-to-all-users-over-18/820440/)
-125. [C2PA FAQ](https://www.c2pa.org/faq)
-126. [Google I/O](https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/)
-127. [Lead Stories](https://leadstories.com/analysis/2026/07/google-gemini-synthid-detector-confuses-results-within-same-chat.html)
-128. [InfoQ](https://infoq.com/news/2026/05/google-synthid-content-detection)
-129. [MBW](https://www.musicbusinessworldwide.com/youtube-will-now-automatically-detect-and-label-ai-videos-even-when-creators-dont-disclose-it/)
-130. [OpenAI 도움말](https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images)
-131. [The Star](https://www.thestar.com.my/tech/tech-news/2026/07/10/meta-ai-image-detector-fails-to-identify-some-of-its-own-cropped-ai-images-reuters-analysis-finds)
-132. [TechCrunch](https://techcrunch.com/2025/11/18/tiktok-now-lets-you-choose-how-much-ai-generated-content-you-want-to-see/)
-133. [ElevenLabs](https://elevenlabs.io/blog/synthid)
-134. [Adobe](https://helpx.adobe.com/ae_en/creative-cloud/help/cai/adobe-content-authenticity-chrome-browser-extension.html)
-135. [Nieman Lab](https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/)
-136. [Mixed](https://mixed-news.com/en/google-synthid-detector-worldwide-apple-ai-content-comes-soon/)
-137. [InfoQ](https://infoq.com/news/2026/10/synthid-watermarking-detector)
-138. [arXiv 2602.18681](https://arxiv.org/abs/2602.18681)
-139. [AIID](https://incidentdatabase.ai/reports/6301)
-140. [PetaPixel](https://petapixel.com/2025/02/13/samsungs-image-authenticity-approach-is-backward-and-its-ais-fault)
-141. [AI Weekly](https://aiweekly.co/alerts/google-synthid-watermarks-hold-up-in-tests-labeling-still-slips)
-142. [Gizmodo](https://gizmodo.com/metas-ai-detector-cant-detect-images-it-generated-itself-report-finds-2000784335)
-143. [arXiv 2607.16010](https://arxiv.org/abs/2607.16010)
-144. [DCW](https://www.digitalcameraworld.com/photography/photojournalism/nikon-revokes-all-c2pa-image-authenticity-certificates-after-major-vulnerability-exposed)
-145. [arXiv 2512.11815](https://arxiv.org/abs/2512.11815v2)
-146. [다음](https://v.daum.net/v/20260121120209717)
-147. [The Decoder](https://the-decoder.com/microsofts-research-argues-ai-media-authentication-doesnt-work-reliably-yet-new-laws-assume-it-does/)
-148. [뉴시스](https://www.newsis.com/view/NISX20260121_0003485509)
-149. [ZDNet](https://zdnet.co.kr/view?no=20261020095628)
-150. [트위그](https://www.twig24.com/news/2026/02/11/20260211500394)
-151. [William Fry](https://www.williamfry.com/knowledge/eu-ai-act-omnibus-deal-reached-postponed-deadlines-watermarking-compromise-and-the-nudificiation-prohibition/)
-152. [Freshfields](https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/eu-ai-act-unpacked-33-the-final-code-of-practice-on-transparency-of-ai-generate-102n4yx)
-153. [Simmons](https://www.simmons-simmons.com/en/publications/cmoveo6ke00icuxskpgueb0od/ai-omnibus-update)
-154. [FTC](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-sends-warning-letters-companies-about-compliance-take-it-down-act)
-155. [MoFo](https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements)
-156. [Latham](https://www.lw.com/en/insights/newest-slate-of-ai-laws-keeps-california-at-the-forefront-of-us-regulation)
-157. [TechNode](https://technode.com/2026/02/13/china-cyberspace-regulators-crack-down-on-unlabeled-ai-generated-content-penalize-over-13000-accounts/)
-158. [Euronews](https://www.euronews.com/2026/10/08/denmark-introduces-a-bill-protecting-peoples-faces-and-voices-from-deepfakes)
-159. [Ropes & Gray](https://www.ropesgray.com/en/insights/alerts/2025/12/trump-attempts-to-preempt-state-ai-regulation-through-executive-order)
-160. [Morgan Lewis](https://morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative)
-161. [Sheppard](https://www.sheppard.com/insights/blogs/california-enacts-ai-spokespeople-chatbots-and-content-disclosures-laws)
-162. [arXiv 2605.09203](https://arxiv.org/pdf/2605.09203)
-163. [OpenAI](https://openai.com/index/advancing-content-provenance)
-164. [HF Papers](https://huggingface.co/papers/2503.02857)
-165. [EmergentMind](https://www.emergentmind.com/topics/deepfake-eval-2024)
+38. [getcoai](https://getcoai.com/news/dhs-deploys-ai-tools-to-detect-fake-child-abuse-imagery)
+39. [HF 2606.19259](https://huggingface.co/papers/2606.19259.md)
+40. [UPC 명령](https://www.unifiedpatentcourt.org/sites/default/files/files/api_order/922-2026%20Adobe%20ea%20Final%20Order%20en-GB.pdf)
+41. [SecurityWeek](https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/)
+42. [BusinessWire](https://www.businesswire.com/news/home/20251119488893/en)
+43. [Chrome 웹스토어](https://chromewebstore.google.com/detail/hive-ai-detector/cmeikcgfecnhojcbfapbmpbjgllklcbi?hl=fil)
+44. [McAfee](https://www.mcafee.com/en-us/newsroom/press-releases/2025/mcafees-scam-detector-added-to-core-plans-protecting-people-against-text-email-and-video-scams.html)
+45. [Norton](https://support.norton.com/sp/en/us/home/current/solutions/v20250722122612120)
+46. [Tubefilter](https://www.tubefilter.com/2026/05/18/youtube-generative-ai-deepfake-likeness-detection-rollout/)
+47. [Android Central](https://www.androidcentral.com/apps-software/ai/gemini-can-now-tell-you-whether-a-video-was-generated-with-google-ai)
+48. [Zoom](https://www.zoom.com/en/blog/zoomtopia2026-ai-governance-zoom-workplace/)
+49. [BleepingComputer](https://bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection)
+50. [세계일보](https://www.segye.com/newsView/20260310517457)
+51. [유니콘팩토리](https://www.unicornfactory.co.kr/article/2025111111081151366)
+52. [Gartner](https://www.gartner.com/en/documents/8056333)
+53. [Google Play](https://play.google.com/store/apps/details?id=com.avk.imagehunter2&hl=en_US)
+54. [Gigazine](https://gigazine.net/gsc_news/en/20260302-ai-detection-fake)
+55. [DF26](https://arxiv.org/pdf/2609.07369)
+56. [TechBytes](https://techbytes.app/posts/allure-security-17m-series-b-deepfake-fraud-prevention/)
+57. [DF26](https://arxiv.org/html/2609.07369v1)
+58. [Calcalist](https://www.calcalistech.com/ctechnews/article/bkeyex0sgl)
+59. [ChatPaper](https://chatpaper.com/chatpaper/paper/357903)
+60. [Mergermarket](https://ionanalytics.com/insights/mergermarket/pindrop-could-step-up-acquisitions-in-agentic-security-as-its-deepfake-detection-takes-off-ceo/)
+61. [Pindrop](https://www.pindrop.com/article/pindrop-pulse-for-audio-deepfake-detection/)
+62. [Resemble](https://www.resemble.ai/resources/audio-deepfake-detection-benchmark-results-how-8-systems-performed-in-2026)
+63. [TechCrunch](https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/)
+64. [SSN](https://www.securitysystemsnews.com/article/reality-defender-launches-public-api-and-free-tier)
+65. [Google](https://blog.google/technology/ai/google-synthid-ai-content-detector/)
+66. [ElevenLabs](https://elevenlabs.io/docs/eleven-creative/audio-tools/audio-detector)
+67. [Hiya](https://www.hiya.com/press-releases/hiya-acquires-deepfake-voice-detection-leader-loccus-ai)
+68. [eSecurityPlanet](https://www.esecurityplanet.com/cybersecurity/best-ai-deepfake-detection-tools/)
+69. [바이라인](https://byline.network/2026/04/27-613/)
+70. [디데일리](https://www.ddaily.co.kr/page/view/2025072908585835162)
+71. [머니투데이](https://www.mt.co.kr/tech/2025/07/23/2025072315221813011)
+72. [바이라인](https://byline.network/2026/09/11-703/)
+73. [BiometricUpdate](https://www.biometricupdate.com/202603/zoom-expands-pindrop-deepfake-detection-to-customer-service)
+74. [Hiya](https://blog.hiya.com/ai-is-making-voice-fraud-worse-both-in-volume-and-in-targeting)
+75. [arXiv 2509.02859](https://arxiv.org/pdf/2509.02859)
+76. [Engadget](https://www.engadget.com/google-is-banning-third-party-call-recording-apps-from-the-play-store-093201443.html)
+77. [서울신문](https://m.seoul.co.kr/news/2024/04/01/20240401500181)
+78. [한경](https://www.hankyung.com/article/2024110369981)
+79. [TNW](https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection)
+80. [Pindrop](https://pindrop.com/products/liveness-detection)
+81. [Winbuzzer](https://winbuzzer.com/2026/06/12/deezer-opens-free-ai-playlist-scanner-to-rival-services-xcxwbn/)
+82. [AI Musicpreneur](https://www.aimusicpreneur.com/ai-tools-news/google-synthid-detector-public-launch-ai-music-october-2026/)
+83. [Cyanite](https://cyanite.ai/blog/best-ai-music-detection-tools-2026/)
+84. [MBW](https://musicbusinessworldwide.com/believe-has-developed-its-own-ai-made-music-detector-with-98-accuracy-what-might-this-mean-for-the-future)
+85. [위키트리](https://www.wikitree.co.kr/articles/1137778)
+86. [아시아경제](https://view.asiae.co.kr/article/2026083116360854659)
+87. [PPC Land](https://ppc.land/spotify-drops-ai-persona-artists-from-recommendations-in-mid-september/)
+88. [TechCrunch](https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/)
+89. [arXiv 2405.04181](https://arxiv.org/abs/2405.04181)
+90. [Deezer](https://newsroom-deezer.com/2025/11/deezer-ipsos-survey-ai-music/)
+91. [주간경향](https://weekly.khan.co.kr/article/202610130600011)
+92. [iMusician](https://imusician.pro/en/resources/blog/deezer-demonetizes-85-of-ia-music-commercializes-ia-detection-technology)
+93. [Deezer](https://newsroom-deezer.com/2025/01/deezer-deploys-cutting-edge-ai-detection-tool-for-music-streaming/)
+94. [Wired](https://www.wired.com/story/student-papers-generative-ai-turnitin/)
+95. [Turnitin FAQ](https://guides.turnitin.com/hc/en-us/articles/28477544839821-Turnitin-s-AI-writing-detection-capabilities)
+96. [Startup Fortune](https://startupfortune.com/superhuman-bets-on-trust-as-it-buys-ai-detection-startup-gptzero-for-its-19-million-users-and-30m-arr/)
+97. [BetaKit](https://betakit.com/grammarly-rebrands-to-superhuman-as-it-expands-from-catching-typos-to-ai-productivity/)
+98. [NBER](https://www.nber.org/system/files/working_papers/w34223/w34223.pdf)
+99. [BleepingComputer](https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/)
+100. [Epoch AI](https://epoch.ai/data-insights/ai-detectors-false-negatives)
+101. [Ars Technica](https://arstechnica.com/information-technology/2023/07/why-ai-detectors-think-the-us-constitution-was-written-by-ai/)
+102. [아이티데일리](https://www.itdaily.kr/news/articleView.html?idxno=223370)
+103. [지티티코리아](https://www.gttkorea.com/news/articleView.html?idxno=22638)
+104. [AI킬러](https://aikiller.app/)
+105. [OpenAI](https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/)
+106. [Liang 외](https://arxiv.org/html/2304.02819v3)
+107. [Plagiarism Today](https://www.plagiarismtoday.com/2026/02/11/adelphi-student-wins-ai-plagiarism-lawsuit/)
+108. [Waterloo](https://uwaterloo.ca/educational-technology-hub/news/discontinuing-use-ai-detection-functionality-turnitin)
+109. [ACL Anthology](https://aclanthology.org/2025.acl-long.1030)
+110. [TechCrunch](https://techcrunch.com/2026/06/23/superhuman-acquires-ai-detection-startup-gptzero/)
+111. [머니투데이](https://www.mt.co.kr/amp/future/2026/05/26/2026052609184984243)
+112. [US11853708B1](https://patents.google.com/patent/US11853708B1/en)
+113. [Gizmodo](https://gizmodo.com/bitdefender-built-an-app-that-analyzes-videos-for-deepfakes-so-you-dont-have-to-guess-2000780027)
+114. [SecurityBrief](https://securitybrief.co.uk/story/norton-adds-ai-powered-deepfake-detection-to-genie-assistant)
+115. [NPR](https://www.npr.org/2024/04/05/1241446778/deepfake-audio-detection)
+116. [BusinessWire](https://www.businesswire.com/news/home/20260729222515/en/Pangram-Launches-New-Worlds-Best-AI-Detector-Expands-to-Images-Backed-by-$9M-From-Menlo-Ventures)
+117. [GeekWire](https://www.geekwire.com/2025/truemedia-is-back-deepfake-detection-tool-revived-now-managed-by-georgetown-university/)
+118. [인공지능신문](https://www.aitimes.kr/news/articleView.html?idxno=34963)
+119. [이투데이](https://www.etoday.co.kr/news/view/2439014)
+120. [이데일리](https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02725686628988568)
+121. [Copyleaks](https://copyleaks.com/blog/ai-detector-apps-arent-what-they-claim)
+122. [jakeinsight](https://jakeinsight.com/ko/tech-economy/2026-09-03-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%83%90%EC%A7%80%EA%B8%B0-%EC%95%B1-%EC%A7%84%EC%A7%9C-%EB%AF%BF%EC%96%B4%EB%8F%84-%EB%90%98%EB%82%98/)
+123. [TrueMedia](https://www.truemedia.org/post/shutting-down-truemedia)
+124. [Morgan Lewis](https://www.morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative)
+125. [SocialMediaToday](https://www.socialmediatoday.com/news/youtube-expands-likeness-detection-to-all-users-over-18/820440/)
+126. [C2PA FAQ](https://www.c2pa.org/faq)
+127. [Google I/O](https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/)
+128. [Lead Stories](https://leadstories.com/analysis/2026/07/google-gemini-synthid-detector-confuses-results-within-same-chat.html)
+129. [InfoQ](https://infoq.com/news/2026/05/google-synthid-content-detection)
+130. [MBW](https://www.musicbusinessworldwide.com/youtube-will-now-automatically-detect-and-label-ai-videos-even-when-creators-dont-disclose-it/)
+131. [OpenAI 도움말](https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images)
+132. [The Star](https://www.thestar.com.my/tech/tech-news/2026/07/10/meta-ai-image-detector-fails-to-identify-some-of-its-own-cropped-ai-images-reuters-analysis-finds)
+133. [TechCrunch](https://techcrunch.com/2025/11/18/tiktok-now-lets-you-choose-how-much-ai-generated-content-you-want-to-see/)
+134. [ElevenLabs](https://elevenlabs.io/blog/synthid)
+135. [Adobe](https://helpx.adobe.com/ae_en/creative-cloud/help/cai/adobe-content-authenticity-chrome-browser-extension.html)
+136. [Nieman Lab](https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/)
+137. [Mixed](https://mixed-news.com/en/google-synthid-detector-worldwide-apple-ai-content-comes-soon/)
+138. [InfoQ](https://infoq.com/news/2026/10/synthid-watermarking-detector)
+139. [arXiv 2602.18681](https://arxiv.org/abs/2602.18681)
+140. [AIID](https://incidentdatabase.ai/reports/6301)
+141. [PetaPixel](https://petapixel.com/2025/02/13/samsungs-image-authenticity-approach-is-backward-and-its-ais-fault)
+142. [AI Weekly](https://aiweekly.co/alerts/google-synthid-watermarks-hold-up-in-tests-labeling-still-slips)
+143. [Gizmodo](https://gizmodo.com/metas-ai-detector-cant-detect-images-it-generated-itself-report-finds-2000784335)
+144. [arXiv 2607.16010](https://arxiv.org/abs/2607.16010)
+145. [DCW](https://www.digitalcameraworld.com/photography/photojournalism/nikon-revokes-all-c2pa-image-authenticity-certificates-after-major-vulnerability-exposed)
+146. [arXiv 2512.11815](https://arxiv.org/abs/2512.11815v2)
+147. [다음](https://v.daum.net/v/20260121120209717)
+148. [The Decoder](https://the-decoder.com/microsofts-research-argues-ai-media-authentication-doesnt-work-reliably-yet-new-laws-assume-it-does/)
+149. [뉴시스](https://www.newsis.com/view/NISX20260121_0003485509)
+150. [ZDNet](https://zdnet.co.kr/view?no=20261020095628)
+151. [트위그](https://www.twig24.com/news/2026/02/11/20260211500394)
+152. [William Fry](https://www.williamfry.com/knowledge/eu-ai-act-omnibus-deal-reached-postponed-deadlines-watermarking-compromise-and-the-nudificiation-prohibition/)
+153. [Freshfields](https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/eu-ai-act-unpacked-33-the-final-code-of-practice-on-transparency-of-ai-generate-102n4yx)
+154. [Simmons](https://www.simmons-simmons.com/en/publications/cmoveo6ke00icuxskpgueb0od/ai-omnibus-update)
+155. [FTC](https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-sends-warning-letters-companies-about-compliance-take-it-down-act)
+156. [MoFo](https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements)
+157. [Latham](https://www.lw.com/en/insights/newest-slate-of-ai-laws-keeps-california-at-the-forefront-of-us-regulation)
+158. [TechNode](https://technode.com/2026/02/13/china-cyberspace-regulators-crack-down-on-unlabeled-ai-generated-content-penalize-over-13000-accounts/)
+159. [Euronews](https://www.euronews.com/2026/10/08/denmark-introduces-a-bill-protecting-peoples-faces-and-voices-from-deepfakes)
+160. [Ropes & Gray](https://www.ropesgray.com/en/insights/alerts/2025/12/trump-attempts-to-preempt-state-ai-regulation-through-executive-order)
+161. [보안뉴스](https://m.boannews.com/html/detail.html?idx=127364)
+162. [Sheppard](https://www.sheppard.com/insights/blogs/california-enacts-ai-spokespeople-chatbots-and-content-disclosures-laws)
+163. [arXiv 2605.09203](https://arxiv.org/pdf/2605.09203)
+164. [OpenAI](https://openai.com/index/advancing-content-provenance)
+165. [HF Papers](https://huggingface.co/papers/2503.02857)
 166. [DailyBench](https://arxiv.org/pdf/2607.24016)
 167. [Müller 2022](https://arxiv.org/pdf/2203.16263)
 168. [NIST](https://ai-challenges.nist.gov/t2i)
@@ -1032,39 +1050,41 @@ C2PA의 특허 정책은 요약본끼리 엇갈린다. 출처증명 요약본은
 230. [GT Law](https://www.gtlaw.com/en/insights/2025/4/federal-circuit-machine-learning-patents-ineligible-in-recentive-analytics-inc-v-fox-corp)
 231. [Nixon Peabody](https://nixonpeabody.com/insights/alerts/2025/06/24/federal-circuit-limits-patent-eligibility-of-machine-learning-in-recentive-analytics-v-fox)
 232. [USPTO 12586419](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586419)
-233. [Justia](https://patents.justia.com/patent/12142083)
-234. [USPTO 공보](https://patentsgazette.uspto.gov/week44/OG/html/1540-1/US12462813-20251104.html)
-235. [USPTO 공보](https://patentsgazette.uspto.gov/week46/OG/html/1540-3/US12475695-20251118.html)
-236. [Google Patents](https://patents.google.com/patent/US11687778)
-237. [USPTO PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586395)
-238. [Justia](https://patents.justia.com/assignee/originality-ai-inc)
-239. [TUM ToS](https://kaldir.vc.in.tum.de/faceforensics_tos.pdf)
-240. [GitHub](https://github.com/sclbd/deepfakebench)
-241. [ASVspoof 2019 논문](https://arxiv.org/pdf/1911.01601)
-242. [AI Weekly](https://aiweekly.co/alerts/stanfords-gpic-ships-100m-commercially-usable-training-images)
-243. [GitHub](https://github.com/truemediaorg/GenConViT)
-244. [Google](https://ai.google.dev/responsible/docs/safeguards/synthid?hl=en)
-245. [Meticulous](https://www.meticulousresearch.com/product/deepfake-detection-market-6944)
-246. [SNS Insider](https://www.snsinsider.com/reports/deepfake-detection-market-11090)
-247. [Astute](https://www.astuteanalytica.com/industry-report/deepfake-detection-market)
-248. [Deloitte](https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html)
-249. [HelpNetSecurity](https://helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report)
-250. [CyberScoop](https://cyberscoop.com/?p=87093)
-251. [HelpNetSecurity](https://www.helpnetsecurity.com/2024/07/18/pindrop-financing-100-million/)
-252. [DCVC](https://dcvc.com/press-releases/reality-defender-expands-series-a-to-33-million-to-enhance-ai-detection-capabilities)
-253. [SecurityWeek](https://www.securityweek.com/doppel-raises-70-million-at-600-million-valuation/)
-254. [Tech.eu](https://tech.eu/2026/03/12/neuramancer-lands-eur17m-pre-seed-to-scale-deepfake-detection-tools)
-255. [AI Weekly](https://aiweekly.co/alerts/superhuman-acquires-gptzero-to-add-ai-authenticity-layer)
-256. [BiometricUpdate](https://www.biometricupdate.com/202607/sensity-ai-gets-eic-funding-for-forensics-focused-deepfake-detection-models)
-257. [Calcalist](https://calcalistech.com/ctechnews/article/bkeyex0sgl)
-258. [Dealroom](https://dealroom.co/news/142736-deel-acquires-clarity-to-strengthen-identity-verification-surpasses-1-5b/)
-259. [BiometricUpdate](https://www.biometricupdate.com/202609/kpmg-investment-in-reality-defender-backs-hiring-spree-to-fight-deepfakes)
-260. [Sacra](https://sacra.com/c/turnitin/)
-261. [CryptoBriefing](https://cryptobriefing.com/superhuman-acquires-gptzero-ai-detector/)
-262. [SecurityWeek](https://www.securityweek.com/imper-ai-emerges-from-stealth-mode-with-28-million-in-funding/)
-263. [Allwork](https://allwork.space/2025/04/ai-deepfake-scammers-infiltrating-the-hiring-processes-at-alarming-rates-gartner-reports/)
-264. [Reinsurance News](https://www.reinsurancene.ws/coalition-enhances-cyber-product-with-addition-of-deepfake-response-endorsement)
-265. [SecurityBrief](https://securitybrief.co.uk/story/norton-rolls-out-ai-deepfake-scam-protection-for-intel-pcs)
-266. [Intercom 가격](https://intercom.help/reality-defender/en/articles/12831411-managing-your-plan-billing)
-267. [Engadget](https://www.engadget.com/ai/a-new-chrome-extension-can-reliably-detect-ai-generated-voices-130059842.html)
-268. [Simplify](https://simplify.jobs/c/Sensity)
+233. [UPC 파리 명령](https://www.veron.com/wp-content/uploads/pve-upc/fichiers/2026-07-29_LD_Paris_UPC_CFI_530-2025_en-GB.pdf)
+234. [Justia](https://patents.justia.com/patent/12142083)
+235. [USPTO 공보](https://patentsgazette.uspto.gov/week44/OG/html/1540-1/US12462813-20251104.html)
+236. [USPTO 공보](https://patentsgazette.uspto.gov/week46/OG/html/1540-3/US12475695-20251118.html)
+237. [Google Patents](https://patents.google.com/patent/US11687778)
+238. [USPTO PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586395)
+239. [Justia](https://patents.justia.com/assignee/originality-ai-inc)
+240. [TUM ToS](https://kaldir.vc.in.tum.de/faceforensics_tos.pdf)
+241. [GitHub](https://github.com/sclbd/deepfakebench)
+242. [ASVspoof 2019 논문](https://arxiv.org/pdf/1911.01601)
+243. [AI Weekly](https://aiweekly.co/alerts/stanfords-gpic-ships-100m-commercially-usable-training-images)
+244. [GitHub](https://github.com/truemediaorg/GenConViT)
+245. [Google](https://ai.google.dev/responsible/docs/safeguards/synthid?hl=en)
+246. [Meticulous](https://www.meticulousresearch.com/product/deepfake-detection-market-6944)
+247. [SNS Insider](https://www.snsinsider.com/reports/deepfake-detection-market-11090)
+248. [Astute](https://www.astuteanalytica.com/industry-report/deepfake-detection-market)
+249. [Deloitte](https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html)
+250. [HelpNetSecurity](https://helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report)
+251. [CyberScoop](https://cyberscoop.com/?p=87093)
+252. [HelpNetSecurity](https://www.helpnetsecurity.com/2024/07/18/pindrop-financing-100-million/)
+253. [DCVC](https://dcvc.com/press-releases/reality-defender-expands-series-a-to-33-million-to-enhance-ai-detection-capabilities)
+254. [SecurityWeek](https://www.securityweek.com/doppel-raises-70-million-at-600-million-valuation/)
+255. [Tech.eu](https://tech.eu/2026/03/12/neuramancer-lands-eur17m-pre-seed-to-scale-deepfake-detection-tools)
+256. [AI Weekly](https://aiweekly.co/alerts/superhuman-acquires-gptzero-to-add-ai-authenticity-layer)
+257. [BiometricUpdate](https://www.biometricupdate.com/202607/sensity-ai-gets-eic-funding-for-forensics-focused-deepfake-detection-models)
+258. [Calcalist](https://calcalistech.com/ctechnews/article/bkeyex0sgl)
+259. [Dealroom](https://dealroom.co/news/142736-deel-acquires-clarity-to-strengthen-identity-verification-surpasses-1-5b/)
+260. [BiometricUpdate](https://www.biometricupdate.com/202609/kpmg-investment-in-reality-defender-backs-hiring-spree-to-fight-deepfakes)
+261. [Sacra](https://sacra.com/c/turnitin/)
+262. [CryptoBriefing](https://cryptobriefing.com/superhuman-acquires-gptzero-ai-detector/)
+263. [SecurityWeek](https://www.securityweek.com/imper-ai-emerges-from-stealth-mode-with-28-million-in-funding/)
+264. [Allwork](https://allwork.space/2025/04/ai-deepfake-scammers-infiltrating-the-hiring-processes-at-alarming-rates-gartner-reports/)
+265. [Reinsurance News](https://www.reinsurancene.ws/coalition-enhances-cyber-product-with-addition-of-deepfake-response-endorsement)
+266. [SecurityBrief](https://securitybrief.co.uk/story/norton-rolls-out-ai-deepfake-scam-protection-for-intel-pcs)
+267. [Intercom 가격](https://intercom.help/reality-defender/en/articles/12831411-managing-your-plan-billing)
+268. [Engadget](https://www.engadget.com/ai/a-new-chrome-extension-can-reliably-detect-ai-generated-voices-130059842.html)
+269. [Simplify](https://simplify.jobs/c/Sensity)
+270. [Morgan Lewis](https://morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative)

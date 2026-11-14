@@ -4,7 +4,7 @@ AI 생성물(영상·사진·음성·음악·글) 판별 앱의 시장조사 자
 
 ## 파일
 
-- `01-market-research.md`: 최종 보고서 (작성 중)
+- `01-market-research.md`: 최종 보고서
 - `raw/`: 영역별 원자료
   - `<영역>.research.json`: 1차 웹 조사 결과
   - `<영역>.verify.json`: 1차 조사에 대한 적대적 검증(반박 시도) 결과
