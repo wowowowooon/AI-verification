@@ -1,0 +1,692 @@
+{
+ "products": [
+  {
+   "name": "Pindrop Pulse / Pindrop Protect",
+   "company": "Pindrop Security",
+   "country": "미국",
+   "modalities": [
+    "음성",
+    "오디오(콜센터 통화)"
+   ],
+   "form": "기업 플랫폼/API (콜센터·CCaaS 연동: NiCE CXone, Zoom, FICO Marketplace)",
+   "target": "기업(은행·보험·헬스케어 콜센터)",
+   "status": "운영중 (2026년에도 헬스케어 확장, 에이전틱 사기조사 제품 출시)",
+   "pricing": "엔터프라이즈 계약, 공개가격 미확인",
+   "major_score": 4,
+   "adoption_score": 5,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "12억 건 이상 통화 분석 기준 딥페이크 활동 전년 대비 680% 증가, 2024년 딥페이크 사기 시도 1,300% 이상 증가(벤더 리포트). HealthEquity 사례에서 음성 사기 90% 이상 감소(벤더 사례).",
+   "independent_evaluation": "이번 조사 범위에서는 독립 평가 미확인",
+   "adoption_evidence": "CEO가 매출이 '1억 달러를 훨씬 넘는다'고 말함(CB Insights 2025년 추정 1억 달러). 2025년부터 현금흐름 흑자, 직원 300명 이상. 2024년 7월 Hercules Capital에서 벤처부채 1억 달러 조달. 누적 투자액은 출처마다 2.18억~3.34억 달러로 다름. 딥페이크 제품이 기존 음성생체인증 제품이 3년 걸린 매출 수준에 3개월 만에 도달했다고 함.",
+   "weaknesses": "음성 채널에 특화되어 이미지·영상·텍스트는 다루지 않음. 성장률 수치는 모두 벤더 자체 발표.",
+   "sources": [
+    "https://ionanalytics.com/insights/mergermarket/pindrop-could-step-up-acquisitions-in-agentic-security-as-its-deepfake-detection-takes-off-ceo/",
+    "https://www.cbinsights.com/company/pindrop-security/financials",
+    "https://www.biometricupdate.com/202407/pindrop-raises-100m-in-venture-debt-to-scale-voice-deepfake-protection",
+    "https://www.globenewswire.com/news-release/2026/02/26/3245758/0/en/Pindrop-Expands-AI-Powered-Deepfake-Detection-to-Healthcare.html",
+    "https://www.cxtoday.com/?p=162519",
+    "https://helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report"
+   ]
+  },
+  {
+   "name": "Reality Defender",
+   "company": "Reality Defender Inc.",
+   "country": "미국",
+   "modalities": [
+    "영상",
+    "이미지",
+    "음성",
+    "텍스트"
+   ],
+   "form": "기업 플랫폼 + 공개 API/SDK (실시간 통화·화상회의 연동)",
+   "target": "기업(금융), 정부, 개발자",
+   "status": "운영중. 2026년 9월 KPMG LLP가 소수지분 인수(조건 비공개)",
+   "pricing": "2025년 7월부터 무료 티어(월 50회 스캔, 오디오·이미지만, 카드 등록 불필요). 영상과 실시간 스트리밍은 맞춤형 유료 플랜.",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "벤더 측 구체적 정확도 수치는 이번 조사에서 미확인. 'Gartner가 이길 상대로 꼽은 딥페이크 탐지 회사'라는 마케팅 문구 사용.",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "Series A는 1,500만 달러(DCVC 주도)로 시작해 2024년 10월 3,300만 달러로 확대(Illuminate Financial). BNY, Samsung NEXT, Fusion Fund, KPMG 투자. 누적 투자액은 출처마다 4,000만~6,600만 달러. KPMG 지분 투자로 KPMG 사이버·사기 방지 서비스에 통합됨.",
+   "weaknesses": "매출과 고객 수가 공개되지 않음. 무료 API를 연 것은 탐지 기능 자체가 범용재로 가고 있다는 신호.",
+   "sources": [
+    "https://kpmg.com/us/en/media/news/kpmg-llp-takes-minority-stake-in-deepfake-detection-leader-reality-defender.html",
+    "https://dcvc.com/press-releases/reality-defender-expands-series-a-to-33-million-to-enhance-ai-detection-capabilities",
+    "https://www.securitysystemsnews.com/article/reality-defender-launches-public-api-and-free-tier",
+    "https://www.biometricupdate.com/202609/kpmg-investment-in-reality-defender-backs-hiring-spree-to-fight-deepfakes",
+    "https://www.cbinsights.com/company/reality-defender"
+   ]
+  },
+  {
+   "name": "GetReal Protect / GetReal Inspect",
+   "company": "GetReal Security",
+   "country": "미국",
+   "modalities": [
+    "영상",
+    "이미지",
+    "음성"
+   ],
+   "form": "기업 플랫폼(실시간 통신 보호 + 포렌식 검증)",
+   "target": "기업, 정부, 언론·소셜미디어",
+   "status": "운영중",
+   "pricing": "엔터프라이즈 계약, 미확인",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인. 공동창업자 Hany Farid가 디지털 포렌식 학계 권위자라는 점이 신뢰의 근거로 쓰임.",
+   "adoption_evidence": "2025년 3월 Series A 1,750만 달러(Forgepoint 주도, Ballistic, Evolution Equity, In-Q-Tel, Cisco 참여). 금융기관, 정부기관, 다국적 기업, 언론사가 채택했다고 발표(고객명·수는 미확인).",
+   "weaknesses": "규모는 아직 초기 단계. 고객 수와 매출 미공개.",
+   "sources": [
+    "https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/",
+    "https://forgepointcap.com/perspectives/has-getreal-cracked-the-code-on-ai-deepfakes-18m-and-an-impressive-client-list-says-yes-techcrunch/"
+   ]
+  },
+  {
+   "name": "Hive AI-Generated Content & Deepfake Detection",
+   "company": "Hive (The Hive AI)",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "음성",
+    "텍스트"
+   ],
+   "form": "API / 콘텐츠 모더레이션 플랫폼 / 온프레미스",
+   "target": "플랫폼(모더레이션), 정부·국방",
+   "status": "운영중",
+   "pricing": "API 종량제(구체 단가는 이번 조사에서 미확인)",
+   "major_score": 4,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "2024년 12월 DoD DIU가 36개 업체 중 Hive를 선정(2년 240만 달러 프로토타입 계약). 정부 조달 선정일 뿐 공개된 성능 벤치마크는 아님. 그 외 독립 평가는 미확인.",
+   "adoption_evidence": "2021년 기업가치 약 20억 달러(8,500만 달러 투자), 2021년 매출 6,700만 달러(Multiples.vc). 2025~2026년 수치는 신뢰할 출처가 없음.",
+   "weaknesses": "딥페이크 탐지 매출이 따로 공개되지 않음. 최신 재무 정보가 불투명.",
+   "sources": [
+    "https://www.businesswire.com/news/home/20241205852015/en/Hive-Secures-DoD-Contract-for-Deepfake-Detection-Pioneering-AI-Defense-Against-Emerging-Threats",
+    "https://www.biometricupdate.com/202412/dod-awards-contract-for-deepfake-detection-to-hive",
+    "https://www.adexchanger.com/platforms/hive-raises-85-million-for-contextual-and-branded-content-ai/",
+    "https://multiples.vc/private-comps/hive"
+   ]
+  },
+  {
+   "name": "Clarity",
+   "company": "Clarity (현재 Deel 소속)",
+   "country": "이스라엘/미국",
+   "modalities": [
+    "영상",
+    "음성"
+   ],
+   "form": "기업 플랫폼(화상회의·신원 검증)",
+   "target": "기업(HR, 채용 사기 방지)",
+   "status": "인수: 2026년 8월 Deel이 인수(보도상 4,000만~5,000만 달러, 공식 조건 비공개)",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "2024년 2월 시드 1,600만 달러(Walden Catalyst, Bessemer). 당시 직원 13명. Deel의 15번째 인수이며 첫 이스라엘 인수. 면접부터 시스템 접근까지 신원 확인에 쓰일 예정.",
+   "weaknesses": "독자 성장 대신 엑시트(누적 투자액의 약 3배). 단독 탐지 스타트업이 대형 플랫폼의 기능으로 흡수되는 패턴을 보여줌.",
+   "sources": [
+    "https://www.calcalistech.com/ctechnews/article/bkeyex0sgl",
+    "https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection",
+    "https://techfundingnews.com/deel-buys-deepfake-detection-startup-clarity-in-15th-acquisition-as-it-hits-1-5b-in-arr/",
+    "https://techcrunch.com/2024/02/15/clarity-raises-16m-to-fight-deepfakes-through-detection"
+   ]
+  },
+  {
+   "name": "GPTZero",
+   "company": "GPTZero (현재 Superhuman, 구 Grammarly 소속)",
+   "country": "미국/캐나다",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹/소비자 구독 + API + 교육기관 라이선스",
+   "target": "교육, 소비자, 기업",
+   "status": "인수: 2026년 6월 Superhuman이 인수(조건 비공개, 보도상 8,800만 달러 이상)",
+   "pricing": "프리미엄(무료 + 개인 구독 + 기관 라이선스)",
+   "major_score": 3,
+   "adoption_score": 5,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인(이번 조사 범위)",
+   "independent_evaluation": "이번 조사에서는 독립 평가 미확인(텍스트 탐지 성능은 별도 영역 조사 필요)",
+   "adoption_evidence": "인수 시점 등록 사용자 1,900만 명 이상, ARR 3,000만 달러(창업자 발표). Sacra 추정 2025년 ARR 2,400만 달러(전년 대비 +253%). 누적 투자 1,350만 달러(2024년 6월 Series A 1,000만 달러 포함), 투자 전부터 흑자.",
+   "weaknesses": "텍스트만 다룸. 결국 대형 글쓰기 플랫폼의 '진본성 레이어' 기능으로 흡수됨.",
+   "sources": [
+    "https://techcrunch.com/2024/06/13/gptzero-profitable-ai-detection-startup-10m-series-a",
+    "https://sacra.com/c/gptzero/",
+    "https://blog.superhuman.com/superhuman-to-acquire-gptzero/",
+    "https://dataconomy.com/2026/06/24/superhuman-acquires-gptzero-to-expand-ai-authenticity-tools/",
+    "https://cryptobriefing.com/superhuman-acquires-gptzero-ai-detector/"
+   ]
+  },
+  {
+   "name": "Pangram (Pangram 4 / Pangram Image)",
+   "company": "Pangram Labs",
+   "country": "미국",
+   "modalities": [
+    "텍스트",
+    "이미지"
+   ],
+   "form": "웹 + API + 교육기관 라이선스",
+   "target": "교육, 기업, 플랫폼",
+   "status": "운영중",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "인간 문서 약 1만 건 중 1건만 AI로 오분류한다고 주장. 신모델은 AI 보조 글과 혼합 글 탐지에서 99% 이상 정확하다고 주장.",
+   "independent_evaluation": "TechCrunch 자체 테스트에서 '매우 인상적이나 완벽하지 않음'. 체계적 독립 벤치마크는 이번 조사에서 미확인.",
+   "adoption_evidence": "2025년 6월 pre-seed+seed 398만 달러, 2026년 7월 Menlo Ventures 주도 900만 달러.",
+   "weaknesses": "투자 규모가 작음. 이미지 탐지는 막 출시됨.",
+   "sources": [
+    "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/",
+    "https://www.businesswire.com/news/home/20250623805035/en/Pangram-Closes-$4-Million-in-Seed-Funding-for-AI-Detection-Technology"
+   ]
+  },
+  {
+   "name": "Resemble DETECT-3B Omni",
+   "company": "Resemble AI",
+   "country": "미국/캐나다",
+   "modalities": [
+    "음성",
+    "영상",
+    "이미지"
+   ],
+   "form": "API / 기업 플랫폼 (생성 + 탐지를 함께 제공)",
+   "target": "기업",
+   "status": "운영중",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "38개 언어 기준 정확도 98%, Hugging Face 오디오·이미지 딥페이크 탐지 순위 1위라고 주장",
+   "independent_evaluation": "독립 평가 미확인(리더보드 순위는 자체 발표)",
+   "adoption_evidence": "2025년 12월 전략 투자 1,300만 달러(Google AI Futures Fund, Sony Innovation Fund, Okta Ventures 등), 누적 약 2,500만 달러. 투자사들이 자사 보안 시스템에 기술을 통합 중. 분기별 딥페이크 사고 리포트를 발행해 업계 통계 출처로 자리잡음.",
+   "weaknesses": "음성 생성 회사가 탐지도 하는 구조여서 이해상충 우려가 있음. 매출 미공개.",
+   "sources": [
+    "https://siliconangle.com/2025/12/08/resemble-ai-hauls-13m-different-approach-deepfake-detection/",
+    "https://www.resemble.ai/resemble-ai-secures-13m-to-combat-rising-ai-generated-threats/",
+    "https://www.tokenpost.kr/news/ai/312460"
+   ]
+  },
+  {
+   "name": "Sensity AI",
+   "company": "Sensity (구 Deeptrace)",
+   "country": "네덜란드",
+   "modalities": [
+    "영상",
+    "이미지",
+    "음성"
+   ],
+   "form": "웹 플랫폼 / API / 포렌식 리포트",
+   "target": "기업(KYC), 정부·수사기관, 언론",
+   "status": "운영중",
+   "pricing": "미확인",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "2026년 7월 NIST CFTT(Computer Forensics Tools & Techniques) 카탈로그에 등재. 카탈로그 등재일 뿐 성능 검증은 아님. 그 외 독립 평가 미확인.",
+   "adoption_evidence": "2026년 1월 210만 달러 조달(누적 320만 달러). 2026년 7월 EIC 지원금(€4.9M 또는 $5.5M, 출처마다 다름). 2025년 매출 3배 성장 후 흑자, 2026년 ARR 400만 달러 이상 목표.",
+   "weaknesses": "자본이 매우 작음. 오래된 업체지만 규모 확장은 제한적이었음.",
+   "sources": [
+    "https://www.biometricupdate.com/202607/sensity-ai-gets-eic-funding-for-forensics-focused-deepfake-detection-models",
+    "https://simplify.jobs/c/Sensity",
+    "https://sensity.ai/"
+   ]
+  },
+  {
+   "name": "Loti",
+   "company": "Loti AI",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "음성"
+   ],
+   "form": "소비자·기업 서비스(초상 무단사용 탐지 + 삭제 요청 대행)",
+   "target": "셀럽·탤런트 에이전시·스포츠 리그, 일반 개인(무료)",
+   "status": "운영중",
+   "pricing": "일반인 대상 무료 초상 보호 공개, 에이전시·IP 보유자는 유료(가격 미확인)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "2025년 4월 Series A 1,620만 달러(Khosla 주도), 누적 약 2,300만 달러. WME, CAA와 파트너십. 2026년 1월 Underscore Talent와 제휴.",
+   "weaknesses": "탐지보다 모니터링과 삭제 요청이 핵심. YouTube의 무료 초상 탐지 기능과 직접 경쟁.",
+   "sources": [
+    "https://www.businesswire.com/news/home/20250415846205/en",
+    "https://www.geekwire.com/2025/seattle-startup-loti-lands-16m-to-help-celebs-politicians-and-ceos-detect-deepfakes/"
+   ]
+  },
+  {
+   "name": "Vermillio TraceID",
+   "company": "Vermillio",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "음성",
+    "음악"
+   ],
+   "form": "기업 플랫폼(AI 라이선싱 + 무단사용 추적)",
+   "target": "스튜디오·레이블·탤런트",
+   "status": "운영중",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "2025년 3월 Series A 1,600만 달러(Sony Music, DNS Capital), 이전 시드 750만 달러. Sony Pictures 스파이더버스 캠페인에서 팬 창작물 150만 건 이상 추적. TIME100 기업 선정.",
+   "weaknesses": "판별보다 권리관리와 추적 중심이어서 포렌식 판별과는 거리가 있음.",
+   "sources": [
+    "https://www.axios.com/2025/03/03/vermillio-ai-rights-licensing-sony-music",
+    "https://www.musicbusinessworldwide.com/sony-music-dns-capital-lead-16m-series-a-funding-round-for-ai-licensing-platform-vermillio"
+   ]
+  },
+  {
+   "name": "Doppel",
+   "company": "Doppel",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "음성",
+    "텍스트"
+   ],
+   "form": "기업 플랫폼(디지털 위험 보호, 사칭·소셜엔지니어링 대응)",
+   "target": "기업(Fortune 500)",
+   "status": "운영중",
+   "pricing": "엔터프라이즈 계약",
+   "major_score": 4,
+   "adoption_score": 4,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "2025년 11월 Series C 7,000만 달러(Bessemer 주도), 기업가치 6억 달러 이상, 누적 1.24억 달러. ARR 전년 대비 3배, 200개 이상 조직 보호(Coinbase, Ramp 등).",
+   "weaknesses": "순수 딥페이크 판별기가 아니라 사칭 대응 플랫폼. 다만 기업 예산이 이런 인접 카테고리로 흘러간다는 점은 중요한 신호.",
+   "sources": [
+    "https://fortune.com/2025/11/19/exclusive-doppel-raises-70-million-series-c-at-more-than-600-million-valuation-to-fight-ai-powered-social-engineering-attacks",
+    "https://www.securityweek.com/doppel-raises-70-million-at-600-million-valuation/"
+   ]
+  },
+  {
+   "name": "Adaptive Security",
+   "company": "Adaptive Security",
+   "country": "미국",
+   "modalities": [
+    "음성",
+    "영상",
+    "텍스트",
+    "이메일"
+   ],
+   "form": "기업 SaaS(딥페이크 시뮬레이션 기반 보안 교육)",
+   "target": "기업",
+   "status": "운영중",
+   "pricing": "미확인",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "해당 없음(탐지가 아닌 교육·시뮬레이션 제품)",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "2025년 4월 Series A 4,300만 달러(OpenAI Startup Fund의 첫 사이버보안 투자, a16z), 9월 추가 1,200만 달러, 12월 Series B 8,100만 달러(Bain Capital Ventures, NVentures). 누적 1.465억 달러.",
+   "weaknesses": "탐지 제품이 아님. 그래도 '딥페이크 방어' 예산을 놓고 경쟁하는 회사.",
+   "sources": [
+    "https://www.govinfosecurity.com/adaptive-security-gets-81m-series-b-for-ai-deepfake-defense-a-30332",
+    "https://www.biometricupdate.com/202512/new-series-b-round-brings-adaptives-total-capital-raised-to-146-5-million"
+   ]
+  },
+  {
+   "name": "imper.ai",
+   "company": "imper.ai",
+   "country": "이스라엘/미국",
+   "modalities": [
+    "음성",
+    "영상(Zoom/Teams/Slack)"
+   ],
+   "form": "기업 플랫폼",
+   "target": "기업",
+   "status": "운영중(2025년 12월 스텔스 해제)",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "미확인. 콘텐츠 자체를 판별하지 않고 공격자가 위조하기 어려운 메타·행동 신호에 의존하는 방식이라고 설명.",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "누적 2,800만 달러(Redpoint, Battery Ventures). 시드 약 650만 달러와 Series A 약 2,200만 달러로 나눠 보도되기도 함.",
+   "weaknesses": "초기 단계. 이 회사가 콘텐츠 판별을 피한다는 사실 자체가, 판별 정확도만으로는 방어가 어렵다는 업계 인식을 보여줌.",
+   "sources": [
+    "https://www.securityweek.com/imper-ai-emerges-from-stealth-mode-with-28-million-in-funding/",
+    "https://www.calcalistech.com/ctechnews/article/rk9nmmjgbl",
+    "https://siliconangle.com/2025/12/04/imper-ai-launches-28m-stop-ai-powered-impersonation-attacks/"
+   ]
+  },
+  {
+   "name": "TrueMedia.org 탐지기",
+   "company": "TrueMedia.org (비영리, Oren Etzioni 설립, Camp.org 후원)",
+   "country": "미국",
+   "modalities": [
+    "영상",
+    "이미지",
+    "음성"
+   ],
+   "form": "웹(언론·팩트체커 대상 무료)",
+   "target": "언론·팩트체커·일반",
+   "status": "종료: 2025년 1월 14일 폐쇄 후 코드·모델 오픈소스화. 이후 Georgetown University McCourt School이 기술 개발을 인수.",
+   "pricing": "무료(기부금 운영)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "이 조직 데이터로 만든 학술 벤치마크 Deepfake-Eval-2024에서 오픈소스 최신 탐지기의 AUC가 기존 벤치마크 대비 영상 약 50%, 음성 48%, 이미지 45% 하락. 상용·파인튜닝 모델은 이보다 낫지만 전문 포렌식 분석가 수준에는 못 미침.",
+   "adoption_evidence": "2024년 선거 기간 언론·팩트체커가 사용(구체 사용자 수 미확인)",
+   "weaknesses": "공식 종료 이유는 '선거 미션 완수'. 수익 모델 없는 무료 탐지 서비스는 지속되기 어렵다는 시장 신호.",
+   "sources": [
+    "https://www.truemedia.org/post/shutting-down-truemedia",
+    "https://www.geekwire.com/2025/truemedia-org-plans-to-shutter-and-open-source-its-ai-deepfake-detector-etzioni-hints-at-new-startup/",
+    "https://www.geekwire.com/2025/truemedia-is-back-deepfake-detection-tool-revived-now-managed-by-georgetown-university/",
+    "https://pdf.arxiv.org/abs/2503.02857"
+   ]
+  },
+  {
+   "name": "Turnitin AI Writing Detection",
+   "company": "Turnitin",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "교육기관 플랫폼(기존 표절검사 라이선스에 포함)",
+   "target": "교육",
+   "status": "운영중",
+   "pricing": "기관 라이선스에 번들",
+   "major_score": 5,
+   "adoption_score": 5,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "이번 조사 범위에서 미확인",
+   "independent_evaluation": "이번 조사 범위에서 독립 평가 미확인",
+   "adoption_evidence": "Sacra 추정 2024년 매출 2.03억 달러(2023년 1.85억 달러 대비 +10%). 2023년 4월 AI 탐지 추가 시 많은 학교가 새 벤더를 검토하지 않고 기존 라이선스에서 기능만 켬.",
+   "weaknesses": "텍스트만 다룸. 다만 '기존 유통 채널에 번들된 기능'이 독립 앱을 이긴다는 사례로 중요.",
+   "sources": [
+    "https://sacra.com/c/turnitin/"
+   ]
+  },
+  {
+   "name": "Copyleaks AI Detector",
+   "company": "Copyleaks",
+   "country": "미국/이스라엘",
+   "modalities": [
+    "텍스트",
+    "이미지(일부)"
+   ],
+   "form": "웹/API/LMS 연동",
+   "target": "교육, 기업",
+   "status": "운영중",
+   "pricing": "구독/크레딧(세부 미확인)",
+   "major_score": 2,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "이번 조사 범위에서 미확인",
+   "adoption_evidence": "마지막 공개 투자는 2022년 Series A 600만 달러(누적 약 710만~775만 달러). 2024년 8월 상반기 매출 전년 대비 +199%(회사 발표). TIME 2025 EdTech Rising Stars 2위.",
+   "weaknesses": "작은 자본. 앱스토어에 자사를 사칭하는 앱이 있다고 Apple에 신고함.",
+   "sources": [
+    "https://www.businesswire.com/news/home/20220524005281/en",
+    "https://natlawreview.com/press-releases/copyleaks-named-no-2-times-list-worlds-top-edtech-rising-stars-2025",
+    "https://copyleaks.com/blog/ai-detector-apps-arent-what-they-claim"
+   ]
+  },
+  {
+   "name": "딥브레인AI 딥페이크 탐지 솔루션",
+   "company": "딥브레인AI (DeepBrain AI)",
+   "country": "한국",
+   "modalities": [
+    "영상",
+    "이미지",
+    "음성"
+   ],
+   "form": "기업·기관용 API / 수사기관 맞춤형 솔루션",
+   "target": "정부·수사기관(경찰청), 기업",
+   "status": "운영중(2025년 11월 API 제공 시작)",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "TTA GS 인증 1등급(GS는 품질 인증이며 탐지 정확도 벤치마크는 아님)",
+   "independent_evaluation": "독립 평가 미확인. 경찰청 탐지 소프트웨어는 진위 탐지율 약 80%로 발표되었고, 증거가 아닌 수사 방향 설정용으로 쓰임.",
+   "adoption_evidence": "경찰청 맞춤형 딥페이크 탐지 솔루션 개발. 경찰 탐지 소프트웨어는 누적 1,636건 수사에 활용(2026년 8월 경찰 발표).",
+   "weaknesses": "수사기관 시장은 국가 R&D(경찰청 2025~2027년 91억 원, 한컴위드 참여)와 국과수·행안부 자체 모델이 함께 있어 경쟁 구도가 복잡함.",
+   "sources": [
+    "https://www.unicornfactory.co.kr/article/2025111111081151366",
+    "https://www.cio.com/article/3516859/%EB%94%A5%EB%B8%8C%EB%A0%88%EC%9D%B8ai-%EA%B2%BD%EC%B0%B0%EC%B2%AD-%EB%A7%9E%EC%B6%A4%ED%98%95-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%83%90%EC%A7%80-%EC%86%94%EB%A3%A8%EC%85%98-%EA%B0%9C%EB%B0%9C.html",
+    "https://m.boannews.com/html/detail.html?idx=127364",
+    "https://www.korea.kr/news/policyNewsView.do?newsId=148973649",
+    "https://www.m-economynews.com/mobile/article.html?no=69729",
+    "https://byline.network/2025/06/5-299/"
+   ]
+  },
+  {
+   "name": "Hiya Deepfake Voice Detector",
+   "company": "Hiya",
+   "country": "미국",
+   "modalities": [
+    "음성"
+   ],
+   "form": "브라우저 확장(Chrome)",
+   "target": "소비자",
+   "status": "운영중(2024년 10월 출시)",
+   "pricing": "무료(이메일 가입 필요, 초기에는 하루 20크레딧 제한)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "제3자 테스터 검증으로 99% 이상 정확하다고 주장(검증 주체는 미공개)",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "Chrome 웹스토어 배포. Bellingcat 툴킷에 등재. 정확한 사용자 수는 미확인.",
+   "weaknesses": "음성만 판별하며 1초 샘플만 분석. 무료라서 소비자 유료 앱의 가격 기준선을 0으로 끌어내림.",
+   "sources": [
+    "https://blog.hiya.com/hiyas-new-chrome-extension-identifies-deepfakes",
+    "https://www.engadget.com/ai/a-new-chrome-extension-can-reliably-detect-ai-generated-voices-130059842.html",
+    "https://bellingcat.gitbook.io/toolkit/more/all-tools/hiya-deepfake-voice-detector"
+   ]
+  },
+  {
+   "name": "Norton Genie Deepfake Protection / McAfee Deepfake Detector",
+   "company": "Gen Digital (Norton) / McAfee",
+   "country": "미국",
+   "modalities": [
+    "음성",
+    "영상(YouTube 등)"
+   ],
+   "form": "소비자 보안 제품 번들 / 온디바이스(AI PC NPU)",
+   "target": "소비자",
+   "status": "운영중(Norton은 모바일 조기 출시, 2025년 9월 Intel Core Ultra PC로 확대. McAfee는 OEM 번들)",
+   "pricing": "Norton 360 Scam Protection 유료 플랜에 포함. McAfee는 Lenovo AI PC에서 첫해 9.99달러부터.",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "수천만 명 규모의 기존 보안 구독자 기반에 번들. 딥페이크 기능 자체의 사용자 수는 미확인.",
+   "weaknesses": "영어만 지원, 플랫폼 제한(McAfee는 NPU 탑재 Windows만). 그래도 대형 보안 브랜드가 소비자 접점을 선점하고 있음.",
+   "sources": [
+    "https://securitybrief.co.uk/story/norton-adds-ai-powered-deepfake-detection-to-genie-assistant",
+    "https://securitybrief.co.uk/story/norton-rolls-out-ai-deepfake-scam-protection-for-intel-pcs",
+    "https://www.esecurityplanet.com/cybersecurity/best-ai-deepfake-detection-tools/"
+   ]
+  },
+  {
+   "name": "YouTube Likeness Detection",
+   "company": "Google/YouTube",
+   "country": "미국",
+   "modalities": [
+    "영상(얼굴)"
+   ],
+   "form": "플랫폼 내장 기능(YouTube Studio)",
+   "target": "크리에이터·셀럽·언론인·탤런트 에이전시",
+   "status": "운영중: 2025년 10월 YPP 대상 출시, 2026년 3월 셀럽·언론인, 2026년 5월 만 18세 이상 모든 크리에이터로 확대",
+   "pricing": "무료",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "adoption_evidence": "YouTube 전체 성인 크리에이터에게 공개(신분증과 셀피 영상 인증 필요). Google은 SynthID·C2PA 검증을 Search, Chrome, Gemini 앱으로 확대.",
+   "weaknesses": "YouTube 안의 콘텐츠만 대상이고, 음성은 아직 미지원으로 보도됨. 그래도 Loti 같은 초상 보호 유료 서비스에는 직접적인 위협.",
+   "sources": [
+    "https://www.macrumors.com/2025/10/21/youtube-ai-likeness-detection-tool/",
+    "https://tubefilter.com/2026/03/11/youtube-ai-deepfake-likeness-detection-celebrities-journalists",
+    "https://idtechwire.com/youtube-opens-ai-likeness-detection-to-all-creators-aged-18-and-over/",
+    "https://blog.google/intl/ro-ro/produse/youtube-noi-instrumente-pentru-protectia-creatorilor-si-transparenta-utilizarii-ai/"
+   ]
+  }
+ ],
+ "key_findings": [
+  {
+   "claim": "시장 규모 추정치는 기관과 정의에 따라 약 10배 차이가 난다. 탐지 전용 기준으로 LP Information은 2024년 1.98억 달러에서 2030년 18.86억 달러(CAGR 45.6%), Meticulous Research는 2025년 7.1억 달러에서 2036년 94.4억 달러(CAGR 25.3%), MRFR은 2024년 17.32억 달러에서 2035년 91.45억 달러(CAGR 16.33%), Technavio는 2024~2029년 27.3억 달러 증가(CAGR 26.1%)로 본다. 생성까지 포함한 '딥페이크 AI' 전체 시장은 2024년 8.26억 달러에서 2030년 60억 달러(CAGR 39.2%)로 추정된다. 결론적으로 탐지 시장은 2025년 기준 수억~20억 달러 수준의 작은 시장이고, 연 25~45% 성장이 전망된다.",
+   "sources": [
+    "https://www.meticulousresearch.com/product/deepfake-detection-market-6944",
+    "https://marketresearch.com/LP-Information-Inc-v4134/Global-AI-Deepfake-Detection-Growth-39750363",
+    "https://www.marketresearchfuture.com/ko/reports/ai-deepfake-detector-tool-market-34740",
+    "https://www.technavio.com/report/ai-deepfake-detector-tool-market-industry-analysis",
+    "https://m.giikorea.co.kr/report/go1786386-deepfake-artificial-intelligence.html",
+    "https://www.marketsandmarkets.com/Market-Reports/geography/deepfake-ai-market/North-America"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "피해 규모는 탐지 시장보다 훨씬 크다. Deloitte는 생성형 AI로 인한 미국 사기 손실이 2023년 123억 달러에서 2027년 400억 달러(CAGR 32%, 보수적 시나리오 약 220억 달러)에 이를 것으로 전망했다. Resemble AI는 2025년 기록된 딥페이크 사기 피해를 12.8억 달러 이상(1분기 2억 달러 이상, 2분기 3.47억 달러)으로 집계했다. 다만 Resemble의 연간 세부 수치는 서로 맞지 않는다.",
+   "sources": [
+    "https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html",
+    "https://www.esecurityplanet.com/news/ai-deepfakes-surge-200-million-lost",
+    "https://www.resemble.ai/q2-2025-ai-deepfake-security-report/",
+    "https://resemble.ai/2025-deepfake-threat-report"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "2024~2026년 자금은 '실시간 통신·사칭 방어 B2B' 쪽으로 몰렸다. Doppel(7,000만 달러, 기업가치 6억 달러 이상), Adaptive Security(누적 1.465억 달러, OpenAI 투자), Reality Defender(3,300만 달러 + KPMG 지분), imper.ai(2,800만 달러), GetReal(1,750만 달러), Loti(1,620만 달러), Vermillio(1,600만 달러), Resemble(1,300만 달러), Pangram(900만 달러)이 대표적이다. 순수 탐지 스타트업 한 곳이 받는 금액은 대개 1,000만~3,500만 달러 수준이다.",
+   "sources": [
+    "https://fortune.com/2025/11/19/exclusive-doppel-raises-70-million-series-c-at-more-than-600-million-valuation-to-fight-ai-powered-social-engineering-attacks",
+    "https://www.govinfosecurity.com/adaptive-security-gets-81m-series-b-for-ai-deepfake-defense-a-30332",
+    "https://kpmg.com/us/en/media/news/kpmg-llp-takes-minority-stake-in-deepfake-detection-leader-reality-defender.html",
+    "https://www.securityweek.com/imper-ai-emerges-from-stealth-mode-with-28-million-in-funding/",
+    "https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/",
+    "https://www.businesswire.com/news/home/20250415846205/en",
+    "https://siliconangle.com/2025/12/08/resemble-ai-hauls-13m-different-approach-deepfake-detection/",
+    "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "2026년에 통합(consolidation)이 시작됐다. Superhuman이 GPTZero를 인수했고(6월, ARR 3,000만 달러, 사용자 1,900만 명), Deel이 Clarity를 인수했으며(8월, 보도상 4,000만~5,000만 달러), KPMG가 Reality Defender 지분을 샀다(9월). 탐지 기술은 단독 제품보다 HR·글쓰기·컨설팅·보안 플랫폼의 '기능'으로 흡수되는 추세다.",
+   "sources": [
+    "https://blog.superhuman.com/superhuman-to-acquire-gptzero/",
+    "https://www.calcalistech.com/ctechnews/article/bkeyex0sgl",
+    "https://kpmg.com/us/en/media/news/kpmg-llp-takes-minority-stake-in-deepfake-detection-leader-reality-defender.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "현재 규모 있는 매출이 확인되는 곳은 매우 적다. 음성 콜센터 분야의 Pindrop(매출 1억 달러 이상, 2025년부터 현금흐름 흑자)과 텍스트 분야의 GPTZero(ARR 3,000만 달러), Turnitin(추정 매출 2.03억 달러, AI 탐지는 번들)이 대표적이다. 멀티모달 범용 탐지 스타트업 가운데 공개적으로 확인되는 매출은 Sensity의 ARR 목표 400만 달러 정도에 그친다.",
+   "sources": [
+    "https://ionanalytics.com/insights/mergermarket/pindrop-could-step-up-acquisitions-in-agentic-security-as-its-deepfake-detection-takes-off-ceo/",
+    "https://cryptobriefing.com/superhuman-acquires-gptzero-ai-detector/",
+    "https://sacra.com/c/turnitin/",
+    "https://simplify.jobs/c/Sensity"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "돈을 내는 세그먼트는 금융과 콜센터(Pindrop, Reality Defender의 BNY 등), 기업 보안·HR(채용 사기, Clarity·imper.ai·Doppel), 교육(Turnitin·GPTZero·Pangram), 정부·국방(Hive DIU 240만 달러, GetReal의 In-Q-Tel, 한국 경찰청 R&D 91억 원), 엔터·IP(Loti·Vermillio), 보험(Coalition 딥페이크 대응 특약에 포렌식 분석 포함) 순으로 확인된다. 소비자 직접 결제는 보안 번들(Norton·McAfee) 외에는 거의 확인되지 않는다.",
+   "sources": [
+    "https://www.biometricupdate.com/202412/dod-awards-contract-for-deepfake-detection-to-hive",
+    "https://www.korea.kr/news/policyNewsView.do?newsId=148973649",
+    "https://www.reinsurancene.ws/coalition-enhances-cyber-product-with-addition-of-deepfake-response-endorsement",
+    "https://cyberscoop.com/?p=87093",
+    "https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "채용 사기 수요가 빠르게 생기고 있다. Gartner는 2028년까지 전 세계 지원자 프로필 4개 중 1개가 가짜일 수 있다고 전망했고, 설문에서는 지원자의 6%가 면접 부정에 참여했다고 답했다. Deel의 Clarity 인수가 이 수요를 겨냥한 것이다.",
+   "sources": [
+    "https://allwork.space/2025/04/ai-deepfake-scammers-infiltrating-the-hiring-processes-at-alarming-rates-gartner-reports/",
+    "https://www.hrdive.com/news/fake-job-candidates-ai/757126/",
+    "https://techfundingnews.com/deel-buys-deepfake-detection-startup-clarity-in-15th-acquisition-as-it-hits-1-5b-in-arr/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "수요는 있지만 아직 체계적으로 준비된 곳은 적다. Pindrop 2026 조사에서 보안 리더의 약 3/4이 딥페이크 공격을 겪었거나 의심했지만, 전용 방어책을 갖춘 곳은 10%뿐이었다. 반면 보험사 Coalition은 청구 건 중 딥페이크 비중이 작고 98%는 고급 AI와 무관하다고 밝혔다. 위협 인식이 실제 지출보다 앞서 있다는 뜻이다.",
+   "sources": [
+    "https://helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report",
+    "https://cyberscoop.com/?p=87093"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "소비자 앱 시장은 질이 낮고 무료 대체재에 눌려 있다. 앱스토어 딥페이크 탐지 앱(예: DeepDetekt)은 '작동하지 않는 사기'라는 리뷰를 받고 내려갔고, 무료 체험 즉시 과금 같은 다크패턴과 유명 탐지사 사칭 앱도 보고됐다. 한편 YouTube 초상 탐지, Hiya 확장 프로그램, Reality Defender 무료 API(월 50회), Google SynthID 검증(Gemini·Chrome)은 모두 무료다. 이번 조사에서 단독 딥페이크 탐지 소비자 구독이 크게 성공한 사례는 찾지 못했고, 텍스트 분야의 GPTZero만 예외적으로 성공했다.",
+   "sources": [
+    "https://apps.apple.com/us/app/deepdetekt-deep-fake-detector/id6476621357",
+    "https://copyleaks.com/blog/ai-detector-apps-arent-what-they-claim",
+    "https://idtechwire.com/youtube-opens-ai-likeness-detection-to-all-creators-aged-18-and-over/",
+    "https://www.engadget.com/ai/a-new-chrome-extension-can-reliably-detect-ai-generated-voices-130059842.html",
+    "https://www.securitysystemsnews.com/article/reality-defender-launches-public-api-and-free-tier"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "실제 유통되는 딥페이크(in-the-wild)에서는 탐지 성능이 크게 떨어진다. Deepfake-Eval-2024에서 오픈소스 최신 탐지기의 AUC가 영상 약 50%, 음성 48%, 이미지 45% 하락했고, 상용 모델도 포렌식 전문가 수준에는 못 미쳤다. 경찰청 자체 탐지 소프트웨어의 탐지율도 약 80%여서 증거가 아닌 수사 방향 설정용으로만 쓰인다. 탐지 정확도와 신뢰성이 아직 풀리지 않은 문제라는 뜻이다.",
+   "sources": [
+    "https://pdf.arxiv.org/abs/2503.02857",
+    "https://m.boannews.com/html/detail.html?idx=127364"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "무료 비영리 모델은 지속되지 못했다. TrueMedia.org는 '선거 미션 완수'를 이유로 2025년 1월 문을 닫고 오픈소스로 전환했으며, 이후 Georgetown이 기술을 이어받았다. 수익 모델 없는 공익형 탐지 서비스는 오래 버티기 어렵다는 신호다.",
+   "sources": [
+    "https://www.truemedia.org/post/shutting-down-truemedia",
+    "https://www.geekwire.com/2025/truemedia-is-back-deepfake-detection-tool-revived-now-managed-by-georgetown-university/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "한국 시장은 공공 R&D가 주도한다. 경찰청은 '허위조작 콘텐츠 진위여부 판별 시스템' 사업을 2025~2027년 91억 원 규모로 진행 중이고(한컴위드 참여), 국과수·행안부는 자체 분석모델을 개발해 감정과 선관위 지원에 쓴다. 민간에서는 딥브레인AI가 API를 제공하고, 스틸컷이 시드 투자를 받았다. 국내 탐지 시장 규모를 직접 추정한 자료는 찾지 못했다.",
+   "sources": [
+    "https://www.korea.kr/news/policyNewsView.do?newsId=148973649",
+    "https://www.segye.com/newsView/20250730515766",
+    "https://byline.network/2025/06/5-299/",
+    "https://www.unicornfactory.co.kr/article/2025111111081151366",
+    "https://www.venturesquare.net/1105380/"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "gaps_and_opportunities": [
+  "포렌식·수사용 '설명 가능한 감정 리포트' 시장: 대부분의 기업용 제품은 실시간 차단(통화·화상회의)에 집중한다. 법정 증거 수준의 근거 제시, 재현 가능한 분석, 감정서 양식, 공급망 보존(chain of custody)을 갖춘 제품은 적다(Sensity가 NIST CFTT 카탈로그에 등재된 정도). 이 영역은 소규모 팀이 정확도와 신뢰성으로 차별화할 여지가 있다.",
+  "한국어와 한국 맥락 특화: 글로벌 벤더는 영어 중심이다(Norton 딥페이크 기능은 영어만 지원). 한국어 음성 클로닝, 한국 얼굴 데이터, 카카오톡·국내 플랫폼 압축 열화 조건에 강한 모델은 국내 수사기관, 금융권(보이스피싱), 선관위 수요와 맞물린다. 다만 경찰청 91억 원 R&D와 국과수 자체 모델이 이미 있어 조달 경쟁은 불가피하다.",
+  "중소 은행·핀테크·콜센터용 저가 API: Pindrop, Reality Defender는 대형 엔터프라이즈 중심이다. 중소 금융기관과 지역 콜센터를 겨냥한 종량제 API는 빈틈일 수 있으나, Reality Defender 무료 티어가 가격 하한선을 만들고 있다.",
+  "채용 사기(면접 딥페이크) 버티컬: Gartner는 2028년 지원자 프로필 4개 중 1개가 가짜일 수 있다고 전망했고, Deel은 이를 위해 Clarity를 인수했다. ATS와 화상면접 도구에 붙는 플러그인형 제품은 수요가 뚜렷하다. 대신 플랫폼 기업에 인수되는 것이 현실적인 엑시트다.",
+  "보험 포렌식: Coalition 같은 보험사가 딥페이크 대응 특약에 '포렌식 분석과 서면 보고서'를 포함하기 시작했다. 보험사와 손해사정 쪽 포렌식 감정 파트너 자리는 아직 채워지는 중이다.",
+  "탐지에 출처 증명(C2PA·워터마크 검증)을 결합한 통합 검증: 탐지 단독으로는 한계가 뚜렷하다(Deepfake-Eval-2024). 탐지 결과에 C2PA, SynthID 같은 메타데이터와 출처 정보를 함께 보여주는 '종합 진위 리포트'는 언론과 팩트체커 수요에 맞다.",
+  "음악·오디오 저작권(AI 생성 음악 판별): 엔터 쪽에서는 Vermillio, Loti 등이 권리관리 중심이라 판별 정확도에 특화된 플레이어가 상대적으로 적다(이번 조사에서는 상세 미확인).",
+  "확인되지 않은 항목: 특허 지형(Pindrop 등 주요 특허, 소송 사례), Intel FakeCatcher와 Microsoft Video Authenticator의 현재 상태, AI or Not 등 소비자 앱의 투자·매출, Arup 2,500만 달러 사건과 FBI IC3 통계는 웹 검색 한도를 모두 써서 조사하지 못했다. 후속 확인이 필요하다."
+ ],
+ "threats_and_barriers": [
+  "빅테크의 무료 기능이 대체재가 된다: YouTube 초상 탐지(2026년 5월 모든 성인 크리에이터에게 무료), Google SynthID·C2PA 검증(Search, Chrome, Gemini), Norton·McAfee 번들, Hiya 무료 확장. 소비자가 낼 의향이 있는 가격이 사실상 0에 가깝다.",
+  "탐지가 범용재로 가고 있다: Reality Defender가 엔터프라이즈 탐지 API를 무료로 열었고(월 50회), TrueMedia는 모델을 오픈소스로 공개했다. '탐지 모델 자체'만으로는 차별화가 어렵다.",
+  "자본 격차: 경쟁사는 수천만~1억 달러 이상을 조달했다(Doppel 누적 1.24억 달러, Adaptive 1.465억 달러, Pindrop 2억~3억 달러 이상과 매출 1억 달러 이상). 개인이나 소규모 팀은 데이터 수집, 레드팀, 지속 재학습 비용에서 불리하다.",
+  "정확도 문제가 근본적이다: 실제 유통 딥페이크에서 AUC가 45~50% 하락하고, 새로운 생성 모델이 나올 때마다 성능이 떨어진다. 범죄 수사급 신뢰도를 주장하면 오탐·미탐 시 법적 책임과 평판 위험이 크다. 경찰청 탐지 소프트웨어도 탐지율이 약 80%여서 증거로 쓰지 못하고 있다.",
+  "B2G 진입 장벽: 국내는 경찰청 국가 R&D(91억 원, 한컴위드 등 참여), 국과수·행안부 자체 모델, GS 인증 같은 조달 요건이 있다. 미국은 DIU, In-Q-Tel 등과의 관계가 필요하다. 영업 주기가 길고 레퍼런스가 필요하다.",
+  "엑시트 구조: 단독 탐지 스타트업은 독립 성장보다 플랫폼에 인수되는 경우가 많다(Clarity는 누적 투자의 약 3배인 4,000만~5,000만 달러에 매각, GPTZero는 약 8,800만 달러 보도). 벤처 규모의 큰 성과를 기대하기 어렵다.",
+  "소비자 앱스토어의 평판 오염: 사기성·비작동 탐지 앱, 무료 체험 즉시 과금, 유명 브랜드 사칭이 보고되면서 '탐지 앱' 카테고리 자체의 신뢰가 낮다.",
+  "특허: 이번 조사에서는 웹 검색 한도 때문에 특허 지형을 확인하지 못했다(미확인). 음성 생체인증과 딥페이크 탐지 분야에서는 Pindrop 등 기존 업체의 특허 보유 가능성을 별도로 점검해야 한다."
+ ],
+ "red_ocean_judgement": "세그먼트별로 판단이 다르다.\n(1) 범용 소비자 'AI 생성물 판별 앱'(B2C 구독)은 사실상 레드오션이자 수익이 나지 않는 시장이다. 근거는 세 가지다. 빅테크와 보안 업체가 무료이거나 번들로 기능을 제공하고(YouTube, Google SynthID, Norton, McAfee, Hiya, Reality Defender 무료 API), 앱스토어 탐지 앱은 사기성·저품질 리뷰를 받고 단명하며, 무료 비영리 탐지기인 TrueMedia도 지속하지 못했다. 텍스트 분야의 GPTZero가 사용자 1,900만 명과 ARR 3,000만 달러로 유일하게 성공했지만, 그 회사도 결국 Superhuman에 흡수됐다.\n(2) 기업용 실시간 사칭 방어(콜센터, 화상회의, 이메일)는 자금이 몰린 경쟁 시장이다. Pindrop, Reality Defender, GetReal, imper.ai, Doppel, Adaptive, Resemble이 이미 수천만~억 달러대 자본을 확보했고, 2026년에는 통합(Deel-Clarity, KPMG-Reality Defender)이 진행 중이다. 소규모 신규 진입자에게는 매우 어렵다.\n(3) 반면 '포렌식·수사·감정용 고신뢰 판별'은 아직 레드오션이 아니다. 기술적으로 미해결이고(실제 유통 딥페이크에서 AUC가 45~50% 하락, 경찰 소프트웨어 탐지율 약 80%), 플레이어 대부분이 실시간 차단에 집중하고 있다. 다만 시장 자체가 작다. 탐지 시장 전체가 2025년 기준 수억~20억 달러로 추정되고, 수사기관은 예산이 R&D와 조달로 묶여 있어 영업이 어렵다.\n결론: '모든 모달리티를 판별하는 소비자 앱'으로 정면 진입하면 레드오션이다. 한국어·국내 플랫폼 조건에 특화된 포렌식 감정 리포트(수사기관, 보험, 언론, 법무)나, 채용·중소 금융 같은 좁은 B2B 버티컬 API로 들어가야 경쟁력이 있다. 특허 장벽은 이번 조사에서 확인하지 못했다(미확인).",
+ "summary": "AI 생성물·딥페이크 탐지 시장은 2025년 기준 탐지 전용으로 약 2억~20억 달러로 추정된다. 기관마다 정의와 수치가 달라 편차가 약 10배이고, 연 16~46%(대체로 25~45%) 성장이 전망된다. 피해 규모는 시장보다 훨씬 크다. Deloitte는 미국 생성형 AI 사기 손실이 2027년 400억 달러에 이를 것으로 봤고, Resemble은 2025년 기록된 피해를 12.8억 달러 이상으로 집계했다.\n\n자금은 2024~2026년 기업용 사칭 방어로 몰렸다. Doppel 7,000만 달러(기업가치 6억 달러 이상), Adaptive 누적 1.465억 달러, Reality Defender 3,300만 달러와 KPMG 지분, imper.ai 2,800만 달러, GetReal 1,750만 달러, Loti 1,620만 달러, Resemble 1,300만 달러, Pangram 900만 달러가 대표적이다. 2026년에는 통합이 본격화됐다(Superhuman의 GPTZero 인수, Deel의 Clarity 인수, KPMG의 Reality Defender 지분 투자).\n\n실제 매출이 큰 곳은 콜센터 음성 분야의 Pindrop(매출 1억 달러 이상, 흑자)과 텍스트 분야의 GPTZero, Turnitin 정도다. 돈을 내는 쪽은 금융·콜센터, 기업 보안·HR, 교육, 정부·국방, 엔터·IP, 보험이다. 소비자는 보안 번들 외에는 거의 돈을 내지 않는다. 소비자 앱 카테고리는 저품질·사기성 앱과 빅테크 무료 기능(YouTube 초상 탐지, SynthID, Norton·McAfee, Hiya) 때문에 사실상 레드오션이다.\n\n신뢰도 면에서는 실제 유통 딥페이크에서 탐지 성능이 45~50% 떨어진다(Deepfake-Eval-2024). 한국 경찰 탐지 소프트웨어도 탐지율이 약 80%여서 증거가 아닌 수사 방향 설정용으로만 쓰인다. 그래서 수사급 고신뢰 판별은 아직 풀리지 않은 틈새다.\n\n개인이나 소규모 팀에게는 B2C 범용 앱보다 다음 방향이 현실적이다. 한국어·국내 플랫폼 조건에 특화된 포렌식 감정 리포트(수사기관, 보험, 언론, 법무), 채용 사기나 중소 금융 같은 좁은 B2B API, 그리고 탐지에 C2PA 같은 출처 검증을 결합한 종합 리포트다. 다만 엑시트는 독립 상장보다 플랫폼 인수형일 가능성이 높다.\n\n참고로 세션 전체의 웹 검색 한도(200회)를 다 써서 일부 항목은 조사하지 못했다. 특허 지형, Intel FakeCatcher·Microsoft Video Authenticator의 현재 상태, AI or Not 등 소비자 앱의 재무, Arup 사건과 FBI IC3 통계가 미확인으로 남아 있으며, 후속 메시지로 추가 조사를 요청하면 이어서 확인할 수 있다."
+}

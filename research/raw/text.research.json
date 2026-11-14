@@ -1,0 +1,576 @@
+{
+ "products": [
+  {
+   "name": "Turnitin AI Writing Detection (Turnitin Originality / Feedback Studio / iThenticate, 작성 과정 도구 Turnitin Clarity)",
+   "company": "Turnitin LLC (Advance Publications 소유, 2019년 약 17.5억 달러에 인수)",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "기관용 SaaS 플랫폼(Canvas·Moodle·Blackboard 등 LMS 연동). 개인 판매 없음",
+   "status": "운영중. 2023-04-04 AI 탐지 출시, 2024년부터 유료 Originality 라이선스에 포함. 2024년 AI 패러프레이즈 탐지, 2025년 'AI bypasser(휴머나이저)' 탐지와 Turnitin Clarity가 추가된 것으로 알려짐(2025년 이후 내용은 본 세션 미검증)",
+   "target": "교육(대학·K-12), 학술출판(iThenticate)",
+   "major_score": 5,
+   "adoption_score": 5,
+   "reliability_score": 3,
+   "adoption_evidence": "출시 1년(2024-04) 동안 2억 건 넘는 과제를 검사했다고 발표함. 그중 11% 이상은 AI 문장이 20% 이상, 약 3%는 80% 이상이었음(Wired 보도). 고객 기관은 전 세계 1.6만 곳 이상(벤더 주장). 2025~2026년 누적 처리량은 미확인.",
+   "independent_evaluation": "Washington Post(2023-04)가 16개 샘플로 테스트한 결과 절반 넘게 적어도 일부를 틀렸고, 실제 학생 글을 AI로 표시함. Weber-Wulff 외(2023, IJEI)의 14개 도구 비교에서 Turnitin을 포함한 모든 도구가 정확도 80% 미만. Vanderbilt(2023-08)는 투명성 부족과 '오탐 1%면 연 7.5만 건 중 약 750건 오판' 우려로 기능을 껐고, UT Austin·Northwestern·Michigan State 등도 비활성화함. 호주 ACU는 2024년 부정행위 사건 약 6,000건(약 90%가 AI 관련)을 처리하며 Turnitin 의존 논란을 겪은 뒤 2025-03 사용을 중단했다고 보도됨(ABC 2025-10, 미검증).",
+   "accuracy_vendor_claim": "문서 단위 오탐률 1% 미만(AI 비율 20% 이상 문서 기준), 문장 단위 오탐률 약 4%(2023-06 Turnitin 블로그). 20% 미만 점수는 오탐 가능성이 높아 별표(*)로 표시.",
+   "pricing": "기관 라이선스만 판매(가격 비공개)",
+   "weaknesses": "모델과 학습 데이터가 비공개인 블랙박스. 단문과 사람+AI 혼합·편집 글에 약함. 비원어민 편향 논란이 있음(벤더는 부정). 한국어 AI 탐지는 미지원(영어·스페인어·일본어 지원으로 알려짐, 최신 확인 필요). 대학 이탈과 오탐 분쟁이 이어짐.",
+   "sources": [
+    "https://www.wired.com/story/student-papers-generative-ai-turnitin/",
+    "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities",
+    "https://www.washingtonpost.com/technology/2023/04/01/chatgpt-cheating-detection-turnitin/",
+    "https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/",
+    "https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z",
+    "ABC News(호주) 2025-10 ACU 보도 (URL 미검증)"
+   ]
+  },
+  {
+   "name": "GPTZero",
+   "company": "GPTZero Inc. (공동창업자 Edward Tian, Alex Cui)",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, API, 크롬 확장(작성 과정 기록), Google Docs·Word·LMS 연동",
+   "status": "운영중. 2023-01 출시. 표절 검사, 허위 인용(hallucinated citation) 검증 등으로 확장 중(2025~2026 확장 내역은 본 세션 미검증)",
+   "target": "교육(교사·학생·기관), 출판·연구·기업",
+   "major_score": 4,
+   "adoption_score": 5,
+   "reliability_score": 3,
+   "adoption_evidence": "2023-05 시드 약 350만 달러(Uncork Capital 주도), 2024-09 시리즈A 1,000만 달러(Footwork 주도)를 유치했다고 보도됨. 시리즈A 당시 사용자 약 400만 명을 주장했고 이후 1,000만 명 이상을 주장함(미검증). 2025-12~2026-01 ICLR·NeurIPS 논문의 허위 인용 분석으로 언론에 노출됨(미검증). 매출은 미확인.",
+   "independent_evaluation": "Bloomberg(2024-10)가 ChatGPT 출시 전(2022년)에 쓰인 대학 지원 에세이 500편으로 테스트한 결과, GPTZero와 Copyleaks가 1~2%를 AI로 오판함. Liang 외(2023)에서는 GPTZero를 포함한 탐지기 7개가 비원어민 TOEFL 에세이를 평균 61.3% 오탐함(당시 버전). RAID(ACL 2024)에서는 상용 탐지기 전반이 적대적 공격과 디코딩 방식 변화에 취약했음. Chicago Booth(Jabarian·Imas 2025)는 장문에서는 양호하지만 단문과 휴머나이저 처리 글에서는 Pangram보다 뒤처진다고 보고함(미검증).",
+   "accuracy_vendor_claim": "약 99% 정확도, 1% 안팎의 오탐률을 주장(정확한 수치와 측정 조건은 본 세션 미검증)",
+   "pricing": "무료(월 약 1만 단어) + 유료 월 약 $10~$25(연간 결제 할인). 미검증",
+   "weaknesses": "단문·혼합 글에서 불안정. 휴머나이저로 우회됨. 초기 버전에 비원어민 편향이 있었음. 오탐 관련 학생 분쟁이 있음(Yale SOM EMBA 학생 소송에서 GPTZero 결과가 근거로 거론됐다는 보도, 미검증). 한국어 성능 미확인.",
+   "sources": [
+    "https://gptzero.me",
+    "https://www.bloomberg.com/news/features/2024-10-18/do-ai-detectors-work-students-face-false-cheating-accusations",
+    "https://arxiv.org/abs/2304.02819",
+    "https://arxiv.org/abs/2405.07940"
+   ]
+  },
+  {
+   "name": "Pangram (Pangram Labs)",
+   "company": "Pangram Labs (Max Spero, Bradley Emi)",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, API, 크롬 확장, 기관용 대시보드",
+   "status": "운영중. 2023년 설립, 2024-02 기술보고서 공개",
+   "target": "교육, 출판·미디어, 플랫폼·기업, 연구",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 4,
+   "adoption_evidence": "사용자 수와 매출은 공개되지 않음(미확인). 투자는 시드 단계로 알려짐(금액 미확인). Wired의 Medium 게시물 AI 비율 분석(2024), ICLR 2026 리뷰의 약 21%가 완전히 AI로 작성됐다는 분석(2025-11, Nature 보도) 등 연구·언론 분석 도구로 자주 인용됨(미검증).",
+   "independent_evaluation": "Chicago Booth(Jabarian·Imas 2025)의 독립 비교에서 중·장문 기준 오탐·미탐이 거의 0이었고 휴머나이저에도 강건해, GPTZero·Originality.ai·오픈소스 RoBERTa보다 우수했음. UMass(Russell·Karpinska·Iyyer, ACL 2025)에서는 LLM을 자주 쓰는 전문가들의 다수결 판정이 대부분의 탐지기를 앞섰는데, Pangram만은 이에 필적함. RAID 리더보드에서도 상위권(벤더 제출). 모두 본 세션 미검증. 한국어·단문 독립 평가는 미확인.",
+   "accuracy_vendor_claim": "기술보고서에서 경쟁사보다 크게 낮은 오탐률(약 1만 건 중 1건 수준)과 99% 이상 정확도를 주장(미검증)",
+   "pricing": "무료(일일 횟수 제한) + 개인·기관 유료, API 종량제. 요금 미확인",
+   "weaknesses": "소규모 기업이라 유통·영업망이 약함. 수십 단어 수준의 단문에서는 신뢰도에 한계. 모델 비공개. 한국어 등 다국어 성능의 독립 검증이 없음.",
+   "sources": [
+    "https://www.pangram.com",
+    "https://arxiv.org/abs/2402.14873 (URL 미검증)",
+    "https://bfi.uchicago.edu/working-paper/artificial-writing-and-automated-detection/ (URL 미검증)",
+    "https://arxiv.org/abs/2501.15654 (URL 미검증)"
+   ]
+  },
+  {
+   "name": "Originality.ai",
+   "company": "Originality.ai (창업자 Jon Gillham)",
+   "country": "캐나다",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, 크롬 확장, API, WordPress 연동(표절·팩트체크 등 부가 기능)",
+   "status": "운영중. 2022-11 출시",
+   "target": "콘텐츠 마케팅·SEO·웹 퍼블리셔, 일부 교육",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "SEO·퍼블리셔 시장에서 인지도가 높고, 언론이 웹·SNS 콘텐츠의 AI 비율을 분석할 때 자주 씀. 사용자 수와 매출은 비공개. 외부 VC 투자 없이 운영되는 것으로 알려짐(미확인).",
+   "independent_evaluation": "RAID(ACL 2024)에서 상용 탐지기 중 상위권이었지만 적대적 공격과 디코딩 변화에는 취약했음. Chicago Booth(2025)에서는 장문은 양호했고 단문·휴머나이저 처리 글은 Pangram보다 뒤처짐(미검증). 프리랜서 작가가 오탐 때문에 일감을 잃었다는 보도가 있음(미검증).",
+   "accuracy_vendor_claim": "Lite 모델은 정확도 99% 이상·오탐 1% 미만. Turbo 모델은 우회 대응을 강화한 대신 오탐이 다소 높음(벤더 주장).",
+   "pricing": "무료 티어는 사실상 없음. Pro 월 약 $14.95(2,000크레딧, 1크레딧=100단어), 종량제 $30/3,000크레딧. 미검증",
+   "weaknesses": "자체 연구 위주의 마케팅, 오탐 분쟁, 다국어 성능의 독립 검증 부재.",
+   "sources": [
+    "https://originality.ai",
+    "https://arxiv.org/abs/2405.07940"
+   ]
+  },
+  {
+   "name": "Copyleaks AI Content Detector",
+   "company": "Copyleaks (Alon Yamin, Yehonatan Bitton 공동창업, 2015)",
+   "country": "미국/이스라엘",
+   "modalities": [
+    "텍스트",
+    "코드"
+   ],
+   "form": "웹, API, LMS 연동, 브라우저 확장, 기업용 거버넌스 플랫폼",
+   "status": "운영중. 2023-01 AI 탐지 출시",
+   "target": "교육기관, 기업(생성형 AI 사용 거버넌스)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "표절 검사 사업을 기반으로 교육·기업 고객을 보유함(고객 수와 투자 규모는 미확인).",
+   "independent_evaluation": "Bloomberg(2024-10) 테스트에서 GPTZero와 함께 2022년에 쓰인 에세이 500편 중 1~2%를 오탐함. 다른 학술 비교에서는 도구별·텍스트 유형별로 결과가 엇갈렸다는 보고가 있음(미검증).",
+   "accuracy_vendor_claim": "정확도 99% 이상, 오탐률 약 0.2%, 30개 이상 언어 지원(한국어 포함으로 알려짐). 미검증",
+   "pricing": "제한적 무료 + 개인 월 약 $8~$14, 기업은 맞춤 계약. 미검증",
+   "weaknesses": "벤더 수치에 비해 독립 검증이 부족함. 한국어 등 비영어 성능의 독립 검증이 없음.",
+   "sources": [
+    "https://copyleaks.com/ai-content-detector",
+    "https://www.bloomberg.com/news/features/2024-10-18/do-ai-detectors-work-students-face-false-cheating-accusations"
+   ]
+  },
+  {
+   "name": "Winston AI",
+   "company": "Winston AI",
+   "country": "캐나다",
+   "modalities": [
+    "텍스트",
+    "이미지"
+   ],
+   "form": "웹, API, 크롬 확장",
+   "status": "운영중",
+   "target": "교육, 퍼블리셔",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "사용자 규모는 벤더 주장 외에는 미확인.",
+   "independent_evaluation": "Weber-Wulff 외(2023)의 14개 도구 비교에 'GoWinston'으로 포함됐고, 모든 도구가 정확도 80% 미만이었음. RAID(2024)의 상용 탐지기 비교 대상으로, 공격에 취약했음(세부 수치 미검증). 그 밖의 독립 평가는 미확인.",
+   "accuracy_vendor_claim": "정확도 99.98% 주장",
+   "pricing": "무료 체험 + 월 약 $12~$32. 미검증",
+   "weaknesses": "정확도를 과장하는 마케팅, 독립 검증 부족.",
+   "sources": [
+    "https://gowinston.ai",
+    "https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z",
+    "https://arxiv.org/abs/2405.07940"
+   ]
+  },
+  {
+   "name": "ZeroGPT",
+   "company": "ZeroGPT (운영 주체 정보 불투명, 미확인)",
+   "country": "미확인",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, API",
+   "status": "운영중",
+   "target": "소비자·학생·교사",
+   "major_score": 2,
+   "adoption_score": 4,
+   "reliability_score": 2,
+   "adoption_evidence": "검색 상위에 노출되는 대표적인 무료 탐지기로 널리 쓰이는 것으로 알려짐(트래픽·사용자 수치 미확인. 점수는 대중적 인지도 기준).",
+   "independent_evaluation": "Weber-Wulff 외(2023)의 14개 도구 비교 대상(모든 도구 80% 미만). RAID(2024) 비교 대상. 미국 헌법 같은 고전 문서를 AI가 썼다고 판정한 사례가 보도됨(Ars Technica 2023).",
+   "accuracy_vendor_claim": "최대 98% 정확도 주장",
+   "pricing": "무료 + 유료 플랜(월 $10 안팎). 미검증",
+   "weaknesses": "오탐 사례가 많음. 방법론 비공개. 운영 주체 불투명. 패러프레이즈 같은 재작성 도구를 함께 제공함(미검증).",
+   "sources": [
+    "https://www.zerogpt.com",
+    "https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z",
+    "https://arstechnica.com/information-technology/2023/07/why-ai-detectors-think-the-us-constitution-was-written-by-ai/"
+   ]
+  },
+  {
+   "name": "Sapling AI Detector",
+   "company": "Sapling Intelligence (Sapling.ai)",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, API, 브라우저 확장",
+   "status": "운영중. 2023년 초 출시로 알려짐",
+   "target": "개발자·기업(API), 교육",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "사용자 규모 미확인.",
+   "independent_evaluation": "독립 평가 미확인",
+   "accuracy_vendor_claim": "미확인",
+   "pricing": "무료(문자 수 제한) + Pro 구독, API 종량제. 미검증",
+   "weaknesses": "차별점이 약하고 독립 검증이 없음.",
+   "sources": [
+    "https://sapling.ai/ai-content-detector"
+   ]
+  },
+  {
+   "name": "Grammarly AI Detector / Grammarly Authorship",
+   "company": "Superhuman (구 Grammarly Inc., 2025-10 사명 변경으로 알려짐)",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, 브라우저 확장, 데스크톱 앱, Google Docs·Word 연동(작성 과정 추적 리포트)",
+   "status": "운영중. Authorship는 2024-08 출시, AI Detector 등 에이전트 기능은 2025-08 출시로 알려짐(미검증)",
+   "target": "학생·소비자·교육기관·기업",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "Grammarly 전체 일일 사용자 약 4,000만 명(벤더 주장). 2025-05 General Catalyst로부터 10억 달러를 조달했다고 보도됨. 탐지 기능 자체의 사용량은 미확인.",
+   "independent_evaluation": "독립 평가 미확인. 오히려 Grammarly로 교정한 글이 Turnitin에서 AI로 판정돼 징계를 받은 사례(미국 노스조지아대 학생, 2024 보도, 미검증)가 '보조 도구 사용'과 'AI 작성'의 경계 문제를 드러냄.",
+   "accuracy_vendor_claim": "구체적인 정확도 미공개(미확인)",
+   "pricing": "무료(고급 기능은 Pro 구독)",
+   "weaknesses": "AI 글쓰기·재작성 기능을 함께 파는 이해상충, 탐지 성능 검증 부재. 다만 작성 과정을 증명하는 Authorship는 사후 탐지의 대안으로 주목받음.",
+   "sources": [
+    "https://www.grammarly.com/ai-detector",
+    "https://www.grammarly.com/authorship"
+   ]
+  },
+  {
+   "name": "QuillBot AI Detector",
+   "company": "QuillBot (Learneo 계열)",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, 크롬 확장, 모바일 앱",
+   "status": "운영중",
+   "target": "학생·소비자",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "QuillBot 서비스 전체는 사용자가 수천만 명 규모로 알려짐(정확한 수치 미확인). 탐지기 사용량은 미확인.",
+   "independent_evaluation": "독립 평가 미확인",
+   "accuracy_vendor_claim": "미확인 (AI 생성 / AI가 다듬음 / 사람 작성으로 구분해 표시)",
+   "pricing": "무료(단어 수 제한) + Premium 구독",
+   "weaknesses": "같은 회사가 패러프레이저·휴머나이저를 함께 판매하는 이해상충. 성능 비공개.",
+   "sources": [
+    "https://quillbot.com/ai-content-detector"
+   ]
+  },
+  {
+   "name": "Scribbr AI Detector",
+   "company": "Scribbr (Learneo 계열로 알려짐, 미검증)",
+   "country": "네덜란드",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹",
+   "status": "운영중",
+   "target": "학생",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "학술 글쓰기 가이드 사이트라 방문자가 많음(수치 미확인).",
+   "independent_evaluation": "독립 평가 미확인 (자사가 한 비교 테스트는 독립 평가가 아님)",
+   "accuracy_vendor_claim": "미확인",
+   "pricing": "무료(단어 수 제한) + 프리미엄",
+   "weaknesses": "모델 출처와 방법론이 불투명함. 단문·혼합 글에 한계.",
+   "sources": [
+    "https://www.scribbr.com/ai-detector/"
+   ]
+  },
+  {
+   "name": "OpenAI AI Text Classifier (종료) 및 ChatGPT 텍스트 워터마크(미공개)",
+   "company": "OpenAI",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹 도구(종료)",
+   "status": "종료. 2023-01-31 출시, 2023-07-20 '낮은 정확도'를 이유로 중단. 텍스트 워터마크는 개발했지만 2024-08 공개 보류를 발표했고 이후 출시 여부는 미확인",
+   "target": "교육·일반",
+   "major_score": 5,
+   "adoption_score": 1,
+   "reliability_score": 1,
+   "adoption_evidence": "서비스 종료. OpenAI 교육자 FAQ는 'AI 탐지기는 우리 경험상 작동하지 않는다'는 입장.",
+   "independent_evaluation": "독립 평가가 아니라 OpenAI 자체 공개 수치: 챌린지셋에서 AI가 쓴 글의 26%만 'AI 가능성 높음'으로 잡아냈고, 사람 글의 9%를 AI로 오탐함.",
+   "accuracy_vendor_claim": "TPR 26%, FPR 9%(OpenAI 공개). 워터마크는 WSJ 보도상 효과 99.9%였지만, OpenAI는 번역이나 다른 모델을 이용한 재작성 같은 전역적 변조에 취약하고 비원어민에게 낙인을 찍을 우려가 있다고 설명함.",
+   "pricing": "무료(종료)",
+   "weaknesses": "최대 LLM 개발사가 사후 탐지의 한계를 공식 인정한 상징적 사례. WSJ에 따르면 워터마크를 도입하면 사용을 줄이겠다는 응답이 약 30%였던 내부 설문도 보류 배경으로 거론됨.",
+   "sources": [
+    "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+    "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
+    "https://www.wsj.com/tech/ai/openai-tool-chatgpt-cheating-writing-135b755a",
+    "https://help.openai.com/en/articles/8313351-how-can-educators-respond-to-students-presenting-ai-generated-content-as-their-own"
+   ]
+  },
+  {
+   "name": "Google SynthID Text / SynthID Detector",
+   "company": "Google DeepMind",
+   "country": "미국/영국",
+   "modalities": [
+    "텍스트",
+    "이미지",
+    "오디오",
+    "영상"
+   ],
+   "form": "생성 모델 내장 워터마크 + 오픈소스 라이브러리(Hugging Face Transformers 등) + 검증 포털(SynthID Detector) + Gemini 앱 내 검증",
+   "status": "운영중. 2024-05 텍스트 확장 발표, 2024-10 Nature 논문과 함께 오픈소스화, 2025-05 SynthID Detector 포털 발표(초기 접근), 2025-11 Gemini 앱에 이미지 검증 도입(미검증). 2026년 텍스트 검증의 일반 공개 범위는 미확인",
+   "target": "생성형 AI 개발사, 언론·플랫폼, 일반 사용자",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "adoption_evidence": "Gemini 출력에 적용됨. 2025-05 기준 SynthID로 워터마크한 콘텐츠가 100억 개를 넘었다고 구글이 발표함(전 모달리티 합산, 미검증). Nature 논문의 실서비스 실험에서는 Gemini 응답 약 2,000만 건에 적용했는데 사용자가 품질 차이를 느끼지 못했음.",
+   "independent_evaluation": "핵심 근거는 구글 저자가 쓴 Nature 논문(동료심사는 거쳤지만 독립 평가는 아님). 학계는 LLM 워터마크 전반이 재작성·번역·워터마크 탈취(stealing) 공격에 취약하다고 보고함(Kirchenbauer 계열 방식을 다룬 Jovanović 외 ICML 2024 등). SynthID-Text만을 대상으로 한 독립 평가는 미확인.",
+   "accuracy_vendor_claim": "변조되지 않은 텍스트에서는 검출력이 높음. 사실형·저엔트로피 응답이나 대폭 재작성·번역된 글에서는 검출 신뢰도가 크게 떨어짐(구글 자체 고지).",
+   "pricing": "오픈소스는 무료. Detector 포털은 초기 접근 단계(과금 여부 미확인)",
+   "weaknesses": "구글 모델과 이 방식을 채택한 모델의 출력만 판별 가능해, 타사·오픈소스 모델이 쓴 글은 잡지 못함. 편집·번역에 약함.",
+   "sources": [
+    "https://www.nature.com/articles/s41586-024-08025-4",
+    "https://huggingface.co/blog/synthid-text",
+    "https://deepmind.google/discover/blog/watermarking-ai-generated-text-and-video-with-synthid/",
+    "https://blog.google/technology/ai/google-synthid-ai-content-detector/ (URL 미검증)",
+    "https://arxiv.org/abs/2402.19361"
+   ]
+  },
+  {
+   "name": "GPT킬러 (카피킬러 연계)",
+   "company": "무하유(Muhayu)",
+   "country": "한국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "웹, 기관용 플랫폼(카피킬러 캠퍼스 등 대학 시스템 연동)",
+   "status": "운영중. 카피킬러는 2010년대 초부터 서비스, GPT킬러는 2023년 출시로 알려짐(세부 일정 미검증)",
+   "target": "대학·교육기관, 공공기관, 기업(채용 서류 등)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "모회사 서비스인 카피킬러가 국내 대학 표절 검사의 사실상 표준으로 널리 도입돼 있음(정확한 기관 수 미확인). GPT킬러 단독 도입 기관 수와 사용자 수는 미확인.",
+   "independent_evaluation": "독립 평가 미확인 (공개 벤치마크나 학술 검증을 본 세션에서 확인할 수 없었음)",
+   "accuracy_vendor_claim": "미확인",
+   "pricing": "기관 라이선스 중심. 개인 이용 요금 미확인",
+   "weaknesses": "독립 검증이 없음. 최신 국내외 LLM과 휴머나이저에 얼마나 대응하는지 불분명. 국내 시장에 한정됨. 반면 국내 대학 영업망이라는 강력한 진입장벽을 갖고 있음.",
+   "sources": [
+    "https://www.copykiller.com",
+    "https://www.muhayu.com (URL 미검증)"
+   ]
+  },
+  {
+   "name": "Hive AI-Generated Content Detection (텍스트 포함)",
+   "company": "Hive (Castle Global)",
+   "country": "미국",
+   "modalities": [
+    "텍스트",
+    "이미지",
+    "영상",
+    "오디오"
+   ],
+   "form": "API·기업 플랫폼, 무료 크롬 확장·데모",
+   "status": "운영중",
+   "target": "플랫폼(콘텐츠 모더레이션), 기업, 정부",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "콘텐츠 모더레이션 API로 여러 플랫폼을 고객으로 둔 것으로 알려짐. 2024-12 미 국방부(DIU)와 약 240만 달러 규모의 딥페이크 탐지 계약을 맺었다고 보도됨(미검증). 텍스트 탐지 사용량은 미확인.",
+   "independent_evaluation": "텍스트 탐지에 대한 독립 평가 미확인(이미지·영상 평가는 별도 영역)",
+   "accuracy_vendor_claim": "텍스트 관련 수치 미확인",
+   "pricing": "API 종량제·기업 계약, 무료 데모",
+   "weaknesses": "텍스트는 주력이 아니고 성능 공개도 부족함. 다만 멀티모달을 하나의 API로 제공한다는 점에서 사용자가 구상하는 통합 앱의 직접 경쟁자.",
+   "sources": [
+    "https://thehive.ai",
+    "MIT Technology Review 2024-12 미 국방부 딥페이크 탐지 투자 보도 (URL 미검증)"
+   ]
+  },
+  {
+   "name": "오픈소스·학술 탐지기 (GLTR, OpenAI RoBERTa 탐지기, DetectGPT, Fast-DetectGPT, Ghostbuster, Binoculars 등)",
+   "company": "학계(Harvard·MIT-IBM, Stanford, UC Berkeley, Univ. of Maryland 등)",
+   "country": "미국 등",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "오픈소스 코드·모델",
+   "status": "연구용으로 공개(2019~2024년 발표)",
+   "target": "연구자·개발자(상용 서비스의 기반 기술)",
+   "major_score": 2,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "누구나 무료로 재현해 서비스로 만들 수 있어, 탐지 서비스가 난립하는 기술적 기반이 됨(개별 사용량 미확인).",
+   "independent_evaluation": "RAID(ACL 2024)에서 오픈소스 탐지기도 공격·디코딩 변화·처음 보는 모델에 쉽게 속았음. Chicago Booth(2025)는 RoBERTa 기반 탐지기의 오탐이 매우 높아 실사용에 부적합하다고 보고함(미검증). 패러프레이저 DIPPER는 DetectGPT의 탐지율을 70.3%에서 4.6%로 떨어뜨림(오탐률 1% 고정).",
+   "accuracy_vendor_claim": "Binoculars: 오탐률 0.01%에서 ChatGPT 등의 생성문을 90% 이상 탐지(저자 주장, 특정 데이터셋 기준)",
+   "pricing": "무료",
+   "weaknesses": "도메인과 모델 변화에 민감함. 대부분 영어 중심이라 한국어에서는 성능이 떨어질 수 있음.",
+   "sources": [
+    "https://arxiv.org/abs/1906.04043",
+    "https://arxiv.org/abs/2301.11305",
+    "https://arxiv.org/abs/2310.05130",
+    "https://arxiv.org/abs/2401.12070",
+    "https://arxiv.org/abs/2303.13408",
+    "https://arxiv.org/abs/2405.07940"
+   ]
+  }
+ ],
+ "key_findings": [
+  {
+   "claim": "'의심 글을 넣으면 AI가 썼는지 판정하는 앱'은 이미 여럿 있고 시장은 성숙 단계다. 교육 시장은 Turnitin(기관)과 GPTZero(개인·교사)가 양강이고, 정확도에서는 Pangram이 독립 평가 우위, SEO·퍼블리셔 시장은 Originality.ai, 무료 대중 시장은 ZeroGPT·QuillBot·Grammarly·Scribbr가 차지하고 있다.",
+   "sources": [
+    "https://www.wired.com/story/student-papers-generative-ai-turnitin/",
+    "https://gptzero.me",
+    "https://www.pangram.com",
+    "https://originality.ai",
+    "https://www.zerogpt.com"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "Turnitin은 2023-04 출시 후 1년 동안 2억 건 넘게 검사했다(11% 이상이 AI 문장 20% 이상, 약 3%가 80% 이상). 문서 단위 오탐은 1% 미만이라고 주장하지만, 문장 단위 오탐은 약 4%라고 스스로 인정했다.",
+   "sources": [
+    "https://www.wired.com/story/student-papers-generative-ai-turnitin/",
+    "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "OpenAI는 자체 분류기를 2023-07-20 '낮은 정확도'(AI 글 26% 탐지, 사람 글 9% 오탐)를 이유로 종료했다. 효과 99.9%로 보도된 텍스트 워터마크도 우회가 쉽고 비원어민에게 낙인을 찍을 우려가 있다며 2024-08 공개를 보류했다. 교육자 FAQ에서는 'AI 탐지기는 작동하지 않는다'는 입장을 냈다.",
+   "sources": [
+    "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+    "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
+    "https://www.wsj.com/tech/ai/openai-tool-chatgpt-cheating-writing-135b755a",
+    "https://help.openai.com/en/articles/8313351-how-can-educators-respond-to-students-presenting-ai-generated-content-as-their-own"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "Google SynthID Text는 2024-10 Nature 논문과 함께 오픈소스로 공개돼 Gemini에 적용됐다(응답 약 2,000만 건으로 실험). 하지만 구글 모델과 이를 채택한 모델의 출력만 검증할 수 있고, 대폭 재작성하거나 번역하면 검출력이 크게 떨어진다. 워터마크는 범용 'AI 글 판별'을 대체하지 못한다.",
+   "sources": [
+    "https://www.nature.com/articles/s41586-024-08025-4",
+    "https://huggingface.co/blog/synthid-text"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "독립 연구들은 범용 탐지의 한계를 일관되게 보고한다. Weber-Wulff 외(2023)에서는 Turnitin을 포함한 14개 도구가 모두 정확도 80% 미만이었고 70%를 넘은 것은 5개뿐이었다. RAID(ACL 2024, 생성문 600만 건 이상)에서는 상용·오픈소스 모두 적대적 공격, 샘플링 방식 변화, 처음 보는 모델에 쉽게 속았다. Washington Post(2023)의 소규모 테스트에서는 Turnitin이 절반 넘게 적어도 일부를 틀렸다.",
+   "sources": [
+    "https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z",
+    "https://arxiv.org/abs/2405.07940",
+    "https://www.washingtonpost.com/technology/2023/04/01/chatgpt-cheating-detection-turnitin/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "비원어민 편향: Liang 외(2023, Patterns)에서 탐지기 7개가 TOEFL 에세이를 평균 61.3% AI로 오판했다(91편 중 89편이 적어도 1개 도구에서 오판). 반면 미국 중학생 에세이는 거의 정확히 판정했다. 이후 일부 기관·벤더 연구가 학습 데이터를 충분히 쓰면 편향을 줄일 수 있다고 반박했지만 논쟁은 계속되고 있다. 한국인처럼 영어 비원어민인 사용자를 대상으로 할 때 핵심 리스크다.",
+   "sources": [
+    "https://arxiv.org/abs/2304.02819",
+    "https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "실사용 오탐 규모: Bloomberg(2024-10)는 ChatGPT 이전에 쓰인 에세이 500편에서 GPTZero와 Copyleaks가 1~2%를 AI로 오판했다고 보도했다. 처리량이 수백만 건이면 수만 명의 무고한 피해자가 생길 수 있다는 뜻이다.",
+   "sources": [
+    "https://www.bloomberg.com/news/features/2024-10-18/do-ai-detectors-work-students-face-false-cheating-accusations"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "기관 이탈과 분쟁: Vanderbilt(2023-08)를 시작으로 UT Austin·Northwestern·Michigan State 등이 Turnitin AI 탐지를 껐다. 호주 ACU는 2024년 부정행위 사건 약 6,000건(약 90% AI 관련)을 처리한 뒤 2025-03 사용을 중단했다고 보도됐다. 미네소타대 Haishan Yang(2025-01), Yale SOM EMBA 학생(2025) 등 AI 사용 의혹을 둘러싼 소송도 이어졌다. Vanderbilt를 뺀 사례는 본 세션에서 검증하지 못했다.",
+   "sources": [
+    "https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/",
+    "ABC News(호주) 2025-10 ACU 보도 (URL 미검증)",
+    "MPR News 등 2025-01 Haishan Yang 소송 보도 (URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "'정교한 모델' 자리도 이미 선점됐다. Chicago Booth(Jabarian·Imas 2025)와 UMass(ACL 2025)의 독립 평가에서 Pangram은 중·장문 오탐·미탐이 거의 0이고 휴머나이저에도 강건한 것으로 보고됐다. 정확도만으로 차별화하기는 어렵다.",
+   "sources": [
+    "https://bfi.uchicago.edu/working-paper/artificial-writing-and-automated-detection/ (URL 미검증)",
+    "https://arxiv.org/abs/2501.15654 (URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "우회 도구(휴머나이저) 시장이 탐지 시장과 함께 크고 있다. Undetectable AI, StealthGPT, WriteHuman, HIX Bypass 등이 성업 중이고, QuillBot·Grammarly·ZeroGPT는 탐지기와 재작성 도구를 함께 제공한다. 연구에서는 DIPPER 패러프레이즈가 DetectGPT의 탐지율을 70.3%에서 4.6%로 떨어뜨렸고, 반복 패러프레이즈가 워터마크를 포함한 탐지기를 무력화했다(Sadasivan 외 2023). Turnitin은 2025년 'AI bypasser' 탐지를 추가하는 등 군비경쟁을 벌이고 있다(미검증).",
+   "sources": [
+    "https://arxiv.org/abs/2303.13408",
+    "https://arxiv.org/abs/2303.11156"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "패러다임 전환: 무게중심이 사후 판별에서 '작성 과정 증명'(Grammarly Authorship 2024-08, Turnitin Clarity 2025, GPTZero 작성 기록)과 'AI 생성물 표시 의무화'로 옮겨가고 있다. EU AI Act 제50조는 2026-08-02부터 텍스트를 포함한 AI 출력에 기계가 판독할 수 있는 표시를 요구하고, 한국 AI 기본법은 2026-01-22 시행으로 생성형 AI 결과물 표시를 의무화했다.",
+   "sources": [
+    "https://www.grammarly.com/authorship",
+    "https://artificialintelligenceact.eu/article/50/",
+    "https://www.law.go.kr (인공지능 발전과 신뢰 기반 조성 등에 관한 기본법, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "한국어: Turnitin AI 탐지는 영어·스페인어·일본어 중심이라 한국어는 지원하지 않는 것으로 알려져 있다. 국내에서는 무하유 GPT킬러(카피킬러 연계)가 사실상 유일한 대형 플레이어다. Copyleaks 등 글로벌 도구가 한국어 지원을 내세우지만 한국어 성능을 독립적으로 검증한 자료는 찾지 못했다. 그 밖의 국내 소형 탐지기(2023년 공개된 'KatchGPT' 등으로 기억됨)는 현재 운영 여부를 확인하지 못했다.",
+   "sources": [
+    "https://www.copykiller.com",
+    "https://copyleaks.com/ai-content-detector"
+   ],
+   "confidence": "low"
+  },
+  {
+   "claim": "한국어 탐지 연구: 연세대 연구진의 KatFish/KatFishNet(2025)은 한국어 LLM 생성문 데이터셋을 만들었고, 띄어쓰기·쉼표 사용·품사 다양성 같은 한국어 고유 특징을 쓰면 기존 최고 방법보다 AUROC가 평균 약 19.78% 개선된다고 보고했다. 영어 중심 탐지기를 그대로 쓰면 한국어 성능이 떨어질 수 있다는 뜻이다(세부 수치 본 세션 미검증).",
+   "sources": [
+    "Park et al. 2025, 'Detecting LLM-Generated Korean Text through Linguistic Feature Analysis' (arXiv, URL 미검증)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "claim": "교사 수요는 크다. 미국 CDT 조사(2024-03)에서 교사 68%가 AI 탐지 도구를 정기적으로 쓴다고 답했다. 반면 MIT Sloan 등 대학 교수지원센터는 'AI 탐지기는 작동하지 않는다'며 사용 자제를 권고한다.",
+   "sources": [
+    "https://cdt.org/insights/report-up-in-the-air-educators-juggling-the-potential-of-generative-ai-with-detection-discipline-and-distrust/",
+    "https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "GPTZero는 2024-09 시리즈A 1,000만 달러(보도 기준 누적 약 1,350만 달러)를 유치했고, 당시 사용자 약 400만 명(이후 1,000만 명 이상 주장)을 확보한 개인·교사 시장 선두권이다.",
+   "sources": [
+    "https://gptzero.me"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "특허: 본 세션에서 특허 DB를 검색하지 못해 미확인이다. 다만 퍼플렉서티 기반 GLTR(2019), RoBERTa 분류기(2019), DetectGPT(2023), Binoculars(2024), LLM 워터마크(Kirchenbauer 2023, SynthID 오픈소스 2024) 등 핵심 기법이 공개 학술 선행기술로 이미 있다. 범용 접근 자체를 막는 원천 특허가 있을 가능성은 낮아 보인다(판단). 상용사의 특정 학습 기법 등 구체적 구현의 특허 여부는 FTO(특허 침해 여부) 조사로 확인해야 한다.",
+   "sources": [
+    "https://arxiv.org/abs/1906.04043",
+    "https://arxiv.org/abs/2301.11305",
+    "https://arxiv.org/abs/2401.12070",
+    "https://arxiv.org/abs/2301.10226"
+   ],
+   "confidence": "low"
+  },
+  {
+   "claim": "레드오션 지표: 이번에 확인한 주요 제품만 15개가 넘고 대부분 무료 티어를 제공하며, 유료는 월 $8~30 수준이다. 최대 유통사들(Turnitin 1.6만+ 기관, Grammarly 일 사용자 약 4천만 명, QuillBot)이 무료나 번들로 제공해 단독 탐지 앱이 가격으로 경쟁할 여지는 거의 없다.",
+   "sources": [
+    "https://gptzero.me",
+    "https://www.grammarly.com/ai-detector",
+    "https://quillbot.com/ai-content-detector",
+    "https://www.zerogpt.com",
+    "https://originality.ai"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "범죄 대응 관점: 텍스트가 AI로 쓰였다는 사실만으로는 피싱·사기·허위정보 범죄의 핵심 증거가 되기 어렵다(사람도 같은 글을 쓸 수 있고, 결과가 확률 점수이기 때문). 텍스트 AI 판별에 대한 확립된 포렌식 표준이나 인증은 찾지 못했다(미확인). 범죄 대응 가치는 음성·영상 딥페이크와 사기 패턴 탐지 쪽이 더 크다(판단).",
+   "sources": [
+    "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+    "https://arxiv.org/abs/2303.11156"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "gaps_and_opportunities": [
+  "한국어 특화 고정밀 텍스트 탐지: 글로벌 강자들은 영어 중심이고 한국어 독립 검증이 없으며, 국내는 무하유 1강 구도다. HyperCLOVA X·EXAONE·Solar 같은 국내 LLM 출력까지 포함한 한국어 대규모 데이터와 공개 벤치마크(KatFish 등)로 '독립 검증된 한국어 정확도'를 공개하면 차별화할 수 있다. 다만 시장 규모가 작고 대학 시장은 카피킬러가 선점하고 있다.",
+  "검증 투명성 자체가 상품이다: 대부분의 벤더가 99%대 정확도를 주장하지만 독립 검증이 부족하다. NIST GenAI 같은 공개 평가 챌린지(참가 가능 여부 미확인)나 학회 벤치마크에 참여하고 오탐률·신뢰구간을 공개하면 '믿을 수 있는' 포지션을 만들 여지가 있다.",
+  "수사·법무용 포렌식 리포트: 소비자용 단일 점수가 아니라 보정된 확률·우도비, 근거 문장 하이라이트, 재현 가능한 분석 로그, 여러 모델의 앙상블, SynthID 등 워터마크 검사 결과를 담은 감정서 형식이다. 교육·SEO 중심인 현 시장에는 거의 없다. 다만 텍스트 단독으로는 증거능력이 낮으므로 음성·영상 포렌식의 일부로 설계해야 한다.",
+  "작성 과정 증명(프로비넌스)의 한국 생태계 통합: Grammarly Authorship와 Turnitin Clarity는 Google Docs·Word 중심이고, 한글(HWP)이나 네이버 문서 같은 국내 환경용 제품은 확인하지 못했다(미확인). 대학 과제·공모전·채용 서류에 쓸 '사람이 직접 썼다는 증명' 도구는 사후 탐지보다 신뢰도와 법적 리스크 면에서 유리하다.",
+  "워터마크·표시 의무 검증 허브: EU AI Act 제50조(2026-08)와 한국 AI 기본법(2026-01) 시행으로 AI 생성물 표시가 확산되고 있지만, 검증 도구는 사업자별로 흩어져 있다(SynthID Detector는 구글 계열만 확인). 여러 워터마크와 메타데이터(C2PA 등)를 한 번에 확인하는 통합 검증 수요가 생길 것으로 본다(추정).",
+  "B2B 한국어 API 니치(가설, 수요 규모 미확인): 웹소설·문학 공모전, 언론사 기고, 리뷰·커뮤니티 플랫폼의 AI 스팸, 기업 채용 자기소개서(대입 자소서는 2024학년도부터 폐지), 학술지 투고 등.",
+  "멀티모달 통합 앱 전략: 텍스트 모듈은 직접 개발하기보다 Pangram·GPTZero·Copyleaks 등의 API 라이선스나 오픈소스(Binoculars 등)로 시작하는 편이 합리적이다. 자원은 덜 붐비고 범죄와의 연관성이 큰 음성·영상 딥페이크와 한국어 특화 영역에 집중한다.",
+  "범죄 대응형 텍스트 분석: 'AI가 썼는가'보다 '사기·피싱 스크립트인가'를 판별하는 의도·패턴 탐지가 실제로 더 쓸모 있다. AI 출처 판별을 보조 신호로 결합하는 설계가 차별점이 될 수 있다."
+ ],
+ "threats_and_barriers": [
+  "근본적인 신뢰성 한계: 모델 성능이 올라갈수록 사람 글과 AI 글의 분포가 비슷해져, 단문이나 사람+AI 혼합 편집 글은 판정이 거의 불가능하다. OpenAI도 분류기를 종료하고 '탐지기는 작동하지 않는다'는 입장을 공식화했다.",
+  "휴머나이저·패러프레이즈 군비경쟁: 값싼 우회 도구가 넘쳐나 출시 직후 무력화될 위험이 있다. 신모델(GPT·Claude·Gemini·오픈소스)이 나올 때마다 데이터 수집과 재학습 비용이 든다.",
+  "오탐의 법적·평판 리스크: 비원어민 편향(Liang 2023), 학생 징계와 소송, 대학의 사용 중단이 이어지고 있다. 범죄 수사용이라면 오탐 1건의 피해가 훨씬 크다.",
+  "유통 장벽: Turnitin의 LMS·기관 계약, Grammarly·QuillBot의 대규모 무료 사용자, 구글 SynthID의 모델 내장 때문에 신생 앱이 고객을 얻는 비용이 높다. 국내 대학 시장은 무하유 카피킬러가 선점하고 있다.",
+  "가격 상품화: 무료 티어가 보편화돼 있고 유료도 월 $8~30 수준이며, 대형사가 번들로 무료 제공해 소비자에게 과금할 여지가 작다.",
+  "검증 비용과 증거능력: '범죄 수사급' 신뢰를 주장하려면 독립 벤치마크와 오탐률·신뢰구간 공개가 필요하다. 그러나 텍스트 분야에는 확립된 포렌식 감정 표준·인증이 없어(미확인) 법정 증거로 인정받기 어렵다.",
+  "규제로 인한 시장 이원화: EU AI Act와 한국 AI 기본법이 생성 단계의 워터마크·표시를 의무화하면, 규정을 지키는 사업자의 출력은 워터마크로 검증되고 규정을 안 지키거나 오픈소스로 만든 출력만 통계적 탐지 대상으로 남는다. 통계적 탐지의 독자적 가치가 줄어들 수 있다.",
+  "특허 불확실성: 진입을 막는 특허는 확인하지 못했다(미확인). Turnitin·Google 등 대형사가 특허 포트폴리오를 갖고 있을 수 있어 출시 전 FTO 조사가 필요하다.",
+  "데이터·연산 비용: 다국어·다모델·다도메인 학습 데이터, 특히 AI 글과 헷갈리기 쉬운 고품질 사람 글(hard negative)을 확보하고 계속 재학습하는 데 상당한 비용이 든다.",
+  "한국 시장 규모 제약: 대입 자기소개서 폐지(2024학년도~)로 일부 수요가 줄었고, 대학·공공 예산은 제한적이며, 기존 공급자와 경쟁해야 한다."
+ ],
+ "red_ocean_judgement": "판단: 영어 중심의 범용 'AI 글 판별' 앱은 분명한 레드오션이다. 한국어·수사용 니치는 덜 붐비지만 텍스트 단독 사업으로는 매력이 낮다. 근거는 다음과 같다. (1) 경쟁 밀도: 이번에 확인한 주요 제품만 15개가 넘는다(Turnitin, GPTZero, Pangram, Originality.ai, Copyleaks, Winston AI, ZeroGPT, Sapling, Grammarly, QuillBot, Scribbr, Hive, 무하유 GPT킬러, 구글 SynthID 등). 소형 무료 사이트와 휴머나이저 겸업 사이트까지 합치면 수십 개가 넘는다. (2) 가격: 대부분 무료 티어가 있고 유료도 월 $8~30 수준이며, Grammarly·QuillBot 같은 대형 플랫폼이 무료로 끼워 제공해 가격 경쟁은 끝난 단계다. (3) 유통 선점: Turnitin(1.6만+ 기관, 첫해 2억 건 이상 검사), GPTZero(수백만 사용자), 구글 SynthID(모델 내장)가 자리를 잡았다. (4) '정교함' 포지션도 선점됐다: 독립 평가 최상위는 Pangram이다. (5) 수요 측 신뢰 하락: OpenAI의 철수, 대학들의 기능 비활성화, 오탐 소송, 비원어민 편향이 이어지고 있다. 높은 신뢰가 필요한 수사 용도일수록 텍스트 판별의 이론적 한계가 치명적이다. (6) 특허: 원천 차단 특허는 확인하지 못했고(미확인), 핵심 기법이 공개 선행기술이라 '특허 때문에 불가능'한 상황은 아닌 것으로 보인다. 포기할 이유는 특허보다 레드오션과 신뢰성 한계다. 권고: 텍스트를 핵심 차별점으로 삼지 말고(필요하면 API 라이선스로 해결), 한국어 특화·작성 과정 증명·워터마크 통합 검증·포렌식 리포트 같은 니치를 멀티모달(음성·영상 딥페이크 중심) 앱의 일부로 결합할 때만 경쟁력이 생길 여지가 있다.",
+ "summary": "[검증 한계] 이 실행에서는 웹 검증을 전혀 하지 못했다. WebSearch는 호출 예산(턴당 200회, 모든 에이전트 공유)이 이미 소진돼 한 건도 검색하지 못했다. WebFetch는 en.wikipedia.org, openai.com, arxiv.org가 세션 네트워크 허용 도메인이 아니어서 실패했고, 재검증하려면 세션 네트워크 설정에서 이 도메인들을 허용해야 한다. 따라서 아래 내용은 모델 사전지식(약 2026년 중반까지)에 근거하며, 제시한 URL은 본 세션에서 접속해 확인하지 못했다. 2026년 하반기 변화(최신 사용자 수, 가격, 인수·종료 등)도 미확인이다. 후속 요청으로 검색을 재개해 검증하기를 권장한다.\n\n[결론] AI 생성 글 탐지는 이미 시장이 형성돼 포화된 영역이다. Turnitin(기관, 첫해 2억 건 이상 검사), GPTZero(개인·교사, 수백만 사용자, 보도 기준 누적 투자 약 1,350만 달러), Pangram(독립 평가 최상위 정확도), Originality.ai(SEO), Copyleaks(기업·교육)와 무료 대중 도구(ZeroGPT, QuillBot, Grammarly, Scribbr) 등 15개 이상이 경쟁하고, 구글은 SynthID로 워터마크 기반 검증을 밀고 있다. 신뢰성은 구조적으로 한계가 있다. OpenAI는 자사 분류기를 탐지율 26%, 오탐률 9%로 종료했다. 독립 연구(Weber-Wulff 2023, RAID 2024, Liang 2023)는 오탐, 비원어민 편향, 우회 취약성을 거듭 확인했고, 대학들은 탐지 기능을 끄고 있으며 오탐 관련 분쟁·소송이 이어진다. 휴머나이저 시장도 함께 커져 군비경쟁이 일상이 됐다. 한국어는 Turnitin 미지원, 무하유 GPT킬러 1강, 독립 검증 부재로 상대적 공백이 있지만, 시장이 작고 무하유가 대학 유통을 쥐고 있다. 특허로 막혀 있다는 근거는 찾지 못했다(미확인이며, 핵심 기법은 공개 선행기술이다).\n\n종합하면 '텍스트 단독 범용 탐지 앱'은 레드오션이고 신뢰성 천장도 낮아 권하지 않는다. 범죄 수사급 정교함을 목표로 한다면 텍스트는 보조 모듈(API 라이선스 활용)로 두고, 음성·영상 딥페이크, 한국어 특화, 작성 과정 증명, 워터마크 통합 검증, 포렌식 리포트 같은 차별 축에 집중하는 편이 경쟁력이 있다."
+}

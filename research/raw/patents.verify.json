@@ -1,0 +1,205 @@
+{
+ "checks": [
+  {
+   "claim": "KIPRIS/한국특허기술진흥원 분석: IP5 딥페이크 탐지·방지 특허출원이 2018년 이후 급증해 2024년 329건. 국가별 미국 205, 한국 151, 유럽 42, 일본 34건. 중국 수치는 확인하지 못함.",
+   "verdict": "corrected",
+   "correction": "같은 특허뉴스 기사(e-patentnews 14873)에 따르면 중국 CNIPA가 1,288건으로 압도적 1위다. 상위 출원인은 핑안테크놀로지, 바이두, 텐센트다. 따라서 원 조사가 중국을 '미확인'으로 비워 둔 탓에 '미국·한국이 주도하는 시장'으로 읽힐 수 있는데, 이는 왜곡이다. 수치도 앞뒤가 맞지 않는다. 미국·한국·유럽·일본만 더해도 432건이라 '2024년 329건'보다 많다. 국가별 수치는 누적 집계이고 329건은 2024년 단년도 수치로 보인다. 원문 보고서는 여전히 확보하지 못했다. 국내 출원인 순위도 KISTI ScienceON 집계(LG전자 129, 삼성전자 35)와 다르다. 검색식과 범위에 따라 결과가 크게 달라지므로 '국내 최다 출원인=삼성전자·성균관대'는 단일 보도 기준으로만 인정하라.",
+   "sources": [
+    "http://e-patentnews.com/14873",
+    "https://scienceon.kisti.re.kr/aiq/issue/selectIssueReportView.do?searchIssueRptNo=171&searchDataSectionId=tab_keyword"
+   ]
+  },
+  {
+   "claim": "KeeeX v. OpenAI·Adobe·Truepic·C2PA: 2025-06 UPC 제소(EP 2 949 070). 2026-03-13 UPC 항소법원이 역외 관할 부분을 뒤집어 범위를 좁혔고, 본안 결론은 미확인.",
+   "verdict": "corrected",
+   "correction": "2026-03-13 항소법원 결정은 확인했다. 스위스·스페인·영국·아일랜드·노르웨이·폴란드 부분에 대해 관할이 없다고 판단하고 나머지 관련 청구도 기각했다. 원 조사 이후 상황이 진행됐다. 2026년 10월 UPC 파리 지방부에서 본안 심리가 시작됐다(JUVE Patent). 피고들은 특허 무효 반소를 냈고, KeeeX는 등록된 청구항 그대로 방어하면서 예비적으로 정정 청구항 세트를 냈다. 6월에 제출한 추가 정정 신청은 1심이 받아들이지 않았다. 2026-11 현재 본안 판결은 나오지 않았다. 즉 C2PA 구현을 둘러싼 특허 리스크는 '진행 중'이다.",
+   "sources": [
+    "https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/",
+    "https://www.unifiedpatentcourt.org/sites/default/files/files/api_order/922-2026%20Adobe%20ea%20Final%20Order%20en-GB.pdf",
+    "https://www.lavoix.eu/the-upc-court-of-appeals-overturns-extraterritorial-jurisdiction-in-the-lawsuit-against-openai-and-adobe/?lang=en",
+    "https://www.eplaw.org/blog/detail/upc-adobe-openai-others-v-keeex-appeal/"
+   ]
+  },
+  {
+   "claim": "탐지 모델 특허를 둘러싼 직접 소송은 없다. 실제 분쟁은 프로비넌스(KeeeX)와 라이브니스(FaceTec v. iProov) 쪽이다.",
+   "verdict": "confirmed",
+   "correction": "2026년 기준 extended 검색으로도 딥페이크/AI 생성물 '탐지' 특허 침해 소송은 찾지 못했다(PACER 직접 조회는 안 함). 라이브니스 분쟁은 원 조사보다 더 활발하다. FaceTec v. iProov(2022~)는 2026년 6월 보도 기준으로 합의나 판결 없이 진행 중이다. FaceTec은 Jumio도 별도로 제소했고(N.D. Cal. 3:24-cv-03623), 2026년 6월 PTAB가 Jumio의 IPR 4건을 모두 기각해 FaceTec 라이브니스 특허 4건이 유지됐다. FaceTec은 등록 특허 50건을 확보했다. 2026년 10월에는 Prove가 신원인증 특허로 KYXStart를 제소했다. eKYC·라이브니스 인접 영역의 리스크가 원 조사의 평가보다 크다.",
+   "sources": [
+    "https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents",
+    "https://idtechwire.com/iproov-denies-facetecs-patent-breach-allegations-launches-countersuit-504211/",
+    "https://ipverse.greyb.com/litigation/cases/case-details/facetec-inc-v-jumio-corporation--3-24-cv-03623",
+    "https://idtechwire.com/facetec-reaches-50-issued-patents-with-uspto-grant-on-autonomous-authentication-nodes/",
+    "https://www.biometricupdate.com/202610/prove-sues-kyxstart-over-patent-infringement-alleged-contract-interference"
+   ]
+  },
+  {
+   "claim": "미국에서는 범용 ML을 새 데이터 환경에 적용한 수준의 청구항이 §101로 무효가 될 수 있다(Recentive Analytics v. Fox, 2025, CAFC). 사전 지식이며 재확인하지 못함.",
+   "verdict": "confirmed",
+   "correction": "확인했다. 2025년 4월 판결로 선례 구속력이 있다(134 F.4th 1205). 판시 요지는 '기존 ML 방법을 새 데이터 환경에 적용하는 데 그친 청구항은 특허적격성이 없다'이다. 단서도 있다. 법원은 'ML 모델 자체의 개선'은 적격일 수 있다고 열어 두었다. 따라서 특정 아키텍처나 학습 방법의 개선을 청구한 Reality Defender·Pindrop류 특허는 이 판례로 쉽게 무효가 되지 않을 수 있다. 원 조사의 '포괄 특허는 집행이 어렵다'는 결론은 맞지만, 이 판례가 구현 특허 리스크를 줄여 준다고 해석하면 과하다.",
+   "sources": [
+    "https://www.gtlaw.com/en/insights/2025/4/federal-circuit-machine-learning-patents-ineligible-in-recentive-analytics-inc-v-fox-corp",
+    "https://nixonpeabody.com/insights/alerts/2025/06/24/federal-circuit-limits-patent-eligibility-of-machine-learning-in-recentive-analytics-v-fox"
+   ]
+  },
+  {
+   "claim": "Pindrop US12142083B2 'Audiovisual deepfake detection'(2021-10-15 출원, 2024-11-12 등록): 화자 생체 임베딩 유사도 점수와 spoofprint 기반 딥페이크 점수를 결합해 최종 점수를 낸다.",
+   "verdict": "corrected",
+   "correction": "등록 번호, 등록일(2024-11-12), 권리자(Pindrop Security), 상태(active)는 확인했다. 우선권은 2020-10-16 가출원(63/092,956)이고, 출원번호는 17/503,152, 공개는 2022-04-21이다. 청구 구조는 원 조사보다 넓다. 화자 딥페이크 탐지, 화자 인식, 얼굴 딥페이크 탐지, 얼굴 인식, 립싱크 추정 엔진을 포함하고, 유사도 점수·립싱크 점수·딥페이크 점수를 결합한다. 립싱크 점수가 빠져 있었다. 이 점은 오디오·비디오 교차검증을 설계할 때 회피 검토 범위를 넓혀야 한다는 뜻이다.",
+   "sources": [
+    "https://patents.justia.com/patent/12142083",
+    "https://patentsgazette.uspto.gov/week46/OG/html/1528-2/US12142083-20241112.html",
+    "https://uspto.report/patent/app/20220121868"
+   ]
+  },
+  {
+   "claim": "Reality Defender US12412376B2(2025-09-09 등록)는 시각 인코더+오디오 인코더+양방향 교차모달 네트워크+분류기 구조이고, US12411910B2는 어텐션 기반 오디오 스푸핑 탐지다. GreyB 집계로 12건 보유.",
+   "verdict": "corrected",
+   "correction": "US12412376(제목 'Machine-learning-based detection of fake videos', 2025-09-09 등록, 권리자 Reality Defender, 발명자 Bharaj·Oorloff·Koppisetti·Bonettini·Colman)와 US12411910(오디오 가짜 탐지)는 확인했다. 그러나 '교차모달 구조'라는 청구항 내용은 검색 결과로 확인하지 못했다. 청구항 원문 접근(patents.google.com, patentsgazette)이 이 세션에서 막혀 있다. 원 조사 이후 Reality Defender는 US12462813 B1(2025-11-04 등록)도 받았으므로, 12건이라는 수치는 이미 늘었을 가능성이 높다. 보유 건수는 GreyB 벤더 집계다.",
+   "sources": [
+    "https://www.patentleaderboard.com/2025/reality-defender/ali-shahriyari/61792",
+    "https://www.swansonreed.com/?p=55074",
+    "https://patentsgazette.uspto.gov/week36/OG/html/1538-2/US12411910-20250909.html",
+    "https://patentsgazette.uspto.gov/week44/OG/html/1540-1/US12462813-20251104.html",
+    "https://insights.greyb.com/reality-defender-patents/"
+   ]
+  },
+  {
+   "claim": "Intel US12475695B2 '대상자별 라이브러리 기반 딥페이크 탐지 모델'(2021-09-22 출원, 2025-11-18 등록), US12125256B2 '생성기 활용 탐지'.",
+   "verdict": "confirmed",
+   "correction": "US12475695는 USPTO 공보로 확인했다. 출원 17/481,475(2021-09-22), 공개 US2022/0004904A1, 발명자 Stemmer·Marshall·Srivastava·Demir, 공보 일자 2025-11-18. 청구항은 대상자별 데이터로 로컬 기기에서 학습한 모델에 얼굴·음성·텍스트 특징을 결합해 특정 인물 사칭을 탐지하는 내용이다. US12125256의 세부 사항은 이번 예산 안에서 독립 확인하지 못했다. 원 조사가 인용한 Daily Upside 기사는 이 두 특허가 아니라 '합성 학습데이터 증강' 출원에 관한 것이다.",
+   "sources": [
+    "https://patentsgazette.uspto.gov/week46/OG/html/1540-3/US12475695-20251118.html",
+    "https://patents.justia.com/patent/20220004904",
+    "https://www.thedailyupside.com/technology/artificial-intelligence/intel-filing-could-diversify-deepfake-detection-models/"
+   ]
+  },
+  {
+   "claim": "SUNY US11687778B2 FakeCatcher(PPG 생체신호 기반)와 계속출원 US12106216B2가 등록돼 있고, 인텔 FakeCatcher의 기반이다.",
+   "verdict": "unverifiable",
+   "correction": "검색 예산 부족으로 따로 검색하지 못했고, patents.google.com이 네트워크 정책으로 막혀 원문도 열지 못했다. 논문(Ciftci·Demir·Yin, arXiv 1901.02212)과 Intel FakeCatcher의 관계는 널리 알려져 있으나, 특허 번호·권리자·계속출원 여부는 이번에 독립 확인하지 못했다.",
+   "sources": [
+    "https://patents.google.com/patent/US11687778"
+   ]
+  },
+  {
+   "claim": "Originality.ai가 US 12,253,988(AI 탐지 포함 통합 텍스트 검증)을 등록했고, 두 번째 특허 12,705,435(사실 검증)를 받았다고 주장한다. USPTO 원문 대조는 못함.",
+   "verdict": "confirmed",
+   "correction": "Justia 특허 DB(독립 출처)로 확인했다. 2024-03-08 출원, 2025-03-18 등록, 발명자 Jonathan Gillham·Conor Watt·Liam McNally. 청구 대상은 'AI 탐지'를 독립적으로 청구한 것이 아니라 표절·사실성·가독성·문법을 포함한 통합 텍스트 검증 시스템의 일부다. 따라서 텍스트 AI 판별 전체를 막는 특허로 보면 안 된다. 12,705,435는 회사 자료로만 확인했다.",
+   "sources": [
+    "https://patents.justia.com/assignee/originality-ai-inc",
+    "https://originality.ai/blog/originality-ai-patent",
+    "https://originality.ai/trust-transparency"
+   ]
+  },
+  {
+   "claim": "누리랩이 'AI+메타데이터' 결합 딥페이크 탐지 특허를 2025년 2월 출원하고 11월 등록했다.",
+   "verdict": "confirmed",
+   "correction": "보안뉴스 보도로 확인했다. 2025-02-12 출원 보도, 2025-11-06 등록 보도. 특허명은 '딥페이크 생성물 탐지 방법 및 이를 수행하는 장치'다. 등록번호는 여전히 미확인이다. 메타데이터(생성·수정 기록, 저장 포맷, 압축 정보) 이상 패턴 분석은 포렌식 앱이 흔히 넣는 기능이므로, 국내 출시 시 해당 청구항을 확인할 필요가 있다.",
+   "sources": [
+    "https://m.boannews.com/html/detail.html?idx=140194"
+   ]
+  },
+  {
+   "claim": "Patsnap 'AI 생성 미디어 탐지' 데이터셋(70여 건, 2020~2026) 상위 출원인: HiddenLayer 7, Dropbox 6, Bank of America 4, Microsoft·IBM·Google·Netskope·QOMPLX 각 3건.",
+   "verdict": "confirmed",
+   "correction": "Patsnap 페이지와 수치가 일치한다. 다만 이는 벤더 블로그의 소규모 스냅샷이다. HiddenLayer의 7건은 'GenAI 모델 보호'에 초점이 있어, 콘텐츠 진위 판별 특허 밀도를 보여 주는 지표로는 약하다. 별도의 Patsnap 'deepfake video forgery detection' 랜드스케이프는 138건 규모이고, 여기에는 2026년 Bank of America의 블록체인 기반 영상 인증 출원이 있다. 70여 건이라는 수치를 시장 전체 특허 규모로 해석하면 과소평가다.",
+   "sources": [
+    "https://www.patsnap.com/resources/blog/rd-blog/ai-generated-media-detection-technology-2026-patsnap-eureka/",
+    "https://www.patsnap.com/resources/blog/rd-blog/deepfake-video-forgery-detection-patent-landscape-patent-landscape/"
+   ]
+  },
+  {
+   "claim": "TrueMedia.org는 2025년 1월 종료하며 코드를 MIT로 공개(상업 이용 허용). 가중치는 이메일 요청, GenConViT는 별도 라이선스(GPL-3.0), 유지보수 중단.",
+   "verdict": "confirmed",
+   "correction": "확인했다. 2025-01-27 공개 공지에서 MIT 라이선스와 상업 이용 허용을 밝혔다. 서비스는 2025-01-13 이후 비용 문제로 종료됐다. ml-models 저장소의 2025-02-03 업데이트에는 '가중치는 아직 누구에게도 공유되지 않았고 책임 있는 공개 정책을 마련 중'이라고 돼 있다. 따라서 '가중치를 이메일로 요청하면 받을 수 있다'보다 '실제 제공 여부가 불확실하다'가 더 정확하다. 이후 가중치를 공개했다는 확인 자료는 없다. 데이터셋 공개도 미완료로 보도됐다. 상업 활용 가치는 '코드 참고' 수준으로 낮춰 봐야 한다.",
+   "sources": [
+    "https://www.truemedia.org/post/open-source-release",
+    "https://worker-github.zxx930427.workers.dev/truemediaorg/ml-models",
+    "https://www.geekwire.com/2025/truemedia-org-plans-to-shutter-and-open-source-its-ai-deepfake-detector-etzioni-hints-at-new-startup/",
+    "https://miraflow.ai/blog/open-source-deepfake-detection-with-truemedia.org"
+   ]
+  },
+  {
+   "claim": "데이터셋 라이선스가 특허보다 현실적인 장벽: GenImage는 CC BY-NC-SA 4.0+추가 약관으로 상업적 이용 금지, FaceForensics++는 비상업 연구·교육 전용.",
+   "verdict": "confirmed",
+   "correction": "GenImage는 확인했다. GitHub와 공식 사이트 모두 CC BY-NC-SA 4.0에 추가 약관이 붙고, 약관이 충돌하면 데이터셋 약관이 우선하며, 데이터셋과 파생물의 상업적 이용을 금지한다. FaceForensics++ 약관은 이번 검색에서 결과가 나오지 않아 독립 확인하지 못했다(원 조사가 인용한 TUM ToS PDF에 의존). 대안도 있다. 2026년 Stanford GPIC(상업 이용 가능한 이미지 1억 장)처럼 상업 허용 대규모 실사진 코퍼스가 나오고 있어, '실제(real)' 클래스 데이터의 장벽은 낮아지는 추세다.",
+   "sources": [
+    "https://genimage-dataset.github.io",
+    "https://uithub.com/Andrew-Zhu/GenImage",
+    "https://aiweekly.co/alerts/stanfords-gpic-ships-100m-commercially-usable-training-images",
+    "https://arxiv.org/pdf/2605.30341"
+   ]
+  },
+  {
+   "claim": "C2PA 특허정책(로열티 프리 여부)은 미확인.",
+   "verdict": "unverifiable",
+   "correction": "검색 결과가 W3C 특허정책만 보여 C2PA/JDF의 IP 정책은 확인하지 못했다. KeeeX는 C2PA 회원이 아닌 제3자 특허권자이므로, C2PA 정책이 로열티 프리라도 이 분쟁 리스크는 없어지지 않는다(추론).",
+   "sources": [
+    "https://www.w3.org/policies/patent-policy/"
+   ]
+  },
+  {
+   "claim": "레드오션 판단(특허 측면): 포괄 특허가 없어 특허 때문에 진입이 불가능하지는 않으며, 구현마다 회피 설계가 필요하다.",
+   "verdict": "confirmed",
+   "correction": "방향은 타당하다. 다만 세 가지를 보정해야 한다. (1) 중국 출원(1,288건)이 압도적이라 중국 진출이나 중국 기업 기술 사용 시 FTO 범위를 넓혀야 한다. (2) 2025년 하반기~2026년에도 등록이 계속 쌓이고 있다(Reality Defender US12462813, Intel US12475695, USPTO 공개 문서 12586395 '특정 딥페이크 도구 적용 탐지 모델', 12586419 '저품질 딥페이크 탐지', 12548588 '이중 트랙 차분 모델링 가짜 음성 탐지' 등). 이 중 저품질 영상, 생성 도구 귀속(attribution), 음성 탐지 같은 범용 기능 영역에도 청구항이 생기고 있어 '구현 단위라서 회피가 쉽다'는 낙관은 다소 줄여야 한다. (3) 라이브니스·eKYC 인접 영역은 FaceTec 특허가 PTAB에서 유지되면서 리스크가 커졌다.",
+   "sources": [
+    "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586395",
+    "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586419",
+    "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12548588",
+    "http://e-patentnews.com/14873",
+    "https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents"
+   ]
+  }
+ ],
+ "missed": [
+  {
+   "item": "중국 CNIPA가 딥페이크 탐지·방지 출원 1,288건으로 압도적 1위다(핑안·바이두·텐센트). 원 조사는 '미확인'으로 남겨 두었다.",
+   "why_it_matters": "특허 장벽을 평가할 때 가장 큰 출원국이 빠졌다. 중국 시장 진출, 중국 오픈소스 모델이나 기술 채택, 글로벌 FTO 범위 결정에 직접 영향을 준다.",
+   "sources": [
+    "http://e-patentnews.com/14873"
+   ]
+  },
+  {
+   "item": "KeeeX v. C2PA 사건이 2026년 10월 UPC 파리 지방부 본안 단계에 들어갔다. 피고 측은 무효 반소를 냈다.",
+   "why_it_matters": "앱에 C2PA Content Credentials 검증을 넣을지 판단하려면 지켜봐야 할 사건이다. 본안 결과에 따라 프로비넌스 기능의 리스크가 바뀐다.",
+   "sources": [
+    "https://www.juve-patent.com/cases/all-eyes-on-paris-as-keeex-case-on-the-merits-against-adobe-and-openai-kicks-off/"
+   ]
+  },
+  {
+   "item": "FaceTec v. Jumio 소송에서 PTAB가 2026년 6월 Jumio의 IPR 4건을 모두 기각했고, FaceTec은 라이브니스 특허 50건을 보유하고 있다. 2026년 10월에는 Prove v. KYXStart 신원인증 특허 소송도 제기됐다.",
+   "why_it_matters": "딥페이크 탐지를 금융 본인인증(eKYC)이나 라이브니스로 확장하면 실제 소송 리스크가 높다는 근거다. 원 조사는 2022년 iProov 건만 언급했다.",
+   "sources": [
+    "https://www.biometricupdate.com/202606/appeals-board-upholds-4-facetec-biometric-liveness-detection-patents",
+    "https://ipverse.greyb.com/litigation/cases/case-details/facetec-inc-v-jumio-corporation--3-24-cv-03623",
+    "https://www.biometricupdate.com/202610/prove-sues-kyxstart-over-patent-infringement-alleged-contract-interference"
+   ]
+  },
+  {
+   "item": "2025년 하반기~2026년 신규 미국 등록·공개 탐지 특허: US12586395(특정 딥페이크 도구 적용 탐지 ML 모델 생성), US12586419(저품질 딥페이크 탐지 장치), US12548588(이중 트랙 차분 모델링 가짜 음성 탐지), Reality Defender US12462813 B1(2025-11-04).",
+   "why_it_matters": "생성 도구 귀속, 압축·저화질 영상 탐지, 음성 탐지는 수사용 앱의 핵심 기능이다. 이 영역에도 구현 특허가 쌓이고 있어 회피 설계 검토 대상이 늘어난다.",
+   "sources": [
+    "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586395",
+    "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12586419",
+    "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12548588",
+    "https://patentsgazette.uspto.gov/week44/OG/html/1540-1/US12462813-20251104.html"
+   ]
+  },
+  {
+   "item": "Patsnap 'Deepfake video forgery detection' 특허 랜드스케이프(138건, 2026)가 있다. 원 조사가 인용한 70여 건 데이터셋보다 범위가 넓다.",
+   "why_it_matters": "영상 위조 탐지 영역의 특허 밀도를 더 정확하게 보여 준다. 레드오션을 판단하는 정량 근거로 쓸 수 있다.",
+   "sources": [
+    "https://www.patsnap.com/resources/blog/rd-blog/deepfake-video-forgery-detection-patent-landscape-patent-landscape/"
+   ]
+  },
+  {
+   "item": "상업 이용 가능한 대규모 실사진 코퍼스(Stanford GPIC, 1억 장, 2026)가 나왔다.",
+   "why_it_matters": "비상업 벤치마크 데이터셋 의존이라는 핵심 장벽에 대한 대안이다. 학습 데이터 라이선스 리스크를 줄이는 전략에 직접 쓸 수 있다.",
+   "sources": [
+    "https://arxiv.org/pdf/2605.30341",
+    "https://aiweekly.co/alerts/stanfords-gpic-ships-100m-commercially-usable-training-images"
+   ]
+  }
+ ],
+ "overall_reliability": "중상(medium-high). 이번 검증에서는 WebSearch 15회를 모두 썼다. 핵심 특허 서지(Pindrop US12142083, Intel US12475695, Reality Defender US12412376/US12411910, Originality.ai US12253988, 누리랩 국내 등록), KeeeX 항소심 결정(2026-03-13), Recentive v. Fox 판례, TrueMedia 공개 조건, GenImage 비상업 라이선스는 대체로 사실과 맞았다. '특허 때문에 진입이 불가능하지 않다'는 결론도 타당하다.\n\n다만 다음 문제가 있다.\n(1) 중국 CNIPA 1,288건이라는 최대 출원국 정보가 누락됐고, 국가별 수치(누적)와 2024년 329건(단년)을 섞어 써서 수치가 서로 맞지 않는다.\n(2) KeeeX 사건의 2026년 10월 본안 진행과 FaceTec의 2026년 PTAB 승소 같은 최신 동향이 빠져, 프로비넌스·라이브니스 리스크가 과소평가됐다.\n(3) Pindrop 청구항에서 립싱크 점수가 빠졌고, Reality Defender의 '교차모달 구조'는 독립 확인되지 않았다.\n(4) TrueMedia 가중치는 '요청하면 받을 수 있다'가 아니라 '공개 보류 상태'다.\n(5) 2025년 하반기~2026년에 저품질 영상, 생성 도구 귀속, 음성 탐지 같은 범용 기능 영역의 구현 특허가 늘고 있어 회피 설계 낙관론은 조금 낮춰야 한다.\n\n검증하지 못한 항목도 있다. SUNY FakeCatcher 특허 번호, Intel US12125256 세부 사항, FaceForensics++ 약관, C2PA 특허정책이다. 검색 예산이 바닥났고, patents.google.com은 이 세션의 네트워크 정책으로 차단돼 원문을 열 수 없었다. 원문을 확인하려면 세션 네트워크 설정에서 patents.google.com을 허용해야 한다. 모든 판단은 변리사의 FTO 검토를 대체하지 않는다."
+}

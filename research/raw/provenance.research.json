@@ -1,0 +1,680 @@
+{
+ "products": [
+  {
+   "name": "SynthID Detector (synthid.com 포털)",
+   "company": "Google DeepMind",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상",
+    "오디오"
+   ],
+   "form": "무료 웹 검증 포털",
+   "status": "운영중. 2025-05 발표 후 제한 공개, 2026-10-07 전 세계 일반 공개(영어만 지원). 공개 시점에 OpenAI·NVIDIA·Kakao 파트너 콘텐츠도 판정하고, Apple은 '곧 지원'으로 발표됨",
+   "target": "일반 소비자·언론·연구자",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "자르기·필터·압축 같은 일반 변형에 견고하다고 주장. 오탐률·미탐률 같은 정량 정확도는 공개하지 않음. FAQ에서 '범용 AI 탐지기가 아니다'라고 명시하고, 결과는 '워터마크 검출/미검출' 두 가지뿐임. 구글은 이미지·영상 1천억 건 이상과 오디오 6만 년 분량에 SynthID를 넣었다고 밝힘(2차 보도 기준)",
+   "independent_evaluation": "체계적인 독립 벤치마크는 확인되지 않음. Ars Technica 체험 테스트(2차 요약 기준)에서는 자르기·리사이즈·압축·스크린샷에는 견뎠지만, 다른 AI 모델로 픽셀을 다시 생성하면 신호가 사라졌음. 'Reverse-SynthID' 프로젝트는 79% 제거를 주장하나 구글이 반박했고, 원 논문이 없어 검증되지 않음. Meta·Microsoft 생성물은 판정 대상이 아님",
+   "weaknesses": "SynthID를 채택한 회사(Google, OpenAI, NVIDIA, Kakao, ElevenLabs, 향후 Apple)의 산출물만 판정함. '미검출'이라고 해서 사람이 만들었다는 증거는 아님. 재생성 공격에 약하고, 오류율이 공개되지 않아 법정 증거로 쓰기 어려움",
+   "adoption_evidence": "OpenAI(2026-05, ChatGPT·API 이미지, 2026-07 오디오), Kakao Kanana(2026-05 발표, 2026 하반기 적용), ElevenLabs(2026-07)가 SynthID를 채택. 포털 이용자 수는 공개되지 않음",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "sources": [
+    "https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/",
+    "https://mixed-news.com/en/google-synthid-detector-worldwide-apple-ai-content-comes-soon/",
+    "https://infoq.com/news/2026/10/synthid-watermarking-detector",
+    "https://www.theneuron.ai/news/google-synthid-ai-watermark-checker/",
+    "https://aiweekly.co/alerts/google-synthid-watermarks-hold-up-in-tests-labeling-still-slips",
+    "https://pasqualepillitteri.it/en/news/909/reverse-synthid-broken-google-ai-watermark-spectral-analysis"
+   ]
+  },
+  {
+   "name": "Gemini 앱 AI 생성물 확인 기능 (SynthID + C2PA 검증)",
+   "company": "Google",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상",
+    "오디오"
+   ],
+   "form": "소비자 앱 기능(gemini.google.com, Android 앱, iOS는 예정)",
+   "status": "운영중. 이미지 2025-11, 동영상 2025-12에 추가. 2026-05 I/O에서 C2PA Content Credentials 검증 추가 발표(C2PA 2.2 이상이면서 적합 제품 목록에 오른 제품만, 외부 저장 메타데이터는 미지원)",
+   "target": "일반 소비자",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "동영상은 SynthID가 검출된 구간을 표시. 정량 정확도는 공개하지 않음. 구글 스스로 '현재는 구글 AI 도구로 만든 콘텐츠만 인식한다'고 고지",
+   "independent_evaluation": "Lead Stories(2026-07) 테스트에서 한 대화 안에 워터마크 없는 이미지를 넣은 뒤에는 SynthID가 실제로 들어 있는 동영상을 '미검출'로 잘못 답하는 등 결과가 일관되지 않았음. 정량 독립 평가는 확인되지 않음",
+   "weaknesses": "LLM 대화형 인터페이스라 답이 일관되지 않을 수 있음. OpenAI 산출물은 별도 도구로 확인해야 한다는 보도가 있음. 워터마크가 없는 콘텐츠는 판정할 수 없음",
+   "adoption_evidence": "Gemini 앱에 기본 탑재됨. Gemini MAU(2025-10 기준 6.5억 이상)는 사전 지식이며 이번 조사에서 재확인하지 못함. 기능별 사용량은 공개되지 않음",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 2,
+   "sources": [
+    "https://support.google.com/gemini/answer/16722517",
+    "https://blog.google/technology/ai/ai-image-verification-gemini-app/",
+    "https://blog.google/innovation-and-ai/products/making-it-easier-to-understand-how-content-was-created-and-edited/",
+    "https://leadstories.com/analysis/2026/07/google-gemini-synthid-detector-confuses-results-within-same-chat.html"
+   ]
+  },
+  {
+   "name": "Google Search·Chrome·Circle to Search의 SynthID/C2PA 확인",
+   "company": "Google",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상"
+   ],
+   "form": "검색엔진·브라우저 기본 기능",
+   "status": "I/O 2026(2026-05-19)에서 발표. SynthID 확인은 Search·Chrome에 몇 주에 걸쳐 배포됐고, Android Circle to Search에서도 확인 가능. C2PA 확인은 '수개월 내' Search·Chrome에 적용 예정(현재 적용 여부는 확인 못 함)",
+   "target": "일반 소비자",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "정량 수치 없음",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "SynthID/C2PA가 들어 있는 콘텐츠에서만 작동. '표시 없음'을 진짜라는 뜻으로 오해할 위험이 있음",
+   "adoption_evidence": "검색·Chrome 이용자 수십억 명에게 기본 노출되는 배포 채널. 기능 사용량은 공개되지 않음",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "sources": [
+    "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+    "https://gadgets.beebom.com/news/google-synthid-and-c2pa-verification-coming-to-search-and-chrome",
+    "https://olhardigital.com.br/2026/05/19/inteligencia-artificial/google-amplia-circle-to-search-com-verificacao-de-imagens-geradas-por-ia/",
+    "https://letsdatascience.com/news/google-adds-synthid-and-c2pa-checks-to-chrome-367a62c3"
+   ]
+  },
+  {
+   "name": "OpenAI Verify (openai.com/verify) + Content Provenance API",
+   "company": "OpenAI",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "오디오"
+   ],
+   "form": "무료 웹 도구 + 개발자 API",
+   "status": "2026-05-19 이미지 프리뷰 공개(ChatGPT·Codex·API 이미지에 C2PA와 SynthID를 함께 삽입). 2026-07-31 오디오로 확대. 2026-10-05 EU AI Act 대응으로 EU에서 텍스트 표시 확대를 발표(방식은 확인 못 함)",
+   "target": "일반·개발자·플랫폼",
+   "pricing": "무료(API 과금 여부는 확인 못 함)",
+   "accuracy_vendor_claim": "OpenAI 산출물의 신뢰할 수 있는 C2PA 매니페스트나 OpenAI 출처 SynthID를 확인. 정량 정확도는 공개하지 않음. '미검출'은 OpenAI 산출물이 아니라는 증거가 아니라고 명시(메타데이터 제거, 워터마크 열화, 타사 모델 미지원). 오디오는 디코딩 후 60초까지",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "자사 산출물 전용. 약관상 워터마크를 역공학하거나 회피하려고 반복 질의하는 것을 금지해 제3자 검증이 어려움. Sora 영상은 이 도구 대상이 아닌 것으로 보임(SynthID가 Sora에도 적용됐다는 주장은 확인 못 함)",
+   "adoption_evidence": "ChatGPT·API 이미지 전체에 이중 신호를 넣음(생성량 막대). 도구 이용 규모는 공개되지 않음",
+   "major_score": 5,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "sources": [
+    "https://openai.com/index/advancing-content-provenance",
+    "https://openai.com/verify",
+    "https://developers.openai.com/api/docs/guides/content-provenance",
+    "https://help.openai.com/en/articles/8912793"
+   ]
+  },
+  {
+   "name": "OpenAI AI Text Classifier",
+   "company": "OpenAI",
+   "country": "미국",
+   "modalities": [
+    "텍스트"
+   ],
+   "form": "무료 웹 도구",
+   "status": "종료. 2023-01 출시, 2023-07 정확도가 낮다는 이유로 중단(시장 신호). 이번 조사에서는 재확인하지 않은 사전 지식",
+   "target": "교육·일반",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "벤더 자체 평가로 AI 텍스트의 26%만 식별하고 사람 글의 9%를 오탐(사전 지식, 미재확인)",
+   "independent_evaluation": "벤더가 스스로 철수. 별도 독립 평가는 확인되지 않음",
+   "weaknesses": "짧은 글과 비영어 텍스트에서 부정확하고, 우회가 쉬움",
+   "adoption_evidence": "출시 약 6개월 만에 종료",
+   "major_score": 5,
+   "adoption_score": 1,
+   "reliability_score": 1,
+   "sources": [
+    "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/"
+   ]
+  },
+  {
+   "name": "Adobe Content Authenticity (웹 앱 + Chrome 확장 + Inspect)",
+   "company": "Adobe",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상",
+    "오디오"
+   ],
+   "form": "무료 웹 앱(자격증명 부착) + Chrome 확장(웹 페이지 속 자격증명 'Cr' 표시) + Inspect 도구",
+   "status": "운영중. 2024-10 발표, 2025년 퍼블릭 베타. Adobe 도움말 페이지가 2026-10-12에도 갱신됐으나 정식 출시(GA) 여부는 확인 못 함",
+   "target": "크리에이터·언론·소비자",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "AI 여부를 추정하지 않고 C2PA 서명과 편집 이력을 검증. 메타데이터가 지워져도 비가시 워터마크·지문으로 복구할 수 있다고 주장(사전 지식)",
+   "independent_evaluation": "독립 평가 미확인. C2PA 공통 한계(업로드 시 메타데이터 제거)가 독립 보도로 확인됨(C2PA 항목 참조)",
+   "weaknesses": "자격증명이 붙은 콘텐츠에서만 의미가 있음. 범죄용 딥페이크에는 대부분 자격증명이 없음",
+   "adoption_evidence": "CAI 회원 규모와 앱 이용자 수는 이번 조사에서 확인 못 함",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "sources": [
+    "https://helpx.adobe.com/ae_en/creative-cloud/help/cai/adobe-content-authenticity-chrome-browser-extension.html",
+    "https://blog.adobe.com/en/publish/2024/10/08/introducing-adobe-content-authenticity-free-web-app-help-creators-protect-their-work-gain-attribution-build-trust",
+    "https://www.neowin.net/amp/adobe-content-authenticity-digital-watermarking-tool-is-out-in-public-beta/"
+   ]
+  },
+  {
+   "name": "Content Credentials Verify / C2PA 오픈소스 SDK·적합성 프로그램",
+   "company": "C2PA / Content Authenticity Initiative",
+   "country": "국제 표준 컨소시엄(미국 중심)",
+   "modalities": [
+    "이미지",
+    "동영상",
+    "오디오",
+    "문서(일부)"
+   ],
+   "form": "무료 웹 검증 + 오픈소스 SDK(c2pa-rs 등) + 적합성 프로그램·신뢰 목록",
+   "status": "운영중. 적합성 프로그램은 2025-06-04 시작, 2026-05-14 기준 31개사 54개 제품 통과. 임시 신뢰 목록(ITL)은 2026-01-01 동결돼 레거시 신호가 됨. 2026-07 배포 가이드 발간",
+   "target": "언론·플랫폼·개발자·소비자",
+   "pricing": "무료·오픈소스(로열티 조건은 확인 못 함)",
+   "accuracy_vendor_claim": "암호 서명으로 출처와 편집 이력을 검증. AI 여부를 추정하지 않음",
+   "independent_evaluation": "Washington Post가 C2PA가 들어간 Sora 영상을 8개 SNS에 기본 설정으로 올렸더니 8곳 모두 자격증명을 지우거나 보여주지 않았음(2차 보도 기준). Nikon Z6III에서는 위조 서명 취약점으로 인증서가 전량 폐기됨. Microsoft 보고서(2026-02)는 신뢰 서명자 목록이 없으면 위조 매니페스트가 붙은 합성 이미지를 진본으로 오인할 수 있다고 경고",
+   "weaknesses": "자격증명이 없으면 판단할 수 없음. 스크린샷이나 '다른 이름으로 저장'만 해도 사라짐. 기기 구현 결함과 키 관리 위험이 있음",
+   "adoption_evidence": "Google(Pixel·Gemini·Search), Samsung, OpenAI, Adobe, Microsoft, TikTok, LinkedIn, 주요 카메라 제조사가 채택. 검증 사이트 이용량은 공개되지 않음",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "sources": [
+    "https://c2pa.org/wp-content/uploads/sites/33/2026/07/Content-Credentials-Deployment-Guidance.pdf",
+    "https://opensource.contentauthenticity.org/docs/conformance/",
+    "https://fredritchin.substack.com/p/major-platforms-are-not-labeling",
+    "https://incidentdatabase.ai/reports/6301",
+    "https://the-decoder.com/microsofts-research-argues-ai-media-authentication-doesnt-work-reliably-yet-new-laws-assume-it-does/"
+   ]
+  },
+  {
+   "name": "Google Pixel 10 Content Credentials (Pixel Camera·Google Photos)",
+   "company": "Google",
+   "country": "미국",
+   "modalities": [
+    "이미지"
+   ],
+   "form": "온디바이스(카메라 서명, Photos 검증·표시)",
+   "status": "운영중. 2025-08~09 Pixel 10부터 Pixel Camera로 찍은 모든 JPEG에 C2PA 서명. Google Photos는 AI 편집 이미지에 자격증명을 붙이고 'About' 패널에 표시",
+   "target": "일반 소비자",
+   "pricing": "기기 내장",
+   "accuracy_vendor_claim": "Pixel Camera 앱이 C2PA 적합성 프로그램 최고 등급인 Assurance Level 2를 달성했다고 주장(Tensor G5·Titan M2 하드웨어 기반, 온디바이스 오프라인 타임스탬프)",
+   "independent_evaluation": "독립 보안 평가 미확인",
+   "weaknesses": "진짜 촬영본을 증명하는 기능이지 AI 탐지기가 아님. 업로드할 때 메타데이터가 지워지는 문제는 똑같음. Pixel 점유율이 낮음",
+   "adoption_evidence": "Pixel 10 시리즈 전 기종에 기본 적용. 판매량은 확인 못 함",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "sources": [
+    "https://security.googleblog.com/2025/09/pixel-android-trusted-images-c2pa-content-credentials.html",
+    "https://thehackernews.com/2025/09/google-pixel-10-adds-c2pa-support-to.html"
+   ]
+  },
+  {
+   "name": "Samsung Galaxy S25/S26 Galaxy AI 편집물 Content Credentials",
+   "company": "Samsung Electronics",
+   "country": "한국",
+   "modalities": [
+    "이미지"
+   ],
+   "form": "온디바이스(갤러리·Galaxy AI 편집)",
+   "status": "운영중. S25(2025-01)부터 Galaxy AI로 생성·편집한 이미지에 C2PA 메타데이터를 붙이고, 이후 구형 기기로 확대됐다는 보도가 있음. S26(2026-02 Unpacked)은 AI 생성·대폭 수정 이미지에 자동 라벨. 일반 촬영 사진은 서명하지 않음(복수 보도)",
+   "target": "일반 소비자",
+   "pricing": "기기 내장",
+   "accuracy_vendor_claim": "해당 없음(표시 기능)",
+   "independent_evaluation": "독립 평가 미확인. exiftool 등으로 쉽게 지울 수 있고 메신저가 메타데이터를 제거한다는 지적이 있음(PetaPixel 등)",
+   "weaknesses": "AI 편집물에만 붙이고 진본 사진은 증명하지 않아 '거꾸로 된 접근'이라는 비판(PetaPixel)을 받음. S26의 장기 표준 조합은 불명확",
+   "adoption_evidence": "Galaxy 플래그십에 기본 적용. 판매량은 확인 못 함",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 2,
+   "sources": [
+    "https://www.techtimes.com/articles/314844/20260226/samsungs-galaxy-s26-will-auto-tag-aigenerated-photos-new-label-help-curb-deepfakes.htm",
+    "https://petapixel.com/2025/02/13/samsungs-image-authenticity-approach-is-backward-and-its-ais-fault",
+    "https://www.androidauthority.com/galaxy-s25-content-credentials-3523256",
+    "https://www.phonearena.com/news/ai-edited-photos-about-to-expose-themselves-as-samsung-expands-this-galaxy-s25-feature-to-millions-older-phones_id173556"
+   ]
+  },
+  {
+   "name": "Apple Reference Image (iPhone 18 Pro·iOS 27)",
+   "company": "Apple",
+   "country": "미국",
+   "modalities": [
+    "이미지"
+   ],
+   "form": "온디바이스(센서 서명 기반 진본 증명)",
+   "status": "2026-09 iPhone 18 Pro·iOS 27과 함께 출시. C2PA가 아닌 Apple 자체 방식. Image Playground 출력물에는 메타데이터를 넣고 향후 SynthID를 지원할 예정(SynthID Detector 'Apple 곧 지원' 발표와 일치)",
+   "target": "일반 소비자·언론",
+   "pricing": "기기 내장",
+   "accuracy_vendor_claim": "센서 서명과 다단계 검증 사슬로 iPhone에서 촬영한 원본임을 증명한다고 주장(세부 수치 없음)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "C2PA와 별개 체계라 생태계가 갈라질 위험. 최신 Pro 기종에 한정. Apple은 CAI에 가입하지 않았다는 보도가 있음",
+   "adoption_evidence": "출시 초기라 규모는 확인 못 함",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "sources": [
+    "https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/",
+    "https://www.macrumors.com/2026/08/10/ios-27-apple-reference-image/",
+    "https://petapixel.com/2026/10/12/apple-content-authenticity-and-the-war-to-prove-whats-real/",
+    "https://www.androidauthority.com/apple-reference-image-vs-android-c2pa-3711734/"
+   ]
+  },
+  {
+   "name": "카메라 내장 C2PA (Nikon Z6III Authenticity Service, Leica·Sony·Canon 등)",
+   "company": "Nikon / Leica / Sony / Canon",
+   "country": "일본·독일",
+   "modalities": [
+    "이미지",
+    "동영상(일부)"
+   ],
+   "form": "카메라 펌웨어 서명 + 클라우드 인증서 서비스",
+   "status": "Nikon은 2025-09 다중노출 기능을 악용한 위조 서명 취약점이 드러나 서비스를 중단했고, 2025-09-21 발급한 인증서를 전량 폐기했으며, 2026-05 기준으로도 복구되지 않음. Leica·Sony·Canon 현황은 이번 조사에서 확인 못 함",
+   "target": "보도사진가·언론사",
+   "pricing": "고가 카메라 내장",
+   "accuracy_vendor_claim": "하드웨어 서명으로 촬영 원본임을 증명",
+   "independent_evaluation": "독립 연구자(Adam Horshack)가 C2PA를 켠 Z6III로 다른 카메라 사진에 유효한 서명을 받는 데 성공. 근본적으로 고치려면 C2PA 검증 도구도 바뀌어야 한다는 분석(PetaPixel)",
+   "weaknesses": "구현에 결함이 있으면 가짜에 진짜 도장이 찍히는 역효과가 남. 전문가 기종에 한정",
+   "adoption_evidence": "보도기관 일부에 한정",
+   "major_score": 4,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "sources": [
+    "https://www.digitalcameraworld.com/photography/photojournalism/nikon-revokes-all-c2pa-image-authenticity-certificates-after-major-vulnerability-exposed",
+    "https://petapixel.com/2025/09/22/nikon-cant-fully-solve-the-z6-iiis-c2pa-problems-alone/",
+    "https://c2paviewer.com/articles/nikon-cameras-c2pa"
+   ]
+  },
+  {
+   "name": "Meta 'AI info' 라벨 + Content Seal 워터마크·탐지 도구",
+   "company": "Meta Platforms",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상",
+    "오디오"
+   ],
+   "form": "플랫폼 자동 라벨 + 제한 공개 웹 탐지 도구",
+   "status": "운영중. 'AI info' 라벨(2024~)은 덜 눈에 띄는 메뉴로 옮겨짐. 2026-07 Muse Image 모델 산출물용 비가시 워터마크 Content Seal과 탐지 도구를 프리뷰로 공개",
+   "target": "일반 소비자(라벨), 제한된 사용자(탐지 도구)",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "Content Seal이 자르기·압축·스크린샷에 견딘다고 주장",
+   "independent_evaluation": "Reuters 분석(2026-07)에서 Muse Image 원본 40장은 모두 검증했지만, 1/3~1/2 크기로 자르기만 해도 55%를 놓쳤음. Meta는 '프리뷰 단계이고 과도한 자르기에는 신호가 사라질 수 있다'고 답변. 경쟁사 AI or Not의 자체 테스트(자르기·변조 후 35.3%)는 이해관계가 있어 참고만 함",
+   "weaknesses": "자사 산출물 전용이고 다른 AI 시스템 이미지는 식별하지 못함. 사실적인 영상·음성은 사용자의 자진 신고에 의존",
+   "adoption_evidence": "Facebook·Instagram·Threads 수십억 사용자에게 라벨 적용. 탐지 도구는 제한 공개",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 1,
+   "sources": [
+    "https://www.thestar.com.my/tech/tech-news/2026/07/10/meta-ai-image-detector-fails-to-identify-some-of-its-own-cropped-ai-images-reuters-analysis-finds",
+    "https://thenextweb.com/news/meta-ai-detector-cropped-images-watermark",
+    "https://cybernews.com/ai-news/metas-ai-detector-misses-some-cropped-images/",
+    "https://getcoai.com/news/facebook-and-instagram-make-ai-labels-less-prominent-on-edited-content",
+    "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/"
+   ]
+  },
+  {
+   "name": "TikTok AIGC 라벨 + 비가시 워터마크 + AI 콘텐츠 노출 조절",
+   "company": "TikTok (ByteDance)",
+   "country": "중국(ByteDance)·글로벌",
+   "modalities": [
+    "동영상",
+    "이미지",
+    "오디오"
+   ],
+   "form": "플랫폼 자동 라벨, 자체 워터마크, 피드 노출 조절 기능",
+   "status": "운영중. 2024년 C2PA 자동 라벨 도입. 2025-11 자사 AI 도구(AI Editor Pro 등) 생성물과 C2PA가 붙은 업로드에 TikTok만 읽을 수 있는 비가시 워터마크를 테스트하고, AI 콘텐츠 노출 조절 슬라이더를 실험 기능으로 도입",
+   "target": "일반 소비자",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "비가시 워터마크가 다운로드·편집·재게시에도 메타데이터보다 견고하다고 주장. 정량 수치는 공개하지 않음",
+   "independent_evaluation": "독립 평가 미확인. Washington Post 테스트에서 C2PA를 보존하지 않은 플랫폼 중 하나로 보도됨(테스트한 8개 플랫폼 목록은 확인 못 함)",
+   "weaknesses": "자체 워터마크는 TikTok 내부에서만 읽을 수 있음. 외부 AI 영상은 자진 신고에 의존. 슬라이더를 최저로 내려도 AI 영상이 완전히 사라지지 않음",
+   "adoption_evidence": "전 세계 대규모 사용자 플랫폼",
+   "major_score": 5,
+   "adoption_score": 5,
+   "reliability_score": 2,
+   "sources": [
+    "https://techcrunch.com/2025/11/18/tiktok-now-lets-you-choose-how-much-ai-generated-content-you-want-to-see/",
+    "https://www.techspot.com/news/110315-sick-ai-slop-feed-tiktok-finally-you-turn.html"
+   ]
+  },
+  {
+   "name": "YouTube 자동 AI 라벨 + 초상 탐지(likeness detection)",
+   "company": "Google (YouTube)",
+   "country": "미국",
+   "modalities": [
+    "동영상"
+   ],
+   "form": "플랫폼 자동 라벨 + 크리에이터용 얼굴 도용 탐지",
+   "status": "운영중. 2026-03 정치인·언론인·공직자 대상 파일럿, 2026-04 연예인으로 확대, 2026-05 18세 이상 모든 크리에이터에게 개방. 2026-05부터 '사실적인 AI 사용이 상당하다'고 감지되면 크리에이터가 밝히지 않아도 자동으로 라벨(라벨 위치도 더 눈에 띄게 바뀜). 음성복제 탐지는 2026년 후반 예정",
+   "target": "일반 소비자·크리에이터·공인",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "정량 수치는 공개하지 않음",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "초상 탐지는 등록한 본인 얼굴만 대상이고 시각 정보만 봄. 자동 라벨 기준이 불투명함",
+   "adoption_evidence": "수십억 사용자 플랫폼. 초상 탐지가 모든 성인 크리에이터에게 열림",
+   "major_score": 5,
+   "adoption_score": 5,
+   "reliability_score": 2,
+   "sources": [
+    "https://techcrunch.com/2026/03/10/youtube-expands-ai-deepfake-detection-to-politicians-government-officials-and-journalists",
+    "https://www.axios.com/2026/03/10/youtube-deepfake-detection-journalists-politicians",
+    "https://www.musicbusinessworldwide.com/youtube-will-now-automatically-detect-and-label-ai-videos-even-when-creators-dont-disclose-it/",
+    "https://www.photographytalk.com/youtube-opens-ai-likeness-detection-to-every-creator-18-and-older/"
+   ]
+  },
+  {
+   "name": "Microsoft Content Integrity / Paint·Photos 워터마크 + C2PA",
+   "company": "Microsoft",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상",
+    "오디오"
+   ],
+   "form": "생성물에 C2PA와 비가시 워터마크 삽입 + 연구 보고서",
+   "status": "운영중. Paint·Photos의 AI 생성 이미지에 비가시 워터마크와 C2PA 삽입(Paint는 워터마크를 넣지 못하면 생성 자체가 실패, 2차 보도). 2026-02 보고서 'Media Integrity and Authentication: Status, Directions, and Futures' 발간",
+   "target": "기업·소비자·정책결정자",
+   "pricing": "무료·Azure 과금",
+   "accuracy_vendor_claim": "자사 보고서 결론: 단일 기술로는 AI 생성물과 진본을 믿을 만하게 구별할 수 없고, 비가시 워터마크와 C2PA 매니페스트를 연결하는 조합이 가장 신뢰도가 높다",
+   "independent_evaluation": "독립 평가 미확인. 보고서 자체가 '역전 공격'(진짜를 AI로, AI를 진짜로 보이게 함) 위험을 경고",
+   "weaknesses": "Microsoft 워터마크는 SynthID와 호환되지 않음. 공개 검증 도구의 현황은 확인 못 함",
+   "adoption_evidence": "Microsoft 생성 도구 출력물에 적용. 이용 규모는 공개되지 않음",
+   "major_score": 5,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "sources": [
+    "https://arxiv.org/abs/2602.18681",
+    "https://the-decoder.com/microsofts-research-argues-ai-media-authentication-doesnt-work-reliably-yet-new-laws-assume-it-does/",
+    "https://redmondmag.com/Articles/2026/02/20/No-Foolproof-Method-Exists-for-Detecting-AI-Generated-Media.aspx",
+    "https://aiunderstanding.org/news/tom-s-hardware-reports-invisible-guid-watermarks-in-microsoft-paint-and-photos-ai"
+   ]
+  },
+  {
+   "name": "ElevenLabs Audio Detector (SynthID + AI Speech Classifier)",
+   "company": "ElevenLabs",
+   "country": "미국",
+   "modalities": [
+    "오디오(음성·음악·효과음)"
+   ],
+   "form": "무료 웹 도구",
+   "status": "운영중. 2026-07 전 요금제와 TTS·Music·Dubbing 등 자사 생성 오디오 전반에 SynthID 적용. 탐지기는 SynthID를 먼저 확인하고, 없으면 기존 AI Speech Classifier(2023~)로 넘어감. 2026-06 이전에 만든 오디오에는 SynthID가 없음",
+   "target": "일반·언론·기업",
+   "pricing": "무료(로그인 필요 여부는 출처마다 다름)",
+   "accuracy_vendor_claim": "압축·클리핑·속도 변경에 견딘다고 주장. 분류기 정확도 수치는 이번 조사에서 확인 못 함",
+   "independent_evaluation": "독립 평가 미확인. 분류기는 통계적 예측이라 오탐·미탐 가능성이 있다는 제3자 가이드의 지적이 있음",
+   "weaknesses": "ElevenLabs 오디오만 판정. 보이스피싱에 쓰이는 오픈소스 음성복제는 대상이 아님. 짧은 조각이나 심하게 열화된 음성에서는 탐지가 어려움",
+   "adoption_evidence": "대형 음성 AI 기업. 탐지기 이용량은 공개되지 않음",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "sources": [
+    "https://elevenlabs.io/blog/synthid",
+    "https://www.createwith.com/tool/elevenlabs/updates/elevenlabs-embeds-synthid-watermarks-in-ai-audio-launches-free-detector-tool",
+    "https://jackrighteous.com/blogs/ai-creator-tools/elevenlabs-synthid-audio-watermark-guide"
+   ]
+  },
+  {
+   "name": "Amazon Bedrock 워터마크 탐지 (Titan·Nova)",
+   "company": "Amazon Web Services",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상(미확인)"
+   ],
+   "form": "API·콘솔",
+   "status": "미확인(사전 지식): 2024년 Titan 이미지 워터마크 탐지 제공, Nova에 워터마크·C2PA 적용. 2026년 현황은 검색하지 않음",
+   "target": "기업(AWS 고객)",
+   "pricing": "Bedrock 과금(미확인)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "자사 모델 전용",
+   "adoption_evidence": "미확인",
+   "major_score": 5,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "sources": [
+    "https://aws.amazon.com/blogs/aws/amazon-titan-image-generator-and-watermark-detection-api-are-now-available-in-amazon-bedrock/ [미검증]"
+   ]
+  },
+  {
+   "name": "Truepic (촬영 시점 C2PA 진본 인증 SDK)",
+   "company": "Truepic",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "동영상"
+   ],
+   "form": "기업용 SDK·플랫폼",
+   "status": "미확인(사전 지식): 운영중으로 추정. 2026년 현황은 검색하지 않음",
+   "target": "보험·금융·현장검사·언론",
+   "pricing": "기업 계약",
+   "accuracy_vendor_claim": "촬영 시점에 하드웨어 기반 서명으로 무결성을 보증한다고 주장(사전 지식)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "진본 증명 도구이고, 임의 콘텐츠가 AI인지 판정하지 않음",
+   "adoption_evidence": "미확인(C2PA 공동 설립사로 알려짐)",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "sources": [
+    "https://www.truepic.com/ [미검증]"
+   ]
+  }
+ ],
+ "key_findings": [
+  {
+   "claim": "[조사 범위] 이 작업에서 WebSearch 38회 한도 가운데 37회를 썼고 WebFetch는 쓰지 않았다. 대부분 2차 보도와 로펌 분석을 근거로 했다. 핵심 일정은 가능하면 1차 출처(FTC, OpenAI, Google 도움말, C2PA 문서)로 교차 확인했다. 2차 출처끼리 엇갈리는 항목은 본문에 따로 적었다.",
+   "sources": [
+    "세션 도구 사용 기록(외부 출처 아님)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "구글 SynthID가 사실상 업계 공용 워터마크로 커지고 있다. SynthID Detector는 2026-10-07 전 세계에 공개됐고, OpenAI·NVIDIA·Kakao 산출물도 판정하며 Apple 지원이 예고됐다. OpenAI는 2026-05 ChatGPT·API 이미지에, 2026-07 오디오에 SynthID를 C2PA와 함께 넣었다. Kakao는 2026-05 아시아 기업 최초로 도입을 발표했고 Kanana 이미지·영상에 2026 하반기 적용한다. ElevenLabs는 2026-07 도입했다. 2025년까지는 '각 사가 자사 산출물만 확인'하는 구도였지만, 2026년에는 구글 중심의 연합 검증 구도로 바뀌었다.",
+   "sources": [
+    "https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/",
+    "https://openai.com/index/advancing-content-provenance",
+    "https://www.kakaocorp.com/page/detail/12039?lang=KOR",
+    "https://www.ddaily.co.kr/page/view/2026052020325982216",
+    "https://elevenlabs.io/blog/synthid"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "빅테크의 무료 확인 기능이 소비자 접점 전반에 들어갔다. Gemini 앱은 이미지(2025-11), 동영상(2025-12), C2PA 검증(2026)을 지원한다. Google Search·Chrome·Circle to Search는 SynthID 확인(I/O 2026, 2026-05-19부터)을 넣었고 C2PA 확인은 예정이다. OpenAI는 openai.com/verify와 API를 냈다. YouTube는 2026-05부터 자동 AI 라벨을 붙이고 18세 이상 모든 크리에이터에게 초상 탐지를 열었다. TikTok은 비가시 워터마크와 노출 조절 기능을 넣었다. 그래서 '주요 생성기로 만든 콘텐츠인지 확인하는' 소비자 수요는 무료 기능이 대부분 흡수한다.",
+   "sources": [
+    "https://support.google.com/gemini/answer/16722517",
+    "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+    "https://openai.com/verify",
+    "https://www.musicbusinessworldwide.com/youtube-will-now-automatically-detect-and-label-ai-videos-even-when-creators-dont-disclose-it/",
+    "https://techcrunch.com/2025/11/18/tiktok-now-lets-you-choose-how-much-ai-generated-content-you-want-to-see/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "그래도 워터마크 생태계는 쪼개져 있다. Meta(Content Seal, 2026-07)와 Microsoft는 SynthID와 호환되지 않는 자체 워터마크를 쓴다. TikTok 워터마크는 TikTok만 읽는다. Apple은 C2PA 대신 자체 'Reference Image'(iPhone 18 Pro, 2026-09)를 내놓았다. 사용자가 출처를 확인하려면 여러 도구를 오가야 하고, Gemini에서는 OpenAI 산출물을 별도 사이트에서 확인해야 했다는 보도도 있다.",
+   "sources": [
+    "https://mixed-news.com/en/google-synthid-detector-worldwide-apple-ai-content-comes-soon/",
+    "https://www.thestar.com.my/tech/tech-news/2026/07/10/meta-ai-image-detector-fails-to-identify-some-of-its-own-cropped-ai-images-reuters-analysis-finds",
+    "https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/",
+    "https://leadstories.com/analysis/2026/07/google-gemini-synthid-detector-confuses-results-within-same-chat.html"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "빅테크 확인 도구의 신뢰도에 대한 독립 검증은 약하거나 부정적이다. (1) Reuters: Meta 탐지기는 자사 이미지 원본 40장을 모두 잡았지만 자르기만 해도 55%를 놓쳤다. (2) Lead Stories: Gemini의 SynthID 판정이 한 대화 안에서 오락가락했다. (3) Washington Post: C2PA가 든 Sora 영상을 8개 플랫폼에 올리자 모두 자격증명을 보존하거나 표시하지 않았다. (4) NewsGuard: 무료 도구로 Sora 가시 워터마크를 약 4분 만에 지웠다. (5) Nikon Z6III는 위조 서명 취약점으로 인증서를 전량 폐기했고 2026-05까지 복구하지 못했다. (6) Google·OpenAI 모두 탐지 오류율을 공개하지 않는다.",
+   "sources": [
+    "https://cybernews.com/ai-news/metas-ai-detector-misses-some-cropped-images/",
+    "https://leadstories.com/analysis/2026/07/google-gemini-synthid-detector-confuses-results-within-same-chat.html",
+    "https://fredritchin.substack.com/p/major-platforms-are-not-labeling",
+    "https://www.newsguardtech.com/?p=31794",
+    "https://www.digitalcameraworld.com/photography/photojournalism/nikon-revokes-all-c2pa-image-authenticity-certificates-after-major-vulnerability-exposed",
+    "https://letsdatascience.com/news/google-opens-synthid-detector-to-global-public-access-effe39eb"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "SynthID 이미지 워터마크는 일반 편집(자르기, 압축, 스크린샷)에는 비교적 강하다는 체험 테스트가 있다(Ars Technica, 2차 요약). 반면 다른 AI 모델로 다시 생성하면 무력화된다. 'Reverse-SynthID'는 79% 제거를 주장했지만 구글이 반박했고 검증되지 않았다. 텍스트 워터마크는 확실히 취약하다. Tamim & Khan(arXiv 2607.16010)에서는 의미를 유지하는 패러프레이즈로 SynthID-Text의 98.3%, KGW·Unigram의 100%가 제거됐고, 공격 전에도 미탐률이 약 80%였다. Daubert 기준과 NIST SP 800-86으로 평가하면 법적 증거 준비도(forensic readiness)를 충족하지 못한다. ETH Zurich는 SynthID-Text 위조(spoofing) 가능성도 보고했다.",
+   "sources": [
+    "https://aiweekly.co/alerts/google-synthid-watermarks-hold-up-in-tests-labeling-still-slips",
+    "https://pasqualepillitteri.it/en/news/909/reverse-synthid-broken-google-ai-watermark-spectral-analysis",
+    "https://arxiv.org/abs/2607.16010",
+    "https://arxiv.org/abs/2603.03410",
+    "https://eth-sri.github.io/blog/probingsynthid"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "탐지 앱에 유리한 기술적 근거가 있다. 워터마크를 지우면 그 흔적이 다시 탐지 가능한 신호로 남는다. arXiv 2605.09203(2026-05)에서는 4개 공격 계열, 6종의 제거 도구에 대해 독립 포렌식 탐지기가 제거 처리된 이미지를 오탐률 1% 기준에서 98% 넘게 잡아냈다. arXiv 2604.25491도 제거 도구 중 '포렌식 은닉'에 성공한 것이 없다고 결론냈다. '워터마크 제거 흔적 탐지'는 빅테크 확인 도구에 없는 기능이고 범죄 수사에 직접 쓸모가 있다.",
+   "sources": [
+    "https://arxiv.org/pdf/2605.09203",
+    "https://arxiv.org/html/2604.25491"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "오픈웨이트 모델이 워터마크 체계 밖의 주된 위협이다. arXiv 2512.11815는 Wan 2.x 등 소수 오픈웨이트 영상 모델이 동의 없는 성적 딥페이크 영상의 주 도구가 됐고, 주로 CivitAI에서 유통된다고 분석했다. AI Forensics는 Hugging Face 상위 이미지 편집 모델 9개 가운데 7개가 동의 없는 합성물을 쉽게 만든다고 보고했다(2차 보도). 이런 산출물에는 SynthID나 C2PA가 없으므로, 빅테크 확인 도구는 범죄 콘텐츠의 핵심 영역을 원천적으로 다루지 못한다.",
+   "sources": [
+    "https://arxiv.org/abs/2512.11815v2",
+    "https://themodelwire.com/article/hugging-face-image-models-enable-nonconsensual-deepfakes-ai-forensics-finds-01KYM0B2V0SFZD050YV984A0R9"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "Microsoft도 자사 연구 보고서(2026-02)에서 C2PA, 비가시 워터마크, 소프트 해시 지문 가운데 어느 하나만으로는 AI 생성물을 믿을 만하게 구별할 수 없다고 결론냈다. '새 법률은 이것이 작동한다고 가정한다'는 비판도 나왔다. 진짜를 AI로, AI를 진짜로 보이게 하는 '역전 공격' 위험도 지적했다.",
+   "sources": [
+    "https://arxiv.org/abs/2602.18681",
+    "https://the-decoder.com/microsofts-research-argues-ai-media-authentication-doesnt-work-reliably-yet-new-laws-assume-it-does/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "사후 탐지도 실전에서는 성능이 크게 떨어진다. Deepfake-Eval-2024(arXiv 2503.02857, 2024년 실제 유포 딥페이크로 구성)에서 오픈소스 탐지기의 AUC는 기존 벤치마크보다 영상 50%, 오디오 48%, 이미지 45% 떨어졌다. 상용 모델과 파인튜닝 모델은 이보다 낫지만 전문 포렌식 분석가 수준에는 못 미쳤다.",
+   "sources": [
+    "https://huggingface.co/papers/2503.02857",
+    "https://github.com/nuriachandra/Deepfake-Eval-2024"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "한국 AI 기본법과 시행령은 2026-01-22 함께 시행됐다. 31조 생성형 AI 결과물 표시 의무에 따라, 딥페이크가 아닌 결과물(애니·웹툰 등)에는 비가시 워터마크도 허용하고 딥페이크에는 사람이 알아볼 수 있는 표시를 요구한다. 서비스 밖으로 내보내는 결과물에도 표시해야 한다. 의무는 사업자에게 있고, 결과물을 SNS에 올리거나 콘텐츠 제작에 쓰는 이용자는 의무 대상이 아니다(개인이 워터마크를 지워도 위반이 아니라는 해석도 있다). 제재는 시정명령 후 최대 3천만 원 과태료이며, 최소 1년의 계도기간 때문에 실제 부과는 빨라야 2027년 이후로 예상된다. 2026-10 ZDNet은 '워터마크, 지우면 그만'이라며 실효성을 지적했고, 시행령 개정 논의도 있다.",
+   "sources": [
+    "https://korea.kr/news/policyNewsView.do?newsId=148958380",
+    "https://m.boannews.com/html//detail.html?idx=141598",
+    "https://www.ddaily.co.kr/page/view/2025090815422394673",
+    "https://v.daum.net/v/20260121120209717",
+    "https://zdnet.co.kr/view?no=20261020095628",
+    "https://wikidocs.net/blog/@openwiki/28121/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "한국의 처벌 규제와 집행 수요가 실제로 있다. 2024-10 개정 성폭력처벌법은 딥페이크 성적 허위영상물을 소지·구입·저장·시청만 해도 최고 징역 3년이다. 경찰 집중단속(2024-11~2025-10)에서 딥페이크 성범죄 1,438명을 검거했고 피의자의 61.8%가 10대였다. 2026-08 보도에 따르면 경찰은 딥페이크 탐지 SW, 영상 분석, AI 포렌식을 함께 써서 7개월 동안 419명을 검거했다. 방미통위 2025 투명성보고서에서 사업자들은 불법촬영물·성적 허위영상물 등 18만5,662건을 신고받아 14만996건을 삭제·차단했고, 2026-07부터 유통방지 대상을 이미지로 넓혔다.",
+   "sources": [
+    "https://www.newsis.com/view/NISX20251114_0003403877",
+    "https://www.m-economynews.com/mobile/article.html?no=69729",
+    "https://m.korea.kr/news/policyNewsView.do?newsId=148935930",
+    "https://mobile.newsis.com/view/NISX20260721_0003716596",
+    "https://www.dailian.co.kr/news/view/1661802"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "공직선거법 82조의8은 선거일 전 90일부터 딥페이크 선거운동을 금지한다(7년 이하 징역 또는 1천만~5천만 원 벌금). 2026-06-03 지방선거와 관련해 선관위가 삭제를 요청한 딥페이크 게시물은 5월 21일 기준 8,832건이었고, 고발 2건, 수사의뢰 1건, 경고 33건이 따로 있었다. 2025 대선 때는 약 1만 513건이 적발됐다. 행안부와 국과수가 선관위에 탐지 도구를 제공했다는 보도(세계일보 2026-03)도 있다. 공공 부문이 탐지 기술을 상시로 필요로 한다는 근거다.",
+   "sources": [
+    "https://www.koreadaily.com/article/20260521130058516",
+    "https://www.segye.com/newsView/20260310517457",
+    "https://newstapa.org/article/TUmMn"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "EU AI Act 50조 투명성 의무는 2026-08-02부터 적용 중이다. 디지털 옴니버스는 50조를 대체로 유예하지 않았고, 2026-08-02 이전에 출시된 시스템의 50조 2항(기계가 읽는 표시) 의무만 2026-12-02까지 미뤘다. AI 생성물 표시 실천강령은 2026-06-10 확정됐고, 집행위원회와 AI Board가 준수 수단으로 적절하다고 확인했다. 강령은 다층적인 기계 판독 표시를 요구하며, 50조 가이드라인은 2026-07-20 발표됐다.",
+   "sources": [
+    "https://www.williamfry.com/knowledge/eu-ai-act-omnibus-deal-reached-postponed-deadlines-watermarking-compromise-and-the-nudificiation-prohibition/",
+    "https://www.faegredrinker.com/zh/insights/publications/2026/7/eu-ai-act-commission-confirms-transparency-code-of-practice-as-adequate-and-publishes-final-version-of-its-guidelines-on-transparency-obligations",
+    "https://www.ropesgray.com/en/insights/viewpoints/2026/08/102nfqm/you-talkin-to-me-operationalising-the-eu-ai-acts-transparency-obligations",
+    "https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "캘리포니아 AI Transparency Act(SB 942, AB 853으로 개정)는 2026-08-02부터 시행 중이다. 월 100만 명 이상이 쓰는 생성형 AI 제공자는 업로드·URL·API를 지원하는 무료 공개 'AI 탐지도구'를 제공하고, 잠재 표시와 명시 표시 옵션을 넣어야 한다. 위반 시 건당·일당 5,000달러이고 사인 소송권은 없다. 대형 플랫폼의 출처정보 표시 의무는 2027-01-01, 촬영기기 제조사 의무는 2028년부터다. SB 1000은 2026-09-30 서명돼 즉시 시행됐다는 보도가 있다. 내용은 100만 명 기준 폐지와 '탐지도구'를 '공개표시 검증도구(disclosure verification tool)'로 바꾸는 것이다. 다만 출처끼리 엇갈려 법 조문으로 확인해야 한다. 이 법은 빅테크가 자사 산출물을 무료로 확인해 주도록 법으로 강제한다.",
+   "sources": [
+    "https://morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative",
+    "https://www.mofo.com/resources/insights/261001-california-revamps-ai-transparency-requirements",
+    "https://www.sheppard.com/insights/blogs/california-enacts-ai-spokespeople-chatbots-and-content-disclosures-laws",
+    "https://apcp.assembly.ca.gov/media/1177"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "미국 TAKE IT DOWN Act의 플랫폼 의무는 2026-05-19부터 FTC가 집행하고 있다. 유효한 신고를 받으면 48시간 안에 삭제하고 알려진 동일 사본도 지우는 데 합리적 노력을 해야 한다. 위반 시 건당 최대 53,088달러이며, FTC는 신고 포털(TakeItDown.ftc.gov)을 열고 경고장을 보냈다. 연방 차원에서는 2025-12-11 행정명령으로 주(州) AI법 견제를 시작했고, 법무부 AI 소송 TF가 2026-01 출범했다. 행정명령 자체로 주법이 무효가 되지는 않는다. NO FAKES Act 2026(S.4591)은 2026-06 상원 법사위를 만장일치로 통과했지만 아직 제정되지 않았다.",
+   "sources": [
+    "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-begins-enforcing-take-it-down-act",
+    "https://www.orrick.com/en/Insights/2026/06/Nonconsensual-Intimate-Images-Online-Take-It-Down-Act-Enforcement-In-Full-Swing",
+    "https://www.ropesgray.com/en/insights/alerts/2025/12/trump-attempts-to-preempt-state-ai-regulation-through-executive-order",
+    "https://ipwatchdog.com/2026/06/18/senate-judiciary-moves-no-fakes-act-one-step-closer-to-passage/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "중국의 AI 생성 합성 콘텐츠 표시 방법(2025-09-01 시행)은 강하게 집행되고 있다. 2026-02 미표시 콘텐츠로 13,421개 계정을 처벌하고 54만여 건을 삭제했다. 2026-04에는 플랫폼에 처분을 내렸고, 2026-05에는 짧은 영상 표시를 표준화하는 캠페인을 벌였다. 칭랑(清朗) AI 캠페인 2단계에서는 561만여 건을 삭제하고 4.9만여 계정을 처벌했다. 엄격한 필터링이 오탐 우려를 낳는다는 지적도 있다.",
+   "sources": [
+    "https://technode.com/2026/02/13/china-cyberspace-regulators-crack-down-on-unlabeled-ai-generated-content-penalize-over-13000-accounts/",
+    "https://technode.com/2026/04/29/china-penalizes-ai-platforms-over-failure-to-label-ai-generated-content/",
+    "https://www.techrepublic.com/article/news-china-ai-content-crackdown-apac-china/",
+    "https://www.mlex.com/mlex/artificial-intelligence/articles/2476949"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "얼굴·목소리 권리 입법과 딥페이크 도구 규제가 퍼지고 있다. 덴마크는 2026-10-08 법안 L 49를 의회에 냈고 2027-01-01 시행을 목표로 하지만, 아직 통과되지 않았다(일부 매체의 '통과' 보도는 부정확한 것으로 판단). 영국 Ofcom은 2026-01-12 Grok의 성적 딥페이크 생성과 관련해 X를 조사하기 시작했다. 인도네시아와 말레이시아는 Grok을 일시 차단했고, 영국은 딥페이크 생성 도구 공급을 불법화하는 법을 추진했다.",
+   "sources": [
+    "https://www.euronews.com/2026/10/08/denmark-introduces-a-bill-protecting-peoples-faces-and-voices-from-deepfakes",
+    "https://ppc.land/denmarks-deepfake-bill-makes-publishers-prove-consent-from-january-2027/",
+    "https://www.aljazeera.com/news/2026/1/12/uk-to-investigate-elon-musks-grok-over-deeply-disturbing-deepfakes",
+    "https://www.theregister.com/2026/01/12/xai_grok_uk_regulation/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "결론 1: 빅테크의 무료 확인 기능은 독립 탐지 앱 시장 가운데 '협조적 생성기 산출물을 확인하는' B2C 부분을 사실상 잠식했다. 근거는 세 가지다. SynthID 연합(Google, OpenAI, NVIDIA, Kakao, ElevenLabs, 예정된 Apple)이 Search·Chrome·Gemini에 기본 탑재됐다. 플랫폼 자동 라벨이 붙는다(YouTube 2026-05, TikTok, Meta). 캘리포니아법이 무료 탐지도구를 의무화했다. 다만 잠식 범위는 '워터마크가 살아 있는 협조적 콘텐츠'로 한정된다. 생태계가 쪼개져 있고(Meta·Microsoft·Apple 방식이 따로 있음) 검증 신뢰도가 낮다는 독립 증거(Meta 55% 미탐, Gemini 비일관성, 플랫폼의 C2PA 제거)가 있어서 시장 전체를 잠식하지는 못한다.",
+   "sources": [
+    "https://www.eweek.com/news/googles-synthid-detector-goes-public-with-openai-and-nvidia-support/",
+    "https://morganlewis.com/pubs/2026/08/new-california-ai-disclosure-rules-become-operative",
+    "https://cybernews.com/ai-news/metas-ai-detector-misses-some-cropped-images/"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "결론 2: 워터마크 없는 콘텐츠에는 사후 탐지가 여전히 꼭 필요하고, 수요는 오히려 늘었다. 근거는 다섯 가지다. 오픈웨이트 모델(Wan 2.x 등)이 성적 딥페이크의 주 도구다. 메타데이터는 업로드만 해도 사라진다. 자르기나 재생성으로 워터마크가 무력화된다. 한국 AI 기본법은 이용자와 악의적 개인을 직접 규율하지 않는다. 워터마크 증거는 법정 증거 기준을 충족하지 못한다(2607.16010). 동시에 한국 경찰의 탐지 SW 활용, 선관위의 대량 삭제 요청, 중국의 '의심' 표시 집행, TAKE IT DOWN의 48시간 삭제 의무가 공공·플랫폼 쪽 탐지 수요를 만든다. 다만 실전 성능 저하(Deepfake-Eval-2024) 때문에 기술 난이도가 높다.",
+   "sources": [
+    "https://arxiv.org/abs/2512.11815v2",
+    "https://arxiv.org/abs/2607.16010",
+    "https://huggingface.co/papers/2503.02857",
+    "https://www.m-economynews.com/mobile/article.html?no=69729",
+    "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-begins-enforcing-take-it-down-act"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "gaps_and_opportunities": [
+  "워터마크 제거·변조 흔적 탐지: 2026년 연구(arXiv 2605.09203, 2604.25491)에서 워터마크를 지우면 그 처리 흔적이 98% 넘게 탐지된다고 나왔다. '워터마크가 없다'는 결과를 '원래 없었다'와 '지워졌다'로 나눠 주는 기능은 빅테크 확인 도구에 없고, 수사에서 쓸모가 크다.",
+  "쪼개진 출처 신호를 한 번에 검증하는 통합 도구: SynthID(Google 연합), Meta Content Seal, Microsoft 워터마크, TikTok 내부 워터마크, C2PA, Apple Reference Image가 서로 호환되지 않는다. 공개된 검증 경로(C2PA SDK, 각사 공개 검증 API, 오픈소스 워터마크)를 묶고, 신호가 없으면 사후 탐지로 넘어가는 하이브리드 판정이 기회다. 단, OpenAI API 약관은 반복 질의로 워터마크를 역공학하는 것을 금지하니 확인이 필요하다.",
+  "법정 증거용 포렌식 리포트: Microsoft 보고서와 Tamim & Khan 논문 모두 현재 워터마크·출처 신호는 증거능력(Daubert 기준, 오류율)이 부족하다고 결론냈다. 오류율 공개, 재현성, 처리 이력(chain of custody), 근거 시각화를 갖춘 리포트는 빅테크가 제공하지 않는 영역이다.",
+  "한국 B2G 수요: 경찰(탐지 SW와 AI 포렌식을 결합해 7개월에 419명 검거), 선관위(지방선거 삭제 요청 8,832건, 대선 약 1만 513건), 방미통위(유통방지 대상을 이미지로 확대, 망법 개정 추진), 성폭력처벌법 소지·시청 처벌에 따른 압수물 대량 분류 수요가 있다. 국과수·행안부가 이미 탐지 도구를 공급한다는 보도도 있어 경쟁 상대가 될 수 있다.",
+  "규제 준수용 B2B: 캘리포니아법(무료 탐지·검증도구 의무, 2027 플랫폼 의무), EU 50조(2026-12-02 기존 시스템 표시 기한, 다층 표시), 한국 31조 표시 의무 때문에, 자체 워터마크·검증 체계가 없는 중소 생성 AI 사업자와 플랫폼에 화이트라벨 표시·검증·스캐닝 API를 팔 수 있다. 다만 SynthID를 라이선스로 쓸 수 있게 되면서(Kakao 사례) 경쟁이 생겼다.",
+  "오디오(보이스피싱)와 한국어 특화: YouTube 초상 탐지는 아직 음성을 다루지 않고(2026 후반 예정), ElevenLabs 탐지기는 자사 음성만 판정한다. 오픈소스 음성복제를 쓴 한국어 보이스피싱 탐지는 빅테크가 비워 둔 영역이다(비교 평가는 미확인)."
+ ],
+ "threats_and_barriers": [
+  "SynthID가 사실상 공용 표준이 되면서(OpenAI·NVIDIA·Kakao·ElevenLabs·Apple 예정) Search·Chrome·Gemini에 무료로 기본 탑재됐다. 그래서 '이거 주요 AI로 만든 거야?'만 확인하는 B2C 앱은 존재 이유가 없다.",
+  "캘리포니아법은 월 100만 명 이상(SB 1000이 확정되면 모든) 생성 AI 제공자에게 업로드·URL·API를 지원하는 무료 탐지·검증도구를 의무화했다. 생성기별 확인 기능은 법으로 무료 상품이 된다.",
+  "YouTube(2026-05 자동 라벨, 초상 탐지 전면 개방), TikTok, Meta가 플랫폼 안에서 직접 탐지·라벨링을 한다. 플랫폼에 탐지 기술을 파는 B2B 시장 일부를 빅테크가 스스로 해결한다.",
+  "사후 탐지는 실전 성능이 크게 떨어진다(Deepfake-Eval-2024에서 AUC 45~50% 하락). 오탐은 명예훼손이나 부당 수사로 이어질 법적 위험이 있다. 빅테크조차 오류율을 공개하지 않는 분야에서 수사 수준 신뢰도를 입증하는 비용이 크다.",
+  "텍스트 판별이 가장 약하다. 패러프레이즈만으로 SynthID-Text 워터마크의 98% 이상이 제거되고, OpenAI는 텍스트 분류기를 철수했다(2023).",
+  "공공 수사 시장에는 기존 공급자(국과수·행안부 도구 제공 보도, 경찰 자체 탐지 SW)가 있고, 조달과 인증 장벽이 있다.",
+  "규제 일정이 불확실하다. 한국 AI 기본법은 최소 1년 계도기간이라 과태료가 2027년 이후이고 시행령 개정 논의도 있다. 미국은 연방 행정명령과 AI 소송 TF가 주법을 견제한다. 캘리포니아 SB 1000은 내용이 엇갈리게 보도됐다. 덴마크 법은 아직 통과되지 않았다. 규제가 만드는 수요가 늦게 오거나 형태가 바뀔 수 있다.",
+  "특허·라이선스: SynthID 탐지기는 비공개라 구글과 파트너십 없이는 통합할 수 없다. OpenAI 검증 API 약관은 워터마크 역공학을 금지한다. 이번 조사에서는 특허 FTO 검색을 하지 않았으므로 '특허로 막혔다'는 근거도 '자유롭다'는 근거도 확보하지 못했다."
+ ],
+ "red_ocean_judgement": "출처증명과 워터마크 레이어는 2026년에 빅테크가 장악한 레드오션이 됐고, 소규모 팀이 들어갈 여지는 사실상 없다. 2025년까지는 각사가 자사 산출물만 확인하는 구도였다. 2026년에는 구글 SynthID가 OpenAI(2026-05), Kakao(2026-05), ElevenLabs(2026-07), NVIDIA, Apple(예정)을 묶는 사실상 공용 표준이 됐다. SynthID Detector는 2026-10-07 전 세계에 무료로 공개됐고, Search·Chrome·Gemini에도 기본 탑재됐다. C2PA는 적합성 프로그램(31개사 54개 제품)과 Pixel 10(AL2)·Galaxy 같은 기기를 통해 퍼졌다. 캘리포니아법(2026-08-02 시행)은 대형 생성 AI 제공자에게 무료 탐지도구 제공까지 의무화했다. 그래서 '메이저 생성기 산출물인지 확인하는 B2C 앱'은 레드오션을 넘어 무료 기능에 흡수된 시장이다. 반면 워터마크가 없거나 지워진 콘텐츠의 사후 탐지는 빅테크가 구조적으로 비워 둔 영역이다. 이런 콘텐츠는 오픈웨이트 모델(Wan 2.x 등) 산출물, 업로드 때 메타데이터가 지워진 콘텐츠, 자르기·재생성으로 워터마크가 무력화된 콘텐츠다. 특히 법정 증거 수준의 포렌식이 그렇다. Microsoft 자체 보고서, Reuters의 Meta 탐지기 테스트, WaPo의 C2PA 테스트, 워터마크 증거능력 연구가 모두 출처 신호만으로는 부족하다고 보여 준다. 이 영역은 수요가 늘고 있다. 한국에서는 경찰·선관위·방미통위의 집행 수요가 있고, 미국 TAKE IT DOWN, 중국 표시 집행, EU 50조도 수요를 만든다. 그러나 전문 탐지 스타트업과 정부 자체 도구와 경쟁해야 하고, 실전 성능 저하라는 기술 장벽이 커서 블루오션은 아니다. 소규모 팀의 경쟁력은 다음을 갖췄을 때만 생긴다. (1) 출처 신호 통합 검증과 사후 탐지를 합친 하이브리드, (2) 워터마크 제거·변조 흔적 탐지 같은 차별 기능, (3) 독립 벤치마크로 공개 검증한 오류율과 법정용 리포트, (4) 한국어·한국 위협(보이스피싱, 지인 딥페이크, 선거) 특화와 B2G/B2B 채널. 특허 장벽은 이번 조사에서 FTO를 하지 않아 판단을 보류한다. 다만 SynthID 탐지기는 비공개라 파트너십이 필요하고, OpenAI 검증 API는 약관으로 역공학을 금지한다는 사실은 확인했다.",
+ "summary": "[조사 범위] WebSearch는 38회 한도 중 37회 썼고 WebFetch는 쓰지 않았다. 이전 초안(사전 지식 기반)의 가설 상당수를 검색으로 확인하거나 수정했다. 근거는 주로 2차 보도와 로펌 분석이며, 출처끼리 엇갈리는 부분은 본문에 따로 적었다.\n\n[2026년 핵심 변화]\n(1) SynthID가 업계 공용 워터마크로 커졌다. OpenAI는 2026-05에 이미지, 2026-07에 오디오에 SynthID를 C2PA와 함께 넣었다. Kakao(아시아 최초, 2026 하반기 Kanana 적용)와 ElevenLabs(2026-07)도 도입했고 Apple은 예정이다. SynthID Detector는 2026-10-07 전 세계에 무료로 공개됐다.\n(2) 확인 기능이 기본 탑재됐다. Gemini 앱(이미지·동영상·C2PA), Google Search·Chrome·Circle to Search(2026-05~), OpenAI verify와 API, YouTube 자동 AI 라벨과 성인 크리에이터 전원에게 연 초상 탐지(2026-05), TikTok 비가시 워터마크가 들어갔다.\n(3) 기기 쪽에서는 Pixel 10이 모든 사진에 AL2 수준 C2PA를 붙이고, Galaxy S25/S26은 AI 편집물에 라벨을 붙인다. Apple은 C2PA가 아닌 자체 'Reference Image'(iPhone 18 Pro, 2026-09)를 내놓았다. Nikon Z6III는 위조 서명 취약점으로 인증서를 전량 폐기했고 2026-05까지 복구하지 못했다.\n\n[신뢰도 근거]\n독립 검증은 부정적이다. Reuters 테스트에서 Meta Content Seal 탐지기는 자르기만 해도 자사 이미지의 55%를 놓쳤다. Lead Stories 테스트에서 Gemini의 SynthID 판정은 일관되지 않았다. WaPo 테스트에서 8개 플랫폼 모두 Sora 영상의 C2PA를 보존하지 않았다. 텍스트 워터마크는 패러프레이즈만으로 98% 이상 제거되고 법정 증거 기준을 충족하지 못한다(arXiv 2607.16010). Microsoft 자체 보고서(2026-02)도 단일 방법으로는 믿을 만하게 구별할 수 없다고 결론냈다. 오픈웨이트 모델(Wan 2.x 등)이 성적 딥페이크의 주 도구다(arXiv 2512.11815).\n\n[규제]\n- 한국 AI 기본법(2026-01-22 시행): 비가시 워터마크는 딥페이크가 아닌 결과물에만 허용하고, 딥페이크에는 사람이 알아볼 수 있는 표시를 요구한다. 의무는 사업자에게만 있고 이용자는 대상이 아니다. 과태료는 최대 3천만 원이며 최소 1년 계도기간이 있어 실제 부과는 2027년 이후로 보인다.\n- 한국 처벌·집행: 성폭력처벌법은 딥페이크 소지·시청까지 처벌한다. 경찰은 딥페이크 성범죄로 1,438명을 검거했고, 탐지 SW와 AI 포렌식을 결합해 7개월에 419명을 검거했다. 지방선거 딥페이크 삭제 요청은 8,832건이었다.\n- EU 50조: 2026-08-02부터 적용 중이며, 기존 시스템의 표시 의무만 2026-12-02까지 유예됐다. 실천강령은 2026-06-10 확정됐다.\n- 캘리포니아 SB 942/AB 853: 2026-08-02 시행. 대형 생성 AI 제공자는 무료 탐지도구를 제공해야 한다. SB 1000이 2026-09-30 서명됐다는 보도가 있으나 출처가 엇갈린다.\n- 미국 연방: TAKE IT DOWN은 2026-05-19부터 FTC가 집행하며 48시간 안에 삭제해야 한다. NO FAKES Act는 상원 법사위만 통과했다.\n- 중국: 표시 규정을 강하게 집행 중이다(수백만 건 삭제).\n- 덴마크·영국: 덴마크 얼굴·목소리 권리 법안은 2026-10 제출됐고 아직 통과되지 않았다. 영국 Ofcom은 Grok과 관련해 X를 조사 중이다.\n\n[판단 1] 빅테크의 무료 확인 기능은 '협조적 생성기 산출물인지 확인하는' B2C 시장을 사실상 흡수했다. 단순한 'AI 생성 여부 확인 앱'은 경쟁력이 없다.\n\n[판단 2] 워터마크가 없거나 지워진 콘텐츠, 즉 오픈웨이트 모델 산출물, 업로드 때 메타데이터가 지워진 콘텐츠, 재생성 공격을 받은 콘텐츠에는 사후 탐지가 꼭 필요하다. 범죄 콘텐츠가 바로 이 영역에 몰려 있다. 이 부분 수요는 규제와 수사 집행 때문에 오히려 늘고 있다. 다만 실전 성능 저하(Deepfake-Eval-2024에서 AUC 45~50% 하락)와 오탐 책임 때문에 진입 난이도는 높다.\n\n[제언] 출처증명 레이어는 직접 만들지 말고 기능으로 통합하라. 차별점이 될 만한 것은 다음 네 가지다.\n- 워터마크 제거 흔적 탐지: arXiv 2605.09203에서 제거 처리를 98% 넘게 잡아냈다.\n- 쪼개진 출처 신호의 통합 검증\n- 오류율을 공개한 법정용 포렌식 리포트\n- 한국어 보이스피싱과 한국 B2G(경찰·선관위·방미통위) 특화\n\n특허는 FTO를 하지 않아 판단을 보류한다. SynthID 탐지기는 비공개라 파트너십이 필요하고, OpenAI 검증 API 약관은 워터마크 역공학을 금지한다는 점은 확인했다."
+}

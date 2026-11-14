@@ -1,0 +1,1001 @@
+{
+ "products": [
+  {
+   "name": "Hive AI-Generated Content Detection (API, 무료 웹 데모, Hive AI Detector 크롬 확장)",
+   "company": "Hive (thehive.ai)",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오",
+    "텍스트"
+   ],
+   "form": "기업 API + 무료 웹 데모 + 브라우저 확장(크롬), 국방용 오프라인·온프레미스 배포",
+   "status": "운영중(2026.11 기준). 2024.12 미 국방부(DIU) 딥페이크 탐지 계약(2년 240만 달러), 2025.9 DHS 사이버범죄센터와 AI 생성 아동성착취물 판별 시범계약(15만 달러, 경쟁입찰 없음), 2025.1 IWF 제휴",
+   "target": "플랫폼·기업·정부·수사기관 (소비자는 무료 웹·확장으로 이용)",
+   "pricing": "엔터프라이즈는 맞춤형. 2026년에 무료 티어와 종량제를 공개(구체 단가 미확인, 제3자 추정 이미지당 약 0.003달러)",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 4,
+   "adoption_evidence": "2021년 기업가치 20억 달러, 누적 투자 1.21억 달러, Reddit 등 75개 이상 플랫폼 고객(2021년, 모더레이션 전체 기준). 크롬 확장 평점 4.6~4.9, 리뷰 약 375~417개(스냅샷마다 다름). AI 탐지만의 사용량은 공개되지 않음",
+   "accuracy_vendor_claim": "'업계 최고 수준 정확도'라는 정성적 주장만 있고 공식 수치는 미확인",
+   "independent_evaluation": "UChicago 'Organic or Diffused'(2024): 5개 탐지기 중 1위, 정확도 98.03%, 사람 그림을 AI로 오판한 비율 0%, 미탐 3.17%. CBC 테스트: 3장 모두 정답. NewsGuard(2026.5): 실제 보도사진 15장에서 오탐 0건이었지만 대폭 조작된 이미지 탐지는 최하위권. Ben Zhao 연구팀: 이미지 교란으로 Hive 우회 가능. Emerging Investigators 연구: AI 아트 97.22%",
+   "weaknesses": "적대적 교란과 후처리에 약하고, 대폭 편집하거나 일부만 합성한(하이브리드) 이미지를 놓친다. 높은 점수의 근거가 된 연구 상당수는 구형 생성기 기준이다. 정부 수의계약에 대한 비판도 있다",
+   "sources": [
+    "https://www.businesswire.com/news/home/20241205852015/en/Hive-Secures-DoD-Contract-for-Deepfake-Detection-Pioneering-AI-Defense-Against-Emerging-Threats",
+    "https://getcoai.com/news/dhs-deploys-ai-tools-to-detect-fake-child-abuse-imagery",
+    "https://arxiv.org/pdf/2402.03214",
+    "https://amp.cbc.ca/news/canada/ai-detector-tools-test-1.7482913",
+    "https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/",
+    "https://chromewebstore.google.com/detail/cmeikcgfecnhojcbfapbmpbjgllklcbi/reviews?hl=en",
+    "https://siliconangle.com/2021/04/21/enterprise-ai-solutions-startup-hive-raises-85m-2b-valuation/",
+    "https://emerginginvestigators.org/articles/23-132/pdf",
+    "https://pricingsaas.com/companies/thehive/diffs/2026W24"
+   ]
+  },
+  {
+   "name": "AI or Not",
+   "company": "AI or Not Inc. (Optic 팀에서 분사)",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오(합성 음성·AI 음악)",
+    "텍스트",
+    "딥페이크 얼굴"
+   ],
+   "form": "웹 + API (B2B 사기·KYC 대응으로 포지셔닝)",
+   "status": "운영중. Optic에서 독립해 사업 전환. 2025.1 시드 500만 달러(Foundation Capital 주도)",
+   "target": "소비자·언론·핀테크·정부",
+   "pricing": "무료로 시작(크레딧 5달러) 후 유료·엔터프라이즈. 제3자 표기는 서로 다름(Pro 월 5달러 등)",
+   "major_score": 3,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "adoption_evidence": "CEO 인터뷰(2025.7~8) 기준 약 33만 사용자. CheckThat.ai는 50만 명 이상 사용자, 600만 건 이상 검사로 표기. Latka 추정 2025년 매출 66만 달러(미검증)",
+   "accuracy_vendor_claim": "API 페이지에 'AI 탐지 정확도 98.9%'(자체 평가)",
+   "independent_evaluation": "UChicago(2024, Optic 시절): 미탐 1.15%지만 사람 그림을 AI로 오판한 비율 24.47%. CBC: 3장 정답. Bellingcat(2023): 압축된 Midjourney 이미지에 자주 속음. NewsGuard(2026.5): 실제 사진 오탐 1/15(6.67%). 대폭 조작 이미지는 모두 잡았지만, 가볍게 보정한 이미지의 87%를 AI로 판정(2차 보도). Succinct 벤치마크: 원본 이미지에서는 상위권이나 블러·노이즈·압축 후 급락",
+   "weaknesses": "보정·압축 때문에 오탐과 미탐이 생긴다. 매출 규모가 작고 텍스트 탐지는 약하다",
+   "sources": [
+    "https://gamesbeat.com/ai-or-not-raises-5m-to-stop-ai-fraud-deepfakes-and-misinformation/",
+    "https://datainnovation.org/2025/08/5-qs-with-anatoly-kvitnitsky-ceo-of-ai-or-not/",
+    "https://checkthat.ai/brands/ai-or-not",
+    "https://detection.aiornot.com/ai-image-detector-api/",
+    "https://bellingcat.com/resources/2023/09/11/testing-ai-or-not-how-well-does-an-ai-image-detector-do-its-job",
+    "https://getlatka.com/companies/aiornot.com",
+    "https://filmdaily.co/news/can-you-trust-an-ai-image-detector-the-accuracy-debate/",
+    "https://blog.succinct.xyz/ai-image-detection-benchmark/",
+    "https://arxiv.org/pdf/2402.03214"
+   ]
+  },
+  {
+   "name": "Sightengine AI-Generated Image Detection",
+   "company": "Sightengine",
+   "country": "프랑스(파리)",
+   "modalities": [
+    "이미지",
+    "영상"
+   ],
+   "form": "기업 API + 무료 웹 데모",
+   "status": "운영중",
+   "target": "플랫폼·개발자",
+   "pricing": "Starter 월 29달러(1만 operation), Pro 월 99달러(4만 operation), 초과분은 operation당 0.002달러(검색 스니펫 기준, 출처마다 다름). 무료 플랜 있음. 고급 검사일수록 호출당 operation 소모가 큼",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "고객사 명단은 공개하지 않음. 각종 비교 테스트에 자주 포함되고 Eden AI 등이 재판매함",
+   "accuracy_vendor_claim": "Kansas·Rochester 대학의 ARIA 벤치마크에서 98.3%로 1위(자사 마케팅 페이지 주장)",
+   "independent_evaluation": "ARIA 원 논문의 결론은 '대부분의 탐지기 정확도가 70% 미만'이며, 98.3%라는 수치는 논문에서 확인되지 않음. NewsGuard(2026.5): 실제 사진 오탐 0건이지만 대폭 조작 이미지는 15장 중 5장만 탐지. Phoblographer(2026.1, 6장 소규모): Hive와 거의 같은 결과. 2026 리뷰(2차, 신뢰도 낮음): Ideogram v3 98%, Hunyuan Image 3.0 75%",
+   "weaknesses": "생성기마다 성능 차이가 크고 편집된 이미지를 놓친다",
+   "sources": [
+    "https://sightengine.com/best-ai-image-detectors-benchmark",
+    "https://www.arxiv.org/pdf/2404.14581",
+    "https://sightengine.com/pricing",
+    "https://www.thephoblographer.com/2026/01/28/ai-detection-tools-review/",
+    "https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/",
+    "https://fast.io/resources/ai-image-detector-tools-2026/"
+   ]
+  },
+  {
+   "name": "Reality Defender",
+   "company": "Reality Defender",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오"
+   ],
+   "form": "기업 플랫폼 + 공개 API/SDK (2025.7부터 무료 티어: 이미지·오디오 월 50건)",
+   "status": "운영중. 2024.10 시리즈A 확장으로 누적 3,300만 달러(BNY, Samsung Next, Booz Allen 등). 2026.6 Gartner 딥페이크 탐지 신흥시장 쿼드런트 'Market Shaper'. 2026.9 KPMG 소수지분 투자 보도(반론 보도도 있음). Samsung 싱가포르와 기업용 탐지 협력",
+   "target": "금융·정부·기업",
+   "pricing": "무료 월 50건, 그 이상은 엔터프라이즈 문의",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "고객 수억 명 규모 대형 은행 사례(은행명 비공개, 벤더 주장). 제3자 자료에 Microsoft·Visa·Intel이 고객으로 표기(미검증)",
+   "accuracy_vendor_claim": "1~99 신뢰도 점수 제공. 공개된 정확도 수치는 미확인",
+   "independent_evaluation": "독립 평가 미확인(이미지 대상 공개 벤치마크를 찾지 못함). Gartner 평가는 성능 시험이 아닌 애널리스트 의견",
+   "weaknesses": "블랙박스형 고가 엔터프라이즈 중심이고, 이미지 성능의 공개 검증이 부족하다. 'Identification of Neural-Network-Generated Fake Images' 특허를 보유하고 있다",
+   "sources": [
+    "https://www.securitysystemsnews.com/article/reality-defender-launches-public-api-and-free-tier",
+    "https://www.realitydefender.com/insights/reality-defender-gartner-market-shaper",
+    "https://www.securityweek.com/reality-defender-banks-33m-to-tackle-ai-generated-deepfakes/amp/",
+    "https://realitydefender.com/publication/patent-identification-of-neural-network-generated-fake-images",
+    "https://dealroom.co/news/150358-kpmg-buys-stake-in-deepfake-detector-reality-defender/",
+    "https://www.sammobile.com/?p=16682735"
+   ]
+  },
+  {
+   "name": "Sensity AI",
+   "company": "Sensity (구 Deeptrace)",
+   "country": "네덜란드(암스테르담)",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오",
+    "얼굴 스왑·KYC"
+   ],
+   "form": "기업 플랫폼/API (포렌식 지향)",
+   "status": "운영중. 2026.1 210만 달러 투자(Auriga Cyber Ventures 주도), 2026.7 EIC 490만 유로 지원",
+   "target": "수사기관·포렌식 연구소·정부·금융·보험",
+   "pricing": "맞춤 계약(비공개)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "2025년 딥페이크 사건 90만 건 이상 탐지(자사 주장). 2025년 흑자 전환 주장(미검증)",
+   "accuracy_vendor_claim": "본 조사에서 공식 이미지 정확도 수치 미확보",
+   "independent_evaluation": "NYT(2026.2) 테스트에서 Resemble.ai와 함께 오디오 탐지 최상위. 이미지만의 독립 평가는 미확인",
+   "weaknesses": "Reality Defender·Hive보다 규모가 작고, 조달 중심 영업이라 성장 속도에 한계가 있다",
+   "sources": [
+    "https://www.biometricupdate.com/202607/sensity-ai-gets-eic-funding-for-forensics-focused-deepfake-detection-models",
+    "https://www.thestar.com.my/tech/tech-news/2026/03/10/these-tools-say-they-can-spot-ai-fakes-do-they-really-work",
+    "https://tech-insider.org/reality-defender-vs-hive-vs-sensity-2026/"
+   ]
+  },
+  {
+   "name": "GetReal Security (GetReal Inspect)",
+   "company": "GetReal Security (공동창업자 Hany Farid)",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오"
+   ],
+   "form": "기업 플랫폼 (GetReal Inspect, 2025.2 출시)",
+   "status": "운영중. 2025.3 시리즈A 1,750만 달러(Forgepoint 주도, In-Q-Tel·Cisco 등 전략 투자자 참여)",
+   "target": "기업 보안·정부·포렌식",
+   "pricing": "미확인",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "TechCrunch가 '인상적인 고객 명단'이라고 보도(구체 수치 미확인)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인. 공동창업자 Hany Farid는 이미지 포렌식 분야의 권위자",
+   "weaknesses": "공개 성능 데이터가 부족하고 엔터프라이즈 전용이다",
+   "sources": [
+    "https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/",
+    "https://pulse2.com/getreal-security-17-5-million-series-a-closed-for-mitigation-of-malicious-genai-threats",
+    "https://forgepointcap.com/perspectives/has-getreal-cracked-the-code-on-ai-deepfakes-18m-and-an-impressive-client-list-says-yes-techcrunch/"
+   ]
+  },
+  {
+   "name": "Resemble AI DETECT-3B Omni (+ 무료 크롬 확장)",
+   "company": "Resemble AI",
+   "country": "미국",
+   "modalities": [
+    "오디오",
+    "이미지",
+    "영상",
+    "텍스트"
+   ],
+   "form": "기업 API + 무료 크롬 확장(2026.4)",
+   "status": "운영중. 2025.12 1,300만 달러 투자(Google AI Futures Fund, Okta Ventures, Sony Innovation Fund), 누적 약 2,500만 달러",
+   "target": "기업·보안",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "구체적인 사용자 수는 미확인",
+   "accuracy_vendor_claim": "38~40개 언어에서 98% 정확도, Hugging Face 리더보드 차순위 모델 대비 평균 오류 66% 감소(자사 주장)",
+   "independent_evaluation": "NYT(2026.2): 오디오 탐지 최상위권. Succinct 벤치마크: 원본 이미지에서는 TruthScan·AI or Not과 함께 최상위권이지만 후처리 후 급락",
+   "weaknesses": "본업이 음성 합성이라 이해상충 소지가 있고, 이미지 성능의 독립 검증은 제한적이다",
+   "sources": [
+    "https://siliconangle.com/2025/12/08/resemble-ai-hauls-13m-different-approach-deepfake-detection/",
+    "https://www.artificialintelligence-news.com/news/google-sony-and-okta-back-resemble-ai-push-into-deepfake-detection/",
+    "https://www.resemble.ai/resources/resemble-ai-secures-13m-to-combat-rising-ai-generated-threats",
+    "https://blog.succinct.xyz/ai-image-detection-benchmark/",
+    "https://www.thestar.com.my/tech/tech-news/2026/03/10/these-tools-say-they-can-spot-ai-fakes-do-they-really-work"
+   ]
+  },
+  {
+   "name": "Copyleaks AI Image Detector",
+   "company": "Copyleaks",
+   "country": "미국(본 조사에서 본사 위치 미검증)",
+   "modalities": [
+    "이미지(픽셀 단위 조작 영역 표시)",
+    "텍스트",
+    "영상"
+   ],
+   "form": "API + 웹 데모",
+   "status": "2025.11.10 이미지 탐지 출시, 이후 영상 탐지 추가",
+   "target": "교육·기관·기업",
+   "pricing": "기관별 사용량 기반 과금(Axios)",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "텍스트 표절·AI 탐지로 교육 시장 기반이 있음. 이미지 탐지 사용량은 미확인",
+   "accuracy_vendor_claim": "완전히 AI로 만든 이미지 95% 이상 탐지, 사람이 만든 이미지의 픽셀 오판 5% 미만, 혼합 이미지는 조작 영역의 최소 40% 식별(V1.1, 자체 테스트)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "생성형 AI 조작만 탐지하고 일반 포토샵 편집은 대상이 아니다. 신생 제품이다",
+   "sources": [
+    "https://www.axios.com/2025/11/10/copyleaks-ai-detect-images",
+    "https://copyleaks.com/blog/introducing-copyleaks-ai-image-detection",
+    "https://copyleaks.com/ai-image-detector/testing-methodology"
+   ]
+  },
+  {
+   "name": "Pangram Image 1.0",
+   "company": "Pangram Labs",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "텍스트"
+   ],
+   "form": "웹 + API",
+   "status": "2026.7 900만 달러 투자(Menlo 주도)와 함께 이미지 탐지 연구 프리뷰 공개, 2026.11.4 Pangram Image 1.0과 영상 모델 출시",
+   "target": "기업·교육·플랫폼",
+   "pricing": "이미지 요금 미확인(참고: 텍스트 API는 1,000단어당 0.05달러)",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "이미지 제품은 출시 직후라 사용량 미확인",
+   "accuracy_vendor_claim": "상용 탐지기 5종과 비교한 자체 벤치마크 99.5%(차순위 98%). AI 이미지 99.2% 탐지에 오탐 0.27%. 12개 생성기로 만든 자체 테스트 99.96%. 512×512 미만 저해상도에서는 정확도가 떨어질 수 있다고 경고",
+   "independent_evaluation": "이미지는 독립 평가 미확인(NTIRE 2026·Synthbuster·Mirage 성적은 자사 블로그 주장). 텍스트 탐지기는 UChicago(2025) 독립 연구에서 높은 정확도 확인",
+   "weaknesses": "신생 제품이고, 저해상도·후처리 상황에서의 견고성이 검증되지 않았다",
+   "sources": [
+    "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/",
+    "https://www.pangram.com/blog/introducing-pangram-image-detection",
+    "https://thenextweb.com/news/pangram-image-1-0-flash-ai-image-video-detection"
+   ]
+  },
+  {
+   "name": "TruthScan",
+   "company": "TruthScan (Undetectable AI 계열)",
+   "country": "미국(추정)",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오",
+    "텍스트"
+   ],
+   "form": "웹 + 엔터프라이즈 API, 타사 라이선스(ZeroGPT 2026.1, DeepAI 2026.2), 2025년 imagedetector.com 인수",
+   "status": "운영중",
+   "target": "기업 사기 방지, 소비자(타사 서비스 경유)",
+   "pricing": "무료 체험 + 엔터프라이즈",
+   "major_score": 2,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "모회사 Undetectable AI가 사용자 2,000만 명 이상이라고 주장(텍스트 '휴머나이저' 서비스). ZeroGPT·DeepAI를 통해 유통",
+   "accuracy_vendor_claim": "99% 주장. Undetectable.ai 자체 벤치마크에서 10장 모두 97% 이상",
+   "independent_evaluation": "IDScan(신분증 검증 업체) 테스트: 신분증 검증에 쓸 만큼 신뢰할 수 없다는 결론. NewsGuard(2026.5): TruthScan 엔진을 라이선스한 ZeroGPT가 실제 사진 20% 오탐, 가볍게 보정한 이미지 80%를 AI로 판정(엔진이 같은지는 추정). Succinct: 원본 이미지에서는 최상위권, 후처리 후 급락",
+   "weaknesses": "탐지 회피(휴머나이저) 사업과 같은 계열이라는 이해상충, 오탐",
+   "sources": [
+    "https://venturebeat.com/business/how-truthscan-fights-generative-ai-fraud",
+    "https://fortune.com/press-releases/zerogpt-truthscan-ai-image-detection-2026-01-22",
+    "https://techintelpro.com/news/marketing/content-marketing/deepai-integrates-truthscan-for-ai-image-detection",
+    "https://idscan.net/blog/we-tested-truthscan-on-ai-generated-and-real-id/",
+    "https://www.unite.ai/truthscan-review",
+    "https://www.newsguardtech.com/?p=33448"
+   ]
+  },
+  {
+   "name": "Google SynthID Detector + Gemini 앱 이미지 검증 (Search·Chrome 통합)",
+   "company": "Google / Google DeepMind",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오",
+    "텍스트(SynthID 워터마크가 있는 경우만)",
+    "C2PA 메타데이터"
+   ],
+   "form": "웹 포털(SynthID Detector) + Gemini 앱 + Chrome·Search(Lens, Circle to Search) 통합",
+   "status": "Gemini 앱 이미지 검증 2025.11.20. I/O 2026(2026.5.19~20)에서 Search·Chrome으로 확대하고 Gemini에 C2PA 지원 추가. SynthID Detector는 2026.10.6~7 전 세계 공개(영어). 파트너: OpenAI·NVIDIA·Kakao·ElevenLabs, Apple은 예정",
+   "target": "소비자·언론",
+   "pricing": "무료",
+   "major_score": 5,
+   "adoption_score": 5,
+   "reliability_score": 3,
+   "adoption_evidence": "Google 발표 기준 이미지·영상 1,000억 개 이상에 워터마크 적용. Gemini·Chrome·Search 기본 기능으로 배포",
+   "accuracy_vendor_claim": "워터마크 검출 방식으로 구체적 정확도는 비공개. FAQ에서 '어떤 신호도 완전히 견고하지는 않다'고 인정",
+   "independent_evaluation": "Full Fact(2026.10.21): 실제 사진으로 보이는 이미지를 'AI로 생성·편집'됐다고 오판했고 Google이 긴급 업데이트. The Intercept(2026.1): 백악관이 조작한 사진에 SynthID Detector와 Gemini가 상반된 답. Gigazine: 파일명만 바꿔도 답변이 달라짐. MarkNull 논문(arXiv 2608.10166): SynthID-Image 제거 공격 성공률 100%(UnMarker도 100%). PCWorld: 워터마크가 없다는 결과가 '진짜'라는 증명은 아님",
+   "weaknesses": "자사·파트너 워터마크가 들어간 콘텐츠에서만 작동한다(Midjourney·오픈소스 모델은 불가). 제거 공격, 오탐 사례, 업로드 횟수 제한이 있다",
+   "sources": [
+    "https://blog.google/innovation-and-ai/products/ai-image-verification-gemini-app/",
+    "https://gigazine.net/news/20251121-gemini-check-synthid",
+    "https://9to5google.com/2026/05/19/google-is-adding-ai-detection-for-photos-videos-and-audio-to-search-and-chrome/",
+    "https://www.searchenginejournal.com/google-opens-synthid-watermark-detector-to-public/592226/",
+    "https://infoq.com/news/2026/10/synthid-watermarking-detector/",
+    "https://fullfact.org/toolkit/google-synthid-detector-flagging-apparently-real-images/",
+    "https://theintercept.com/2026/01/24/googles-ai-detection-white-house-synthid-gemini/",
+    "https://arxiv.org/pdf/2608.10166",
+    "https://www.pcworld.com/article/3255083/i-tested-googles-new-synthid-detector-on-ai-slop-theres-a-big-catch.html",
+    "https://blog.google/intl/ko-kr/company-news/technology/identifying-ai-generated-media-online-kr/"
+   ]
+  },
+  {
+   "name": "OpenAI Verify",
+   "company": "OpenAI",
+   "country": "미국",
+   "modalities": [
+    "이미지(C2PA·SynthID 신호 확인)"
+   ],
+   "form": "웹 (openai.com/research/verify)",
+   "status": "2026.5.19 공개(일부 매체는 프리뷰로 표기). 같은 날 C2PA 준수 생성기임을 밝히고 ChatGPT·API·Codex 이미지에 SynthID 삽입을 시작",
+   "target": "소비자·언론",
+   "pricing": "무료",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "도구 사용량은 미확인. ChatGPT·API로 생성한 이미지 전체에 신호가 삽입됨",
+   "accuracy_vendor_claim": "비공개",
+   "independent_evaluation": "독립 평가 미확인. 참고로 NYT(2026.2) 테스트에서 ChatGPT는 방금 자신이 만든 가짜 이미지도 판별하지 못함(Verify 출시 이전 챗봇 기준)",
+   "weaknesses": "OpenAI가 생성한 이미지만 확인할 수 있고, 메타데이터·워터마크 제거 공격에 취약하다",
+   "sources": [
+    "https://openai.com/index/advancing-content-provenance",
+    "https://openai.com/research/verify/",
+    "https://thenextweb.com/news/openai-c2pa-synthid-ai-image-detection-watermark",
+    "https://www.thestar.com.my/tech/tech-news/2026/03/10/these-tools-say-they-can-spot-ai-fakes-do-they-really-work"
+   ]
+  },
+  {
+   "name": "Adobe Content Authenticity (웹 앱, 크롬 확장, Inspect)",
+   "company": "Adobe",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오 (C2PA Content Credentials 판독)"
+   ],
+   "form": "무료 웹 앱 + 크롬 확장 + Inspect 도구",
+   "status": "2024.10 발표, 2025.4 퍼블릭 베타. 2026.10 도움말에는 무료 웹 앱으로 표기(정식 출시 여부는 미확인)",
+   "target": "크리에이터·소비자·언론",
+   "pricing": "무료",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "크롬 확장 평점 약 2.3~2.5(스니펫 기준), 사용자 수 미확인",
+   "accuracy_vendor_claim": "탐지가 아니라 암호학적 출처 정보를 읽는 도구라 정확도 개념이 해당되지 않음",
+   "independent_evaluation": "독립 평가 미확인. C2PA 메타데이터는 재저장·스크린샷으로 제거될 수 있고, 진위를 입증하도록 설계되지 않았다는 학술 비판이 있음(arXiv 2604.24890)",
+   "weaknesses": "메타데이터가 없으면 판단할 수 없다. Midjourney 등 미지원 생성기가 있다. KeeeX 특허 소송(UPC)의 피고다",
+   "sources": [
+    "https://www.neowin.net/amp/adobe-content-authenticity-digital-watermarking-tool-is-out-in-public-beta/",
+    "https://helpx.adobe.com/creative-cloud/help/cai/adobe-content-authenticity-chrome-browser-extension.html",
+    "https://chromewebstore.google.com/detail/adobe-content-authenticit/dmfbmenkapmaoldfgacgkoaoiblkimel",
+    "https://arxiv.org/pdf/2604.24890",
+    "https://ipfray.com/upc-gets-worlds-first-serious-patent-lawsuit-against-openai-french-company-alleges-infringement-by-c2pa-content-authenticity-standard/"
+   ]
+  },
+  {
+   "name": "Truepic (Truepic Lens, Content Credentials Display)",
+   "company": "Truepic",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상 (촬영 시점 출처 인증)"
+   ],
+   "form": "기업 SDK/플랫폼",
+   "status": "운영중. 사후 탐지보다 '촬영 시점 진본 인증(프로비넌스)'으로 포지셔닝. C2PA 창립 멤버",
+   "target": "기업(보험·금융·미디어)",
+   "pricing": "미확인",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "Microsoft·Qualcomm·Hugging Face에 Content Credentials 구현 제공. '수백 개 기업 고객, 수천만 건 진본 촬영'(자사 주장)",
+   "accuracy_vendor_claim": "서명 기반이라 정확도 개념이 해당되지 않음",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "이미 퍼진 의심 이미지는 판별할 수 없고, 촬영 시점에 서명된 콘텐츠만 검증한다. KeeeX 소송의 피고다",
+   "sources": [
+    "https://www.truepic.com/blog/content-provenance",
+    "https://truepic.com/?p=9013",
+    "https://ipfray.com/upc-gets-worlds-first-serious-patent-lawsuit-against-openai-french-company-alleges-infringement-by-c2pa-content-authenticity-standard/"
+   ]
+  },
+  {
+   "name": "Microsoft (Video Authenticator, Content Integrity, AI for Good 탐지 연구)",
+   "company": "Microsoft",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상"
+   ],
+   "form": "일반 공개 탐지기 없음. 2020년 Video Authenticator는 제한 배포, Content Integrity 도구는 선거 캠페인용",
+   "status": "연구·제한 배포 단계. 2026.2 'Media Integrity and Authentication' 보고서 발간",
+   "target": "정부·선거·언론 파트너",
+   "pricing": "해당 없음",
+   "major_score": 5,
+   "adoption_score": 1,
+   "reliability_score": 2,
+   "adoption_evidence": "일반 공개 제품은 미확인",
+   "accuracy_vendor_claim": "AI for Good 자체 탐지기가 비적대적 조건에서 95% 이상",
+   "independent_evaluation": "독립 평가 미확인. 자사 보고서조차 탐지기를 '유용하지만 본질적으로 신뢰할 수 없는 최후 방어선'으로 평가. Real or Not 연구(1.25만 명, 28.7만 회 판별)에서 사람의 정확도는 62%",
+   "weaknesses": "공개 제품이 없고, 적대적 조건에서 성능이 떨어진다",
+   "sources": [
+    "https://campustechnology.com/articles/2026/02/25/report-no-foolproof-method-exists-for-detecting-ai-generated-media",
+    "https://the-decoder.com/microsofts-research-argues-ai-media-authentication-doesnt-work-reliably-yet-new-laws-assume-it-does/",
+    "https://www.windowscentral.com/artificial-intelligence/only-slightly-better-than-a-coin-flip-most-people-can-be-fooled-by-ai-images-think-you-can-do-better",
+    "https://techcrunch.com/2020/09/02/microsoft-launches-a-deepfake-detector-tool-ahead-of-us-election/"
+   ]
+  },
+  {
+   "name": "TrueMedia.org",
+   "company": "TrueMedia.org (비영리, Oren Etzioni)",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오"
+   ],
+   "form": "무료 웹 (언론·팩트체커용)",
+   "status": "종료(2025.1.13~14), 운영비 부담이 원인. 웹앱 코드와 모델을 오픈소스화했고, 이후 Georgetown University McCourt School이 기술을 넘겨받아 재가동(시점 미확인)",
+   "target": "언론·팩트체커·선거",
+   "pricing": "무료(종료 전)",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "adoption_evidence": "2024 선거 시즌에 언론이 활용(구체 수치 미확인)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "자사 연구진의 Deepfake-Eval-2024(2025.3): 실제 유통된 딥페이크에서 오픈소스 탐지기의 이미지 AUC가 기존 벤치마크 대비 45% 하락. 상용 탐지기는 그보다 낫지만 인간 포렌식 분석가에는 못 미침",
+   "weaknesses": "지속 가능한 수익모델이 없어 종료됐다. 무료 공익 탐지 서비스의 비용 구조를 보여주는 시장 신호다",
+   "sources": [
+    "https://www.geekwire.com/2025/truemedia-org-plans-to-shutter-and-open-source-its-ai-deepfake-detector-etzioni-hints-at-new-startup/",
+    "https://truemedia.org/post/shutting-down-truemedia",
+    "https://www.geekwire.com/2025/truemedia-is-back-deepfake-detection-tool-revived-now-managed-by-georgetown-university/",
+    "https://huggingface.co/papers/2503.02857"
+   ]
+  },
+  {
+   "name": "Illuminarty",
+   "company": "Illuminarty (운영 주체 비공개)",
+   "country": "미확인",
+   "modalities": [
+    "이미지",
+    "텍스트"
+   ],
+   "form": "웹 + API (히트맵, 생성 모델 식별)",
+   "status": "운영중(2026 기준)",
+   "target": "소비자·개발자",
+   "pricing": "무료 + Basic/Pro (Pro 월 30달러)",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 1,
+   "adoption_evidence": "월 방문 약 8.35만(ToolMage, 2026년 중반). 고객·재무 정보 공개 없음",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "UChicago(2024): 사람 그림을 AI로 오판한 비율 67.4%. CBC: 3장 모두 오답. Emerging Investigators: 75%. 2025.12 테스트 56.87%(2차 출처)",
+   "weaknesses": "오탐이 매우 높고 회사 정보가 불투명하다",
+   "sources": [
+    "https://www.stork.ai/en/illuminarty",
+    "https://www.toolmage.com/pt/tool/illuminarty/",
+    "https://arxiv.org/pdf/2402.03214",
+    "https://amp.cbc.ca/news/canada/ai-detector-tools-test-1.7482913",
+    "https://emerginginvestigators.org/articles/23-132/pdf"
+   ]
+  },
+  {
+   "name": "Is It AI? (isitai.com)",
+   "company": "미확인",
+   "country": "미확인",
+   "modalities": [
+    "이미지",
+    "영상(일부)"
+   ],
+   "form": "웹 + iOS/Android 앱",
+   "status": "운영중",
+   "target": "소비자·뉴스룸",
+   "pricing": "무료 + 무제한 구독",
+   "major_score": 1,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "Trustpilot 3.2점(리뷰 5개). 앱 설치 수 미확인",
+   "accuracy_vendor_claim": "20개 이상 생성 모델에서 95% 이상",
+   "independent_evaluation": "CBC: 1차에서 3장 모두 오답, 2차에서도 AI 이미지는 오답. WebsitePlanet(2026.2, AI 42장·실사 31장 소규모): 7개 도구 중 평균 정확도 1위, 실사 100% 정답",
+   "weaknesses": "평가마다 결과가 엇갈리고, 결제정보 관련 사용자 불만이 있다",
+   "sources": [
+    "https://isitai.com/ai-image-detector",
+    "https://www.websiteplanet.com/blog/ai-image-detection-research/",
+    "https://ie.trustpilot.com/review/isitai.com",
+    "https://amp.cbc.ca/news/canada/ai-detector-tools-test-1.7482913",
+    "https://play.google.com/store/apps/details?id=com.isitai.detector"
+   ]
+  },
+  {
+   "name": "WasItAI",
+   "company": "미확인",
+   "country": "미확인",
+   "modalities": [
+    "이미지"
+   ],
+   "form": "웹",
+   "status": "운영중",
+   "target": "소비자",
+   "pricing": "무료 체험(유료 정보 미확인)",
+   "major_score": 1,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "미확인",
+   "accuracy_vendor_claim": "공개 정확도 수치 없음. 오탐과 미탐이 있다는 점을 스스로 인정",
+   "independent_evaluation": "독립 평가 미확인(AIMultiple 비교에 포함됐으나 수치 미확인)",
+   "weaknesses": "판별 방식(DB 매칭인지 모델인지)에 대한 설명이 출처마다 다르고 운영 주체가 불명이다",
+   "sources": [
+    "https://wasitai.com/about",
+    "https://blog.wasitai.com/?p=304",
+    "https://aimultiple.com/ai-image-detector"
+   ]
+  },
+  {
+   "name": "Decopy AI (AI Image Detector)",
+   "company": "Decopy AI",
+   "country": "미확인",
+   "modalities": [
+    "이미지",
+    "텍스트"
+   ],
+   "form": "웹 (무료 중심)",
+   "status": "운영중",
+   "target": "소비자·학생",
+   "pricing": "무료 중심(상세 미확인)",
+   "major_score": 1,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "미확인",
+   "accuracy_vendor_claim": "'매우 높은 정확도'(정량 수치 없음)",
+   "independent_evaluation": "Phoblographer(2026.1): 사람이 찍은 사진은 모두 맞혔지만 생성 이미지 탐지에 어려움. 텍스트 탐지는 경쟁사 GPTZero·Originality 리뷰에서 낮은 정확도",
+   "weaknesses": "AI 이미지를 놓친다",
+   "sources": [
+    "https://www.thephoblographer.com/2026/01/28/ai-detection-tools-review/",
+    "https://gptzero.me/news/decopy-ai-detector-review/"
+   ]
+  },
+  {
+   "name": "Winston AI (이미지 탐지)",
+   "company": "Winston AI",
+   "country": "캐나다(본 조사에서 미검증)",
+   "modalities": [
+    "텍스트",
+    "이미지"
+   ],
+   "form": "웹 + API",
+   "status": "운영중",
+   "target": "교육·출판·기업",
+   "pricing": "미확인",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "이미지 탐지 사용량 미확인(텍스트 탐지기는 DetectArena 텍스트 리더보드 1위라고 자사 주장)",
+   "accuracy_vendor_claim": "99.98%(주로 텍스트 기준 주장). 이미지 비교 글은 자사 발행",
+   "independent_evaluation": "Phoblographer(2026.1, 6장): Hive·Sightengine과 근소한 차이였고 모든 도구에서 오탐 발생. 텍스트: University of Florida 연구 75.9%(벤더 계열 리뷰가 인용)",
+   "weaknesses": "마케팅 수치와 독립 평가 결과의 차이가 크다",
+   "sources": [
+    "https://help.gowinston.ai/article/are-ai-detection-tools-accurate",
+    "https://www.thephoblographer.com/2026/01/28/ai-detection-tools-review/",
+    "https://www.fast.io/resources/winston-ai-detector-review-2026.md",
+    "https://help.gowinston.ai/understanding-ai-detection/independent-ai-detector-accuracy-benchmarks"
+   ]
+  },
+  {
+   "name": "BitMind (모바일 앱 'AI or Not: AI Detection', Bittensor Subnet 34)",
+   "company": "BitMind Labs Inc.",
+   "country": "미국(추정)",
+   "modalities": [
+    "이미지",
+    "영상"
+   ],
+   "form": "모바일 앱(iOS·Android) + 크롬 확장 + API, Bittensor 기반 탈중앙 모델 경쟁",
+   "status": "운영중(앱 출시 2025년, 출처마다 출시일이 다름)",
+   "target": "소비자·개발자",
+   "pricing": "무료 앱(상세 미확인)",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "앱스토어 평점·설치 수 미확인",
+   "accuracy_vendor_claim": "88%(홍보성 요약). 상용·오픈소스 대비 벤치마크 우위 주장",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "암호화폐 생태계에 의존하고 검증이 부족하다",
+   "sources": [
+    "https://bitmind.ai/blog/bitmind-mobile-app-launch",
+    "https://apps.apple.com/app/id6742792714",
+    "https://docs.bitmind.ai/bitmind-overview",
+    "https://cryptobriefing.com/bitmind-forensics-top-deepfake-detection/"
+   ]
+  },
+  {
+   "name": "Image Whisperer",
+   "company": "ImageWhisperer.org",
+   "country": "미확인",
+   "modalities": [
+    "이미지"
+   ],
+   "form": "웹",
+   "status": "운영중(v1.0 출시 시점이 2026.2와 2026.6으로 출처마다 다름)",
+   "target": "언론·팩트체커·소비자",
+   "pricing": "미확인",
+   "major_score": 1,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "미확인",
+   "accuracy_vendor_claim": "44개 검사를 병렬 실행, 개별 보조 탐지기 70~87%(자체). '100% 정확도 보장 불가'라고 명시",
+   "independent_evaluation": "PetaPixel(2026.2) 테스트에서 정성적 호평(수치 없음)",
+   "weaknesses": "차별점은 전 세계 팩트체크 기관이 판정한 가짜 이미지의 해시 DB와 역이미지 검색이다. 이미 알려진 가짜에는 강하지만 새로운 가짜에는 약하다",
+   "sources": [
+    "https://petapixel.com/2026/02/23/ai-image-whisperer-detector-debunked/",
+    "https://imagewhisperer.org/about"
+   ]
+  },
+  {
+   "name": "DeepFake-o-Meter v2.0",
+   "company": "University at Buffalo",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "오디오"
+   ],
+   "form": "무료 웹 + 오픈소스",
+   "status": "운영중(2024 v2.0). 2025년 이후 현황 미확인",
+   "target": "언론·연구자·일반",
+   "pricing": "무료",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "2023.11~2024.9 약 6,300건 제출",
+   "accuracy_vendor_claim": "해당 없음(학술 탐지기 모음, 이미지 탐지기 6종)",
+   "independent_evaluation": "Poynter 분석에서 바이든 가짜 로보콜 오디오를 가장 잘 탐지(69.7%). 다만 오픈소스 탐지기는 Deepfake-Eval-2024와 arXiv 2602.07814에서 실제 환경 성능이 급락",
+   "weaknesses": "학술 모델 기반이라 최신 상용 생성기에 약하다",
+   "sources": [
+    "https://www.buffalo.edu/news/releases/2024/09/ub-deepfake-o-meter-democratizes-deepfake-detection.html",
+    "https://arxiv.org/html/2404.13146v2"
+   ]
+  },
+  {
+   "name": "딥브레인AI 'AI 디텍터' (경찰청 딥페이크 탐지 소프트웨어 공동 개발)",
+   "company": "딥브레인AI (DeepBrain AI)",
+   "country": "한국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "음성"
+   ],
+   "form": "SaaS + API(2025.11), 경찰청 맞춤형 탐지 소프트웨어",
+   "status": "운영중. 2024.1 출시, 2024.3 경찰청 탐지 소프트웨어 공개, 2025.11 Sora·Veo 대응으로 고도화하고 API 제공",
+   "target": "수사기관·공공·금융·교육",
+   "pricing": "미확인",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "경찰청 탐지 소프트웨어가 누적 1,636건 수사에 활용(2026 보도). 다수 공공·금융·교육기관에서 활용 중이라고 회사가 주장",
+   "accuracy_vendor_claim": "정확도 90% 이상(제품 페이지). 한국인 데이터 100만 건을 포함해 520만 건으로 학습, 5~10분 안에 판별",
+   "independent_evaluation": "독립 평가 미확인. 경찰청은 탐지율 약 80%(2024)라서 증거가 아닌 수사 방향 참고자료로 쓰고, 선거범죄는 민간 전문가가 교차검증",
+   "weaknesses": "얼굴 딥페이크 중심이라 일반 AI 생성 이미지 성능은 공개되지 않았고 독립 검증이 없다",
+   "sources": [
+    "https://www.ddaily.co.kr/page/view/2025111410120875507",
+    "https://www.unicornfactory.co.kr/article/2025111111081151366",
+    "https://m.boannews.com/html/detail.html?idx=127364",
+    "https://www.m-economynews.com/mobile/article.html?no=69729",
+    "https://www.aistudios.com/ko/deepfake-detecting",
+    "https://www.unicornfactory.co.kr/article/2024031510312117331"
+   ]
+  },
+  {
+   "name": "샌즈랩 페이크체크 (FakeCheck)",
+   "company": "샌즈랩 (SANDS LAB)",
+   "country": "한국",
+   "modalities": [
+    "이미지(얼굴)",
+    "영상(2.0부터)"
+   ],
+   "form": "무료 웹 서비스(오픈 베타)",
+   "status": "운영중(2024.9 출시, 2025.5 2.0)",
+   "target": "일반 국민",
+   "pricing": "무료(운영비 회사 부담)",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "미확인",
+   "accuracy_vendor_claim": "자체 테스트 99.33%(웹 실사 100장 + GPT-4o 생성 200장)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "자체 테스트 규모가 작고 얼굴 중심이다",
+   "sources": [
+    "https://byline.network/2024/09/240904_006/",
+    "https://byline.network/2025/05/16-487/",
+    "https://m.boannews.com/html/detail.html?idx=132560"
+   ]
+  },
+  {
+   "name": "카이캐치 (KaiCatch)",
+   "company": "KAIST 이흥규 교수 연구팀",
+   "country": "한국",
+   "modalities": [
+    "이미지(위변조·딥페이크)",
+    "영상",
+    "CCTV 영상"
+   ],
+   "form": "모바일 앱(안드로이드 우선)",
+   "status": "2021 출시, 2022.6 v2.1. 2025~2026 업데이트·운영 현황 미확인",
+   "target": "소비자·기관",
+   "pricing": "미확인",
+   "major_score": 2,
+   "adoption_score": 1,
+   "reliability_score": 2,
+   "adoption_evidence": "최근 사용 지표 미확인",
+   "accuracy_vendor_claim": "알려지지 않은 변형 기법에도 약 90%",
+   "independent_evaluation": "독립 평가 미확인. 논문 대비 실제 오탐률이 높았다는 지적(보안뉴스). v2.1에서 CAT-Net 구조로 개선했다고 설명",
+   "weaknesses": "확산모델 기반 생성형 AI 이전에 설계됐고 최신성이 불분명하다",
+   "sources": [
+    "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=24130",
+    "https://www.fnnews.com/news/202206131041129939",
+    "https://m.boannews.com/html/detail.html?idx=107442",
+    "https://news.jkn.co.kr/post/829205"
+   ]
+  },
+  {
+   "name": "腾讯 朱雀 AI检测 (Tencent Zhuque AI Detection)",
+   "company": "Tencent",
+   "country": "중국",
+   "modalities": [
+    "이미지",
+    "텍스트"
+   ],
+   "form": "웹",
+   "status": "운영중",
+   "target": "중국 소비자·기업",
+   "pricing": "미확인",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "미확인",
+   "accuracy_vendor_claim": "이미지 98% 이상, 텍스트 92% 이상(2차 전언)",
+   "independent_evaluation": "南都大数据研究院의 10개 도구 표본 테스트: 이미지 탐지 도구들이 공통적으로 포토샵 편집 사진을 잘 판별하지 못함",
+   "weaknesses": "중국어권 중심이고 편집된 이미지에 약하다",
+   "sources": [
+    "https://www.aitoollab.cn/tools/zhuque-ai-detect/",
+    "https://www.secrss.com/articles/79617"
+   ]
+  },
+  {
+   "name": "ForgeSpy 'AI Image & Video Detector' (앱스토어 상위 소비자 앱 사례)",
+   "company": "Zyur",
+   "country": "미확인",
+   "modalities": [
+    "이미지",
+    "딥페이크·얼굴 스왑",
+    "영상",
+    "음성 복제"
+   ],
+   "form": "소비자 앱 (Android·iOS)",
+   "status": "2025.11 출시, 운영중",
+   "target": "소비자",
+   "pricing": "인앱결제",
+   "major_score": 1,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "Google Play 약 1.76만 설치, 평점 4.62(1.2천 개), MAU 약 2.7천(AppGoblin 2026 상반기 추정), AppBrain 기준 1만~10만 설치 구간. 본 조사에서 확인한 AI 이미지 판별 전용 앱 중 최대. 비교: Black Sheep Media 'AI Image Detector'는 약 8.4천 설치에 평점 1.22, iOS에서 리뷰가 가장 많은 'AI Detector - Detect AI Image'도 98개(4.4). 같은 개발사의 텍스트 'AI Detector & Humanizer'는 10만 설치 이상",
+   "accuracy_vendor_claim": "0~100% 신뢰도 점수(정확도 수치 비공개)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "소규모 개발사이고 검증이 없다. 카테고리 전체의 신뢰도가 낮다",
+   "sources": [
+    "https://appgoblin.info/apps/io.zyur.forgespy",
+    "https://www.appbrain.com/dev/Zyur/",
+    "https://www.producthunt.com/p/forgespy/forgespy",
+    "https://appgoblin.info/apps/com.aiimage.detector",
+    "https://apps.apple.com/us/app/ai-detector-detect-ai-image/id6503948280"
+   ]
+  }
+ ],
+ "key_findings": [
+  {
+   "claim": "소비자용 'AI 이미지 판별 앱' 시장은 성숙하지 않았다. 구글플레이에서 설치 10만 건 이상인 이미지 판별 전용 앱은 찾지 못했다. 확인된 최대치는 ForgeSpy 약 1.76만 설치이고, 나머지는 대부분 수십~수천 건이다. iOS에서 리뷰가 가장 많은 앱도 98개 수준이며, 평점 1점대 앱도 섞여 있다. 반면 같은 개발사의 텍스트 AI 탐지·휴머나이저 앱은 10만 설치를 넘는다.",
+   "sources": [
+    "https://appgoblin.info/apps/io.zyur.forgespy",
+    "https://www.appbrain.com/dev/Zyur/",
+    "https://appgoblin.info/apps/com.aiimage.detector",
+    "https://apps.apple.com/us/app/ai-detector-detect-ai-image/id6503948280",
+    "https://play.google.com/store/apps/details?id=com.AI.image.detector&hl=en"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "실제 수요는 무료 웹 서비스와 빅테크 기본 기능이 흡수하고 있다. AI or Not은 약 33만(2025)~50만 명 이상의 사용자를 보유했다. Google은 Gemini 앱 검증(2025.11), Search·Chrome 통합(2026.5), SynthID Detector 전면 공개(2026.10.7)를 진행했고, OpenAI도 Verify(2026.5.19)를 무료로 내놓았다.",
+   "sources": [
+    "https://datainnovation.org/2025/08/5-qs-with-anatoly-kvitnitsky-ceo-of-ai-or-not/",
+    "https://checkthat.ai/brands/ai-or-not",
+    "https://blog.google/innovation-and-ai/products/ai-image-verification-gemini-app/",
+    "https://9to5google.com/2026/05/19/google-is-adding-ai-detection-for-photos-videos-and-audio-to-search-and-chrome/",
+    "https://www.searchenginejournal.com/google-opens-synthid-watermark-detector-to-public/592226/",
+    "https://openai.com/index/advancing-content-provenance"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "빅테크의 워터마크·프로비넌스 검증은 자사·파트너 워터마크가 들어간 콘텐츠에서만 작동하고, 그 자체도 완벽하지 않다. 2차 출처에 따르면 Midjourney는 2026년 중반까지 C2PA·비가시 워터마크를 넣지 않는다. Full Fact는 SynthID Detector의 오탐을 확인했고 Google이 긴급 수정했다(2026.10). The Intercept는 SynthID와 Gemini가 서로 반대로 판정한 사례를 보도했다(2026.1). MarkNull·UnMarker 공격은 SynthID-Image 제거에 100% 성공했다고 보고됐다.",
+   "sources": [
+    "https://c2paviewer.com/articles/ai-tools-c2pa-support",
+    "https://fullfact.org/toolkit/google-synthid-detector-flagging-apparently-real-images/",
+    "https://theintercept.com/2026/01/24/googles-ai-detection-white-house-synthid-gemini/",
+    "https://arxiv.org/pdf/2608.10166"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "독립 평가에서 범용 탐지기의 신뢰성은 제한적이다. NYT(2026.2, 도구 12개 이상, 1,000회 이상 스캔)는 '완전히 믿기엔 부족하다'고 결론 내렸다. 진짜 사진 확인은 잘하지만 가짜와 부분 조작은 놓쳤다. AIMultiple(2026.5)은 7개 중 대부분이 동전 던지기 수준이라고 평가했다. 오픈소스 16종 대규모 평가(arXiv 2602.07814)에서는 최고 평균 정확도가 75%였고, Midjourney v7·Flux Dev·Firefly v4 이미지는 18~30%만 탐지했다. AIGIBench(NeurIPS 2025), RRBench(ICCV 2025), Deepfake-Eval-2024도 실제 환경에서 성능이 급락함을 확인했다.",
+   "sources": [
+    "https://www.thestar.com.my/tech/tech-news/2026/03/10/these-tools-say-they-can-spot-ai-fakes-do-they-really-work",
+    "https://aimultiple.com/ai-image-detector",
+    "https://arxiv.org/abs/2602.07814",
+    "https://arxiv.org/abs/2505.12335",
+    "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Bridging_the_Gap_Between_Ideal_and_Real-world_Evaluation_Benchmarking_AI-Generated_ICCV_2025_paper.pdf",
+    "https://huggingface.co/papers/2503.02857"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "탐지기는 간단한 후처리에도 크게 흔들린다. Succinct Labs 벤치마크(이미지 1.56만 장)에서 상위 3개 상용 탐지기의 탐지율이 블러·노이즈·압축 후 98/90/90%에서 36/11/13%로 떨어졌고, 여러 탐지기를 묶는 앙상블로도 해결되지 않았다(검증 기술을 파는 회사가 수행한 평가). Notebookcheck의 Nano Banana Pro 실험(비공식 소규모)에서는 원본 이미지도 6개 중 2개가 놓쳤고, 간단히 편집하자 6개 모두 속았다.",
+   "sources": [
+    "https://blog.succinct.xyz/ai-image-detection-benchmark/",
+    "https://aidetection.succinct.xyz/paper.pdf",
+    "https://www.notebookcheck.net/The-Nano-Banana-Pro-experiment-AI-detection-tools-prove-useless.1201789.0.html",
+    "https://letsdatascience.com/news/detection-tools-fail-nano-banana-pro-images-5628b2bd"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "오탐(진짜를 가짜로 판정)과 미탐(조작을 놓침)이 맞바꾸는 관계다. NewsGuard(2026.5)가 이란 전쟁 실제 보도사진 15장으로 시험한 결과 평균 오탐은 13.33%였다(ScamAI 40%, ZeroGPT 20%, AI or Not 6.67%, Hive·Sightengine 0%). 그러나 오탐이 없던 Hive·Sightengine은 대폭 조작된 이미지 탐지에서 최하위였다(Sightengine은 15장 중 5장만 탐지).",
+   "sources": [
+    "https://www.newsguardtech.com/?p=33448",
+    "https://edmo.eu/publications/major-ai-image-detection-tools-deceive-online-users-often-classifying-authentic-images-as-fakes/",
+    "https://filmdaily.co/news/can-you-trust-an-ai-image-detector-the-accuracy-debate/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "상용 탐지기 중에서는 Hive가 가장 많은 독립 평가에서 상위권이다(UChicago 2024 정확도 98.03%·오탐 0%, CBC 전부 정답, NewsGuard 오탐 0건). 미 국방부(240만 달러)와 DHS(AI 생성 아동성착취물 판별) 계약도 따냈다. 다만 연구자들은 이미지 교란으로 우회할 수 있다고 지적한다.",
+   "sources": [
+    "https://arxiv.org/pdf/2402.03214",
+    "https://amp.cbc.ca/news/canada/ai-detector-tools-test-1.7482913",
+    "https://www.businesswire.com/news/home/20241205852015/en/Hive-Secures-DoD-Contract-for-Deepfake-Detection-Pioneering-AI-Defense-Against-Emerging-Threats",
+    "https://getcoai.com/news/dhs-deploys-ai-tools-to-detect-fake-child-abuse-imagery"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "범죄 수사 현장에서도 탐지기는 '증거'가 아니라 '참고자료'다. 한국 경찰청 탐지 소프트웨어(딥브레인AI 협력)는 탐지율이 약 80%라 수사 방향 설정에만 쓰고, 선거범죄는 민간 전문가가 교차검증한다. 누적 1,636건 수사에 활용됐다. 미국 연방증거규칙위원회는 2026.1 기준 AI 생성 증거에 관한 규칙을 채택하지 않았다. Microsoft도 탐지기를 '본질적으로 신뢰할 수 없는 최후 방어선'이라고 규정했다.",
+   "sources": [
+    "https://m.boannews.com/html/detail.html?idx=127364",
+    "https://www.m-economynews.com/mobile/article.html?no=69729",
+    "https://www.nextpoint.com/ediscovery-blog/a-federal-judge-and-legal-experts-reveal-how-to-detect-and-challenge-deepfake-evidence",
+    "https://campustechnology.com/articles/2026/02/25/report-no-foolproof-method-exists-for-detecting-ai-generated-media"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "자금과 인수합병은 기업·정부 시장에 집중되고 있다. 투자: Reality Defender 누적 3,300만 달러 이상(Gartner 'Market Shaper'), GetReal 1,750만 달러, Resemble 1,300만 달러, Pangram 900만 달러, AI or Not 500만 달러, IdentifAI 500만 유로, Sensity EIC 490만 유로. 인수: Deel이 Clarity를 인수(2026.8), Cheq가 Deduce를 인수(2025 초). 대형 보안 회사도 소비자 시장에 들어왔다(Bitdefender RealCheck 2026.6, McAfee Deepfake Detector, 둘 다 주로 영상).",
+   "sources": [
+    "https://www.securityweek.com/reality-defender-banks-33m-to-tackle-ai-generated-deepfakes/amp/",
+    "https://www.securityweek.com/getreal-security-raises-17-5-million-to-tackle-gen-ai-threats/",
+    "https://siliconangle.com/2025/12/08/resemble-ai-hauls-13m-different-approach-deepfake-detection/",
+    "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/",
+    "https://tech.eu/2025/07/24/identifai-raises-eur5m-to-tackle-the-rise-of-deepfakes-with-ai-driven-detection-platform/",
+    "https://thenextweb.com/news/deel-acquires-clarity-deepfake-detection",
+    "https://www.biometricupdate.com/202501/deepfake-detection-platform-deduce-acquired-by-cheq",
+    "https://www.helpnetsecurity.com/2026/06/25/bitdefender-realcheck-analyzes-videos-for-deepfakes-and-fraud/",
+    "https://www.mcafee.com/en-us/newsroom/press-releases/2025/mcafees-scam-detector-added-to-core-plans-protecting-people-against-text-email-and-video-scams.html"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "규제는 생성 서비스 사업자에게 AI 표시와 무료 검증 도구 제공을 의무화하는 방향이다. 한국 AI 기본법은 2026.1.22 시행됐고, 계도기간 뒤 최대 3,000만 원 과태료, 딥페이크는 명확히 표시해야 한다. EU AI Act 제50조는 2026.8 시행이다. 캘리포니아 SB 942/AB 853(2026.8.2)은 월 사용자 100만 명 이상 생성 서비스에 무료 공개 탐지 도구를 의무화했다. Indicator·WITNESS 평가는 이런 도구들이 '개선 필요' 수준이라고 했다. 카카오는 아시아 최초로 SynthID를 도입했다(2026.5). 국내에서는 '워터마크는 지우면 그만'이라는 비판도 나왔다(2026.10).",
+   "sources": [
+    "https://www.etoday.co.kr/news/view/2547948",
+    "https://v.daum.net/v/20260121120209717",
+    "https://www.ddaily.co.kr/page/view/2025090815422394673",
+    "https://indicator.media/p/ai-generators-are-now-required-to-offer-detection-tools-we-tested-them-and-they-need-work",
+    "https://news.bloomberglaw.com/ip-law/ai-slop-drives-states-to-act-as-federal-rules-lag-explained",
+    "https://www.kakaocorp.com/page/detail/12039",
+    "https://www.newsis.com/view/NISX20260520_0003636879",
+    "https://zdnet.co.kr/view?no=20261020095628"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "특허가 AI 이미지 탐지 자체를 원천 봉쇄하고 있다는 정황은 찾지 못했다. 탐지 특허는 기법 단위로 존재한다(Reality Defender 'Identification of Neural-Network-Generated Fake Images', 딥브레인AI 음성·얼굴행동 분석 특허 출원, 누리랩 AI+메타데이터 특허). 실제 분쟁은 프로비넌스(출처 인증) 쪽에서 벌어지고 있다. KeeeX가 C2PA 관련 특허 EP2949070으로 Adobe·Truepic·OpenAI·C2PA를 유럽 통합특허법원에 제소했고(2025.6), 2026.7 기준 계류 중이다. 정식 FTO(특허 침해 여부) 조사는 하지 않았다.",
+   "sources": [
+    "https://realitydefender.com/publication/patent-identification-of-neural-network-generated-fake-images",
+    "https://www.unicornfactory.co.kr/article/2024050210383828649",
+    "https://m.boannews.com/html/detail.html?idx=140194",
+    "https://ipfray.com/upc-gets-worlds-first-serious-patent-lawsuit-against-openai-french-company-alleges-infringement-by-c2pa-content-authenticity-standard/",
+    "https://www.veron.com/wp-content/uploads/pve-upc/fichiers/2026-07-20_LD_Paris_UPC_CFI_530-2025_en-GB.pdf"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "한국 시장은 B2G·B2B 중심이고 지배적인 소비자 앱이 없다. 딥브레인AI(경찰·API), 샌즈랩 페이크체크(무료, 자체 테스트 99.33%), 카이캐치(2021~22 이후 최신성 미확인)가 있고, 라온시큐어·누리랩·씨유박스 등은 개발 단계다. 스틸컷은 원본 사진에 보이지 않는 신호를 넣어 합성을 미리 막는 접근을 택했다.",
+   "sources": [
+    "https://www.ddaily.co.kr/page/view/2025111410120875507",
+    "https://byline.network/2025/05/16-487/",
+    "https://www.fnnews.com/news/202206131041129939",
+    "https://newstomato.com/ReadNews.aspx?no=1240402",
+    "https://www.venturesquare.net/1105380/",
+    "https://m.boannews.com/html/detail.html?idx=137309"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "최신 생성기별 독립 데이터는 빈약하다. Nano Banana Pro는 비공식 테스트에서 탐지기들이 실패했다. Midjourney v7·Flux Dev는 오픈소스 탐지기 기준 18~30%만 탐지됐다. GPT-Image-2로 만든 글자 많은 이미지 벤치마크(2026.6)에서는 포스터는 잘 잡던 탐지기가 표·영수증에서 무너졌다. Seedream·Flux 2에 대한 상용 탐지기별 수치는 확인하지 못했다(AI Detector Arena는 SeedDream v4를 포함했지만 생성기별 수치를 공개하지 않음).",
+   "sources": [
+    "https://www.notebookcheck.net/The-Nano-Banana-Pro-experiment-AI-detection-tools-prove-useless.1201789.0.html",
+    "https://arxiv.org/abs/2602.07814",
+    "https://huggingface.co/papers/2606.19259.md",
+    "https://dev.to/aidetectarena/i-checked-1000-ai-and-real-images-with-top-ai-image-detectors-you-will-be-surprised-2jd8"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "챗봇에게 '이거 진짜야?'라고 묻는 방식은 특히 부정확하다. AFP(2025.11) 사례에서 Gemini·Copilot·Google AI Mode가 Nano Banana로 만든 가짜를 진짜라고 판정했다. Tow Center 연구에서는 7개 시스템이 진짜 보도사진 10장 중 한 장도 검증하지 못했다. 많은 사람이 의지하는 도구가 부정확하다는 점은 신뢰할 만한 도구에 대한 미충족 수요를 보여준다.",
+   "sources": [
+    "https://www.rnz.co.nz/news/business/579586/ai-s-blind-spot-tools-fail-to-detect-their-own-fakes",
+    "https://www.cjr.org/tow_center/why-ai-models-are-bad-at-verifying-photos.php"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "사람의 판별력도 낮아서 수요 자체는 실재한다. Microsoft 'Real or Not' 연구(1.25만 명)에서 정확도는 62%였고, ARIA 사용자 연구는 65~68%였다. UChicago 연구에서는 일반인이 AI 아트와 사람 그림을 사실상 구분하지 못했다.",
+   "sources": [
+    "https://www.windowscentral.com/artificial-intelligence/only-slightly-better-than-a-coin-flip-most-people-can-be-fooled-by-ai-images-think-you-can-do-better",
+    "https://petapixel.com/2025/07/30/a-little-over-50-of-people-can-recognize-ai-images-from-real-photos",
+    "https://www.arxiv.org/pdf/2404.14581",
+    "https://arxiv.org/pdf/2402.03214"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "무료 공익 탐지 서비스는 지속하기 어렵다. TrueMedia.org는 운영비 부담으로 2025.1 문을 닫았다(오픈소스화 후 Georgetown 이관). AI or Not은 모델을 일주일에 여러 번 업데이트한다고 밝혔다. 최신 생성기 샘플 수집, 재학습, 추론에 드는 비용이 핵심 원가다.",
+   "sources": [
+    "https://www.geekwire.com/2025/truemedia-org-plans-to-shutter-and-open-source-its-ai-deepfake-detector-etzioni-hints-at-new-startup/",
+    "https://datainnovation.org/2025/08/5-qs-with-anatoly-kvitnitsky-ceo-of-ai-or-not/"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "탐지 전용 시장 규모 추정치는 2025년 약 7억~12억 달러, 연평균 성장률 25~37%다(보고서마다 다르고 방법론은 검증하지 않음). 소프트웨어·API가 73.6%를 차지하고, 가장 빨리 성장하는 분야는 오디오다.",
+   "sources": [
+    "https://www.astuteanalytica.com/industry-report/deepfake-detection-market",
+    "https://www.snsinsider.com/reports/deepfake-detection-market-11090",
+    "https://www.meticulousresearch.com/product/deepfake-detection-market-6944"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "gaps_and_opportunities": [
+  "여러 신호를 한 번에 확인하는 '통합 검증' 리포트: C2PA 판독, SynthID·OpenAI Verify 조회, 자체 탐지 앙상블, 역이미지 검색과 팩트체크 기관이 판정한 가짜 이미지 DB, EXIF·압축 이력 분석을 한 화면에 모아 '판정'이 아니라 '근거와 불확실성'으로 보여주는 도구가 없다. 지금은 사용자가 여러 사이트를 돌아다녀야 한다.",
+  "부분 합성·인페인팅·보정 이미지의 '조작 영역 표시': NYT·NewsGuard 테스트에서 상용 도구가 가장 약했던 부분이다. Copyleaks가 픽셀 단위 표시를 막 시작한 초기 단계다.",
+  "문서·영수증·신분증·캡처 화면 위조 탐지: GPT-Image-2로 만든 글자 많은 이미지 벤치마크에서 탐지기가 무너졌다. 보험 청구, 중고거래, 환불 사기, KYC(본인확인)용 B2B 니치로 국내 플랫폼을 공략할 수 있다.",
+  "한국 환경 특화: 한국인 얼굴, 한글이 들어간 이미지, 카카오톡·밴드 등 메신저 재압축 경로에 맞춘 데이터셋으로 해외 도구의 데이터 편향을 공략할 수 있다. 딥브레인AI가 한국인 데이터 100만 건을 차별점으로 내세운 것이 선례다.",
+  "수사·법률용 '설명 가능한' 포렌식 보고서: 해시, 처리 이력, 재현성, 오탐 가능성을 명시해 증거능력 요건을 갖춘 리포트다. 경찰도 탐지율 80% 수준 도구를 참고용으로만 쓰는 상황이라 로펌·보험사·언론사·수사기관의 수요가 있다.",
+  "워터마크를 넣지 않는 생성기(Midjourney, 오픈소스 Flux 계열, 일부 해외 모델) 대응: 빅테크 무료 검증이 닿지 않는 이 사각지대가 독립 탐지기가 존재할 이유다.",
+  "디지털 성범죄 피해자 지원형 서비스(유포된 합성 이미지 탐지와 삭제 요청 연계): 기관 협력이 필요하고 데이터 수집·보유에 법적 제약이 크지만, 사회적 수요가 크고 공공 조달 가능성이 있다.",
+  "신뢰를 차별화하는 요소는 모델 자체보다 '신규 생성기 출시 후 며칠 안에 재학습하는 업데이트 파이프라인'과 '공개 벤치마크·오탐률 공시'다. 대부분의 경쟁 앱은 독립 검증 수치를 공개하지 않는다.",
+  "국내 AI 기본법에 맞춘 B2B 검증 API(플랫폼이 업로드 콘텐츠의 AI 표시·워터마크 유무를 확인) 수요 가능성이 있다. 다만 법적 의무 주체가 플랫폼이 아니라 AI 서비스 사업자라서 수요 규모는 불확실하다."
+ ],
+ "threats_and_barriers": [
+  "무료 대체재: Google(Gemini·Chrome·Search·SynthID Detector), OpenAI Verify, Adobe가 무료로 제공하고, 캘리포니아 SB 942·EU AI Act가 생성 서비스에 무료 탐지 도구 제공을 의무화했다. 소비자에게 돈을 받기가 매우 어렵다.",
+  "기술적 군비경쟁: 생성기가 최신일수록 탐지율이 떨어진다(2차 요약 기준 2020~21년 생성기 약 79%에서 2024년 생성기 약 38%로). 간단한 후처리만으로 98%가 36%로 떨어진다. 탐지 회피용 '휴머나이저' 시장도 존재한다(Undetectable AI는 탐지와 회피 사업을 함께 운영).",
+  "오탐의 사회적·법적 위험: 진짜 사진을 가짜로 판정하면(NewsGuard 평균 13.3%, Full Fact의 SynthID 사례) 명예훼손이나 수사 오류의 책임이 생길 수 있다. '범죄까지 잡는다'는 마케팅은 특히 위험하다.",
+  "운영비 구조: 최신 생성기 샘플 수집, 재학습, 추론 GPU 비용이 계속 든다. TrueMedia.org는 비용 문제로 종료했고, AI or Not은 일주일에 여러 번 업데이트한다.",
+  "자금력 있는 경쟁자와 업계 통합: Hive(2021년 기업가치 20억 달러), Reality Defender, GetReal(In-Q-Tel 투자), Resemble(Google 펀드 투자), Pangram 등이 있다. Bitdefender·McAfee 같은 대형 보안 회사가 소비자 시장에 들어왔고, Deel-Clarity 같은 인수합병도 진행 중이다.",
+  "공공기관·포렌식 시장의 진입장벽: 조달 실적, 인증, 보안 요구(온프레미스)가 필요하다. 경찰청-딥브레인AI, 미 국방부·DHS-Hive처럼 이미 계약이 있고, 법정 증거 기준도 아직 정해지지 않았다.",
+  "데이터와 법적 제약: 얼굴 등 개인정보를 다뤄야 하고, 성착취물 데이터는 학습·보유할 수 없다(Hive도 학습하지 않는다고 밝힘). 한국 실사진 라이선스 확보 비용과 최신 생성기 샘플 수집 비용도 든다.",
+  "앱스토어 카테고리의 신뢰 저하: 평점 1점대 저품질 앱이 키워드를 점유하고 있다. 사용자 확보 비용에 비해 지불의사가 낮다.",
+  "특허·표준 불확실성: 범용 탐지를 막는 특허는 찾지 못했지만, C2PA 관련 KeeeX 소송이 계류 중이고 기법별 특허가 존재한다. C2PA 기능을 넣는다면 출시 전에 키프리스·Google Patents로 FTO 조사가 필요하다."
+ ],
+ "red_ocean_judgement": "판단: '범용 AI 이미지 판별 소비자 앱'은 사실상 레드오션이다. 더 정확히는 '돈이 안 되는 포화 시장'이다. 압도적 1위 앱이 있어서가 아니라 세 가지 이유 때문이다. ① 수십 개의 웹·앱이 차별화 없이 난립하고, 앱스토어 최대 설치가 수만 건에 그친다. 평점 1점대 앱도 많아 카테고리 전체의 신뢰가 낮다. ② Google·OpenAI·Adobe가 무료 검증을 기본 기능으로 넣었고, 캘리포니아 SB 942·EU AI Act·한국 AI 기본법이 생성 서비스 쪽에 표시와 검증 책임을 지우고 있다. ③ 독립 평가에서 최고 수준 도구도 편집된 이미지와 신형 생성기 앞에서 크게 흔들리고 오탐률이 0~40%까지 벌어진다. '더 정확하다'는 것만으로는 차별화하기 어렵고 법적 위험도 크다. 기업·정부용 API 시장은 Hive·Reality Defender·GetReal·Sensity·Resemble·Pangram처럼 자금력 있는 기업이 선점하고 있고, Deel-Clarity 같은 인수로 통합이 시작된 '레드오션 진입 단계'다. 반면 '범죄 수사급 포렌식'은 다르다. 부분 조작 위치 표시, 설명 가능성, 증거능력, 한국 환경 대응 같은 미해결 과제가 많고, 한국 경찰조차 탐지율 약 80% 도구를 참고용으로만 쓴다. 블루오션 성격이 있지만 조달·인증·데이터·법적 검증이라는 진입장벽이 높다. 특허는 범용 탐지를 원천 봉쇄한 정황이 없어 포기할 이유가 되지 않는다(C2PA 관련 KeeeX 소송만 주시하면 된다). 결론: 범용 소비자 앱으로 정면 승부하는 것은 비추천한다. 대신 한국 특화, 특정 사기 유형(문서·신분증·중고거래·보험), 수사·법률용 설명 가능 리포트, 여러 신호를 묶은 통합 검증처럼 B2B·B2G 니치로 문제를 다시 정의하면 소규모 팀도 경쟁할 여지가 있다.",
+ "summary": "2026년 11월 기준 AI 생성·조작 이미지 탐지 제품은 이미 30개 안팎이 있다. 사용자의 네 가지 기준으로 보면 다음과 같다.\n\n(1) 메이저 앱이 있는가: 있다. Google(SynthID Detector, Gemini, Chrome, Search), OpenAI(Verify), Adobe(Content Credentials) 같은 빅테크가 '자사 워터마크 검증'을 무료로 제공한다. 범용 탐지에서는 Hive(미 국방부·DHS 계약)가 사실상 기준점이고, 투자받은 Reality Defender, GetReal, Sensity, Resemble, Pangram, AI or Not 등이 기업 시장을 놓고 경쟁한다. 한국에는 딥브레인AI(경찰청 협력), 샌즈랩 페이크체크, KAIST 카이캐치가 있다.\n\n(2) 많이 쓰이는가: 소비자 '앱'은 매우 미성숙하다. 구글플레이에서 설치 10만 건 이상인 이미지 판별 전용 앱은 찾지 못했고, 확인된 최대치는 약 1.8만 설치다. 실제 수요는 AI or Not(수십만 명) 같은 무료 웹과 빅테크 기본 기능이 흡수하고 있다.\n\n(3) 믿을 만한가: 아니다. NYT, NewsGuard, AIMultiple 테스트와 NeurIPS·ICCV 학술 벤치마크는 같은 결론에 이른다. 진짜 사진 확인은 그럭저럭 하지만, 최신 생성기(Midjourney v7, Flux, Nano Banana Pro)와 편집·하이브리드 이미지는 자주 놓친다. 일부 도구는 진짜 사진을 13~40% 가짜로 판정한다. 범죄 수사급으로 믿을 수 있는 단일 도구는 없고, 한국 경찰도 탐지율 약 80% 도구를 참고자료로만 쓴다. 빅테크 워터마크 검증은 자사 콘텐츠에서만 작동하며, 오탐과 워터마크 제거 공격 사례가 보고됐다.\n\n(4) 지금 만들어도 경쟁력이 있는가: 범용 소비자 '판별 앱'은 무료 대체재와 기술 한계 때문에 레드오션에 가깝고, 기업용 API도 자금 경쟁이 치열하다. 특허가 길을 막고 있다는 정황은 없다(C2PA 관련 KeeeX 소송은 계류 중). 그래도 차별화 없이 들어가면 승산이 낮다. 남아 있는 미해결 영역은 한국 환경 특화, 부분 조작 위치 표시, 문서·영수증·신분증 위조, 수사·법률용 설명 가능 포렌식 리포트, 여러 신호(C2PA, SynthID, 자체 탐지, 역검색)를 묶은 통합 검증이다. B2B·B2G 니치로 좁히면 경쟁 여지가 있다.\n\n조사 한계: notebookcheck.net과 pangram.com은 이 세션의 네트워크 허용 목록 밖이라 원문을 열지 못했고 검색 요약으로 대신했다. 이 두 사이트를 직접 확인하려면 세션 네트워크 설정에서 허용해야 한다. 웹 검색 한도(턴당 200회, 에이전트 공유)를 다 써서 InVID-WeVerify 등 일부 도구와 앱별 최신 설치 수, Seedream·Flux 2 대상 상용 탐지기 수치는 추가로 확인하지 못했다. 이어서 조사하려면 후속 메시지를 보내면 된다. 앱 설치·평점 수치는 AppGoblin 등 제3자 추적 사이트의 2026년 스냅샷이라 실제와 다를 수 있다."
+}

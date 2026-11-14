@@ -1,0 +1,713 @@
+{
+ "products": [
+  {
+   "name": "Pindrop Pulse / Pulse Inspect",
+   "company": "Pindrop Security",
+   "country": "미국",
+   "modalities": [
+    "음성(콜센터 실시간 통화)",
+    "음성(오디오·영상 파일)",
+    "음성(화상회의)"
+   ],
+   "form": "기업 플랫폼/API(콜센터 통합), 웹 업로드 분석 도구(Pulse Inspect)",
+   "target": "기업(금융·보험·콜센터), 미디어·정부",
+   "status": "운영중. 2024년 콜센터용 출시, 같은 해 파일 분석용 Pulse Inspect 공개, 이후 화상회의용으로 확장(기억에 근거). 2026-11 현황은 미검증",
+   "pricing": "기업 견적(비공개). Pulse Inspect 가격 미확인",
+   "accuracy_vendor_claim": "딥페이크 탐지 정확도 99%, 약 2초 안에 판별, 낮은 오탐률을 주장(2024-07 TechCrunch 보도로 기억, 미검증)",
+   "independent_evaluation": "NPR이 2024-04에 실제·합성 클립 84개로 한 소규모 비교 테스트에서 AI or Not, AI Voice Detector보다 가장 정확했다(오류 소수)고 보도(기억에 근거, 미검증). 2024-01 바이든 가짜 로보콜의 생성 엔진을 ElevenLabs로 추정한 분석이 언론에 널리 인용됨. 대규모 공개 벤치마크에서의 제품 성능은 미확인",
+   "weaknesses": "비공개 상용 모델이라 재현·검증이 어려움. 소비자는 직접 쓰기 어려움. 한국어와 국내 전화망 코덱에서의 성능 미확인. 독립 테스트는 2024년 시점의 소규모 1건뿐",
+   "major_score": 4,
+   "adoption_score": 4,
+   "reliability_score": 4,
+   "adoption_evidence": "미국 대형 은행·보험사 다수가 고객이고 수십억 건의 통화를 분석했다고 주장(벤더 주장, 수치 미검증). 2024-07 Hercules Capital로부터 1억 달러 부채금융을 받았다는 보도(기억에 근거, 미검증)",
+   "sources": [
+    "https://www.pindrop.com/products/pindrop-pulse/ (제품 페이지, 이번 세션에서 접속 불가·미검증)",
+    "https://techcrunch.com/ (2024-07 'Pindrop claims to detect AI audio deepfakes with 99% accuracy' 기사, URL 미검증)",
+    "https://www.npr.org/ (2024-04 오디오 딥페이크 탐지기 비교 테스트 기사, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Reality Defender (오디오/음성 탐지 포함 멀티모달)",
+   "company": "Reality Defender",
+   "country": "미국",
+   "modalities": [
+    "음성",
+    "이미지",
+    "영상",
+    "텍스트"
+   ],
+   "form": "API/SDK, 웹 플랫폼, 통화·화상회의 실시간 연동",
+   "target": "기업·금융·정부",
+   "status": "운영중(2021년 설립). 2026-11 현황 미검증",
+   "pricing": "기업 견적. 2025년에 개발자용 무료 티어를 냈다는 보도로 기억(미검증)",
+   "accuracy_vendor_claim": "공개된 단일 정확도 수치는 미확인. 여러 모델을 앙상블해 확률 점수를 제공한다고 주장",
+   "independent_evaluation": "독립 평가 미확인(RSA Conference 2024 Innovation Sandbox 우승은 성능 평가가 아님)",
+   "weaknesses": "독립 벤치마크가 없음. 기업 위주로 판매. 모델 비공개",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "Series A 누적 약 3,300만 달러(2023~2024, DCVC 주도, Booz Allen Ventures·IBM Ventures·Accenture 등 참여) 보도. 2024년 ElevenLabs와 탐지 협력(기억에 근거, 미검증)",
+   "sources": [
+    "https://www.realitydefender.com/ (이번 세션에서 접속 불가·미검증)",
+    "https://techcrunch.com/ (2023-10 Reality Defender Series A 보도, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Resemble Detect",
+   "company": "Resemble AI",
+   "country": "미국",
+   "modalities": [
+    "음성(주력)",
+    "이미지·영상(2025년 확장 발표로 기억, 미검증)"
+   ],
+   "form": "API, 웹 대시보드, 온프레미스. 자체 워터마크(PerTh)를 함께 제공",
+   "target": "기업·미디어·정부",
+   "status": "운영중(2023 출시, 2024 DETECT-2B 모델 발표로 기억). 2026-11 현황 미검증",
+   "pricing": "사용량 기반/기업 견적(세부 미확인)",
+   "accuracy_vendor_claim": "DETECT-2B 등에서 다국어 90%대 고정확도를 주장. 정확한 수치는 미검증",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "음성 복제 사업자가 탐지기도 함께 파는 구조라 자사 데이터에 치우칠 수 있음. 독립 검증 없음",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "고객 수·사용량 공개 수치 미확인. 분기별 딥페이크 사고 보고서를 내며 업계 인지도는 있음(기억에 근거)",
+   "sources": [
+    "https://www.resemble.ai/detect/ (이번 세션에서 접속 불가·미검증)"
+   ]
+  },
+  {
+   "name": "ElevenLabs AI Speech Classifier",
+   "company": "ElevenLabs",
+   "country": "미국/영국",
+   "modalities": [
+    "음성(ElevenLabs 생성물만)"
+   ],
+   "form": "무료 웹 도구",
+   "target": "일반 소비자·언론·플랫폼",
+   "status": "운영중(2023-06 공개). 2026-11 현황 미검증",
+   "pricing": "무료",
+   "accuracy_vendor_claim": "가공하지 않은 ElevenLabs 음성은 99% 이상, 코덱·잔향 처리 후에도 90% 이상 판별한다고 주장(2023 발표로 기억, 미검증)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "자사 모델이 만든 음성만 판별함. 다른 회사나 오픈소스 TTS·보이스클로닝 음성은 대상이 아니므로 범용 탐지기가 아님",
+   "major_score": 4,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "adoption_evidence": "사용량 공개 수치 미확인. 모회사는 2025-01 Series C 1.8억 달러(기업가치 33억 달러)를 유치했다는 보도(기억에 근거, 미검증)",
+   "sources": [
+    "https://elevenlabs.io/ai-speech-classifier (이번 세션에서 접속 불가·미검증)",
+    "https://elevenlabs.io/blog/ (2023-06 AI Speech Classifier 발표, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Hiya Deepfake Voice Detector",
+   "company": "Hiya Inc.",
+   "country": "미국",
+   "modalities": [
+    "음성(브라우저에서 재생되는 오디오·영상)",
+    "음성(통화, Hiya 앱·통신사 연동)"
+   ],
+   "form": "Chrome 확장 프로그램(무료) + 통신사/기업용 API",
+   "target": "소비자, 통신사·기업",
+   "status": "운영중(2024년 하반기 출시로 기억). 기반 기술은 2024년에 인수한 스페인 Loccus.ai로 기억(미검증)",
+   "pricing": "무료(사용 횟수 제한이 있는 것으로 기억, 미검증)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "확장 프로그램 사용자 규모와 한국어 지원 여부 미확인. 브라우저에서 재생되는 오디오 위주",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "확장 프로그램 사용자 수 미확인. Hiya는 삼성 Smart Call 등 통신사·제조사에 발신자 식별을 공급해(기억) 유통 채널은 강함",
+   "sources": [
+    "https://www.hiya.com/ (Deepfake Voice Detector·Loccus.ai 인수 발표, URL 미검증)",
+    "https://chromewebstore.google.com/ (Hiya Deepfake Voice Detector 확장, 사용자 수 미확인)"
+   ]
+  },
+  {
+   "name": "McAfee Deepfake Detector (Scam Detector 통합)",
+   "company": "McAfee",
+   "country": "미국",
+   "modalities": [
+    "음성(PC에서 재생되는 영상·오디오)"
+   ],
+   "form": "온디바이스 소비자 보안 SW(Copilot+ PC NPU 사용)",
+   "target": "소비자",
+   "status": "운영중. CES 2024에서 'Project Mockingbird'로 공개, 2024-08 Lenovo Copilot+ PC에 탑재, 2025년 Scam Detector에 통합된 것으로 기억(미검증)",
+   "pricing": "McAfee 구독 번들(지원 하드웨어 한정)",
+   "accuracy_vendor_claim": "Project Mockingbird 발표 때 90% 이상을 주장했고, 이후 96% 수준을 주장한 것으로 기억(미검증)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "특정 PC 하드웨어에 의존. 영어 중심. 전화 통화 탐지는 아님",
+   "major_score": 4,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "adoption_evidence": "탐지 기능의 실사용 수치 미확인(McAfee 전체 사용자 기반은 큼)",
+   "sources": [
+    "https://www.mcafee.com/ (Deepfake Detector 제품 페이지, URL 미검증)",
+    "McAfee CES 2024 'Project Mockingbird' 발표(URL 미확인)"
+   ]
+  },
+  {
+   "name": "Nuance Gatekeeper (합성 음성 탐지 포함)",
+   "company": "Microsoft (Nuance Communications)",
+   "country": "미국",
+   "modalities": [
+    "음성(콜센터 화자인증·합성음 탐지)"
+   ],
+   "form": "기업 플랫폼(클라우드/온프레미스)",
+   "target": "금융·통신·공공 콜센터",
+   "status": "운영중(Microsoft가 2022년 Nuance를 인수한 뒤 제공). 합성음 탐지 기능 세부와 2026 현황은 미검증",
+   "pricing": "기업 견적",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "음성 생체인증 자체가 AI 음성복제로 뚫릴 수 있다는 경고가 반복됨(2023 VICE 기자의 은행 음성인증 우회 보도, 2025-07 샘 올트먼의 은행 음성인증 위험 발언, 둘 다 기억에 근거·미검증)",
+   "major_score": 5,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "adoption_evidence": "글로벌 은행·통신사 다수가 도입했다고 주장(벤더 주장, 미검증). 합성음 탐지 기능만의 사용 규모는 미확인",
+   "sources": [
+    "https://www.nuance.com/ (Gatekeeper 제품 페이지, Microsoft로 이관, URL 미검증)"
+   ]
+  },
+  {
+   "name": "ValidSoft Voice Verity",
+   "company": "ValidSoft",
+   "country": "영국",
+   "modalities": [
+    "음성"
+   ],
+   "form": "기업 API/플랫폼(사전 등록이 필요 없는 비생체 방식 딥페이크 탐지)",
+   "target": "금융·콜센터",
+   "status": "운영중(2024년 출시로 기억). 2026-11 현황 미검증",
+   "pricing": "기업 견적",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "공개 성능 정보가 부족하고 시장 인지도가 제한적",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "고객 공개 정보 미확인",
+   "sources": [
+    "https://www.validsoft.com/ (Voice Verity, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Truecaller AI Call Scanner",
+   "company": "Truecaller",
+   "country": "스웨덴",
+   "modalities": [
+    "음성(통화)"
+   ],
+   "form": "소비자 앱(Android, 프리미엄 기능)",
+   "target": "소비자",
+   "status": "2024-05 미국에서 출시(기억). 2025~2026년에도 유지되는지는 미확인",
+   "pricing": "프리미엄 구독",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "Android 전용이고 통화 중 사용자가 직접 실행해야 함. 출시 국가 제한. 한국 출시 여부 미확인",
+   "major_score": 4,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "Truecaller 앱 자체는 대규모 사용자 기반이 있으나 이 기능의 사용 수치는 미확인",
+   "sources": [
+    "https://www.truecaller.com/ (2024-05 AI Call Scanner 발표, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Norton Genie Deepfake Protection",
+   "company": "Gen Digital (Norton)",
+   "country": "미국",
+   "modalities": [
+    "음성(영상 속 합성 음성)"
+   ],
+   "form": "온디바이스 소비자 보안 SW(Copilot+ PC)",
+   "target": "소비자",
+   "status": "2025년 출시로 기억(미검증). 2026 현황 미확인",
+   "pricing": "Norton 제품 번들(세부 미확인)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "특정 하드웨어·영어 위주로 기억. 통화 탐지 아님",
+   "major_score": 4,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "사용 수치 미확인",
+   "sources": [
+    "https://us.norton.com/ (Genie Deepfake Protection, URL 미검증)"
+   ]
+  },
+  {
+   "name": "AI or Not (오디오 판별)",
+   "company": "AI or Not",
+   "country": "미국",
+   "modalities": [
+    "음성",
+    "음악",
+    "이미지"
+   ],
+   "form": "웹·모바일 앱·API(소비자용 업로드 판별)",
+   "target": "소비자·언론",
+   "status": "운영중(2026-11 현황 미검증)",
+   "pricing": "무료 체험 + 유료 구독(세부 미확인)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "NPR 2024-04 테스트에서 오디오 샘플의 상당수(절반 안팎)를 오판했다고 보도(기억에 근거, 미검증). 같은 테스트에서 AI Voice Detector(aivoicedetector.com)도 결과가 불안정",
+   "weaknesses": "독립 테스트 정확도가 낮음. 압축된 파일이나 짧은 클립에 약할 가능성",
+   "major_score": 2,
+   "adoption_score": 2,
+   "reliability_score": 1,
+   "adoption_evidence": "사용자 수 공개 수치 미확인",
+   "sources": [
+    "https://www.aiornot.com/ (URL 미검증)",
+    "https://www.npr.org/ (2024-04 비교 테스트 기사, URL 미검증)"
+   ]
+  },
+  {
+   "name": "LG U+ 익시오(ixi-O) 안티딥보이스",
+   "company": "LG유플러스",
+   "country": "한국",
+   "modalities": [
+    "음성(실시간 통화, 합성·변조 음성 탐지)",
+    "통화 문맥(보이스피싱 탐지)"
+   ],
+   "form": "통신사 AI 통화 앱(온디바이스)",
+   "target": "소비자(LG U+ 가입자 중심)",
+   "status": "운영중. 2024-11 익시오 출시, 2025년 초 안티딥보이스 탑재 발표로 기억. 2026-11 현황 미검증",
+   "pricing": "가입자 무료",
+   "accuracy_vendor_claim": "'세계 최초 온디바이스 AI 변조음성 탐지'와 통화 수 초 안의 판별을 주장(기억에 근거, 정확도 수치 미검증)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "자사 가입자·지원 단말에만 해당. 독립 검증 없음. 소비자 경고용이라 결과를 증거로 쓰기 어려움",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "익시오 가입자·탐지 건수 공개 수치 미검증",
+   "sources": [
+    "https://www.lguplus.com/ (익시오 안티딥보이스 보도자료, URL 미검증)"
+   ]
+  },
+  {
+   "name": "KT AI 보이스피싱 탐지 서비스(화자인식·딥보이스 탐지)",
+   "company": "KT",
+   "country": "한국",
+   "modalities": [
+    "통화 문맥(실시간 STT 분석)",
+    "음성(화자인식·합성음 탐지)"
+   ],
+   "form": "통신사 서비스(앱/네트워크 연동)",
+   "target": "소비자(KT 가입자)",
+   "status": "운영중. 2025년 출시 후 화자인식(국과수 협력으로 기억)과 딥보이스 탐지를 차례로 추가 발표한 것으로 기억. 세부 시점 미검증",
+   "pricing": "가입자 무료",
+   "accuracy_vendor_claim": "미확인(정확도와 피해예방액 수치를 발표한 것으로 기억되나 검증 못함)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "가입자 한정. 화자인식은 이미 확보된 범죄자 음성 DB에 의존. 딥보이스 탐지 성능 공개 부족",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "이용자 수·탐지 건수 미검증",
+   "sources": [
+    "https://corp.kt.com/ (AI 보이스피싱 탐지 서비스 보도자료, URL 미검증)"
+   ]
+  },
+  {
+   "name": "SKT 에이닷 전화 보이스피싱 탐지 / 스캠뱅가드",
+   "company": "SK텔레콤",
+   "country": "한국",
+   "modalities": [
+    "통화 문맥·스팸/스미싱 차단",
+    "음성 합성 탐지(탑재 여부 미확인)"
+   ],
+   "form": "통신사 앱 + 네트워크 레벨 차단",
+   "target": "소비자(SKT 가입자)",
+   "status": "운영중으로 기억(세부 미검증). 딥보이스 탐지 탑재 여부 미확인",
+   "pricing": "가입자 무료",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "합성음 탐지 기능이 있는지 불명확. 2025년 유심 정보 유출 사고로 보안 신뢰도가 타격받음",
+   "major_score": 4,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "에이닷 전화 이용자 수 미검증",
+   "sources": [
+    "https://news.sktelecom.com/ (에이닷 전화·스캠뱅가드 보도자료, URL 미검증)"
+   ]
+  },
+  {
+   "name": "삼성 갤럭시 통화 '보이스피싱 의심 알림'",
+   "company": "삼성전자",
+   "country": "한국",
+   "modalities": [
+    "통화 문맥(온디바이스 AI)",
+    "음성 합성 탐지(포함 여부 미확인)"
+   ],
+   "form": "OS 기본 전화 앱 기능(온디바이스)",
+   "target": "소비자(국내 갤럭시 사용자)",
+   "status": "2025년 국내 도입으로 기억(미검증). 2026년 신규 기능은 미확인",
+   "pricing": "무료(기본 탑재)",
+   "accuracy_vendor_claim": "미확인(공공기관 데이터로 학습했다고 보도된 것으로 기억, 미검증)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "국내 갤럭시에만 해당. 딥보이스(합성음) 자체를 탐지하는지 불명확. 결과는 경고용",
+   "major_score": 5,
+   "adoption_score": 3,
+   "reliability_score": 2,
+   "adoption_evidence": "기본 탑재라 도달 범위는 넓을 수 있으나 실제 활성화·사용 수치 미확인",
+   "sources": [
+    "https://news.samsung.com/kr/ (갤럭시 보이스피싱 의심 알림 관련 뉴스룸, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Google SynthID Detector (워터마크 기반 검증)",
+   "company": "Google DeepMind",
+   "country": "미국",
+   "modalities": [
+    "오디오",
+    "이미지",
+    "영상",
+    "텍스트(SynthID 워터마크가 있는 구글 생성물만)"
+   ],
+   "form": "웹 검증 포털 + 워터마크 기술",
+   "target": "언론·전문가(초기 테스터), 플랫폼",
+   "status": "2025-05 Google I/O에서 공개로 기억(미검증). 2026 개방 범위 미확인",
+   "pricing": "미확인",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "SynthID 오디오에 특화된 독립 평가는 미확인",
+   "weaknesses": "구글 모델(Lyria 등)이 만든 결과물만 판별함. 비협조 생성기나 오픈소스 모델 생성물에는 소용없음",
+   "major_score": 5,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "adoption_evidence": "포털 사용 수치 미확인",
+   "sources": [
+    "https://deepmind.google/technologies/synthid/ (URL 미검증)",
+    "https://blog.google/ (2025-05 I/O SynthID Detector 발표, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Deezer AI 음악 탐지·태깅",
+   "company": "Deezer",
+   "country": "프랑스",
+   "modalities": [
+    "음악"
+   ],
+   "form": "플랫폼 내부 탐지 + 앱 안 'AI 생성' 태그 표시(외부 상용화 여부 미확인)",
+   "target": "자사 스트리밍 사용자·업계",
+   "status": "운영중. 2025-01 탐지 도구 배치와 특허 2건 출원(2024-12) 발표, 2025-06부터 AI 생성 앨범 태깅(기억에 근거). 2026 동향 미확인",
+   "pricing": "해당 없음(내부 기능)",
+   "accuracy_vendor_claim": "Suno·Udio 등 주요 모델의 생성곡을 탐지할 수 있다고 주장. 공개 통계: 하루 업로드 중 완전 AI 생성곡 비율 10%(2025-01) → 18%(2025-04) → 28%(2025-09) → 약 34%, 하루 약 5만 곡(2025-11). AI 트랙 스트림의 최대 70%가 부정 스트리밍이라고 주장(2025-06). 모두 기억에 근거, 미검증",
+   "independent_evaluation": "독립 평가 미확인. 다만 Deezer 연구진의 논문은 단순 분류기가 실험실에서 99.8%를 내도 피치·템포 변경, 재인코딩에 약하고, 학습하지 않은 생성기로는 일반화되지 않는다고 스스로 밝힘",
+   "weaknesses": "사람+AI 하이브리드 곡, 새로 나온 생성 모델, 변조된 곡 탐지가 어려울 가능성",
+   "major_score": 4,
+   "adoption_score": 4,
+   "reliability_score": 3,
+   "adoption_evidence": "모든 신규 업로드에 적용한다고 주장. Velvet Sundown(2025-07) 사례에서 AI 의심 표시를 낸 사실상 유일한 대형 플랫폼으로 보도",
+   "sources": [
+    "https://newsroom-deezer.com/ (2025-01/04/06/09/11 AI 음악 관련 발표, URL 미검증)",
+    "https://arxiv.org/abs/2405.04181 (Deezer 연구진 'Detecting music deepfakes is easy but actually hard', 이번 세션에서 접속 불가·미검증)"
+   ]
+  },
+  {
+   "name": "IRCAM Amplify AI-Generated Music Detector",
+   "company": "IRCAM Amplify",
+   "country": "프랑스",
+   "modalities": [
+    "음악"
+   ],
+   "form": "B2B API/웹",
+   "target": "레이블·유통사·스트리밍·저작권단체",
+   "status": "운영중(2024년 출시로 기억). 2026-11 현황 미검증",
+   "pricing": "B2B 견적/사용량 기반(미확인)",
+   "accuracy_vendor_claim": "정확도 98.5%를 주장(기억에 근거, 미검증)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "고객과 검증 데이터가 비공개. 신규 생성 모델에 얼마나 빨리 대응하는지 불명",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 3,
+   "adoption_evidence": "공개 고객사 정보 미확인",
+   "sources": [
+    "https://www.ircamamplify.com/ (AI-Generated Music Detector, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Believe AI Radar (TuneCore 포함)",
+   "company": "Believe",
+   "country": "프랑스",
+   "modalities": [
+    "음악(AI 생성 마스터)",
+    "음성(아티스트 보이스 딥페이크)"
+   ],
+   "form": "자사 유통 파이프라인 내부 도구",
+   "target": "자사 유통 고객(TuneCore 포함)",
+   "status": "운영중(2024년 발표로 기억). 2026 현황 미검증",
+   "pricing": "해당 없음(내부)",
+   "accuracy_vendor_claim": "AI 생성 마스터 98%, 딥페이크 93% 탐지를 주장(기억에 근거, 미검증)",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "내부용이라 외부 검증이 불가능. 세부 방법론 비공개",
+   "major_score": 3,
+   "adoption_score": 3,
+   "reliability_score": 3,
+   "adoption_evidence": "대형 디지털 유통사의 업로드 파이프라인에 적용했다고 주장(미검증)",
+   "sources": [
+    "https://www.believe.com/ (AI Radar 발표, URL 미검증)"
+   ]
+  },
+  {
+   "name": "YouTube Content ID 합성 가창 식별 / 초상 탐지",
+   "company": "Google (YouTube)",
+   "country": "미국",
+   "modalities": [
+    "음악(합성 가창 음성)",
+    "얼굴(초상)"
+   ],
+   "form": "플랫폼 내 권리자 도구(Content ID 확장)",
+   "target": "권리자·크리에이터",
+   "status": "2024-09 개발 발표, 2025년 파일럿 예정이었음. 정식 확대 여부 미검증. 얼굴 초상 탐지는 2025-10 YPP 크리에이터로 확대된 것으로 기억",
+   "pricing": "권리자 무료(플랫폼 내)",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "YouTube 안에서만, 권리자만 쓸 수 있음. 일반인의 판별 도구가 아님",
+   "major_score": 5,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "합성 가창 식별 기능 사용 규모 미확인",
+   "sources": [
+    "https://blog.youtube/ (2024-09 합성 가창 식별 기술·초상 탐지 발표, URL 미검증)"
+   ]
+  },
+  {
+   "name": "Vermillio TraceID",
+   "company": "Vermillio",
+   "country": "미국",
+   "modalities": [
+    "음악",
+    "음성",
+    "이미지(IP·초상 기반 AI 생성물 추적)"
+   ],
+   "form": "B2B 플랫폼",
+   "target": "레이블·스튜디오·탤런트",
+   "status": "운영중. 2025-03 Sony Music 주도 1,600만 달러 Series A로 기억(미검증)",
+   "pricing": "기업 견적",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인",
+   "weaknesses": "권리자용 추적 도구라 일반 판별기가 아님. 성능 공개 없음",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "Sony Music 투자·제휴(기억). 고객 수 미확인",
+   "sources": [
+    "Vermillio 공식 발표 및 2025-03 Series A 보도(URL 미확인)"
+   ]
+  },
+  {
+   "name": "GetReal Security (포렌식 등급 멀티모달 분석)",
+   "company": "GetReal Security (구 GetReal Labs, Hany Farid 공동창업)",
+   "country": "미국",
+   "modalities": [
+    "이미지",
+    "영상",
+    "음성(포함으로 기억, 미검증)"
+   ],
+   "form": "기업·정부용 포렌식 분석 플랫폼",
+   "target": "기업 보안·정부·수사",
+   "status": "운영중. 2025-03 1,750만 달러 Series A로 기억(미검증)",
+   "pricing": "기업 견적",
+   "accuracy_vendor_claim": "미확인",
+   "independent_evaluation": "독립 평가 미확인(창업자는 학계 디지털 포렌식 권위자)",
+   "weaknesses": "오디오 기능 범위 미확인. 고가의 엔터프라이즈 중심",
+   "major_score": 3,
+   "adoption_score": 2,
+   "reliability_score": 2,
+   "adoption_evidence": "고객 공개 정보 미확인",
+   "sources": [
+    "GetReal Security 공식 사이트 및 2025-03 Series A 보도(URL 미확인)"
+   ]
+  }
+ ],
+ "key_findings": [
+  {
+   "claim": "[검증 한계] 이번 실행에서는 워크플로 전체가 공유하는 웹 검색 한도(200회)가 이미 소진되었고, WebFetch도 허용 도메인 밖이라 실패했다(elevenlabs.io, www.resemble.ai, www.pindrop.com, arxiv.org, www.realitydefender.com 모두 ENOTFOUND). 따라서 이 영역의 모든 내용은 모델 사전지식(대체로 2025년 말까지)에 기반하며, 2026년 동향은 공백이고 모든 URL·수치는 이번 세션에서 미검증이다.",
+   "sources": [
+    "세션 도구 오류 메시지(WebSearch 예산 소진, WebFetch ENOTFOUND)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "음성 딥페이크 탐지의 기업(콜센터·금융) 시장은 이미 자금력 있는 전문 기업들이 경쟁 중이다. Pindrop(2024년 1억 달러 부채금융, 99% 정확도 주장), Reality Defender(Series A 누적 약 3,300만 달러), Microsoft(Nuance Gatekeeper), Resemble AI, ValidSoft 등이 있어, 소규모 팀이 범용 정확도로 정면 경쟁하기 어려운 구조다.",
+   "sources": [
+    "https://www.pindrop.com/products/pindrop-pulse/ (미검증)",
+    "https://techcrunch.com/ (2024-07 Pindrop 기사, URL 미검증)",
+    "https://www.realitydefender.com/ (미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "한국 소비자 실시간 통화 영역은 통신3사와 삼성이 무료 기본 기능으로 선점했다. LG U+ 익시오 '안티딥보이스'(온디바이스, 2025년 초 탑재, '세계 최초' 주장), KT 'AI 보이스피싱 탐지'(문맥 분석+화자인식, 이후 딥보이스 탐지 추가 발표), SKT 에이닷 전화·스캠뱅가드, 삼성 갤럭시 '보이스피싱 의심 알림'이 있다. 세부 시점·수치·성능은 미검증이다.",
+   "sources": [
+    "https://www.lguplus.com/ (URL 미검증)",
+    "https://corp.kt.com/ (URL 미검증)",
+    "https://news.sktelecom.com/ (URL 미검증)",
+    "https://news.samsung.com/kr/ (URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "새로 만든 독립 앱은 OS 정책상 실시간 통화 음성을 분석하기가 사실상 불가능하다. iOS는 서드파티 앱의 셀룰러 통화 오디오 접근을 허용하지 않고, Google Play는 2022년 5월부터 접근성 API를 쓰는 통화 녹음 앱을 금지했다. 그래서 신규 앱이 현실적으로 할 수 있는 것은 '녹음 파일 업로드 분석'이나 통신사·제조사·은행과의 제휴(B2B2C)뿐이다.",
+   "sources": [
+    "https://support.google.com/googleplay/android-developer/ (2022-05 접근성 API 정책 변경, URL 미검증)",
+    "https://developer.apple.com/ (CallKit, 통화 오디오 접근 제한, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "소비자용 업로드 판별 도구의 독립 테스트 결과는 들쭉날쭉하다. NPR(2024-04)이 실제·합성 클립 84개로 Pindrop, AI or Not, AI Voice Detector를 비교했을 때 Pindrop은 대부분 맞췄지만 나머지 도구는 다수를 오판했다(기억에 근거).",
+   "sources": [
+    "https://www.npr.org/ (2024-04 오디오 딥페이크 탐지기 테스트 기사, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "실제로 유통되는 딥페이크에서는 탐지 성능이 크게 떨어진다. TrueMedia.org가 수집한 실사용 데이터 기반 Deepfake-Eval-2024에서 기존 오픈소스 SOTA 탐지 모델의 AUC가 기존 벤치마크보다 영상 약 50%, 오디오 약 48%, 이미지 약 45% 낮아졌다. 상용 모델과 파인튜닝 모델은 더 나았지만 사람 포렌식 분석가 수준에는 못 미쳤다.",
+   "sources": [
+    "https://arxiv.org/abs/2503.02857 (Deepfake-Eval-2024, 이번 세션에서 접속 불가·미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "음성 위변조 탐지 벤치마크에는 알려진 한계가 있다. (1) ASVspoof 2019로 학습한 모델이 실제 유명인·정치인 음성(In-the-Wild, Müller et al. 2022)에서는 EER가 수 배 이상 나빠졌다. (2) ASVspoof 2021 DF 트랙(압축, 학습하지 않은 출처)의 최고 시스템 EER는 15% 안팎으로 LA 트랙(1%대)보다 훨씬 나빴다. (3) ASVspoof 5(2024)는 코덱·적대적 공격 조건을 추가했고, 일반화와 강건성이 여전히 핵심 난제임을 보여준다. 수치는 기억에 근거한다.",
+   "sources": [
+    "https://www.asvspoof.org/ (미검증)",
+    "https://arxiv.org/abs/2203.16263 (Does Audio Deepfake Detection Generalize?, 미검증)",
+    "https://deepfake-total.com/in_the_wild (In-the-Wild 데이터셋, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "전화망 조건은 합성 흔적을 지워 탐지를 어렵게 한다. 8kHz 협대역, G.711/AMR/EVS 코덱, 패킷 손실, 잡음, 스피커폰 재녹음, 메신저 재압축이 그 예다. 노이즈·잔향·재압축 같은 '세탁(laundering)' 처리만으로 SOTA 탐지기의 EER가 크게 오른다는 연구가 여럿 있다. 신경 코덱 기반 음성 LM(VALL-E류)의 출력에는 보코더 산출물로 학습한 기존 탐지기가 약하다는 Codecfake 계열 연구도 있다.",
+   "sources": [
+    "https://www.asvspoof.org/ (ASVspoof 2021 LA 전화 채널 조건, 미검증)",
+    "Codecfake 및 laundering attack 관련 2024 논문(URL 미확인)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "생성사·빅테크의 판별 도구는 '자사 결과물만' 판별한다. ElevenLabs AI Speech Classifier(무료, ElevenLabs 음성만), Google SynthID Detector(2025-05 공개, SynthID 워터마크가 있는 구글 생성물만), Meta AudioSeal(오픈소스 워터마크)이 그렇다. 비협조 생성기나 오픈소스 모델 생성물에는 앞으로도 분류기 기반 탐지가 필요하다.",
+   "sources": [
+    "https://elevenlabs.io/ai-speech-classifier (미검증)",
+    "https://deepmind.google/technologies/synthid/ (URL 미검증)"
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim": "사람도 귀로는 구분하지 못한다. 청취 실험에서 음성 딥페이크 식별 정확도는 약 73%였다(Mai et al., PLOS ONE 2023). Deezer·Ipsos 설문(2025-11, 약 9,000명)에서는 97%가 AI 음악과 사람이 만든 음악을 구별하지 못했다. 판별 도구에 대한 수요의 근거다.",
+   "sources": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0285333 (URL 미검증)",
+    "https://newsroom-deezer.com/ (2025-11 설문 발표, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "AI 음악 유입이 급증하고 있다. Deezer 공개 통계로 하루 업로드 중 완전 AI 생성곡 비율은 10%(2025-01, 하루 약 1만 곡) → 18%(2025-04, 2만 곡 이상) → 28%(2025-09, 3만 곡 이상) → 약 34%(2025-11, 하루 약 5만 곡)로 늘었다. Deezer는 2025-06부터 AI 생성 앨범에 태그를 붙이고 추천·에디토리얼에서 제외하며, AI 트랙 스트림의 최대 70%가 부정 스트리밍이라고 밝혔다. 2024-12에는 탐지 기술 특허 2건을 출원했다.",
+   "sources": [
+    "https://newsroom-deezer.com/ (2025년 각 발표, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "AI 음악 탐지 B2B 벤더의 정확도는 모두 벤더 주장뿐이다. IRCAM Amplify는 98.5%, Believe AI Radar는 AI 생성 98%·딥페이크 93%를 주장하며 독립 평가는 미확인이다. 반면 Deezer 연구진 논문은 단순 CNN이 실험실에서 99.8%를 내도 피치·템포 변경과 재인코딩에 약하고 학습하지 않은 생성기로는 일반화되지 않는다고 보고했다. SONICS(ICLR 2025) 같은 학계 데이터셋도 긴 곡과 신규 모델로의 일반화를 난제로 꼽는다.",
+   "sources": [
+    "https://www.ircamamplify.com/ (URL 미검증)",
+    "https://www.believe.com/ (URL 미검증)",
+    "https://arxiv.org/abs/2405.04181 (미검증)",
+    "https://arxiv.org/abs/2408.14080 (SONICS, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "대형 플랫폼은 'AI 판별 표시'보다 사칭·스팸 통제로 대응한다. Spotify(2025-09)는 AI 음악 자체는 허용하면서 무단 음성복제 사칭 금지, 스팸 필터, DDEX 기반 AI 사용 크레딧 공개를 발표했고 최근 12개월간 스팸 트랙 7,500만 개 이상을 삭제했다고 밝혔다. YouTube는 Content ID 안에서 합성 가창 식별 기술 개발을 발표(2024-09)했고 사실적 합성물에 표시 의무를 두었다. SoundCloud는 2025-05 약관 논란 뒤 생성형 AI 학습에 옵트인 동의를 요구했다. Velvet Sundown(2025-07, 월 청취자 100만 명) 사례에서 AI 여부를 표시한 곳은 Deezer뿐이었다.",
+   "sources": [
+    "https://newsroom.spotify.com/ (2025-09-25 AI 보호 조치 발표, URL 미검증)",
+    "https://blog.youtube/ (2024-09 발표, URL 미검증)",
+    "https://soundcloud.com/ (2025-05 CEO 서한, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "레이블과 생성AI의 분쟁은 라이선스 합의로 바뀌고 있다. 2024-06 UMG·Sony·WMG가 Suno·Udio를 제소한 뒤 UMG–Udio(2025-10), WMG–Udio·WMG–Suno(2025-11)가 합의했고, 2026년에 라이선스 모델·플랫폼이 나올 예정이다(Udio는 다운로드 차단). Sony의 합의 여부와 2026년 진행 상황은 미확인이다. 라이선스 생성물은 추적·귀속(attribution) 기술로 관리하는 방향으로 가고 있다. Sony Music은 2025-03 Vermillio(TraceID) 투자를 주도했고 딥페이크 7만 5천 건 이상의 삭제를 요청했다고 밝혔다. Sony 그룹이 AI 곡에 쓰인 원곡을 식별하는 기술을 개발했다는 보도는 기억에만 있어 미검증이다.",
+   "sources": [
+    "https://www.universalmusic.com/ (2025-10 Udio 합의, URL 미검증)",
+    "https://www.wmg.com/ (2025-11 Suno·Udio 합의, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "한국 음악 저작권: 음저협은 2022년 AI 작곡가 '이봄(EvoM)' 곡의 저작권료 지급을 중단했다. 한국저작권위원회·문체부는 2023-12 '생성형 AI 저작권 안내서'에서 사람의 창작적 기여가 없는 AI 산출물은 저작권 등록이 안 된다는 원칙을 제시했다.",
+   "sources": [
+    "https://www.copyright.or.kr/ (생성형 AI 저작권 안내서, URL 미검증)",
+    "https://www.komca.or.kr/ (URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "음저협은 AI가 관여한 곡의 등록을 제한하면서 작품 신고 때 자기신고(확인서·서약)에 의존한다고 보도된 것으로 기억한다. 기술적 판별 도구의 도입 여부, 2026년 정책, 한국저작권위원회의 AI 음악 판별 관련 공공 R&D 사업은 모두 미확인이다. 그렇다면 국내 음악 분야에 기술 공백이 있을 수 있다.",
+   "sources": [
+    "https://www.komca.or.kr/ (URL 미검증)",
+    "https://www.copyright.or.kr/ (URL 미검증)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "claim": "규제가 순풍이다. 한국 AI 기본법(2026-01-22 시행)은 생성형 AI 결과물 표시(워터마크 등)와 딥페이크 고지를 의무화했고 과태료는 계도기간을 두기로 했다는 보도가 있다. EU AI Act 제50조 투명성 의무는 2026-08 적용 예정이다(이후 일정 조정 여부는 미확인). 그 결과 '표시 검증' 수요는 늘지만, 협조적 생성물의 판별은 일부 워터마크 판독으로 대체될 수 있다.",
+   "sources": [
+    "https://www.law.go.kr/ (인공지능 발전과 신뢰 기반 조성 등에 관한 기본법, URL 미검증)",
+    "https://eur-lex.europa.eu/ (Regulation (EU) 2024/1689 Art. 50, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "종료·인수 등 시장 신호: 비영리 무료 딥페이크 탐지 서비스 TrueMedia.org는 자금 문제로 2025-01 운영을 종료하고 모델을 오픈소스로 풀었다. Hiya는 2024년 스페인 음성 딥페이크 탐지 스타트업 Loccus.ai를 인수한 뒤 소비자용 탐지 확장을 냈다(기억). 무료 소비자 탐지만으로는 지속하기 어렵고, 탐지 기술은 유통 채널을 가진 기업에 흡수되는 경향이 있다.",
+   "sources": [
+    "https://www.truemedia.org/ (운영 종료 공지, URL 미검증)",
+    "https://www.hiya.com/ (Loccus.ai 인수 발표, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "특허: Deezer는 AI 음악 탐지 기술 특허 2건 출원(2024-12)을 공개했고, Pindrop은 음성 위변조·라이브니스 탐지 관련 특허를 다수 보유한 것으로 알려져 있다(정확한 수는 미확인). 다만 SSL(wav2vec2/XLS-R)+AASIST 같은 핵심 방법론은 학술·오픈소스로 공개되어 있어, 분야 전체를 막는 특허 정황은 확인되지 않았다. 이번 세션에서 KIPRIS·USPTO 검색은 못 했으므로 구체적인 FTO 조사가 필요하다.",
+   "sources": [
+    "https://newsroom-deezer.com/ (2025-01 AI 탐지 도구·특허 출원 발표, URL 미검증)"
+   ],
+   "confidence": "low"
+  },
+  {
+   "claim": "한국의 수요 근거: 경찰청 집계로 2024년 보이스피싱 피해액은 약 8,545억 원으로 전년보다 크게 늘었다는 보도가 있다. 가족 목소리를 흉내 낸 딥보이스 사기 사례 보도도 늘고 있다. 2025년 피해액이 1조 원대라는 추정 보도도 있었던 것으로 기억하지만 검증하지 못했다.",
+   "sources": [
+    "https://www.police.go.kr/ (보이스피싱 통계, URL 미검증)"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "claim": "수사 활용 사례: 2024년 미국 메릴랜드 Pikesville 고교 교장 음성 딥페이크 사건에서는 포렌식 전문가 분석을 거쳐 이 학교 체육부장이 기소됐다. 법정·수사에서 쓰려면 탐지 점수 하나가 아니라 여러 증거, 전문가 감정, 검증된 오류율이 필요하다는 점을 보여준다.",
+   "sources": [
+    "https://apnews.com/ (2024-04 Pikesville 고교 딥페이크 음성 사건 보도, URL 미검증)"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "gaps_and_opportunities": [
+  "[니치 1] 한국어·국내 전화망에 특화된 딥보이스 포렌식 감정 리포트. 통신3사·삼성 기능은 실시간 '경고'용이라 결과를 증거로 쓰기 어렵다. 녹음 파일을 넣으면 합성 여부, 부분 합성 구간, 추정 생성 엔진, 보정된 확률과 불확실성을 담은 감정 보고서를 내주는 공개 상용 제품은 이번 조사에서 확인되지 않았다(미확인). 대상은 수사기관·법무법인·보험사·금융 분쟁조정 쪽 니치다.",
+  "[니치 2] 부분 합성(스플라이싱) 구간 탐지와 생성 엔진 출처 추적(source tracing). 학계에서는 활발한 과제(PartialSpoof 등)이지만 제품화는 부족하고, 수사 목적에서 가치가 크다.",
+  "[차별화] 강건성: 8kHz, AMR/EVS 코덱, 스피커폰 재녹음, 카카오톡 보이스톡 등 메신저 압축, 잡음 조건의 한국어 학습·평가 데이터를 직접 구축해 글로벌 벤더의 약점(전화망 성능 검증 부족)을 파고들 여지가 있다.",
+  "[차별화] 이진 판정 대신 보정된 확률, 신뢰구간, 근거 시각화(스펙트로그램 아티팩트 등)를 제공하고 오류율을 공개 벤치마크로 투명하게 밝히면 신뢰 확보에 유리하다. 경쟁사 다수가 독립 평가를 내지 않고 있다.",
+  "[차별화] 워터마크·출처 판독(C2PA, SynthID, AudioSeal 등), 분류기, 메타데이터 분석을 묶은 '다중 증거' 리포트. AI 기본법(2026-01 시행)의 표시 의무 때문에 '표시가 진짜인지, 빠졌는지'를 검증하려는 수요가 생길 수 있다.",
+  "[음악 니치] 국내 음저협·유통사·스트리밍(멜론·지니·FLO 등)의 기술적 판별 공백 가능성(미확인). K-pop·트로트 등 국내 장르 특화, 'AI 보컬 + 사람 반주' 하이브리드 탐지, AI 관여 비율 추정은 차별화 요소다. 다만 수요와 예산 규모는 검증해야 한다.",
+  "[유통 전략] 단독 소비자 앱보다 통신사·은행·보험·메신저·음원유통사에 SDK/API로 공급하는 B2B2C가 OS 제약과 무료 기본 기능이라는 장벽을 피하기에 유리하다.",
+  "[수요 신호] 은행의 음성인증이 AI 음성복제로 뚫릴 수 있다는 경고와 보이스피싱 피해 증가 때문에 금융권의 탐지 수요가 커지고 있다. 국내 은행권의 딥보이스 탐지 도입 사례는 이번 세션에서 미확인이다.",
+  "[미조사 항목, 후속 검증 필요] 국내 은행권 딥보이스 탐지 도입 사례, 국과수·경찰의 딥보이스 탐지 도구, 음저협 2025~2026 정책 세부, 한국저작권위원회·한국저작권보호원 R&D, 특허(KIPRIS/USPTO/Google Patents), 2026년 Suno·Udio·Sony 동향과 Deezer 탐지 기술의 외부 상용화 여부, 앱스토어 다운로드·평점 수치, 각 벤더의 2026년 투자·인수 소식"
+ ],
+ "threats_and_barriers": [
+  "기술 군비경쟁: 새 생성기(신경 코덱 TTS, Suno·Udio 최신 버전, 오픈소스 음악 모델)가 나올 때마다 탐지 성능이 급락한다. Deepfake-Eval-2024에서 오디오 모델 AUC가 약 48% 떨어졌고, Codecfake 연구도 같은 문제를 보여준다. 데이터를 계속 모으고 재학습하는 비용이 크다.",
+  "전화망 압축·잡음·재녹음과 의도적인 세탁 처리(노이즈·잔향·재인코딩·피치 변경)로 합성 흔적이 사라진다. 음악에서도 피치·템포 변경과 재인코딩에 약하다는 결과가 Deezer 연구에서 나왔다.",
+  "유통 장벽: 통신3사·삼성이 실시간 통화 보호를 무료로 기본 탑재했고, iOS는 통화 오디오 접근을 막으며 Google Play는 2022-05부터 접근성 API 통화녹음을 금지했다. 독립 앱은 실시간 통화 탐지가 사실상 불가능하다.",
+  "빅테크·생성사의 워터마크·출처 표준(SynthID, C2PA, AudioSeal)과 자체 판별기 때문에 협조적 생성물의 판별은 무료로 범용화된다. 라이선스 합의 이후 Suno·Udio의 생성물도 추적 기술로 관리될 가능성이 있다.",
+  "신뢰·책임 리스크: 범죄 수사용이라면 오탐(진짜를 가짜로)과 미탐 모두 법적·평판 책임이 따른다. 증거능력을 얻으려면 검증된 오류율, 감정 절차, 보관연속성, 기관 인증(ISO/IEC 17025 등)이 필요하다. 진짜 증거를 '딥페이크'라고 우기는 '거짓말쟁이의 배당' 문제도 있다.",
+  "데이터·법률: 음성은 개인정보이고 경우에 따라 생체정보라서 한국어 실통화 데이터를 모으고 학습하는 데 개인정보보호법상 제약이 있다. 음악 학습 데이터에는 저작권 리스크가 있다. '정답 라벨'(무엇이 진짜 AI인지)을 확보하는 것 자체가 어렵다.",
+  "특허: Pindrop의 대규모 포트폴리오, Deezer의 출원 2건 등이 있다. 분야 전체를 막는 정황은 확인되지 않았지만 FTO는 하지 못했다.",
+  "자금·경쟁: Pindrop(1억 달러 부채금융), Reality Defender(3,300만 달러), ElevenLabs(수십억 달러 기업가치), Microsoft 등과 자금력 차이가 크다. 비영리 TrueMedia.org 종료(2025-01)에서 보듯 무료 소비자 서비스는 지속하기 어렵고, 소비자의 지불의사도 낮다.",
+  "이번 조사 자체의 한계: 실시간 웹 검증을 못 해서 2025년 말~2026년의 신규 진입자나 대형 출시(예: 통신사 기능 고도화, 빅테크의 범용 탐지기 출시)를 놓쳤을 수 있다."
+ ],
+ "red_ocean_judgement": "세그먼트별로 판단이 갈리며, 전체로 보면 '부분적 레드오션 + 기술은 미해결'이다. (1) 음성·기업(콜센터/금융) 시장은 레드오션이다. Pindrop, Microsoft(Nuance), Reality Defender, Resemble, ValidSoft 등 자금력과 통화 데이터, 통합 역량을 갖춘 사업자가 이미 차지하고 있다. (2) 한국 소비자 실시간 통화 탐지는 사실상 진입이 불가능하다. 통신3사(LG U+ 익시오 안티딥보이스, KT, SKT)와 삼성이 무료 기본 기능으로 선점했고, iOS·Android 정책상 신규 앱은 통화 음성에 접근할 수 없다. (3) 소비자 '파일 업로드 판별'(음성·음악)은 도구 수로는 이미 레드오션이다(무료 도구가 넘쳐남). 하지만 독립 테스트 성능이 들쭉날쭉하고 '신뢰받는 승자'는 없다. 차별화 없이 들어가면 수익화가 어렵다. (4) AI 음악 탐지 B2B는 성장 중인 경쟁 시장이다. 글로벌에는 Deezer(자체), Believe(자체), IRCAM Amplify, Vermillio 등이 있지만 표준은 아직 없다. 한국은 음저협이 자기신고에 의존하는 것으로 보여(미검증) 기술 공백이 있을 수 있으나 수요 규모는 검증되지 않았다. (5) 수사·법정용 한국어 음성 포렌식은 니치다. 국과수 등이 기관 내부 역량을 갖춘 것으로 보이고 공개 상용 제품 정보는 적다. 검증·인증·신뢰를 쌓는 비용이 매우 크지만 경쟁 밀도는 상대적으로 낮다. 결론적으로 '모든 매체를 넣으면 AI인지 판별해주는 범용 소비자 앱'은 레드오션인 데다 기술적으로 미해결(실제 환경에서 오탐·미탐이 많음)이고 유통 장벽까지 있어, 개인·초기 팀이 정확도로 정면승부하기는 권하지 않는다. 반면 '한국어 전화망 딥보이스 포렌식 감정 리포트'나 '국내 음원 유통·저작권 단체용 AI 음악 판별 API'처럼 좁은 수직 시장은 검토할 가치가 있다. 분야 전체를 막는 특허 정황은 확인되지 않았지만 FTO는 하지 않았다. 이 판단은 이번 세션에서 웹으로 검증하지 못한 사전지식에 기반하므로 재검증이 필요하다.",
+ "summary": "[중요: 검증 한계] 이번 실행에서는 워크플로 전체가 공유하는 웹 검색 한도(턴당 200회)가 이미 소진되었고, WebFetch도 네트워크 허용 도메인 밖이라 실패했다(elevenlabs.io, www.resemble.ai, www.pindrop.com, arxiv.org, www.realitydefender.com 모두 ENOTFOUND). 그래서 지시받은 '2025~2026 최신 상태 웹 확인'을 하지 못했고, 아래 내용은 모델 사전지식(대체로 2025년 말까지)에 기반한다. 모든 URL·수치는 미검증 표시를 달았고, 2026년 동향은 공백이다. 조사를 이어가려면 후속 메시지로 재요청하거나 CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION을 올려야 하고, 위 도메인들도 세션 네트워크 설정에서 허용해야 한다.\n\n[음성] 음성 딥페이크 탐지는 이미 시중에 많다. 기업용으로는 Pindrop Pulse(99% 정확도 주장, NPR 2024 소규모 독립 테스트에서 비교 도구 중 최상), Reality Defender, Resemble Detect, Microsoft Nuance Gatekeeper, ValidSoft가 있다. 소비자용으로는 ElevenLabs Classifier(자사 음성만 판별), Hiya 크롬 확장, McAfee·Norton의 PC용 탐지, Truecaller, AI or Not(NPR 테스트에서 저조)이 있다. 한국에서는 LG U+ 익시오 안티딥보이스, KT AI 보이스피싱 탐지(화자인식·딥보이스), SKT 에이닷 전화, 삼성 갤럭시 보이스피싱 알림이 무료 기본 기능으로 자리 잡았다(세부 미검증). 그런데 기술 자체는 아직 미해결이다. Deepfake-Eval-2024에서 실제 딥페이크에 대한 오디오 탐지 모델 AUC가 약 48% 떨어졌고, ASVspoof와 In-the-Wild 연구에서도 학습하지 않은 공격·코덱·전화망 조건에서 성능이 크게 나빠졌다. 사람의 식별 정확도도 약 73%에 그친다.\n\n[음악] Deezer가 자체 탐지·태깅을 운영한다. 하루 업로드 중 완전 AI 생성곡이 2025-11 기준 약 34%(하루 5만 곡)이고, 2024-12에 특허 2건을 출원했다. Believe AI Radar(98% 주장)와 IRCAM Amplify(98.5% 주장)는 독립 평가가 없다. Deezer 연구진 스스로 '실험실 99.8%'가 변조에 약하고 일반화되지 않는다고 밝혔다. Spotify·YouTube·SoundCloud는 판별 표시보다 사칭·스팸·동의 정책으로 대응한다. 레이블은 Suno·Udio 소송을 라이선스 합의(UMG–Udio 2025-10, WMG–Suno·Udio 2025-11)로 바꾸며 추적·귀속 기술(예: Sony Music이 투자한 Vermillio) 쪽으로 가고 있다. 한국은 음저협이 2022년 AI 작곡가 '이봄'의 저작권료 지급을 중단했고 자기신고에 의존하는 것으로 보인다(미검증). 기술적 판별 도구와 한국저작권위원회 R&D 여부는 미확인이다.\n\n[판단] '모든 매체를 넣으면 AI인지 알려주는 범용 소비자 앱'으로 정면승부하는 것은 권하지 않는다. 레드오션이고, 기술은 미해결이며, 유통·OS 장벽과 무료 경쟁자가 있다. 기회가 있다면 좁은 수직 시장이다. 한국어·전화망 특화 딥보이스 포렌식 감정 리포트(수사·법무·보험·금융 분쟁용, 부분 합성 구간과 생성 엔진 추적, 보정된 확률 제공)나, 국내 음원 유통·저작권 단체용 AI 음악 판별 API(K-pop 특화, 하이브리드 곡 탐지)가 그 예이며, 둘 다 B2B2C로 접근하는 편이 낫다. 분야 전체를 막는 특허 정황은 확인되지 않았지만 FTO 조사는 하지 못했다. 이 결과는 예비 조사이므로 실시간 검색으로 재검증해야 한다."
+}
